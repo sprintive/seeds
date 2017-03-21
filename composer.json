@@ -42,29 +42,21 @@
     ],
     "extra": {
         "installer-paths": {
-            "app/core": [
+            "public_html/core": [
                 "drupal/core"
             ],
-            "app/modules/contrib/{$name}": [
+            "public_html/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "app/profiles/contrib/{$name}": [
+            "public_html/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "app/themes/contrib/{$name}": [
+            "public_html/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
             "drush/contrib/{$name}": [
                 "type:drupal-drush"
             ]
-        },
-        "patches": {
-            "drupal/page_manager": {
-                "Fix contextual links on page manager pages": "https://www.drupal.org/files/issues/page_manager-block_content_contextual-2601004-14.patch"
-            },
-            "drupal/media_entity_browser": {
-                "Add view as a config dependency": "https://www.drupal.org/files/issues/meb_add_config-2850574-2.patch"
-            }
         }
     },
     "minimum-stability": "dev",
