@@ -1,0 +1,33 @@
+.seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-bar {
+  background-color: #000;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal a:hover,
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal a:active,
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal a:focus {
+  background: #74a333;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal .menu-item--expanded:hover > a,
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal .menu-item--expanded:hover > .toolbar-box > a {
+  background: #74a333;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:after {
+ content: url('../images/chevron-right.svg');
+ width:15px;
+ height: 15px;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-horizontal ul  ul li.menu-item:first-child {
+	border-top: 3px solid #74a333
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-horizontal {
+	border-bottom: 3px solid #74a333;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-vertical .toolbar-menu a:hover,
+.seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-vertical .toolbar-menu a:focus {
+  background: #74a333;
+}

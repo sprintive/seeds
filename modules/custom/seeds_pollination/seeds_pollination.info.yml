@@ -1,0 +1,7 @@
+name: Seeds Pollination
+core: 8.x
+description: Custom functions on seeds.
+package: Seeds
+type: module
+dependencies:
+  - adminimal_admin_toolbar

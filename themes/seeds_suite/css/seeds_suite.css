@@ -3,6 +3,13 @@
 	border-color: #5c8e23;
 }
 
-input[type=checkbox]:checked, input[type=checkbox]:disabled:checked, input[type=radio]:checked, input[type=radio]:disabled:checked {
-    background: #73a341;
-    }
+input[type=checkbox]:checked,
+input[type=checkbox]:disabled:checked,
+input[type=radio]:checked, input[type=radio]:disabled:checked {
+  background: #73a341;
+}
+
+.seeds-suite .content-header {
+    background-color: #333;
+    padding: 2.5rem 0 0;
+}

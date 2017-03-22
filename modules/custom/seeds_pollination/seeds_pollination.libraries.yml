@@ -1,0 +1,5 @@
+seeds-toolbar:
+  version: VERSION
+  css:
+    theme:
+      css/seeds_toolbar.css: {}
