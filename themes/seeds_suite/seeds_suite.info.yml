@@ -1,0 +1,22 @@
+name: Seeds Suite
+type: theme
+description: 'Adminimal theme customized to suit RTL interfaces.'
+base theme: adminimal_theme
+package: 'Seeds'
+core: 8.x
+
+libraries:
+  - seeds_suite/global-styling
+
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first

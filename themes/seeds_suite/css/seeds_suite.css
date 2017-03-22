@@ -1,0 +1,8 @@
+.seeds-suite .button--primary {
+	background: #73A333;
+	border-color: #5c8e23;
+}
+
+input[type=checkbox]:checked, input[type=checkbox]:disabled:checked, input[type=radio]:checked, input[type=radio]:disabled:checked {
+    background: #73a341;
+    }
