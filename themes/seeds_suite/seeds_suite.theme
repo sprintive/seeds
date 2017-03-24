@@ -1,11 +1,9 @@
-<?php 
+<?php
+
 /**
  * @file
  * Functions to support theming in the Seeds Suite.
  */
-
-use Drupal\Component\Utility\Xss;
-use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -14,5 +12,4 @@ function seeds_suite_preprocess_html(&$variables) {
 
   // Add Seeds Suite class to the body.
   $variables['attributes']['class'][] = 'seeds-suite';
-
 }

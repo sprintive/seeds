@@ -2,6 +2,12 @@
 
 /**
  * @file
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * @file
  * Functions to support adminimal admin toolbar.
  */
 
@@ -23,4 +29,13 @@ function seeds_pollination_page_attachments_alter(array &$page) {
   if (_adminimal_admin_toolbar_is_access()) {
     $page['#attached']['library'][] = 'seeds_pollination/seeds-toolbar';
   }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  $title = $form['title']['widget'][0]['value']['#title'];
+  $form['title']['widget'][0]['value']['#title_display'] = 'hidden';
+  $form['title']['widget'][0]['value']['#placeholder'] = $title;
 }
