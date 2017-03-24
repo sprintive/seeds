@@ -13,21 +13,73 @@
   background: #74a333;
 }
 
+.seeds-toolbar .toolbar .toolbar-tray-horizontal .toolbar-menu .toolbar-handle,
+.seeds-toolbar .toolbar .toolbar-tray-horizontal .toolbar-menu ul,
+.seeds-toolbar .toolbar .toolbar-tray-vertical .toolbar-menu ul {
+  box-shadow: none;
+}
+
+[dir="rtl"] .seeds-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded {
+  background: none;
+}
+
 .seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:after {
- content: url('../images/chevron-right.svg');
- width:15px;
- height: 15px;
+  content: url(../images/chevron-right.svg);
+  width: 15px;
+  height: 15px;
+}
+
+[dir="rtl"] .seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:after {
+  content: url(../images/chevron-left.svg);
+  left: 5px;
+  right: auto;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:hover:after {
+  content: url(../images/white-chevron-right.svg);
+  transform: translate(3px, -8px);
+}
+
+[dir="rtl"] .seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:hover:after {
+  content: url(../images/white-chevron-left.svg);
+  transform: translate(-3px, -8px);
 }
 
 .seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-horizontal ul  ul li.menu-item:first-child {
-	border-top: 3px solid #74a333
+  border-top: 3px solid #74a333;
 }
 
 .seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-horizontal {
-	border-bottom: 3px solid #74a333;
+  border-bottom: 3px solid #74a333;
 }
 
 .seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-vertical .toolbar-menu a:hover,
 .seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-vertical .toolbar-menu a:focus {
   background: #74a333;
+}
+
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-icon-admin-toolbar-tools-help:before {
+  background-image: url('../images/seeds.svg');
+  width: 25px;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal .menu-item--expanded:hover .toolbar-icon-admin-toolbar-tools-help:before,
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-icon-admin-toolbar-tools-help:hover:before {
+  background-image: url('../images/seeds-white.svg');
+}
+
+.seeds-toolbar .toolbar-bar .toolbar-icon-user:before {
+  background-image: url('../images/person.svg');
+  background-color: #74a333;
+  height: 20px;
+  top: 9px;
+}
+
+.seeds-toolbar.adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab  a {
+  color: #74a333;
+}
+
+[dir="rtl"] .seeds-toolbar.adminimal-admin-toolbar .toolbar-oriented .user-toolbar-tab {
+  float: left;
 }
