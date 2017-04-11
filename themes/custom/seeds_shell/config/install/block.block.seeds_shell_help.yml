@@ -4,9 +4,9 @@ dependencies:
   module:
     - help
   theme:
-    - seeds_suite
-id: seeds_suite_help
-theme: seeds_suite
+    - seeds_shell
+id: seeds_shell_help
+theme: seeds_shell
 region: help
 weight: 0
 provider: null

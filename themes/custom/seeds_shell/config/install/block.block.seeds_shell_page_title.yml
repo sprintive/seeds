@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - seeds_suite
-id: seeds_suite_page_title
-theme: seeds_suite
+    - seeds_shell
+id: seeds_shell_page_title
+theme: seeds_shell
 region: header
 weight: -30
 provider: null

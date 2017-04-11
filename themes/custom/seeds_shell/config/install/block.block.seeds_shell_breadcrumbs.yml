@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - seeds_suite
-id: seeds_suite_breadcrumbs
-theme: seeds_suite
+    - seeds_shell
+id: seeds_shell_breadcrumbs
+theme: seeds_shell
 region: breadcrumb
 weight: 0
 provider: null

@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - seeds_suite
-id: seeds_suite_primary_local_tasks
-theme: seeds_suite
-region: header
+    - seeds_shell
+id: seeds_shell_secondary_local_tasks
+theme: seeds_shell
+region: pre_content
 weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Primary tabs'
+  label: 'Secondary tabs'
   provider: core
   label_display: '0'
-  primary: true
-  secondary: false
+  primary: false
+  secondary: true
 visibility: {  }

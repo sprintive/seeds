@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - seeds_suite
-id: seeds_suite_content
-theme: seeds_suite
+    - seeds_shell
+id: seeds_shell_content
+theme: seeds_shell
 region: content
 weight: 0
 provider: null
