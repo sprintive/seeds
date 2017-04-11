@@ -1,4 +1,4 @@
-name: Seeds Suite
+name: Seeds Shell
 type: theme
 description: 'Adminimal theme customized to suit RTL interfaces.'
 base theme: adminimal_theme
@@ -6,7 +6,7 @@ package: 'Seeds'
 core: 8.x
 
 libraries:
-  - seeds_suite/global-styling
+  - seeds_shell/global-styling
 
 regions:
   header: 'Header'

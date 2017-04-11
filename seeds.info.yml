@@ -1,13 +1,13 @@
 name: Seeds
 type: profile
-description: "Kickoff distro for SME's, Curated by Sprintive."
-# version: VERSION
+description: "Kickoff distro for SME's, Curated by Sprintive"
+version: VERSION
 core: 8.x
+
 dependencies:
   - node
   - history
   - block
-  - breakpoint
   - ckeditor
   - color
   - config
@@ -19,7 +19,6 @@ dependencies:
   - block_content
   - quickedit
   - editor
-  - help
   - image
   - menu_ui
   - options
@@ -27,8 +26,6 @@ dependencies:
   - page_cache
   - dynamic_page_cache
   - taxonomy
-  - dblog
-  - search
   - shortcut
   - toolbar
   - field_ui
@@ -36,9 +33,16 @@ dependencies:
   - rdf
   - views
   - views_ui
-  - tour
   - automated_cron
-themes:
-  - bartik
-  - seven
 
+  # Embryos
+  - seeds_editor
+
+  # Pollination
+  - seeds_pollination
+
+themes:
+  - adminimal_theme
+  - bootstrap
+  - seeds_shell
+  - seeds_coat

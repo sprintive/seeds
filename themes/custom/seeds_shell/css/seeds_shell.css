@@ -1,19 +1,19 @@
-.seeds-suite h1.page-title {
+.seeds-shell h1.page-title {
   font-weight: 400;
   color: #a1cc5c;
 }
 
-.seeds-suite .content-header {
+.seeds-shell .content-header {
   background-color: #333;
   padding: 2.5rem 0 0;
 }
 
-.seeds-suite .breadcrumb {
+.seeds-shell .breadcrumb {
   padding: 0px;
   margin-bottom: 30px;
 }
 
-.seeds-suite .breadcrumb ol {
+.seeds-shell .breadcrumb ol {
   background: #fff;
   margin-left: -2.0rem;
   margin-right: -2.0rem;
@@ -21,22 +21,22 @@
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
 
-[dir="rtl"] .seeds-suite .breadcrumb ol {
+[dir="rtl"] .seeds-shell .breadcrumb ol {
   margin-right: -2.0rem;
 }
 
-.seeds-suite a,
-.seeds-suite .link {
+.seeds-shell a,
+.seeds-shell .link {
   color: #5ea304;
   text-decoration: none;
 }
 
-.seeds-suite .panel {
+.seeds-shell .panel {
   background: #fbf9f6;
   border: 1px solid #e5e5e5;
 }
 
-.seeds-suite .admin-list li {
+.seeds-shell .admin-list li {
   border-top: 1px solid #e5e5e5;
 }
 
@@ -47,38 +47,38 @@ input[type=radio]:disabled:checked {
   background: #73a341;
 }
 
-.seeds-suite .button--primary {
+.seeds-shell .button--primary {
   background: #73a333;
   border-color: #5c8e23;
 }
 
-.seeds-suite.adminimal .action-links .button--primary:hover,
-.seeds-suite.adminimal .action-links .button--primary:focus {
+.seeds-shell.adminimal .action-links .button--primary:hover,
+.seeds-shell.adminimal .action-links .button--primary:focus {
   background-color: #73a333;
 }
 
-.js .seeds-suite .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:hover,
-.js .seeds-suite .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:focus {
+.js .seeds-shell .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:hover,
+.js .seeds-shell .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:focus {
   background: #5ea304;
 }
 
-.js .seeds-suite .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
-.js .seeds-suite .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
+.js .seeds-shell .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
+.js .seeds-shell .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
   background: #5ea304;
 }
 
-.seeds-suite input.form-autocomplete,
-.seeds-suite input.form-text,
-.seeds-suite input.form-tel,
-.seeds-suite input.form-email,
-.seeds-suite input.form-url,
-.seeds-suite input.form-search,
-.seeds-suite input.form-number,
-.seeds-suite input.form-color,
-.seeds-suite input.form-file,
-.seeds-suite input.form-date,
-.seeds-suite input.form-time,
-.seeds-suite textarea.form-textarea {
+.seeds-shell input.form-autocomplete,
+.seeds-shell input.form-text,
+.seeds-shell input.form-tel,
+.seeds-shell input.form-email,
+.seeds-shell input.form-url,
+.seeds-shell input.form-search,
+.seeds-shell input.form-number,
+.seeds-shell input.form-color,
+.seeds-shell input.form-file,
+.seeds-shell input.form-date,
+.seeds-shell input.form-time,
+.seeds-shell textarea.form-textarea {
   padding: .4em .4em .4em .5em;
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
@@ -100,54 +100,54 @@ input[type=radio]:disabled:checked {
   box-shadow: none;
 }
 
-.seeds-suite .button:hover,
-.seeds-suite .button:focus {
+.seeds-shell .button:hover,
+.seeds-shell .button:focus {
   border-color: #5c8e23;
 }
 
-.js .seeds-suite .form-actions .dropbutton-multiple .dropbutton-widget {
+.js .seeds-shell .form-actions .dropbutton-multiple .dropbutton-widget {
   background-color: #73a333;
   border-color: #5c8e23;
 }
 
-.seeds-suite .action-links .button--primary {
+.seeds-shell .action-links .button--primary {
   color: #73a333;
   border: 2px solid #73a333;
 }
 
-.js .seeds-suite .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
+.js .seeds-shell .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
   background-image: linear-gradient(to bottom, #73a333, #5c8e23);
 }
 
-.seeds-suite .form-actions .dropbutton-multiple.open .dropbutton-widget {
+.seeds-shell .form-actions .dropbutton-multiple.open .dropbutton-widget {
   background-image: linear-gradient(to bottom, #73a333, #5c8e23);
 }
 
 /* --- Ckeditor --- */
-.seeds-suite .cke_chrome {
+.seeds-shell .cke_chrome {
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
   box-shadow: 0 1px 1px rgba(0,0,0,.04);
 }
 
-.seeds-suite .cke_top {
+.seeds-shell .cke_top {
   background: #f5f5f5;
   padding: 10px 10px 5px 10px;
   border-bottom: 1px solid #e5e5e5;;
 }
 
-.seeds-suite .cke_bottom {
+.seeds-shell .cke_bottom {
   background: #f5f5f5;
   border-top: 1px solid #e5e5e5;
 }
 
-.seeds-suite .cke_toolgroup {
+.seeds-shell .cke_toolgroup {
   background: none;
   box-shadow: none;
   border: 1px solid #e5e5e5;
 }
 
-.seeds-suite .filter-wrapper {
+.seeds-shell .filter-wrapper {
   background: transparent;
   border: 0;
   padding: 0.5em 0;
@@ -157,7 +157,7 @@ input[type=radio]:disabled:checked {
   float: right;
 }
 
-.seeds-suite a.cke_combo_button {
+.seeds-shell a.cke_combo_button {
   background: none;
   box-shadow: none !important;
   border: 1px solid #e5e5e5 !important;
@@ -165,39 +165,39 @@ input[type=radio]:disabled:checked {
   cursor: pointer;
 }
 
-.seeds-suite .cke_toolbar_separator {
+.seeds-shell .cke_toolbar_separator {
   background-color: #e5e5e5;
   margin-top: 4px;
 }
 
-.seeds-suite a.cke_button_off:hover,
-.seeds-suite a.cke_button_off:focus,
-.seeds-suite a.cke_button_off:active,
-.seeds-suite a.cke_button_disabled:hover,
-.seeds-suite a.cke_button_disabled:focus,
-.seeds-suite a.cke_button_disabled:active {
+.seeds-shell a.cke_button_off:hover,
+.seeds-shell a.cke_button_off:focus,
+.seeds-shell a.cke_button_off:active,
+.seeds-shell a.cke_button_disabled:hover,
+.seeds-shell a.cke_button_disabled:focus,
+.seeds-shell a.cke_button_disabled:active {
   box-shadow: none !important;
   background: #fff !important;
 }
-.seeds-suite .cke_combo_on a.cke_combo_button:active,
-.seeds-suite .cke_combo_on a.cke_combo_button.active,
-.seeds-suite .cke_combo_on a.cke_combo_button:hover,
-.seeds-suite .cke_combo_on a.cke_combo_button:focus,
-.seeds-suite .cke_combo_off a.cke_combo_button:active,
-.seeds-suite .cke_combo_off a.cke_combo_button.active,
-.seeds-suite .cke_combo_off a.cke_combo_button:hover,
-.seeds-suite .cke_combo_off a.cke_combo_button:focus {
+.seeds-shell .cke_combo_on a.cke_combo_button:active,
+.seeds-shell .cke_combo_on a.cke_combo_button.active,
+.seeds-shell .cke_combo_on a.cke_combo_button:hover,
+.seeds-shell .cke_combo_on a.cke_combo_button:focus,
+.seeds-shell .cke_combo_off a.cke_combo_button:active,
+.seeds-shell .cke_combo_off a.cke_combo_button.active,
+.seeds-shell .cke_combo_off a.cke_combo_button:hover,
+.seeds-shell .cke_combo_off a.cke_combo_button:focus {
   background: #fff;
   border: 1px solid #e5e5e5;
   box-shadow: none;
 }
 
 /* ----- Node ----- */
-body.seeds-suite.path-node {
+body.seeds-shell.path-node {
   background: #fbf9f6;
 }
 
-.seeds-suite .field--name-title input.form-text {
+.seeds-shell .field--name-title input.form-text {
   padding: 3px 8px;
   font-size: 1.4em;
   line-height: 100%;
@@ -208,18 +208,18 @@ body.seeds-suite.path-node {
   background-color: #fff;
 }
 
-.seeds-suite.path-node .field--name-title .form-item {
+.seeds-shell.path-node .field--name-title .form-item {
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
-.seeds-suite.path-node .admin-list li {
+.seeds-shell.path-node .admin-list li {
   border-top: 0px;
   background: #fff;
   margin-bottom: 1em;
 }
 
-.seeds-suite.path-node details {
+.seeds-shell.path-node details {
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
   box-shadow: 0 1px 1px rgba(0,0,0,.04);
@@ -227,7 +227,7 @@ body.seeds-suite.path-node {
   line-height: 1.4;
 }
 
-.seeds-suite.path-node .entity-meta__header {
+.seeds-shell.path-node .entity-meta__header {
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
   box-shadow: 0 1px 1px rgba(0,0,0,.04);
@@ -235,18 +235,18 @@ body.seeds-suite.path-node {
   line-height: 1.4;
 }
 
-.seeds-suite.path-node .entity-meta {
+.seeds-shell.path-node .entity-meta {
   background: none;
   border-left: 0;
   border-right: 0;
   box-shadow: none;
 }
 
-.seeds-suite.path-node .entity-meta details {
+.seeds-shell.path-node .entity-meta details {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-.seeds-suite.path-node details > summary {
+.seeds-shell.path-node details > summary {
   padding: 0.85em 1.25em;
 }

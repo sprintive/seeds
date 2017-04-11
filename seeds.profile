@@ -1,1 +1,6 @@
 <?php
+
+/**
+ * @file
+ * Seeds profile.
+ */
