@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Advanced Editor'
+format: advanced_editor
+weight: 0
+filters: {  }

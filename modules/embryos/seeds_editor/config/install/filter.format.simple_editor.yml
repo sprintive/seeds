@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Simple Editor'
+format: simple_editor
+weight: 0
+filters: {  }

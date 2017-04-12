@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - editor
-name: 'Visual Editor'
-format: visual_editor
+name: 'Basic Editor'
+format: basic_editor
 weight: 0
 filters:
   editor_file_reference:
