@@ -118,13 +118,13 @@ projects[adminimal_admin_toolbar][version] = '1.3'
 
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][subdir] = "contrib"
-projects[admin_toolbar][version] = '1.18'
+projects[admin_toolbar][version] = '1.19'
 
 
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][subdir] = "contrib"
-projects[bootstrap][version] = '3.2'
+projects[bootstrap][version] = '3.3'
 
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][subdir] = "contrib"
