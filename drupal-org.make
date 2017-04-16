@@ -4,11 +4,11 @@ api = 2
 ; Utilities Modules
 projects[ctools][type] = module
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = 3.0-beta1
+projects[ctools][version] = '3.0-beta1'
 
 projects[token][type] = module
 projects[token][subdir] = "contrib"
-projects[token][version] = 1.0-alpha2
+projects[token][version] = '1.0-rc1'
 
 
 ; Content Layout Modules.
@@ -44,11 +44,11 @@ projects[entity_browser][version] = '1.0-rc2'
 
 projects[entity_embed][type] = module
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][version] = '1.0'
+projects[entity_embed][version] = '1.0-beta2'
 
 projects[embed][type] = module
 projects[embed][subdir] = "contrib"
-projects[embed][version] = '1.0-rc3'
+projects[embed][version] = '1.0'
 
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][subdir] = "contrib"
@@ -86,7 +86,7 @@ projects[metatag][version] = '1.0'
 
 projects[pathauto][type] = module
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = '1.0-alpha3'
+projects[pathauto][version] = '1.0-rc1'
 
 projects[simple_sitemap][type] = module
 projects[simple_sitemap][subdir] = "contrib"
@@ -98,7 +98,7 @@ projects[link_attributes][version] = '1.0'
 
 projects[redirect][type] = module
 projects[redirect][subdir] = "contrib"
-projects[redirect][version] = '1.0-alpha4'
+projects[redirect][version] = '1.0-alpha5'
 
 projects[google_analytics][type] = module
 projects[google_analytics][subdir] = "contrib"
