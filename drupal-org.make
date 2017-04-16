@@ -4,7 +4,7 @@ api = 2
 ; Utilities Modules
 projects[ctools][type] = module
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = 3.0-alpha27
+projects[ctools][version] = 3.0-beta1
 
 projects[token][type] = module
 projects[token][subdir] = "contrib"
@@ -44,7 +44,7 @@ projects[entity_browser][version] = '1.0-rc2'
 
 projects[entity_embed][type] = module
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][version] = '1.0-beta2'
+projects[entity_embed][version] = '1.0'
 
 projects[embed][type] = module
 projects[embed][subdir] = "contrib"
@@ -65,6 +65,10 @@ projects[media_entity_browser][version] = '1.0-beta3'
 projects[media_entity_image][type] = module
 projects[media_entity_image][subdir] = "contrib"
 projects[media_entity_image][version] = '1.2
+
+projects[media_entity_document][type] = module
+projects[media_entity_document][subdir] = "contrib"
+projects[media_entity_document][version] = 1.1
 
 projects[video_embed_field][type] = module
 projects[video_embed_field][subdir] = "contrib"
@@ -102,14 +106,9 @@ projects[google_analytics][version] = '2.1'
 
 
 ; Security Modules
-projects[captcha][type] = module
-projects[captcha][subdir] = "contrib"
-projects[captcha][version] = '1.0-beta1'
-
-projects[recaptcha][type] = module
-projects[recaptcha][subdir] = "contrib"
-projects[recaptcha][version] = '2.2'
-
+projects[honeypot][type] = module
+projects[honeypot][subdir] = "contrib"
+projects[honeypot][version] = '1.24'
 
 ; Administration Modules.
 projects[adminimal_admin_toolbar][type] = module
@@ -120,6 +119,10 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][subdir] = "contrib"
 projects[admin_toolbar][version] = '1.19'
 
+
+projects[allowed_formats][type] = module
+projects[allowed_formats][subdir] = "contrib"
+projects[allowed_formats][version] = '1.0'
 
 ; Themes
 projects[bootstrap][type] = theme

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_document
+name: document_browser
+label: 'Document Browser'
+display: modal
+display_configuration:
+  width: '100'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  92556747-9434-4ced-87f1-23fd1f302944:
+    settings:
+      extensions: 'txt, pdf, doc, docx'
+      media_bundle: document
+      upload_location: 'public://documents/'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 92556747-9434-4ced-87f1-23fd1f302944
+    weight: 1
+    label: Upload
+    id: media_entity_document_upload

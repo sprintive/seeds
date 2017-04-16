@@ -1,0 +1,10 @@
+name: 'Seeds SEO'
+type: module
+core: 8.x
+dependencies:
+  - metatag
+  - simple_sitemap
+  - redirect
+  - pathauto
+  - google_analytics
+  - link_attributes

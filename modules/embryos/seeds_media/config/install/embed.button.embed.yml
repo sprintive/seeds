@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.embed
+  module:
+    - entity_embed
+    - media_entity
+label: Embed
+id: embed
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - embed
+  display_plugins: {  }
+  entity_browser: embed_browser
+  entity_browser_settings:
+    display_review: false
+icon_uuid: null

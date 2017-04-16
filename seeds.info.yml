@@ -38,6 +38,9 @@ dependencies:
 
   # Embryos
   - seeds_editor
+  - seeds_media
+  - seeds_seo
+  - seeds_security
 
   # Pollination
   - seeds_pollination

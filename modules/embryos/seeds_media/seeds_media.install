@@ -1,0 +1,25 @@
+<?php 
+/**
+ * @file
+ * Contains install Seeds Media.
+ */
+
+
+ /**
+ * Implements hook_install().
+ */
+function seeds_media_install() {
+	// Set icons for seeds embed entities.
+	$icon = \Drupal::moduleHandler()->getModule('seeds_media')->getPath() . '/images/embed.png';
+  $fs = \Drupal::service('file_system');
+  $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
+
+  if ($destination) {
+    $file = File::create(['uri' => $destination]);
+    $file->save();
+
+    EmbedButton::load('embed')
+      ->set('icon_uuid', $file->uuid())
+      ->save();
+  }
+}
