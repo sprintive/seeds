@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wysiwyg
+    - field.field.media.embed.field_media_embed
+    - media_entity.bundle.embed
+  module:
+    - text
+id: media.embed.wysiwyg
+targetEntityType: media
+bundle: embed
+mode: wysiwyg
+content:
+  field_media_embed:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

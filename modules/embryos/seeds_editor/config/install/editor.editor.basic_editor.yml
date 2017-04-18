@@ -47,6 +47,20 @@ settings:
             - DrupalLink
             - DrupalUnlink
         -
+          name: Media
+          items:
+            - DrupalImage
+            - image
+            - videos
+            - documents
+            - embed
+        -
+          name: Table
+          items:
+            - Table
+            - Blockquote
+            - gmaps
+        -
           name: 'Clear Format'
           items:
             - RemoveFormat
@@ -56,13 +70,9 @@ settings:
             - Undo
             - Redo
         -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
           name: Tools
           items:
+            - ShowBlocks
             - Source
         -
           name: 'Full Screen'

@@ -1,0 +1,13 @@
+.view-media-browser .views-col {
+  border: 10px solid #FFF;
+  cursor: pointer;
+  background: #F2F2F2;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.view-media-browser .views-col.checked {
+  border-color: #74a333;
+}
+.view-media-browser .views-field-entity-browser-select {
+  display: none;
+}

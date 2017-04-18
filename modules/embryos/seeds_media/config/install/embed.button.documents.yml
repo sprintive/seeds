@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - media_entity.bundle.document
+  content:
+    - 'file:file:bda0c7bd-6c76-4879-86bd-c6302a30b195'
   module:
     - entity_embed
     - media_entity
@@ -13,8 +15,9 @@ type_settings:
   entity_type: media
   bundles:
     - document
-  display_plugins: {  }
+  display_plugins:
+    - 'view_mode:media.wysiwyg'
   entity_browser: document_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: null
+icon_uuid: bda0c7bd-6c76-4879-86bd-c6302a30b195

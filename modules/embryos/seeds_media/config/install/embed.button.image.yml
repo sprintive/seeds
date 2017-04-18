@@ -2,20 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - media_entity.bundle.video
+    - media_entity.bundle.image
   module:
     - entity_embed
     - media_entity
-label: Videos
-id: videos
+label: Image
+id: image
 type_id: entity
 type_settings:
   entity_type: media
   bundles:
-    - video
+    - image
   display_plugins:
     - 'view_mode:media.wysiwyg'
-  entity_browser: video_browser
+  entity_browser: image_browser
   entity_browser_settings:
     display_review: false
 icon_uuid: null

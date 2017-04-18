@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: seeds_eb_thumbnail
+label: 'Seeds EB Thumbnail'
+effects:
+  862f066e-65fb-464a-8d39-2f4f4319cc24:
+    uuid: 862f066e-65fb-464a-8d39-2f4f4319cc24
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 180

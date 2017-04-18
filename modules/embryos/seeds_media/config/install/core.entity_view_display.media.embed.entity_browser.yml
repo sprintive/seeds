@@ -2,31 +2,35 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.entity_browser
     - field.field.media.embed.field_media_embed
+    - image.style.thumbnail
     - media_entity.bundle.embed
   module:
-    - text
-id: media.embed.default
+    - image
+id: media.embed.entity_browser
 targetEntityType: media
 bundle: embed
-mode: default
+mode: entity_browser
 content:
-  field_media_embed:
+  name:
+    label: hidden
+    type: string
     weight: 1
     settings:
-      rows: 5
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: text_textarea
     region: content
-  name:
-    type: string_textfield
+  thumbnail:
+    type: image
     weight: 0
+    label: hidden
     settings:
-      size: 60
-      placeholder: 'Insert name here ...'
+      image_style: thumbnail
+      image_link: ''
     third_party_settings: {  }
     region: content
 hidden:
   created: true
+  field_media_embed: true
   uid: true

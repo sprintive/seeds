@@ -11,7 +11,7 @@ projects[token][subdir] = "contrib"
 projects[token][version] = '1.0-rc1'
 
 
-; Content Layout Modules.
+; Content Management Modules.
 projects[ds][type] = module
 projects[ds][subdir] = "contrib"
 projects[ds][version] = '2.6'
@@ -32,8 +32,6 @@ projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][subdir] = "contrib"
 projects[bootstrap_layouts][version] = '4.1'
 
-
-; Content Display Modules
 projects[entity][type] = module
 projects[entity][subdir] = "contrib"
 projects[entity][version] = '1.0-alpha4'
@@ -58,10 +56,6 @@ projects[media_entity][type] = module
 projects[media_entity][subdir] = "contrib"
 projects[media_entity][version] = '1.6'
 
-projects[media_entity_browser][type] = module
-projects[media_entity_browser][subdir] = "contrib"
-projects[media_entity_browser][version] = '1.0-beta3'
-
 projects[media_entity_image][type] = module
 projects[media_entity_image][subdir] = "contrib"
 projects[media_entity_image][version] = '1.2
@@ -74,9 +68,25 @@ projects[video_embed_field][type] = module
 projects[video_embed_field][subdir] = "contrib"
 projects[video_embed_field][version] = '1.4'
 
+projects[image_widget_crop][type] = module
+projects[image_widget_crop][subdir] = "contrib"
+projects[image_widget_crop][version] = '1.5'
+
 projects[smart_trim][type] = module
 projects[smart_trim][subdir] = "contrib"
 projects[smart_trim][version] = '1.0'
+
+projects[allowed_formats][type] = module
+projects[allowed_formats][subdir] = "contrib"
+projects[allowed_formats][version] = '1.0'
+
+projects[slick][type] = module
+projects[slick][subdir] = "contrib"
+projects[slick][version] = '1.0-rc3'
+
+projects[paragraphs][type] = module
+projects[paragraphs][subdir] = "contrib"
+projects[paragraphs][version] = '1.1'
 
 
 ; SEO Modules
@@ -90,7 +100,7 @@ projects[pathauto][version] = '1.0-rc1'
 
 projects[simple_sitemap][type] = module
 projects[simple_sitemap][subdir] = "contrib"
-projects[simple_sitemap][version] = '2.8'
+projects[simple_sitemap][version] = '2.9'
 
 projects[link_attributes][type] = module
 projects[link_attributes][subdir] = "contrib"
@@ -118,11 +128,6 @@ projects[adminimal_admin_toolbar][version] = '1.3'
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][subdir] = "contrib"
 projects[admin_toolbar][version] = '1.19'
-
-
-projects[allowed_formats][type] = module
-projects[allowed_formats][subdir] = "contrib"
-projects[allowed_formats][version] = '1.0'
 
 ; Themes
 projects[bootstrap][type] = theme

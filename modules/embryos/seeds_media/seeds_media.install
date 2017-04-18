@@ -3,14 +3,16 @@
  * @file
  * Contains install Seeds Media.
  */
-
+ 
+use Drupal\embed\Entity\EmbedButton;
+use Drupal\file\Entity\File;
 
  /**
  * Implements hook_install().
  */
 function seeds_media_install() {
-	// Set icons for seeds embed entities.
-	$icon = \Drupal::moduleHandler()->getModule('seeds_media')->getPath() . '/images/embed.png';
+  // Set icons for seeds embed entities.
+  $icon = \Drupal::moduleHandler()->getModule('seeds_media')->getPath() . '/images/embed.png';
   $fs = \Drupal::service('file_system');
   $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
 
@@ -19,6 +21,48 @@ function seeds_media_install() {
     $file->save();
 
     EmbedButton::load('embed')
+      ->set('icon_uuid', $file->uuid())
+      ->save();
+  }
+
+  // Set icons for seeds document entities.
+  $icon = \Drupal::moduleHandler()->getModule('seeds_media')->getPath() . '/images/document.png';
+  $fs = \Drupal::service('file_system');
+  $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
+
+  if ($destination) {
+    $file = File::create(['uri' => $destination]);
+    $file->save();
+
+    EmbedButton::load('document')
+      ->set('icon_uuid', $file->uuid())
+      ->save();
+  }
+
+  // Set icons for seeds image entities.
+  $icon = \Drupal::moduleHandler()->getModule('seeds_media')->getPath() . '/images/image.png';
+  $fs = \Drupal::service('file_system');
+  $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
+
+  if ($destination) {
+    $file = File::create(['uri' => $destination]);
+    $file->save();
+
+    EmbedButton::load('image')
+      ->set('icon_uuid', $file->uuid())
+      ->save();
+  }
+
+  // Set icons for seeds video entities.
+  $icon = \Drupal::moduleHandler()->getModule('seeds_media')->getPath() . '/images/video.png';
+  $fs = \Drupal::service('file_system');
+  $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
+
+  if ($destination) {
+    $file = File::create(['uri' => $destination]);
+    $file->save();
+
+    EmbedButton::load('video')
       ->set('icon_uuid', $file->uuid())
       ->save();
   }

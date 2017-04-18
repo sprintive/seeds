@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - media_entity.bundle.embed
+  content:
+    - 'file:file:15f5a32a-21b9-484f-933f-c85961f0efe9'
   module:
     - entity_embed
     - media_entity
@@ -17,4 +19,4 @@ type_settings:
   entity_browser: embed_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: null
+icon_uuid: 15f5a32a-21b9-484f-933f-c85961f0efe9
