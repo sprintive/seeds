@@ -9,5 +9,6 @@
  * Implements hook_install().
  */
 function seeds_install() {
-
+	// Enable admin theme for node edit.
+	\Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
 }
