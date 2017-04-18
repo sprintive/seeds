@@ -18,6 +18,7 @@ dependencies:
   - video_embed_field
   - video_embed_media
   - views
+
 version: 8.x-1.x-dev
 core: 8.x
 project: seeds

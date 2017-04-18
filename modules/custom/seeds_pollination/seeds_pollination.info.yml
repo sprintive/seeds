@@ -5,3 +5,4 @@ package: Seeds
 type: module
 dependencies:
   - adminimal_admin_toolbar
+  - admin_toolbar_tools

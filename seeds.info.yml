@@ -11,16 +11,11 @@ dependencies:
   - history
   - block
   - ckeditor
-  - color
   - config
-  - comment
   - contextual
-  - contact
-  - help
   - menu_link_content
   - datetime
   - block_content
-  - quickedit
   - editor
   - image
   - menu_ui
@@ -37,7 +32,7 @@ dependencies:
   - views
   - views_ui
   - automated_cron
-  - ds
+  - help
 
   # Embryos
   - seeds_editor

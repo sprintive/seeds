@@ -4,7 +4,7 @@ api = 2
 ; Utilities Modules
 projects[ctools][type] = module
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = '3.0-beta1'
+projects[ctools][version] = '3.0-beta2'
 
 projects[token][type] = module
 projects[token][subdir] = "contrib"
