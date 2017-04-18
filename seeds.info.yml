@@ -37,6 +37,7 @@ dependencies:
   - views
   - views_ui
   - automated_cron
+  - ds
 
   # Embryos
   - seeds_editor
