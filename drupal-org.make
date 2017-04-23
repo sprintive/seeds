@@ -34,7 +34,7 @@ projects[bootstrap_layouts][version] = '4.1'
 
 projects[entity][type] = module
 projects[entity][subdir] = "contrib"
-projects[entity][version] = '1.0-alpha4'
+projects[entity][version] = '1.0'
 
 projects[entity_browser][type] = module
 projects[entity_browser][subdir] = "contrib"
@@ -78,18 +78,34 @@ projects[smart_trim][version] = '1.0'
 
 projects[allowed_formats][type] = module
 projects[allowed_formats][subdir] = "contrib"
-projects[allowed_formats][version] = '1.0'
+projects[allowed_formats][version] = '1.1'
 
 projects[slick][type] = module
 projects[slick][subdir] = "contrib"
 projects[slick][version] = '1.0-rc3'
+
+projects[blazy][type] = module
+projects[blazy][subdir] = "contrib"
+projects[blazy][version] = '1.0-rc1'
+
+projects[slick_views][subdir] = "contrib"
+projects[slick_views][type] = module
+projects[slick_views][version] = '1.0-rc2'
+
+projects[slick_media][subdir] = "contrib"
+projects[slick_media][type] = module
+projects[slick_media][version] = '1.0-rc1'
 
 projects[paragraphs][type] = module
 projects[paragraphs][subdir] = "contrib"
 projects[paragraphs][version] = '1.1'
 
 
-; SEO Modules
+; Performance & SEO Modules
+projects[fast_404][type] = module
+projects[fast_404][subdir] = "contrib"
+projects[fast_404][version] = '1.0-alpha2'
+
 projects[metatag][type] = module
 projects[metatag][subdir] = "contrib"
 projects[metatag][version] = '1.0'
@@ -138,4 +154,16 @@ projects[adminimal_theme][type] = theme
 projects[adminimal_theme][subdir] = "contrib"
 projects[adminimal_theme][version] = '1.3'
 
+; Libraries
+libraries[slick][download][type] = get
+libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.6.0.tar.gz"
+libraries[slick][destination] = "libraries"
+
+libraries[easing][download][type] = get
+libraries[easing][download][url] = "https://github.com/gdsmith/jquery.easing/archive/1.4.1.tar.gz"
+libraries[easing][destination] = "libraries"
+
+libraries[blazy][download][type] = get
+libraries[blazy][download][url] = "https://github.com/dinbror/blazy/archive/1.8.2.tar.gz"
+libraries[blazy][destination] = "libraries"
 
