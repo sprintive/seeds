@@ -1,3 +1,8 @@
+.seeds-shell img {
+  max-width: 100%;
+  height: auto;
+}
+
 .seeds-shell h1.page-title {
   font-weight: 400;
   color: #a1cc5c;
