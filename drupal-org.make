@@ -100,9 +100,9 @@ projects[paragraphs][type] = module
 projects[paragraphs][subdir] = "contrib"
 projects[paragraphs][version] = '1.1'
 
-projects[editor_advanced_link][type] = module
-projects[editor_advanced_link][subdir] = "contrib"
-projects[editor_advanced_link][version] = '1.4'
+projects[anchor_link][type] = module
+projects[anchor_link][subdir] = "contrib"
+projects[anchor_link][version] = '1.3'
 
 
 ; Performance & SEO Modules
