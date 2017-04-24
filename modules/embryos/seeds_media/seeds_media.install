@@ -48,7 +48,7 @@ function seeds_media_install() {
     $file = File::create(['uri' => $destination]);
     $file->save();
 
-    EmbedButton::load('image')
+    EmbedButton::load('media_image')
       ->set('icon_uuid', $file->uuid())
       ->save();
   }
