@@ -118,6 +118,7 @@ input[type=radio]:disabled:checked {
 .seeds-shell .action-links .button--primary {
   color: #73a333;
   border: 2px solid #73a333;
+  border-radius: 0px;
 }
 
 .js .seeds-shell .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {

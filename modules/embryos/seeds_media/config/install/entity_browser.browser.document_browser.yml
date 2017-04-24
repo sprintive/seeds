@@ -27,7 +27,7 @@ widgets:
       multiple: 0
       submit_text: Upload
     uuid: 92556747-9434-4ced-87f1-23fd1f302944
-    weight: 1
+    weight: -9
     label: Upload
     id: media_entity_document_upload
   4bb9726b-3848-455a-aecf-979d5d417ccd:
@@ -37,6 +37,6 @@ widgets:
       submit_text: Insert
       auto_select: false
     uuid: 4bb9726b-3848-455a-aecf-979d5d417ccd
-    weight: 2
+    weight: -10
     label: Choose
     id: view

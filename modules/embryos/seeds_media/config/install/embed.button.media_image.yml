@@ -6,8 +6,8 @@ dependencies:
   module:
     - entity_embed
     - media_entity
-label: Image
-id: image
+label: 'Media Image'
+id: media_image
 type_id: entity
 type_settings:
   entity_type: media

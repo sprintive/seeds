@@ -50,7 +50,7 @@ settings:
           name: Media
           items:
             - DrupalImage
-            - image
+            - media_image
             - videos
             - documents
             - embed
@@ -59,7 +59,6 @@ settings:
           items:
             - Table
             - Blockquote
-            - gmaps
         -
           name: 'Clear Format'
           items:

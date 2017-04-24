@@ -1,8 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.media_browser
   module:
     - entity_browser_entity_form
+    - views
 name: embed_browser
 label: 'Embed Browser'
 display: iframe
@@ -23,6 +26,16 @@ widgets:
       form_mode: default
       submit_text: 'Insert '
     uuid: 0e0402d7-e330-4c7a-963f-66801d429a28
-    weight: 1
+    weight: -9
     label: Insert
     id: entity_form
+  a2bb80a2-1b60-4226-9513-0878cb46ffcf:
+    settings:
+      view: media_browser
+      view_display: embed
+      submit_text: Create
+      auto_select: false
+    uuid: a2bb80a2-1b60-4226-9513-0878cb46ffcf
+    weight: -10
+    label: Choose
+    id: view

@@ -3,7 +3,7 @@ type: theme
 description: 'Adminimal theme customized to suit RTL interfaces.'
 base theme: adminimal_theme
 package: 'Seeds'
-core: 8.x
+# core: 8.x
 
 libraries:
   - seeds_shell/global-styling
@@ -20,3 +20,9 @@ regions:
   sidebar_first: 'First sidebar'
 regions_hidden:
   - sidebar_first
+
+# Information added by Drupal.org packaging script on 2017-04-23
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'seeds'
+datestamp: 1492956845

@@ -34,11 +34,11 @@ projects[bootstrap_layouts][version] = '4.1'
 
 projects[entity][type] = module
 projects[entity][subdir] = "contrib"
-projects[entity][version] = '1.0'
+projects[entity][version] = '1.0-alpha4'
 
 projects[entity_browser][type] = module
 projects[entity_browser][subdir] = "contrib"
-projects[entity_browser][version] = '1.0-rc2'
+projects[entity_browser][version] = '1.0'
 
 projects[entity_embed][type] = module
 projects[entity_embed][subdir] = "contrib"
@@ -99,6 +99,10 @@ projects[slick_media][version] = '1.0-rc1'
 projects[paragraphs][type] = module
 projects[paragraphs][subdir] = "contrib"
 projects[paragraphs][version] = '1.1'
+
+projects[editor_advanced_link][type] = module
+projects[editor_advanced_link][subdir] = "contrib"
+projects[editor_advanced_link][version] = '1.4'
 
 
 ; Performance & SEO Modules

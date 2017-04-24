@@ -1,8 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.media_browser
   module:
     - entity_browser_entity_form
+    - views
 name: video_browser
 label: 'Video Browser'
 display: iframe
@@ -23,6 +26,16 @@ widgets:
       form_mode: default
       submit_text: Insert
     uuid: 7987dce7-2a5d-4dc5-87c5-cc82c469bbeb
-    weight: 1
+    weight: -9
     label: Insert
     id: entity_form
+  7623a337-97c6-4088-a16a-e5a2244cf3b6:
+    settings:
+      view: media_browser
+      view_display: video
+      submit_text: Insert
+      auto_select: false
+    uuid: 7623a337-97c6-4088-a16a-e5a2244cf3b6
+    weight: -10
+    label: Choose
+    id: view
