@@ -1,12 +1,10 @@
-name: Seeds Coat
-type: theme
-description: 'Base theme for Seeds Distro, using the Less bootstrap starter.'
-base theme: bootstrap
-package: 'Seeds'
 core: 8.x
+type: theme
+base theme: bootstrap
 
-libraries:
-  - seeds_coat/global-styling
+name: 'THEMETITLE'
+description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
+package: 'Bootstrap'
 
 regions:
   navigation: 'Navigation'
@@ -20,3 +18,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+libraries:
+  - 'THEMENAME/global-styling'
+  - 'THEMENAME/bootstrap-scripts'

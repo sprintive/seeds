@@ -1,0 +1,17 @@
+header.navbar-default {
+  background-color: none;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid #74a333;
+}
+header.navbar-default .navbar-brand {
+  font-size: 45px;
+  color: #74a333;
+}
+header.navbar-default .logo {
+  width: 80px;
+}
+.footer {
+  background: #474c55;
+  color: #fff;
+}

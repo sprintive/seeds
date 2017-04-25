@@ -398,7 +398,7 @@ display:
         type: grid
         options:
           grouping: {  }
-          columns: 2
+          columns: 4
           automatic_width: true
           alignment: horizontal
           col_class_default: true
