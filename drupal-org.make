@@ -12,19 +12,16 @@ projects[token][version] = '1.0-rc1'
 
 ; Content Management Modules.
 projects[ds][type] = module
-projects[ds][version] = '2.6'
+projects[ds][version] = '3.0-beta3'
 
 projects[page_manager][type] = module
-projects[page_manager][version] = '1.0-alpha24'
+projects[page_manager][version] = '4.0-beta1'
 
 projects[panels][type] = module
-projects[panels][version] = '3.0-beta6'
-
-projects[layout_plugin][type] = module
-projects[layout_plugin][version] = '1.0-alpha23'
+projects[panels][version] = '4.0-beta1'
 
 projects[bootstrap_layouts][type] = module
-projects[bootstrap_layouts][version] = '4.1'
+projects[bootstrap_layouts][version] = '5.x-dev'
 
 projects[entity][type] = module
 projects[entity][version] = '1.0-alpha4'
@@ -52,7 +49,6 @@ projects[media_entity_document][version] = 1.1
 
 projects[video_embed_field][type] = module
 projects[video_embed_field][version] = '1.4'
-
 
 projects[crop][type] = module
 projects[crop][version] = '1.2'
