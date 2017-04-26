@@ -10,4 +10,4 @@ dependencies:
   - pathauto
   - google_analytics
   - link_attributes
-  - fast_404
+  - fast404
