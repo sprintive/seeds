@@ -1,13 +1,14 @@
-<?php 
+<?php
+
 /**
  * @file
  * Contains install Seeds Media.
  */
- 
+
 use Drupal\embed\Entity\EmbedButton;
 use Drupal\file\Entity\File;
 
- /**
+/**
  * Implements hook_install().
  */
 function seeds_media_install() {

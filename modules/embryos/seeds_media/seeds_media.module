@@ -11,7 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements hook_form_alter().
  */
 function seeds_media_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
-    if (strpos($form_id, 'entity_browser') === 0) {
-      $form['#attached']['library'][] = 'seeds_media/media_pollination';
+  if (strpos($form_id, 'entity_browser') === 0) {
+    $form['#attached']['library'][] = 'seeds_media/media_pollination';
   }
 }

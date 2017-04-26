@@ -137,4 +137,3 @@ libraries[easing][destination] = "libraries"
 libraries[blazy][download][type] = get
 libraries[blazy][download][url] = "https://github.com/dinbror/blazy/archive/1.8.2.tar.gz"
 libraries[blazy][destination] = "libraries"
-

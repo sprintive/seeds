@@ -1,7 +1,7 @@
 .view-media-browser .views-col {
-  border: 10px solid #FFF;
+  border: 10px solid #fff;
   cursor: pointer;
-  background: #F2F2F2;
+  background: #f2f2f2;
   box-sizing: border-box;
   padding: 10px;
 }
@@ -30,13 +30,13 @@
 .entity-browser-form .button:hover,
 .entity-browser-form .button:focus {
   background: #73a333;
-  color: #FFF;
+  color: #fff;
 }
 .entity-browser-form .button.button--primary {
   background: #73a333;
   border-color: #5c8e23;
   border-radius: 0;
-  color: #FFF;
+  color: #fff;
 }
 .entity-browser-form .button.button--primary:hover,
 .entity-browser-form .button.button--primary:focus {
