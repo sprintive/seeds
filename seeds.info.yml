@@ -1,6 +1,6 @@
 name: Seeds
 type: profile
-description: "Kickoff distro for SME's, Curated by Sprintive"
+description: "Kickoff distribution for SMEs, Curated by Sprintive"
 version: VERSION
 core: 8.x
 distribution:

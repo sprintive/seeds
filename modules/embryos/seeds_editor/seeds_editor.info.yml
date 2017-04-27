@@ -1,5 +1,6 @@
 name: 'Seeds Editor'
 type: module
+description: Neat editors focused on normal users UX.
 dependencies:
   - ckeditor
   - editor
