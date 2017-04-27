@@ -1,0 +1,59 @@
+seeds_highlighted:
+  label: Seeds Highlighted 
+  category: Seeds
+  template: templates/seeds-highlighted
+  class: '\Drupal\seeds_pollination\Plugin\Layout\SeedsHighlighted'
+  regions:
+    row_1:
+      label: Row one (12)
+    row_2:
+      label: Row two (12)
+    row_3_half_1:
+      label: Row three - First half (6)
+    row_3_half_2:
+      label: Row three - Second half (6)
+    row_4:
+      label: Row four (12)
+    row_5_content:
+      label: Row five - Content (9)
+    row_5_sidebar:
+      label: Row five - Sidebar (3)
+    row_6_content:
+      label: Row six - Content (8)
+    row_6_col_1:
+      label: Row six - Column one (4)
+    row_6_col_2:
+      label: Row six - Column two (4)
+    row_6_sidebar:
+      label: Row six - Sidebar & Column three (4)
+    row_7:
+      label: Row seven (12)
+    row_8_half_1:
+      label: Row eight - First half (6)
+    row_8_half_2:
+      label: Row eight - Second half (6)
+    row_9:
+      label: Row nine (12)
+    row_10_sidebar:
+      label: Row ten - Sidebar (3)
+    row_10_content:
+      label: Row ten - Content (9)
+    row_11_sidebar:
+      label: Row eleven - Sidebar & Column one (4)
+    row_11_col_1:
+      label: Row eleven - Column one (4)
+    row_11_col_2:
+      label: Row eleven - Column two (4)
+    row_11_content:
+      label: Row eleven - Content (8) 
+    row_12:
+      label: Row twelve (12)
+    row_13_half_1:
+      label: Row thirteen - First half (6)
+    row_13_half_2:
+      label: Row thirteen - Second half (6)
+    row_14:
+      label: Row fourteen (12)
+    row_15:
+      label: Row fifteen (12)
+
