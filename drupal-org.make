@@ -48,7 +48,7 @@ projects[media_entity_document][type] = module
 projects[media_entity_document][version] = 1.1
 
 projects[video_embed_field][type] = module
-projects[video_embed_field][version] = '1.4'
+projects[video_embed_field][version] = '1.5'
 
 projects[crop][type] = module
 projects[crop][version] = '1.2'
