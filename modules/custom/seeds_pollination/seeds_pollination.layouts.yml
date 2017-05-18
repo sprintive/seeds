@@ -1,8 +1,8 @@
-seeds_highlighted:
-  label: Seeds Highlighted 
+seeds_lighthouse:
+  label: Seeds Lighthouse 
   category: Seeds
-  template: templates/seeds-highlighted
-  class: '\Drupal\seeds_pollination\Plugin\Layout\SeedsHighlighted'
+  template: templates/seeds-lighthouse
+  class: '\Drupal\seeds_pollination\Plugin\Layout\SeedsLighthouse'
   regions:
     row_1:
       label: Row one (12)
@@ -57,3 +57,24 @@ seeds_highlighted:
     row_15:
       label: Row fifteen (12)
 
+seeds-card:
+  label: Seeds Card
+  category: Seeds
+  template: templates/seeds-card
+  class: '\Drupal\seeds_pollination\Plugin\Layout\SeedsCard'
+  regions:
+    image:
+      label: Image
+    title:
+      label: Title Wrapper
+
+seeds_card:
+  label: Seeds Card *
+  category: Seeds
+  class: '\Drupal\ds\Plugin\DsLayout'
+  template: templates/seeds-card
+  regions:
+    image:
+      label: Image
+    title:
+      label: Title Wrapper

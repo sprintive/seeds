@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Seeds Card.
+ *
+ * Available variables:
+ * - outer_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - image: content region
+ * - title: content region
+ */
+#}
+<{{ outer_wrapper }} {{ attributes.addClass('seeds-card', 'clearfix') }}>
+
+  {{ title_suffix.contextual_links }}
+
+  <{{ image_wrapper }}{{ image_attributes.addClass('group-image') }}>
+    {{ image }}
+  </{{ image_wrapper }}>
+
+  <{{ title_wrapper }}{{ title_attributes.addClass('group-title') }}>
+    {{ title }}
+  </{{ title_wrapper }}>
+
+</{{ outer_wrapper }}>
