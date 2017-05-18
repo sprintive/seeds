@@ -12,7 +12,7 @@ projects[token][version] = '1.0'
 
 ; Content Management Modules.
 projects[ds][type] = module
-projects[ds][version] = '3.0-beta3'
+projects[ds][version] = '3.0'
 
 projects[page_manager][type] = module
 projects[page_manager][version] = '4.0-beta2'
