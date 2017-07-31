@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * Implements hook_page_build().
+ */
+function seeds_pollination_page_build(&$page) {
+  if (!_adminimal_admin_menu_access()) {
+    return;
+  }
+
+  $path = drupal_get_path('module', 'seeds_pollination');
+  // Attach the CSS and JavaScript assets.
+  drupal_add_css($path . '/css/fixes.css');
+}
+
+
+/**
+ * Implementation of hook_panels_ipe_pane_links_alter().
+ */
+function seeds_pollination_panels_ipe_pane_links_alter(&$links, $context) {
+  $pane = $context['pane'];
+  $renderer = $context['renderer'];
+
+  if (user_access('administer advanced pane settings')) {
+    $new_link['css'] = array(
+      'title' => t('CSS'),
+      'href' => $renderer->get_url('pane-css', $pane->pid),
+      'html' => TRUE,
+      'attributes' => array(
+        'class' => array('ctools-use-modal', 'pane-css'),
+        'title' => t('CSS'),
+      ),
+    );
+    array_splice($links, array_search('style', array_keys($links)) + 1, 0, $new_link);
+  }
+}

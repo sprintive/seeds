@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Seeds Editor feature.
+ */
+
+include_once 'seeds_editor.features.inc';

@@ -18,3 +18,12 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = path
 dependencies[] = taxonomy
+
+; Sprintive Seeds Features.
+dependencies[] =  seeds_base
+dependencies[] =  seeds_admin
+dependencies[] =  seeds_seo
+dependencies[] =  seeds_editor
+
+; Custom Modules.
+dependencies[] = seeds_pollination

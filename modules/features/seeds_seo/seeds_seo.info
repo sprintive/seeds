@@ -1,0 +1,14 @@
+name = Seeds SEO
+core = 7.x
+package = Sprintive Seeds
+version = 7.x-1.1
+dependencies[] = metatag
+dependencies[] = pathauto
+dependencies[] = redirect
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = xmlsitemap
+dependencies[] = xmlsitemap_menu
+dependencies[] = xmlsitemap_node
+dependencies[] = googleanalytics
+features[features_api][] = api:2

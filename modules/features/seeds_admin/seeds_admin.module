@@ -1,0 +1,10 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+function seeds_admin_enable() {
+  theme_enable(array('adminimal'));
+  theme_enable(array('seeds_admin'));
+}

@@ -1,0 +1,24 @@
+name = Sprintive Seeds Admin 
+description = Adminimal theme with enhancment and RTL support.
+core = 7.x
+base theme = adminimal
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[hidden] = Hidden
+regions[content_before] = Before Content
+regions[sidebar_left] = Sidebar Left
+regions[content] = Content
+regions[sidebar_right] = Sidebar Right
+regions[content_after] = After Content
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = 'css/seeds_admin.css'

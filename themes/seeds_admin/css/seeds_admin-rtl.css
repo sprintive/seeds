@@ -1,0 +1,23 @@
+#branding {
+  background: url('../images/sprintive-logo.png') no-repeat left center #333740;
+}
+/* ---  RTL Form Fixes. --- */
+div.vertical-tabs ul li.vertical-tab-button a {
+  border-left: 1px solid #CCCCCC;
+}
+div.vertical-tabs ul li.selected a {
+  border-right: 5px solid #73A333;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-left: 0 none;
+  margin-right: -1px;
+  margin-left: 0px;
+}
+div.vertical-tabs ul li.selected a:hover,
+div.vertical-tabs ul li.selected a:focus,
+div.vertical-tabs ul li.selected a:active {
+  border-right: 5px solid #73A333;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-left: 0 none;
+  margin-right: -1px;
+  margin-left: 0px;
+}

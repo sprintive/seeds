@@ -1,0 +1,40 @@
+/* --- Adminimal menu fixes --- */
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable a {
+	padding-right: 8px;
+	padding-left: 25px;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable {
+	background: url("../images/square.png") no-repeat scroll 10px 10px #1f1f1f;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable:hover {
+	background: url("../images/square.png") no-repeat scroll 10px -83px #73A333 !important;
+}
+
+body.adminimal-menu div.toolbar-shortcuts {
+	float: right;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shortcuts ul li a {
+	background: url("../images/shortcut-ar.png") no-repeat scroll right 7px transparent;
+}
+
+body.adminimal-menu.admin-menu.menu-render-collapsed div.shortcut-toolbar div#toolbar div.toolbar-shortcuts ul.menu li.label a:hover {
+	background: url("../images/shortcut-ar.png") no-repeat scroll right -78px #202020 !important;
+}
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shortcuts ul li a:hover {
+	background: url("../images/shortcut-ar.png") no-repeat scroll right -78px transparent;
+}
+
+body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts {
+	position: relative;
+	float: left;
+}
+
+#admin-menu a, #admin-menu li > span {
+	text-align: right;
+}
+

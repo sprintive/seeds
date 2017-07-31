@@ -1,0 +1,24 @@
+<?php
+/**
+ * @file
+ * Code for the Seeds Base feature.
+ */
+
+include_once 'seeds_base.features.inc';
+
+/**
+ * Implements hook_ctools_plugin_directory()
+ */
+function seeds_base_ctools_plugin_directory($module, $plugin) {
+  if ($module == "panels" && in_array($plugin, array('layouts'))) {
+    return "plugins/$plugin";
+  }
+  return FALSE;
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function seeds_base_menu_alter(&$items) {
+  unset($items['node']);
+}

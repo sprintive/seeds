@@ -1,0 +1,87 @@
+a {
+	color: #73A333;
+}
+
+#branding {
+	background: #333740;
+	h1 {
+		&.page-title {
+			color: #73A333;
+		}
+	}
+}
+
+table {
+	th {
+		&.active {
+  		background: #73A333;
+  		color: #FFFFFF;
+  	}
+  }
+}
+
+.vertical-tabs {
+	.vertical-tabs-list {
+		li {
+			a {
+				color: #333740;
+			}
+			&.selected {
+				a {
+					border-left: 3px solid #73A333;
+					&:hover,&:focus,&:active {
+						border-left: 3px solid #73A333;
+					}
+				}
+			}
+		}
+	}
+	.field-group-tab {
+		fieldset {
+			border-top: 3px solid #73A333;
+		}
+	}
+}
+
+fieldset {
+	box-shadow: 0px -3px 0 #73A333;
+  &.date-combo {
+		border-top: 0px !important;
+	}
+}
+
+.style-checkboxes {
+	input {
+		&[type=checkbox], &[type=radio] {
+			&:hover, &:focus {
+				border-color: #73A333;
+			}
+			&:checked, &:disabled:checked {
+				background: #73A333;
+			}
+		}
+	}
+}
+
+ul {
+	&.primary {
+		li {
+			&.active {
+				a {
+					border-top: 3px solid #73A333;
+					&.active ,&:active , &:visited {
+						border-top: 3px solid #73A333;
+					}
+				}
+			}
+		}
+	}
+}
+
+ul {
+	&.action-links {
+		a {
+			border: 2px solid #73A333;
+		}
+	}
+}
