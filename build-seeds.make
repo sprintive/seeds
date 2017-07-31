@@ -1,7 +1,7 @@
-core = 8.x
 api = 2
+core = 7.x
 
 includes[] = drupal-org-core.make
 
-; Download the Seeds install profile and recursively build all its dependencies:
+; Download install profile and recursively build all its dependencies:
 projects[seeds][type] = profile
