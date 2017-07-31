@@ -1,0 +1,20 @@
+name = Sprintive Seeds
+description = Kickoff distribution for SMEs, Curated by Sprintive.
+core = 7.x
+
+; System Requirements
+php = 5.3
+php_memory_limit = 256M
+
+; Core Modules
+dependencies[] = contextual
+dependencies[] = field
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy

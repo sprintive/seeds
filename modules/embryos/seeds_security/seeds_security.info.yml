@@ -1,8 +1,0 @@
-name: 'Seeds Security'
-type: module
-description: Starter Module to enable all security modules
-core: 8.x
-version: 8.x-1.0
-
-dependencies:
-  - honeypot
