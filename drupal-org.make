@@ -18,7 +18,7 @@ projects[page_manager][type] = module
 projects[page_manager][version] = '4.0-beta2'
 
 projects[panels][type] = module
-projects[panels][version] = '4.1'
+projects[panels][version] = '4.2'
 
 projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = '5.x-dev'
@@ -63,19 +63,19 @@ projects[allowed_formats][type] = module
 projects[allowed_formats][version] = '1.1'
 
 projects[slick][type] = module
-projects[slick][version] = '1.0-rc3'
+projects[slick][version] = '1.0'
 
 projects[blazy][type] = module
-projects[blazy][version] = '1.0-rc1'
+projects[blazy][version] = '1.0-rc2'
 
 projects[slick_views][type] = module
 projects[slick_views][version] = '1.0-rc2'
 
 projects[slick_media][type] = module
-projects[slick_media][version] = '1.0-rc1'
+projects[slick_media][version] = '1.0'
 
 projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = '1.2'
+projects[entity_reference_revisions][version] = '1.3'
 
 projects[paragraphs][type] = module
 projects[paragraphs][version] = '1.1'
@@ -89,7 +89,7 @@ projects[fast_404][type] = module
 projects[fast_404][version] = '1.0-alpha2'
 
 projects[metatag][type] = module
-projects[metatag][version] = '1.0'
+projects[metatag][version] = '1.1'
 
 projects[pathauto][type] = module
 projects[pathauto][version] = '1.0'
@@ -98,10 +98,10 @@ projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = '2.9'
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = '1.0'
+projects[link_attributes][version] = '1.1'
 
 projects[redirect][type] = module
-projects[redirect][version] = '1.0-alpha5'
+projects[redirect][version] = '1.0-beta1'
 
 projects[google_analytics][type] = module
 projects[google_analytics][version] = '2.1'
@@ -109,11 +109,11 @@ projects[google_analytics][version] = '2.1'
 
 ; Security Modules
 projects[honeypot][type] = module
-projects[honeypot][version] = '1.25'
+projects[honeypot][version] = '1.27'
 
 ; Administration Modules.
 projects[adminimal_admin_toolbar][type] = module
-projects[adminimal_admin_toolbar][version] = '1.4'
+projects[adminimal_admin_toolbar][version] = '1.5'
 
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = '1.19'
