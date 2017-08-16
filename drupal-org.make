@@ -12,7 +12,7 @@ projects[token][version] = '1.0'
 
 ; Content Management Modules.
 projects[ds][type] = module
-projects[ds][version] = '3.0'
+projects[ds][version] = '3.1'
 
 projects[page_manager][type] = module
 projects[page_manager][version] = '4.0-beta2'
@@ -21,13 +21,13 @@ projects[panels][type] = module
 projects[panels][version] = '4.2'
 
 projects[bootstrap_layouts][type] = module
-projects[bootstrap_layouts][version] = '5.x-dev'
+projects[bootstrap_layouts][version] = '5.0-alpha1'
 
 projects[entity][type] = module
 projects[entity][version] = '1.0-alpha4'
 
 projects[entity_browser][type] = module
-projects[entity_browser][version] = '1.0'
+projects[entity_browser][version] = '1.1'
 
 projects[entity_embed][type] = module
 projects[entity_embed][version] = '1.0-beta2'
@@ -89,7 +89,7 @@ projects[fast_404][type] = module
 projects[fast_404][version] = '1.0-alpha2'
 
 projects[metatag][type] = module
-projects[metatag][version] = '1.1'
+projects[metatag][version] = '1.2'
 
 projects[pathauto][type] = module
 projects[pathauto][version] = '1.0'
