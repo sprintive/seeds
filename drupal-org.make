@@ -125,8 +125,6 @@ projects[views_bulk_operations][subdir] = administration
 
 projects[media][subdir] = editor
 projects[media][version] = "3.0-beta6"
-projects[media][patch][2018075] = "https://www.drupal.org/files/issues/media_filter_float_delegate-2018075-44.patch"
-projects[media][patch][2148641] = "http://www.drupal.org/files/issues/media-wysiwyg-images-lose-ckeditor-styles-2148641-8.patch"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
