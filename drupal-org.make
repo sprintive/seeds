@@ -14,7 +14,7 @@ projects[panels][subdir] = utilities
 projects[jquery_update][version] = 3.0-alpha5
 projects[jquery_update][subdir] = utilities
 
-projects[views][version] = 3.16
+projects[views][version] = 3.17
 projects[views][subdir] = utilities
 
 projects[token][version] = 1.7
