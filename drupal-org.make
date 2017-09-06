@@ -14,7 +14,7 @@ projects[panels][subdir] = utilities
 projects[jquery_update][version] = 3.0-alpha5
 projects[jquery_update][subdir] = utilities
 
-projects[views][version] = 3.17
+projects[views][version] = 3.18
 projects[views][subdir] = utilities
 
 projects[token][version] = 1.7
@@ -26,7 +26,7 @@ projects[libraries][subdir] = utilities
 projects[entity][version] = 1.8
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.3
+projects[file_entity][version] = 2.4
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -124,14 +124,14 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-beta4"
+projects[media][version] = "3.0-beta6"
 projects[media][patch][2018075] = "https://www.drupal.org/files/issues/media_filter_float_delegate-2018075-44.patch"
 projects[media][patch][2148641] = "http://www.drupal.org/files/issues/media-wysiwyg-images-lose-ckeditor-styles-2148641-8.patch"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
 
-projects[media_ckeditor][version] = "2.1"
+projects[media_ckeditor][version] = "2.5"
 projects[media_ckeditor][subdir] = editor
 
 projects[pathologic][version] = 3.1
@@ -191,7 +191,7 @@ projects[module_filter][subdir] = contrib
 projects[copyprevention][version] = 1.1
 projects[copyprevention][subdir] = contrib
 
-projects[autocomplete_deluxe][version] = 2.2
+projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
 projects[webform][version] = 4.15
