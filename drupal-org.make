@@ -116,7 +116,7 @@ projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = '1.5'
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = '1.19'
+projects[admin_toolbar][version] = '1.20'
 
 ; Themes
 projects[bootstrap][type] = theme
