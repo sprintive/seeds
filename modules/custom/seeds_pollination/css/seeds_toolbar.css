@@ -31,7 +31,6 @@
 }
 
 [dir="rtl"] .seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:after {
-  content: url(../images/chevron-left.svg);
   left: 5px;
   right: auto;
 }
@@ -42,8 +41,8 @@
 }
 
 [dir="rtl"] .seeds-toolbar.adminimal-admin-toolbar .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:hover:after {
-  content: url(../images/white-chevron-left.svg);
-  transform: translate(-3px, -8px);
+  content: url(../images/white-chevron-left.svg) !important;
+  transform: translate(-4px, 0px);
 }
 
 .seeds-toolbar.adminimal-admin-toolbar .toolbar .toolbar-tray-horizontal ul  ul li.menu-item:first-child {
