@@ -127,7 +127,8 @@ projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.5
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.20
+projects[admin_toolbar][download][type] = git
+projects[admin_toolbar][download][revision] = fa374ff
 
 ; Themes
 projects[bootstrap][type] = theme
