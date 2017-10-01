@@ -51,6 +51,9 @@ projects[media_entity_document][version] = 1.1
 projects[video_embed_field][type] = module
 projects[video_embed_field][version] = 1.5
 
+projects[crop][type] = module
+projects[crop][version] = 1.2
+
 projects[focal_point][type] = module
 projects[focal_point][version] = 1.0-beta4
 
@@ -82,7 +85,7 @@ projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-beta18
+projects[webform][version] = 5.0-beta19
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta3
