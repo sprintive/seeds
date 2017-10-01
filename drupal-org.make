@@ -88,7 +88,7 @@ projects[webform][type] = module
 projects[webform][version] = 5.0-beta19
 
 projects[rabbit_hole][type] = module
-projects[rabbit_hole][version] = 1.0-beta3
+projects[rabbit_hole][version] = 1.0-beta4
 
 projects[field_group][type] = module
 projects[field_group][version] = 1.0-rc6
@@ -103,7 +103,7 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha2
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.2
+projects[metatag][version] = 1.3
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.0
