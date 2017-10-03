@@ -46,6 +46,7 @@
     }
   ],
   "extra": {
+    "enable-patching": true,
     "installer-paths": {
       "public_html/core": [
         "drupal/core"
