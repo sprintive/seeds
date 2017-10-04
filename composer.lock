@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1cfcd116e5644d79e9397ba6a577dfe",
+    "content-hash": "4f2b0bdc52911690e3d78de12f1af26c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3110,52 +3110,6 @@
             }
         },
         {
-            "name": "drupal/seeds",
-            "version": "1.72.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/seeds",
-                "reference": "8.x-1.72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/seeds-8.x-1.72-core.zip",
-                "reference": "8.x-1.72",
-                "shasum": "aa11d2f3a4b10776fc9a0a6c64a1904e8b68c0d2"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-profile",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.72",
-                    "datestamp": "1506878114",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "m.abdulqader",
-                    "homepage": "https://www.drupal.org/user/1281252"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/seeds",
-            "support": {
-                "source": "http://cgit.drupalcode.org/seeds"
-            }
-        },
-        {
             "name": "drupal/simple_sitemap",
             "version": "2.10.0",
             "source": {
@@ -6183,16 +6137,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "8.1.13",
+            "version": "8.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "f93fc2bed05ba58cf65fb65f799429bf6354b205"
+                "reference": "b1f1e421185da5468eedfd25eeb5b51e705d3cef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/f93fc2bed05ba58cf65fb65f799429bf6354b205",
-                "reference": "f93fc2bed05ba58cf65fb65f799429bf6354b205",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/b1f1e421185da5468eedfd25eeb5b51e705d3cef",
+                "reference": "b1f1e421185da5468eedfd25eeb5b51e705d3cef",
                 "shasum": ""
             },
             "require": {
@@ -6284,7 +6238,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2017-08-22T17:28:25+00:00"
+            "time": "2017-10-03T16:20:45+00:00"
         },
         {
             "name": "gabordemooij/redbean",
