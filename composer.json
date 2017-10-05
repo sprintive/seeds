@@ -141,8 +141,7 @@
     }
   },
   "config": {
-    "bin-dir": "bin/",
-    "sort-packages": true
+    "bin-dir": "bin/"
   },
   "scripts": {
     "post-install-cmd": [
