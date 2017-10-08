@@ -71,7 +71,7 @@
       "package": {
         "dist": {
           "type": "zip",
-          "url": "https://github.com/kenwheeler/slick/archive/1.6.0.zip"
+          "url": "https://github.com/kenwheeler/slick.git"
         },
         "name": "kenwheeler/slick",
         "require": {
@@ -86,7 +86,7 @@
       "package": {
         "dist": {
           "type": "zip",
-          "url": "https://github.com/gdsmith/jquery.easing/archive/1.4.1.zip"
+          "url": "https://github.com/gdsmith/jquery.easing.git"
         },
         "name": "gdsmith/easing",
         "require": {
@@ -101,7 +101,7 @@
       "package": {
         "dist": {
           "type": "zip",
-          "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip"
+          "url": "https://github.com/dinbror/blazy.git"
         },
         "name": "dinbror/blazy",
         "require": {
