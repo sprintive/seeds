@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.entity_browser
-    - field.field.media.image.field_media_image
+    - field.field.media.image.field_image
     - image.style.seeds_eb_thumbnail
     - media_entity.bundle.image
   module:
@@ -32,5 +32,5 @@ content:
     region: content
 hidden:
   created: true
-  field_media_image: true
+  field_image: true
   uid: true

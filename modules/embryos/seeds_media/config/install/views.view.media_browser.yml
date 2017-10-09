@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.media.field_media_image
+    - field.storage.media.field_image
     - image.style.seeds_eb_thumbnail
     - media_entity.bundle.document
     - media_entity.bundle.embed
@@ -975,10 +975,10 @@ display:
           hide_alter_empty: true
           entity_type: media
           plugin_id: entity_browser_select
-        field_media_image:
-          id: field_media_image
-          table: media__field_media_image
-          field: field_media_image
+        field_image:
+          id: field_image
+          table: media__field_image
+          field: field_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -1212,7 +1212,7 @@ display:
         - url.query_args
         - user.permissions
       tags:
-        - 'config:field.storage.media.field_media_image'
+        - 'config:field.storage.media.field_image'
   video:
     display_plugin: entity_browser
     id: video

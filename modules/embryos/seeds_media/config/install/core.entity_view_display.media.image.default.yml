@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_media_image
+    - field.field.media.image.field_image
     - media_entity.bundle.image
   module:
     - image
@@ -22,7 +22,7 @@ content:
       timezone: ''
     third_party_settings: {  }
     region: content
-  field_media_image:
+  field_image:
     weight: 3
     label: visually_hidden
     settings:
