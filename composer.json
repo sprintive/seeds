@@ -106,6 +106,10 @@
       "drupal/photoswipe": {
         "Aspect ratio incorrect for landscape photo":
                 "https://www.drupal.org/files/issues/aspect_ratio_incorrect-2695191-7.patch"
+      },
+      "drupal/metatag": {
+        "Fatal error: Class NormalizerBase not found":
+                "https://www.drupal.org/files/issues/missing_serialization_dependency-2899699-6.patch"
       }
     }
   },

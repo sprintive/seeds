@@ -104,6 +104,7 @@ projects[fast_404][version] = 1.0-alpha2
 
 projects[metatag][type] = module
 projects[metatag][version] = 1.3
+projects[metatag][patch][] = https://www.drupal.org/files/issues/missing_serialization_dependency-2899699-6.patch
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.0
