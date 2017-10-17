@@ -9,11 +9,14 @@ projects[ctools][version] = 3.0
 projects[token][type] = module
 projects[token][version] = 1.0
 
+projects[diff][type] = module
+projects[diff][version] = 1.0-rc1
+
 
 ; Content Management Modules.
 projects[ds][type] = module
 projects[ds][version] = 3.1
-projects[ds][patch][] = https://www.drupal.org/files/issues/url_link_fix-2883928-5.patch
+projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
 
 projects[page_manager][type] = module
 projects[page_manager][version] = 4.0-beta2
@@ -136,10 +139,23 @@ projects[admin_toolbar][version] = 1.x-dev
 projects[admin_toolbar][download][url] = https://git.drupal.org/project/admin_toolbar.git
 projects[admin_toolbar][download][revision] = fa374ffa4339f8fde91e658f43ccf975604198c5
 
+projects[toolbar_anti_flicker][type] = module
+projects[toolbar_anti_flicker][version] = 2.6
+
+projects[admin_links_access_filter][type] = module
+projects[admin_links_access_filter][version] = 1.0-alpha3
+
+projects[menu_admin_per_menu][type] = module
+projects[menu_admin_per_menu][version] = 1.0
+
+projects[taxonomy_access_fix][type] = module
+projects[taxonomy_access_fix][version] = 2.1
+
 
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.6
+projects[bootstrap][patch][] = https://www.drupal.org/files/issues/updating_to_drupal_core-2903656-3.patch
 
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][version] = 1.3
