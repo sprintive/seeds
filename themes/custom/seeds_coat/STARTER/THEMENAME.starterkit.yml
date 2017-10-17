@@ -22,3 +22,6 @@ regions:
 libraries:
   - 'THEMENAME/global-styling'
   - 'THEMENAME/bootstrap-scripts'
+
+ckeditor_stylesheets:
+  - css/style.css
