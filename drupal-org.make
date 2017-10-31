@@ -157,7 +157,7 @@ projects[field_group][subdir] = fields
 projects[linkit][version] = 3.5
 projects[linkit][subdir] = fields
 
-projects[focal_point][version] = 1.0
+projects[focal_point][version] = 1.1
 projects[focal_point][subdir] = fields
 
 projects[hires_images][version] = 1.1
@@ -192,7 +192,7 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.15
+projects[webform][version] = 4.16
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
@@ -228,7 +228,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.14
+projects[bootstrap][version] = 3.15
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
