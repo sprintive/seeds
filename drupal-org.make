@@ -26,7 +26,7 @@ projects[libraries][subdir] = utilities
 projects[entity][version] = 1.8
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.4
+projects[file_entity][version] = 2.12
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -69,7 +69,7 @@ projects[fitvids][subdir] = ui
 ;; SEO Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[google_analytics][version] = 2.3
+projects[google_analytics][version] = 2.4
 projects[google_analytics][subdir] = seo
 
 projects[imagecache_token][version] = 1.0-rc2
@@ -124,7 +124,7 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-beta6"
+projects[media][version] = "3.0-beta7"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
@@ -138,7 +138,7 @@ projects[pathologic][subdir] = editor
 projects[token_filter][version] = 1.1
 projects[token_filter][subdir] = editor
 
-projects[wysiwyg_filter][version] = 1.6-rc3
+projects[wysiwyg_filter][version] = 1.6-rc9
 projects[wysiwyg_filter][subdir] = editor
 
 ;;;;;;;;;;;;;;;;;;;;;
