@@ -151,7 +151,7 @@ projects[date][subdir] = fields
 projects[link][version] = 1.4
 projects[link][subdir] = fields
 
-projects[field_group][version] = 1.5
+projects[field_group][version] = 1.6
 projects[field_group][subdir] = fields
 
 projects[linkit][version] = 3.5
