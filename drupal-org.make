@@ -25,7 +25,7 @@ projects[panels][type] = module
 projects[panels][version] = 4.2
 
 projects[bootstrap_layouts][type] = module
-projects[bootstrap_layouts][version] = 5.0-alpha1
+projects[bootstrap_layouts][version] = 5.0
 
 projects[entity][type] = module
 projects[entity][version] = 1.0-beta1
@@ -43,7 +43,7 @@ projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-beta1
 
 projects[media_entity][type] = module
-projects[media_entity][version] = 1.6
+projects[media_entity][version] = 1.7
 
 projects[media_entity_image][type] = module
 projects[media_entity_image][version] = 1.2
@@ -55,10 +55,10 @@ projects[video_embed_field][type] = module
 projects[video_embed_field][version] = 1.5
 
 projects[crop][type] = module
-projects[crop][version] = 1.2
+projects[crop][version] = 1.3
 
 projects[focal_point][type] = module
-projects[focal_point][version] = 1.0-beta4
+projects[focal_point][version] = 1.0-beta5
 
 projects[smart_trim][type] = module
 projects[smart_trim][version] = 1.0
@@ -88,13 +88,13 @@ projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-beta19
+projects[webform][version] = 5.0-beta24
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
 
 projects[field_group][type] = module
-projects[field_group][version] = 1.0-rc6
+projects[field_group][version] = 1.0
 
 projects[photoswipe][type] = module
 projects[photoswipe][version] = 1.0-beta3
