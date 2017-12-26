@@ -12,15 +12,15 @@
     "cweagans/composer-patches": "1.6.2",
     "drupal-composer/drupal-scaffold": "2.3.0",
     "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.4.2",
+    "drupal/core": "8.4.3",
     "drupal/ctools": "3.0",
-    "drupal/token": "1.0",
+    "drupal/token": "1.1",
     "drupal/ds": "3.1",
     "drupal/page_manager": "4.0-beta2",
     "drupal/panels": "4.2",
     "drupal/bootstrap_layouts": "5.0",
     "drupal/entity": "1.0-beta1",
-    "drupal/entity_browser": "1.3",
+    "drupal/entity_browser": "1.4",
     "drupal/entity_embed": "1.0-beta2",
     "drupal/embed": "1.0",
     "drupal/inline_entity_form": "1.0-beta1",
@@ -43,21 +43,20 @@
     "drupal/field_group": "1.0",
     "drupal/photoswipe": "1.0-beta3",
     "drupal/fast_404": "1.0-alpha2",
-    "drupal/metatag": "1.3",
+    "drupal/metatag": "1.4",
     "drupal/pathauto": "1.0",
-    "drupal/webform": "5.0-beta24",
-    "drupal/simple_sitemap": "2.10",
+    "drupal/webform": "5.0-rc1",
+    "drupal/simple_sitemap": "2.11",
     "drupal/link_attributes": "1.1",
-    "drupal/redirect": "1.0-beta1",
+    "drupal/redirect": "1.0",
     "drupal/google_analytics": "2.2",
     "drupal/honeypot": "1.27",
     "drupal/config_devel": "~1.0",
     "drupal/adminimal_admin_toolbar": "1.5",
     "drupal/toolbar_anti_flicker": "2.6",
-    "drupal/bootstrap": "3.6",
+    "drupal/bootstrap": "3.7",
     "drupal/adminimal_theme": "1.3",
     "drupal/diff": "1.0-rc1",
-    "drupal/admin_links_access_filter": "1.0-alpha3",
     "drupal/menu_admin_per_menu": "1.0",
     "drupal/taxonomy_access_fix": "2.1"
   },
@@ -115,10 +114,6 @@
       "drupal/metatag": {
         "Fatal error: Class NormalizerBase not found":
                 "https://www.drupal.org/files/issues/missing_serialization_dependency-2899699-6.patch"
-      },
-      "drupal/bootstrap": {
-        "Updating to Drupal core 8.4.0-beta1 results in not working dropdown menu":
-                "https://www.drupal.org/files/issues/updating_to_drupal_core-2903656-3.patch"
       }
     }
   },

@@ -7,7 +7,7 @@ projects[ctools][type] = module
 projects[ctools][version] = 3.0
 
 projects[token][type] = module
-projects[token][version] = 1.0
+projects[token][version] = 1.1
 
 projects[diff][type] = module
 projects[diff][version] = 1.0-rc1
@@ -31,7 +31,7 @@ projects[entity][type] = module
 projects[entity][version] = 1.0-beta1
 
 projects[entity_browser][type] = module
-projects[entity_browser][version] = 1.3
+projects[entity_browser][version] = 1.4
 
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.0-beta2
@@ -88,7 +88,7 @@ projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-beta24
+projects[webform][version] = 5.0-rc1
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -106,20 +106,20 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha2
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.3
+projects[metatag][version] = 1.4
 projects[metatag][patch][] = https://www.drupal.org/files/issues/missing_serialization_dependency-2899699-6.patch
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.0
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 2.10
+projects[simple_sitemap][version] = 2.11
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.1
 
 projects[redirect][type] = module
-projects[redirect][version] = 1.0-beta1
+projects[redirect][version] = 1.0
 
 projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.2
@@ -154,8 +154,7 @@ projects[taxonomy_access_fix][version] = 2.1
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.6
-projects[bootstrap][patch][] = https://www.drupal.org/files/issues/updating_to_drupal_core-2903656-3.patch
+projects[bootstrap][version] = 3.7
 
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][version] = 1.3
