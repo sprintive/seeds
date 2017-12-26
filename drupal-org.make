@@ -134,10 +134,7 @@ projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.5
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][download][type] = git
-projects[admin_toolbar][version] = 1.x-dev
-projects[admin_toolbar][download][url] = https://git.drupal.org/project/admin_toolbar.git
-projects[admin_toolbar][download][revision] = fa374ffa4339f8fde91e658f43ccf975604198c5
+projects[admin_toolbar][version] = 1.21
 
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.6
