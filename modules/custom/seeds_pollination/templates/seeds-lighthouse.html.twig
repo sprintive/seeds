@@ -1,6 +1,6 @@
 <div {{ attributes.setAttribute('id', settings.wrapper_id).addClass(settings.wrapper_classes) }}>
 
-	{% if content.row_1 %}
+	{% if content.row_1|render is not empty %}
 		<div class="lh-row-1">
 			<div class="{{settings.row_1}}">
 				{{ content.row_1 }}
@@ -8,7 +8,7 @@
 		</div>
 	{% endif %}
 
-	{% if content.row_2 %}
+	{% if content.row_2|render is not empty %}
 		<div class="lh-row-2">
 			<div class="{{settings.row_2}}">
 				{{ content.row_2 }}
@@ -36,7 +36,7 @@
 		</div>
 	{% endif %}
 
-	{% if content.row_4 %}
+	{% if content.row_4|render is not empty %}
 		<div class="lh-row-4">
 			<div class="{{settings.row_4}}">
 				{{ content.row_4 }}
@@ -100,7 +100,7 @@
 		</div>
 	{% endif %}
 
-	{% if content.row_7 %}
+	{% if content.row_7|render is not empty %}
 		<div class="lh-row-7">
 			<div class="{{settings.row_7}}">
 				{{ content.row_7 }}
@@ -127,7 +127,7 @@
 		</div>
 	{% endif %}
 
-	{% if content.row_9 %}
+	{% if content.row_9|render is not empty %}
 		<div class="lh-row-9">
 			<div class="{{settings.row_9}}">
 				{{ content.row_9 }}
@@ -191,7 +191,7 @@
 		</div>
 	{% endif %}
 
-	{% if content.row_12 %}
+	{% if content.row_12|render is not empty %}
 		<div class="lh-row-12">
 			<div class="{{settings.row_12}}">
 				{{ content.row_12 }}
@@ -218,7 +218,7 @@
 		</div>
 	{% endif %}
 
-	{% if content.row_14 %}
+	{% if content.row_14|render is not empty %}
 		<div class="lh-row-14">
 			<div class="{{settings.row_14}}">
 				{{ content.row_14 }}
@@ -226,7 +226,7 @@
 		</div>
 	{% endif %}
 
-	{% if content.row_15 %}
+	{% if content.row_15|render is not empty %}
 		<div class="lh-row-15">
 			<div class="{{settings.row_15}}">
 				{{ content.row_15 }}
