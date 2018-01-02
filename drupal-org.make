@@ -116,7 +116,7 @@ projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 2.11
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = 1.1
+projects[link_attributes][version] = 1.2
 
 projects[redirect][type] = module
 projects[redirect][version] = 1.0
@@ -134,7 +134,7 @@ projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.5
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.21
+projects[admin_toolbar][version] = 1.22
 
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.6
