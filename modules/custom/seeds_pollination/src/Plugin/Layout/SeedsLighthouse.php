@@ -96,13 +96,6 @@ class SeedsLighthouse extends LayoutDefault implements PluginFormInterface {
       $this->configuration[$name] = $this->configuration['attributes'][$name];
       unset($this->configuration['attributes'][$name]);
     }
-
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function validateConfigurationForm(array &$form, FormStateInterface $form_state) {
   }
 
   /**
