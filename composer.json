@@ -119,7 +119,7 @@
       },
       "drupal/smtp": {
         "Wrong schema for smtp settings": "https://www.drupal.org/files/issues/2865696-fix-schema-2.patch"
-      },
+      }
     }
   },
   "config": {
