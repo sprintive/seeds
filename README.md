@@ -1,6 +1,6 @@
 ### Seeds: Kickoff distribution for SMEs
 
-[![Latest Stable Version](https://poser.pugx.org/sprintive/seeds-project/v/stable)](https://packagist.org/packages/sprintive/seeds-project) [![Total Downloads](https://poser.pugx.org/sprintive/seeds-project/downloads)](https://packagist.org/packages/sprintive/seeds-project) [![Latest Unstable Version](https://poser.pugx.org/sprintive/seeds-project/v/unstable)](https://packagist.org/packages/sprintive/seeds-project) [![License](https://poser.pugx.org/sprintive/seeds-project/license)](https://packagist.org/packages/sprintive/seeds-project) [![composer.lock](https://poser.pugx.org/sprintive/seeds-project/composerlock)](https://packagist.org/packages/sprintive/seeds-project)
+[![Latest Stable Version](https://poser.pugx.org/sprintive/seeds/v/stable)](https://packagist.org/packages/sprintive/seeds) [![Total Downloads](https://poser.pugx.org/sprintive/seeds/downloads)](https://packagist.org/packages/sprintive/seeds) [![Latest Unstable Version](https://poser.pugx.org/sprintive/seeds/v/unstable)](https://packagist.org/packages/sprintive/seeds) [![License](https://poser.pugx.org/sprintive/seeds/license)](https://packagist.org/packages/sprintive/seeds) [![composer.lock](https://poser.pugx.org/sprintive/seeds/composerlock)](https://packagist.org/packages/sprintive/seeds)
 
 [![Seeds](https://www.drupal.org/files/styles/grid-3/public/project-images/Sprintive%20Seets-01.png)](https://www.drupal.org/project/seeds)
 

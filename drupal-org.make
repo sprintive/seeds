@@ -79,7 +79,7 @@ projects[slick_media][type] = module
 projects[slick_media][version] = 1.0
 
 projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = 1.3
+projects[entity_reference_revisions][version] = 1.4
 
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.2
