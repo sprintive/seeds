@@ -100,6 +100,9 @@ projects[photoswipe][type] = module
 projects[photoswipe][version] = 1.0-beta3
 projects[photoswipe][patch][] = https://www.drupal.org/files/issues/aspect_ratio_incorrect-2695191-7.patch
 
+projects[smtp][type] = module
+projects[smtp][version] = 1.0-beta3
+
 
 ; Performance & SEO Modules
 projects[fast_404][type] = module

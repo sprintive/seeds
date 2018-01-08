@@ -59,7 +59,8 @@
     "drupal/diff": "1.0-rc1",
     "drupal/menu_admin_per_menu": "1.0",
     "drupal/taxonomy_access_fix": "2.1",
-    "drupal/admin_toolbar": "1.22"
+    "drupal/admin_toolbar": "1.22",
+    "drupal/smtp": "1.0-beta3"
   },
   "require-dev": {
     "drush/drush": "~8.1",
