@@ -116,7 +116,10 @@
       "drupal/metatag": {
         "Fatal error: Class NormalizerBase not found":
                 "https://www.drupal.org/files/issues/missing_serialization_dependency-2899699-6.patch"
-      }
+      },
+      "drupal/smtp": {
+        "Wrong schema for smtp settings": "https://www.drupal.org/files/issues/2865696-fix-schema-2.patch"
+      },
     }
   },
   "config": {
