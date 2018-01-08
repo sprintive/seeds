@@ -101,6 +101,11 @@ class SeedsLighthouse extends LayoutDefault implements PluginFormInterface {
   /**
    * {@inheritdoc}
    */
+  public function validateConfigurationForm(array &$form, FormStateInterface $form_state) {}
+
+  /**
+   * {@inheritdoc}
+   */
   public function getRows() {
     return ['row_1', 'row_2', 'row_4', 'row_7', 'row_9', 'row_12', 'row_14', 'row_15'];
   }
