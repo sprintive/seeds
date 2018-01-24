@@ -2,7 +2,7 @@
   "name": "sprintive/seeds",
   "description": "Kickoff distro for SME's, Curated by Sprintive",
   "type": "drupal-profile",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
