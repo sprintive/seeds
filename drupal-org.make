@@ -25,7 +25,7 @@ projects[panels][type] = module
 projects[panels][version] = 4.2
 
 projects[bootstrap_layouts][type] = module
-projects[bootstrap_layouts][version] = 5.0
+projects[bootstrap_layouts][version] = 5.1
 
 projects[entity][type] = module
 projects[entity][version] = 1.0-beta1
@@ -55,13 +55,13 @@ projects[video_embed_field][type] = module
 projects[video_embed_field][version] = 1.5
 
 projects[crop][type] = module
-projects[crop][version] = 1.3
+projects[crop][version] = 1.5
 
 projects[focal_point][type] = module
 projects[focal_point][version] = 1.0-beta5
 
 projects[smart_trim][type] = module
-projects[smart_trim][version] = 1.0
+projects[smart_trim][version] = 1.1
 
 projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.1
@@ -154,7 +154,7 @@ projects[taxonomy_access_fix][version] = 2.1
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.7
+projects[bootstrap][version] = 3.9
 
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][version] = 1.3
