@@ -5,7 +5,7 @@ core = 7.x
 ;; Utilities Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[ctools][version] = 1.12
+projects[ctools][version] = 1.14
 projects[ctools][subdir] = utilities
 
 projects[panels][version] = 3.9
@@ -23,10 +23,10 @@ projects[token][subdir] = utilities
 projects[libraries][version] = 2.3
 projects[libraries][subdir] = utilities
 
-projects[entity][version] = 1.8
+projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.12
+projects[file_entity][version] = 2.16
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -124,7 +124,7 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-beta7"
+projects[media][version] = "3.0-rc2"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
@@ -228,7 +228,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.15
+projects[bootstrap][version] = 3.19
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
