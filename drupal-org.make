@@ -88,7 +88,7 @@ projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc1
+projects[webform][version] = 5.0-rc3
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -137,7 +137,7 @@ projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.5
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.22
+projects[admin_toolbar][version] = 1.23
 
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.6
@@ -149,12 +149,12 @@ projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
 
 projects[taxonomy_access_fix][type] = module
-projects[taxonomy_access_fix][version] = 2.1
+projects[taxonomy_access_fix][version] = 2.5
 
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.9
+projects[bootstrap][version] = 3.10
 
 projects[adminimal_theme][type] = theme
 projects[adminimal_theme][version] = 1.3
