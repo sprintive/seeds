@@ -98,7 +98,7 @@ projects[admin_menu][version] = 3.0-rc5
 projects[admin_menu][subdir] = administration
 projects[admin_menu][patch][1910546] = "https://www.drupal.org/files/issues/sub_lists_not_show_on_rtl-1910546-1.patch"
 
-projects[adminimal_admin_menu][version] = 1.7
+projects[adminimal_admin_menu][version] = 1.9
 projects[adminimal_admin_menu][subdir] = administration
 
 projects[date_popup_authored][version] = 1.2
