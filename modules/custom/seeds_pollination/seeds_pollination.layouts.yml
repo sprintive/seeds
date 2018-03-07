@@ -56,6 +56,16 @@ seeds_lighthouse:
       label: Row fourteen (12)
     row_15:
       label: Row fifteen (12)
+    row_16:
+      label: Row sixteen (12)
+    row_17:
+      label: Row seventeen (12)
+    row_18:
+      label: Row eighteen (12)
+    row_19:
+      label: Row nineteen (12)
+    row_20:
+      label: Row twenty (12)
 
 seeds_card:
   label: Seeds Card
