@@ -29,15 +29,11 @@ class SeedsLighthouse extends LayoutDefault implements PluginFormInterface {
       'row_1' => 'container',
       'row_2' => 'container',
       'row_4' => 'container',
-      'row_6' => 'container',
-      'row_8' => 'container',
-      'row_10' => 'container',
+      'row_7' => 'container',
+      'row_9' => 'container',
       'row_12' => 'container',
       'row_14' => 'container',
-      'row_16' => 'container',
-      'row_18' => 'container',
-      'row_19' => 'container',
-      'row_20' => 'container',
+      'row_15' => 'container',
     ];
   }
 
@@ -111,7 +107,7 @@ class SeedsLighthouse extends LayoutDefault implements PluginFormInterface {
    * {@inheritdoc}
    */
   public function getRows() {
-    return ['row_1', 'row_2', 'row_4', 'row_6', 'row_8', 'row_10', 'row_12', 'row_14', 'row_16', 'row_18', 'row_19', 'row_20'];
+    return ['row_1', 'row_2', 'row_4', 'row_7', 'row_9', 'row_12', 'row_14', 'row_15'];
   }
 
 }
