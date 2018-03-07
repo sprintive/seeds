@@ -63,63 +63,26 @@
     </div>
   {% endif %}
 
-  {% if content.row_6_content or content.row_6_col_1 or content.row_6_col_2 or content.row_6_sidebar %}
-    <div class="lh-3-3-3-col-wrapper lh-row-6 ">
-      <div class="container">
-        <div class="row">
-          {% if content.row_6_content or content.row_6_col_1 or content.row_6_col_2 %}
-            <div class="lh-content col-sm-8">
-              {% if content.row_6_content %}
-                {{ content.row_6_content }}
-                <div class="panel-separator"></div>
-              {% endif %}
-
-              <div class="row">
-                <div class="lh-col-1 col-sm-6">
-                  {% if content.row_6_col_1 %}
-                    {{ content.row_6_col_1 }}
-                    <div class="panel-separator"></div>
-                  {% endif %}
-                </div>
-                <div class="lh-col-2 col-sm-6">
-                  {% if content.row_6_col_2 %}
-                    {{ content.row_6_col_2 }}
-                    <div class="panel-separator"></div>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-          {% endif %}
-          {% if content.row_6_sidebar %}
-            <div class="lh-col-3 lh-sidebar col-sm-4">
-              {{ content.row_6_sidebar }}
-            </div>
-          {% endif %}
-        </div>
+  {% if content.row_6|render is not empty %}
+    <div class="lh-row-6">
+      <div class="{{settings.row_6}}">
+        {{ content.row_6 }}
       </div>
     </div>
   {% endif %}
 
-  {% if content.row_7|render is not empty %}
-    <div class="lh-row-7">
-      <div class="{{settings.row_7}}">
-        {{ content.row_7 }}
-      </div>
-    </div>
-  {% endif %}
-
-  {% if content.row_8_half_1 or content.row_8_half_2 %}
-    <div class="lh-6-6-col-wrapper lh-row-8">
+  {% if content.row_7_half_1 or content.row_7_half_2 %}
+    <div class="lh-6-6-col-wrapper lh-row-7">
       <div class="container">
         <div class="row">
-          {% if content.row_8_half_1 %}
+          {% if content.row_7_half_1 %}
             <div class="col-sm-6 lh-half-1">
-              {{ content.row_8_half_1 }}
+              {{ content.row_7_half_1 }}
             </div>
           {% endif %}
-          {% if content.row_8_half_2 %}
+          {% if content.row_7_half_2 %}
             <div class="col-sm-6 lh-half-2">
-              {{ content.row_8_half_2 }}
+              {{ content.row_7_half_2 }}
             </div>
           {% endif %}
         </div>
@@ -127,63 +90,71 @@
     </div>
   {% endif %}
 
-  {% if content.row_9|render is not empty %}
-    <div class="lh-row-9">
-      <div class="{{settings.row_9}}">
-        {{ content.row_9 }}
+  {% if content.row_8|render is not empty %}
+    <div class="lh-row-8">
+      <div class="{{settings.row_8}}">
+        {{ content.row_8 }}
       </div>
     </div>
   {% endif %}
 
-  {% if content.row_10_content or content.row_10_sidebar %}
-    <div class="lh-3-9-col-wrapper lh-row-10">
+  {% if content.row_9_content or content.row_9_col_1 or content.row_9_col_2 or content.row_9_sidebar %}
+    <div class="lh-3-3-3-col-wrapper lh-row-9 ">
       <div class="container">
         <div class="row">
-          {% if content.row_10_sidebar %}
-            <div class="lh-sidebar col-sm-3">
-              {{ content.row_10_sidebar }}
-            </div>
-          {% endif %}
-          {% if content.row_10_content %}
-            <div class="lh-content col-sm-9">
-              {{ content.row_10_content }}
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  {% endif %}
-
-  {% if content.row_11_content or content.row_11_col_1 or content.row_11_col_2 or content.row_11_sidebar %}
-    <div class="lh-3-3-3-col-wrapper lh-row-11 ">
-      <div class="container">
-        <div class="row">
-          {% if content.row_11_sidebar %}
-            <div class="lh-col-3 lh-sidebar col-sm-4">
-              {{ content.row_11_sidebar }}
-            </div>
-          {% endif %}
-          {% if content.row_11_content or content.row_11_col_1 or content.row_11_col_2 %}
+          {% if content.row_9_content or content.row_9_col_1 or content.row_9_col_2 %}
             <div class="lh-content col-sm-8">
-              {% if content.row_11_content %}
-                {{ content.row_11_content }}
+              {% if content.row_9_content %}
+                {{ content.row_9_content }}
                 <div class="panel-separator"></div>
               {% endif %}
 
               <div class="row">
                 <div class="lh-col-1 col-sm-6">
-                  {% if content.row_11_col_1 %}
-                    {{ content.row_11_col_1 }}
+                  {% if content.row_9_col_1 %}
+                    {{ content.row_9_col_1 }}
                     <div class="panel-separator"></div>
                   {% endif %}
                 </div>
                 <div class="lh-col-2 col-sm-6">
-                  {% if content.row_11_col_2 %}
-                    {{ content.row_11_col_2 }}
+                  {% if content.row_9_col_2 %}
+                    {{ content.row_9_col_2 }}
                     <div class="panel-separator"></div>
                   {% endif %}
                 </div>
               </div>
+            </div>
+          {% endif %}
+          {% if content.row_9_sidebar %}
+            <div class="lh-col-3 lh-sidebar col-sm-4">
+              {{ content.row_9_sidebar }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.row_10|render is not empty %}
+    <div class="lh-row-10">
+      <div class="{{settings.row_10}}">
+        {{ content.row_10 }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.row_11_half_1 or content.row_11_half_2 %}
+    <div class="lh-6-6-col-wrapper lh-row-11">
+      <div class="container">
+        <div class="row">
+          {% if content.row_11_half_1 %}
+            <div class="col-sm-6 lh-half-1">
+              {{ content.row_11_half_1 }}
+            </div>
+          {% endif %}
+          {% if content.row_11_half_2 %}
+            <div class="col-sm-6 lh-half-2">
+              {{ content.row_11_half_2 }}
             </div>
           {% endif %}
         </div>
@@ -199,18 +170,18 @@
     </div>
   {% endif %}
 
-  {% if content.row_13_half_1 or content.row_13_half_2 %}
-    <div class="lh-6-6-col-wrapper lh-row-13">
+  {% if content.row_13_content or content.row_13_sidebar %}
+    <div class="lh-3-9-col-wrapper lh-row-13">
       <div class="container">
         <div class="row">
-          {% if content.row_13_half_1 %}
-            <div class="col-sm-6 lh-half-1">
-              {{ content.row_13_half_1 }}
+          {% if content.row_13_sidebar %}
+            <div class="lh-sidebar col-sm-3">
+              {{ content.row_13_sidebar }}
             </div>
           {% endif %}
-          {% if content.row_13_half_2 %}
-            <div class="col-sm-6 lh-half-2">
-              {{ content.row_13_half_2 }}
+          {% if content.row_13_content %}
+            <div class="lh-content col-sm-9">
+              {{ content.row_13_content }}
             </div>
           {% endif %}
         </div>
@@ -226,10 +197,90 @@
     </div>
   {% endif %}
 
-  {% if content.row_15|render is not empty %}
-    <div class="lh-row-15">
-      <div class="{{settings.row_15}}">
-        {{ content.row_15 }}
+  {% if content.row_15_content or content.row_15_col_1 or content.row_15_col_2 or content.row_15_sidebar %}
+    <div class="lh-3-3-3-col-wrapper lh-row-15 ">
+      <div class="container">
+        <div class="row">
+          {% if content.row_15_sidebar %}
+            <div class="lh-col-3 lh-sidebar col-sm-4">
+              {{ content.row_15_sidebar }}
+            </div>
+          {% endif %}
+          {% if content.row_15_content or content.row_15_col_1 or content.row_15_col_2 %}
+            <div class="lh-content col-sm-8">
+              {% if content.row_15_content %}
+                {{ content.row_15_content }}
+                <div class="panel-separator"></div>
+              {% endif %}
+
+              <div class="row">
+                <div class="lh-col-1 col-sm-6">
+                  {% if content.row_15_col_1 %}
+                    {{ content.row_15_col_1 }}
+                    <div class="panel-separator"></div>
+                  {% endif %}
+                </div>
+                <div class="lh-col-2 col-sm-6">
+                  {% if content.row_15_col_2 %}
+                    {{ content.row_15_col_2 }}
+                    <div class="panel-separator"></div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.row_16|render is not empty %}
+    <div class="lh-row-16">
+      <div class="{{settings.row_16}}">
+        {{ content.row_16 }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.row_17_half_1 or content.row_17_half_2 %}
+    <div class="lh-6-6-col-wrapper lh-row-17">
+      <div class="container">
+        <div class="row">
+          {% if content.row_17_half_1 %}
+            <div class="col-sm-6 lh-half-1">
+              {{ content.row_17_half_1 }}
+            </div>
+          {% endif %}
+          {% if content.row_17_half_2 %}
+            <div class="col-sm-6 lh-half-2">
+              {{ content.row_17_half_2 }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.row_18|render is not empty %}
+    <div class="lh-row-18">
+      <div class="{{settings.row_18}}">
+        {{ content.row_18 }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.row_19|render is not empty %}
+    <div class="lh-row-19">
+      <div class="{{settings.row_19}}">
+        {{ content.row_19 }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.row_20|render is not empty %}
+    <div class="lh-row-20">
+      <div class="{{settings.row_20}}">
+        {{ content.row_20 }}
       </div>
     </div>
   {% endif %}

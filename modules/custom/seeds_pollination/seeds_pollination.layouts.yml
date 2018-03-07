@@ -18,44 +18,56 @@ seeds_lighthouse:
       label: Row five - Content (9)
     row_5_sidebar:
       label: Row five - Sidebar (3)
-    row_6_content:
-      label: Row six - Content (8)
-    row_6_col_1:
-      label: Row six - Column one (4)
-    row_6_col_2:
-      label: Row six - Column two (4)
-    row_6_sidebar:
-      label: Row six - Sidebar & Column three (4)
-    row_7:
-      label: Row seven (12)
-    row_8_half_1:
-      label: Row eight - First half (6)
-    row_8_half_2:
-      label: Row eight - Second half (6)
-    row_9:
-      label: Row nine (12)
-    row_10_sidebar:
-      label: Row ten - Sidebar (3)
-    row_10_content:
-      label: Row ten - Content (9)
-    row_11_sidebar:
-      label: Row eleven - Sidebar & Column one (4)
-    row_11_col_1:
-      label: Row eleven - Column one (4)
-    row_11_col_2:
-      label: Row eleven - Column two (4)
-    row_11_content:
-      label: Row eleven - Content (8) 
+    row_6:
+      label: Row six (12)
+    row_7_half_1:
+      label: Row seven - First half (6)
+    row_7_half_2:
+      label: Row seven - Second half (6)
+    row_8:
+      label: Row eight (12)
+    row_9_content:
+      label: Row nine - Content (8)
+    row_9_col_1:
+      label: Row nine - Column one (4)
+    row_9_col_2:
+      label: Row nine - Column two (4)
+    row_9_sidebar:
+      label: Row nine - Sidebar & Column three (4)
+    row_10:
+      label: Row ten (12)
+    row_11_half_1:
+      label: Row eleven - First half (6)
+    row_11_half_2:
+      label: Row eleven - Second half (6)
     row_12:
       label: Row twelve (12)
-    row_13_half_1:
-      label: Row thirteen - First half (6)
-    row_13_half_2:
-      label: Row thirteen - Second half (6)
+    row_13_sidebar:
+      label: Row thirteen - Sidebar (3)
+    row_13_content:
+      label: Row thirteen - Content (9)
     row_14:
       label: Row fourteen (12)
-    row_15:
-      label: Row fifteen (12)
+    row_15_sidebar:
+      label: Row fifteen - Sidebar & Column one (4)
+    row_15_col_1:
+      label: Row fifteen - Column one (4)
+    row_15_col_2:
+      label: Row fifteen - Column two (4)
+    row_15_content:
+      label: Row fifteen - Content (8)
+    row_16:
+      label: Row sixteen (12)
+    row_17_half_1:
+      label: Row seventeen - First half (6)
+    row_17_half_2:
+      label: Row seventeen - Second half (6)
+    row_18:
+      label: Row eighteen (12)
+    row_19:
+      label: Row nineteen (12)
+    row_20:
+      label: Row twenty (12)
 
 seeds_card:
   label: Seeds Card
