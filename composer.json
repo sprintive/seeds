@@ -119,6 +119,9 @@
       },
       "drupal/smtp": {
         "Wrong schema for smtp settings": "https://www.drupal.org/files/issues/2865696-fix-schema-2.patch"
+      },
+      "drupal/paragraphs": {
+        "[META] Support translatable paragraph entity reference revision field.": "https://www.drupal.org/files/issues/meta_support-2461695-224.patch"
       }
     }
   },
