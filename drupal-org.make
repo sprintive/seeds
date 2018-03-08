@@ -58,7 +58,7 @@ projects[crop][type] = module
 projects[crop][version] = 1.5
 
 projects[focal_point][type] = module
-projects[focal_point][version] = 1.0-beta5
+projects[focal_point][version] = 1.0-beta6
 
 projects[smart_trim][type] = module
 projects[smart_trim][version] = 1.1
@@ -113,7 +113,7 @@ projects[metatag][version] = 1.4
 projects[metatag][patch][] = https://www.drupal.org/files/issues/missing_serialization_dependency-2899699-6.patch
 
 projects[pathauto][type] = module
-projects[pathauto][version] = 1.0
+projects[pathauto][version] = 1.1
 
 projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 2.11
