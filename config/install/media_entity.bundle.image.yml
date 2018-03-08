@@ -1,0 +1,3 @@
+type_configuration:
+  source_field: field_image
+  gather_exif: true
