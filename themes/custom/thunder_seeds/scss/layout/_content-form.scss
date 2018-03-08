@@ -1,7 +1,19 @@
 .thunder-seeds {
     .content-form__advanced-toggle,
     .content-form__advanced {
+      &, &:active, &:hover, &:focus {
         background: $primary-color-darker;
+      }
+    }
+    .content-form__advanced-toggle {
+      &:active, &:hover, &:focus {
+        background: $primary-color-dark;
+        svg {
+          path {
+            fill: $primary-color-lightest;
+          }
+        }
+      }
     }
     .entity-meta--advanced {
         details {

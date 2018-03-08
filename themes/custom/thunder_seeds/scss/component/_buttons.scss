@@ -1,49 +1,48 @@
 $button-border-radius: $base-border-radius;
 .thunder-seeds {
-    .button {
-        border-radius: $button-border-radius;
-        background-color: $gray-lightest;
-        background-image: linear-gradient(0deg, $primary-color-lightest 0%, $gray-lightest 100%);
-        color: $primary-color;
-        &:focus,
-        &:hover {
-            background-color: $gray-lighter;
-            background-image: linear-gradient(180deg, $primary-color-lightest 0%, $gray-lightest 100%);
-            text-decoration: none;
-        }
-        &:hover {
-            outline: none;
-        }
-    } //text-shadow removed
-    .button--primary {
-        border-color: $primary-color-intense;
-        background-color: $primary-color;
-        background-image: linear-gradient(180deg, $primary-color-intense 0%, $primary-color 100%);
-        color: #fff; // re-added color otherwise overridden by .button
+  .button {
+    border-radius: $button-border-radius;
+    background-color: $gray-lightest;
+    background-image: linear-gradient(0deg, $primary-color-lightest 0%, $gray-lightest 100%);
+    color: $primary-color;
+    &:focus,
+      &:hover {
+      background-color: $gray-lighter;
+      background-image: linear-gradient(180deg, $primary-color-lightest 0%, $gray-lightest 100%);
+      text-decoration: none;
     }
-    .button--primary:hover,
+    &:hover {
+      outline: none;
+    }
+  } //text-shadow removed
+  .button--primary {
+    border-color: $primary-color-intense;
+    background-color: $primary-color;
+    background-image: linear-gradient(180deg, $primary-color-intense 0%, $primary-color 100%);
+    color: #fff; // re-added color otherwise overridden by .button
+  }
+  .button--primary:hover,
     .button--primary:focus {
-        border-color: $primary-color;
-        background-color: $primary-color-intense;
-        background-image: linear-gradient(0deg, $primary-color-intense 0%, $primary-color 100%);
-        color: #fff;
-    }
-    .button-action:before {
-        margin-left: -0.2em;
-        /* LTR */
-        padding-right: 0.2em;
-        /* LTR */
-        font-size: 0.875rem;
-        line-height: 16px;
-        -webkit-font-smoothing: auto;
-    }
-    .no-touchevents .button--small {
-        font-size: 0.75rem;
-        min-height: 0px;
-    }
-}
+    border-color: $primary-color;
+    background-color: $primary-color-intense;
+    background-image: linear-gradient(0deg, $primary-color-intense 0%, $primary-color 100%);
+    color: #fff;
+  }
+  .button-action:before {
+    margin-left: -0.2em;
+    /* LTR */
+    padding-right: 0.2em;
+    /* LTR */
+    font-size: 0.875rem;
+    line-height: 16px;
+    -webkit-font-smoothing: auto;
+  }
+  .no-touchevents .button--small {
+    font-size: 0.75rem;
+    min-height: 0px;
+  }
 
-.button--danger {
+  .button--danger {
     display: inline;
     cursor: pointer;
     padding: 0;
@@ -56,11 +55,11 @@ $button-border-radius: $base-border-radius;
     color: #c72100;
     font-weight: 400;
     text-decoration: underline;
-}
+  }
 
-.button--danger:hover,
-.button--danger:focus,
-.button--danger:active {
+  .button--danger:hover,
+    .button--danger:focus,
+    .button--danger:active {
     color: #ff2a00;
     text-decoration: underline;
     text-shadow: none;
@@ -68,10 +67,10 @@ $button-border-radius: $base-border-radius;
     border: 0;
     box-shadow: none;
     background: none;
-}
+  }
 
-.button--danger:disabled,
-.button--danger.is-disabled {
+  .button--danger:disabled,
+    .button--danger.is-disabled {
     color: #737373;
     cursor: default;
     text-decoration: none;
@@ -80,28 +79,126 @@ $button-border-radius: $base-border-radius;
     border: 0;
     box-shadow: none;
     background: none;
-}
+  }
 
-// NEW
-.button__icon,
-.button__text {
+  // NEW
+  .button__icon,
+  .button__text {
     display: inline-block;
+  }
+
+  button {
+    .button__icon,
+    .details__toggle-description .button__icon,
+    .form-item__toggle-description .button__icon {
+      svg {
+        path {
+          fill: $primary-color-dark;
+        }
+      }
+      .button--highlight &,
+      .button:focus &,
+        .button:hover & {
+        svg {
+          path {
+            fill: $primary-color-dark;
+          }
+        }
+      }
+      &:hover, &:active, &:focus {
+        svg {
+          path {
+            fill: $primary-color;
+          }
+        }
+      }
+    }
+    &:hover, &:active, &:focus {
+      .button__icon {
+        svg {
+          path {
+            fill: $primary-color;
+          }
+        }
+      }
+    }
+  }
 }
 
-// NEW
-.button__icon {
-    svg {
-        path {
-            fill: $primary-color;
-        }
-    }
-    .button--highlight &,
-    .button:focus &,
-    .button:hover & {
-        svg {
-            path {
-                fill: $primary-color-dark;
-            }
-        }
-    }
+.js .thunder-seeds {
+  .dropbutton-multiple .dropbutton-widget {
+    border: 1px solid $primary-color-intense;
+    background-color: $gray-lightest;
+    background-image: linear-gradient(0deg, $primary-color-dark 0%, $gray-lightest 100%);
+  }
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:hover,
+    .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:hover,
+    .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:hover,
+    .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:focus,
+    .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:focus,
+    .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:focus {
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $gray-lightest 100%);
+    color: $primary-color;
+  }
+  .dropbutton-single .dropbutton-action a {
+    background-color: $gray-lightest;
+    background-image: linear-gradient(0deg, $primary-color-dark 0%, $gray-lightest 100%);
+    color: $primary-color;
+  }
+  .dropbutton-single .dropbutton-action a:hover,
+    .dropbutton-single .dropbutton-action a:focus {
+    background-color: $gray-lighter;
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $gray-lightest 100%);
+    color: $primary-color;
+  }
+  .dropbutton-single .dropbutton-action a:active {
+    background-color: $gray-lighter;
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $gray-lightest 100%);
+  }
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
+    .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
+    background-color: $gray-lighter;
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $gray-lightest 100%);
+    color: $primary-color;
+  }
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:active {
+    background-color: $gray-lighter;
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $gray-lightest 100%);
+  }
+  .dropbutton-multiple.open .dropbutton-arrow {
+    border-bottom: 0.3333em solid $primary-color;
+  }
+  .form-actions .dropbutton-widget {
+    border-color: $primary-color-dark;
+    background-color: $primary-color;
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $primary-color 100%);
+  }
+  .form-actions .dropbutton-multiple.open .dropbutton-widget {
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $primary-color 100%);
+  }
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:hover,
+    .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:focus {
+    background-color: $primary-color-dark;
+    background-image: linear-gradient(0deg, $primary-color-dark 0%, $primary-color 100%);
+  }
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:active {
+    background-image: linear-gradient(0deg, $primary-color-dark 0%, $primary-color 100%);
+  }
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button,
+  .form-actions .dropbutton .secondary-action {
+    border-color: $primary-color-dark;
+  }
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
+    background-image: linear-gradient(180deg, $primary-color-dark 0%, $primary-color 100%);
+  }
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
+    .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
+    background-color: $primary-color-dark;
+    background-image: linear-gradient(0deg, $primary-color-dark 0%, $primary-color 100%);
+  }
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:active {
+    background-color: $primary-color-dark;
+    background-image: linear-gradient(0deg, $primary-color-dark 0%, $primary-color 100%);
+    border-color: $primary-color;
+  }
 }
