@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - seeds_shell
-id: seeds_shell_local_actions
-theme: seeds_shell
+    - thunder_seeds
+id: thunder_seeds_local_actions
+theme: thunder_seeds
 region: content
 weight: -10
 provider: null

@@ -1,0 +1,22 @@
+.thunder-seeds {
+    .content-form__advanced-toggle,
+    .content-form__advanced {
+        background: $primary-color-darker;
+    }
+    .entity-meta--advanced {
+        details {
+            border-top: 2px solid $primary-color-dark;
+            border-bottom: 2px solid $primary-color-dark;
+            &+details {
+                border-top: 0;
+            }
+        }
+    }
+}
+
+@include for-tablet-portrait-and-up {
+    /* Fixed action bar */
+    .thunder-seeds .content-form__actions {
+        background: $primary-color-darker;
+    }
+}

@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - seeds_shell
-id: seeds_shell_breadcrumbs
-theme: seeds_shell
-region: breadcrumb
-weight: 0
+    - thunder_seeds
+id: thunder_seeds_breadcrumbs
+theme: thunder_seeds
+region: header
+weight: -2
 provider: null
 plugin: system_breadcrumb_block
 settings:

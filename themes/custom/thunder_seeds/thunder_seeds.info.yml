@@ -1,19 +1,17 @@
-name: Seeds Shell
+name: Thunder Seeds
 type: theme
-description: 'Adminimal theme customized to suit RTL interfaces.'
-base theme: adminimal_theme
+description: 'Thunder admin theme customized to suit RTL interfaces.'
+base theme: thunder_admin
 package: 'Seeds'
 core: 8.x
 
 libraries:
-  - seeds_shell/global-styling
+  - thunder_seeds/global-styling
 
 regions:
   header: 'Header'
   pre_content: 'Pre-content'
-  breadcrumb: Breadcrumb
   highlighted: Highlighted
-  help: Help
   content: Content
   page_top: 'Page top'
   page_bottom: 'Page bottom'

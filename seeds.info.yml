@@ -44,7 +44,7 @@ dependencies:
   - seeds_pollination
 
 themes:
-  - adminimal_theme
+  - thunder_admin
   - bootstrap
-  - seeds_shell
+  - thunder_seeds
   - seeds_coat

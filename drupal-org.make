@@ -155,9 +155,8 @@ projects[taxonomy_access_fix][version] = 2.5
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.10
-
-projects[adminimal_theme][type] = theme
-projects[adminimal_theme][version] = 1.3
+projects[thunder_admin][type] = theme
+projects[thunder_admin][version] = 2.0-beta13
 
 ; Libraries
 libraries[slick][download][type] = get

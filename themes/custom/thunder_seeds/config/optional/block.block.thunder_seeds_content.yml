@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - seeds_shell
-id: seeds_shell_content
-theme: seeds_shell
+    - thunder_seeds
+id: thunder_seeds_content
+theme: thunder_seeds
 region: content
 weight: 0
 provider: null

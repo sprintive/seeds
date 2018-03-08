@@ -2,4 +2,4 @@ global-styling:
   version: VERSION
   css:
     base:
-      css/seeds_shell.css: {}
+      css/thunder_seeds.css: {}
