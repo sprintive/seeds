@@ -28,7 +28,7 @@ projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
 
 projects[entity][type] = module
-projects[entity][version] = 1.0-beta1
+projects[entity][version] = 1.0-beta3
 
 projects[entity_browser][type] = module
 projects[entity_browser][version] = 1.4
@@ -88,7 +88,7 @@ projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc3
+projects[webform][version] = 5.0-rc7
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -97,7 +97,7 @@ projects[field_group][type] = module
 projects[field_group][version] = 1.0
 
 projects[photoswipe][type] = module
-projects[photoswipe][version] = 1.0-beta3
+projects[photoswipe][version] = 1.0-beta4
 projects[photoswipe][patch][] = https://www.drupal.org/files/issues/aspect_ratio_incorrect-2695191-7.patch
 
 projects[smtp][type] = module
@@ -122,7 +122,7 @@ projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.2
 
 projects[redirect][type] = module
-projects[redirect][version] = 1.0
+projects[redirect][version] = 1.1
 
 projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.2
@@ -154,9 +154,9 @@ projects[taxonomy_access_fix][version] = 2.5
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.10
+projects[bootstrap][version] = 3.11
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.0-beta13
+projects[thunder_admin][version] = 2.0-beta14
 
 ; Libraries
 libraries[slick][download][type] = get
