@@ -142,9 +142,6 @@ projects[admin_toolbar][version] = 1.23
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.6
 
-projects[admin_links_access_filter][type] = module
-projects[admin_links_access_filter][version] = 1.0-alpha3
-
 projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
 
