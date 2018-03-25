@@ -1,0 +1,102 @@
+.thunder-seeds {
+    .field-multiple-table {
+        &>thead {
+            tr {
+                border-bottom: 1px solid $primary-color;
+            }
+            [dir="rtl"] & {
+                .field-label {
+                    padding-left: 12px;
+                    padding-right: 0;
+                }
+            }
+        }
+        &>tbody>tr {
+            background: $primary-color-lighter;
+            border-bottom: 1px solid $primary-color;
+            &.draggable {
+                &:hover {
+                    background: $primary-color-lighter;
+                }
+                >.field-multiple-drag {
+                    .js[dir="rtl"] & {
+                        .tabledrag-changed {
+                            left: auto;
+                            right: 0;
+                        }
+                        .tabledrag-handle {
+                            .handle {
+                                margin-right: 5px;
+                                margin-left: 0;
+                                @include for-tablet-portrait-and-up {
+                                    margin-right: 2px;
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.drag {
+                    background: $primary-color-lighter-2;
+                }
+            }
+        }
+    }
+    [dir="rtl"] {
+        .paragraph-form-item--has-preview {
+            .paragraph-form-item__actions {
+                float: left;
+                margin-right: 1em;
+                margin-left: 0;
+                .paragraph-form-item__links {
+                    border-left: 0;
+                    border-right: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}
+
+[dir="rtl"] {
+    .paragraph-form-item--has-subform {
+        padding: 20px 020px 20px;
+        .paragraph-form-item__actions {
+            margin-right: 0;
+            margin-left: 24px;
+            .paragraph-form-item__links {
+                .confirm-remove {
+                    margin-right: 0;
+                    margin-left: $base-space;
+                }
+            }
+        }
+        .filter-wrapper {
+            margin-left: 24px;
+            margin-right: 0;
+        }
+        .entities-list {
+            .item-container {
+                margin: $base-space-80pct * 1.5 $base-space-80pct $base-space-80pct;
+            }
+        }
+    }
+    .paragraph-form-item__preview {
+        .text-formatted {
+            ul {
+                padding-right: 1.4em;
+                padding-left: 0;
+            }
+        }
+    }
+    .paragraph-preview__thumbnail {
+        margin-right: 0;
+        margin-left: 1em;
+        .thumbnail-quadruple {
+            background: $gray-lightest;
+        }
+    }
+    .paragraph-form-item .ajax-progress {
+        left: auto;
+        right: 0;
+    }
+}

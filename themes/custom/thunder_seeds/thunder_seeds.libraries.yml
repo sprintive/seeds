@@ -3,3 +3,8 @@ global-styling:
   css:
     base:
       css/thunder_seeds.css: {}
+content-form:
+  css:
+    theme:
+      css/content-form.css: {}
+      

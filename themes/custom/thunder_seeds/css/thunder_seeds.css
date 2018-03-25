@@ -23,6 +23,125 @@
 /* 8px/16px */
 /* Device breakpoints */
 /* toolbar */
+/* line 4, ../scss/_paragraphs-widget.scss */
+.thunder-seeds .field-multiple-table > thead tr {
+  border-bottom: 1px solid #aecf79;
+}
+/* line 8, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .thunder-seeds .field-multiple-table > thead .field-label {
+  padding-left: 12px;
+  padding-right: 0;
+}
+/* line 14, ../scss/_paragraphs-widget.scss */
+.thunder-seeds .field-multiple-table > tbody > tr {
+  background: #e2f3c8;
+  border-bottom: 1px solid #aecf79;
+}
+/* line 18, ../scss/_paragraphs-widget.scss */
+.thunder-seeds .field-multiple-table > tbody > tr.draggable:hover {
+  background: #e2f3c8;
+}
+/* line 23, ../scss/_paragraphs-widget.scss */
+.js[dir="rtl"] .thunder-seeds .field-multiple-table > tbody > tr.draggable > .field-multiple-drag .tabledrag-changed {
+  left: auto;
+  right: 0;
+}
+/* line 28, ../scss/_paragraphs-widget.scss */
+.js[dir="rtl"] .thunder-seeds .field-multiple-table > tbody > tr.draggable > .field-multiple-drag .tabledrag-handle .handle {
+  margin-right: 5px;
+  margin-left: 0;
+}
+@media (min-width: 600px) {
+  /* line 28, ../scss/_paragraphs-widget.scss */
+  .js[dir="rtl"] .thunder-seeds .field-multiple-table > tbody > tr.draggable > .field-multiple-drag .tabledrag-handle .handle {
+    margin-right: 2px;
+    margin-left: 0;
+  }
+}
+/* line 39, ../scss/_paragraphs-widget.scss */
+.thunder-seeds .field-multiple-table > tbody > tr.draggable.drag {
+  background: #f1fbe1;
+}
+/* line 47, ../scss/_paragraphs-widget.scss */
+.thunder-seeds [dir="rtl"] .paragraph-form-item--has-preview .paragraph-form-item__actions {
+  float: left;
+  margin-right: 1em;
+  margin-left: 0;
+}
+/* line 51, ../scss/_paragraphs-widget.scss */
+.thunder-seeds [dir="rtl"] .paragraph-form-item--has-preview .paragraph-form-item__actions .paragraph-form-item__links {
+  border-left: 0;
+  border-right: 1px solid #ccc;
+}
+
+/* line 61, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-form-item--has-subform {
+  padding: 20px 020px 20px;
+}
+/* line 63, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-form-item--has-subform .paragraph-form-item__actions {
+  margin-right: 0;
+  margin-left: 24px;
+}
+/* line 67, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-form-item--has-subform .paragraph-form-item__actions .paragraph-form-item__links .confirm-remove {
+  margin-right: 0;
+  margin-left: 0.625rem;
+}
+/* line 73, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-form-item--has-subform .filter-wrapper {
+  margin-left: 24px;
+  margin-right: 0;
+}
+/* line 78, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-form-item--has-subform .entities-list .item-container {
+  margin: 0.75rem 0.5rem 0.5rem;
+}
+/* line 85, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-form-item__preview .text-formatted ul {
+  padding-right: 1.4em;
+  padding-left: 0;
+}
+/* line 91, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-preview__thumbnail {
+  margin-right: 0;
+  margin-left: 1em;
+}
+/* line 94, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-preview__thumbnail .thumbnail-quadruple {
+  background: #fafafa;
+}
+/* line 98, ../scss/_paragraphs-widget.scss */
+[dir="rtl"] .paragraph-form-item .ajax-progress {
+  left: auto;
+  right: 0;
+}
+
+/* line 5, ../scss/_paragraphs-widget--deprecated.scss */
+[dir="rtl"] .thunder-seeds .field--widget-entity-reference-paragraphs .paragraph-type-add-modal.first-button {
+  margin-right: -29px;
+  margin-left: 0;
+}
+/* line 9, ../scss/_paragraphs-widget--deprecated.scss */
+[dir="rtl"] .thunder-seeds .field--widget-entity-reference-paragraphs .clearfix > .paragraph-type-add-modal.first-button {
+  margin-right: 0;
+}
+/* line 14, ../scss/_paragraphs-widget--deprecated.scss */
+.thunder-seeds .field--widget-entity-reference-paragraphs .field-multiple-table--paragraphs--deprecated > tbody > tr {
+  border-bottom-color: #eaf6fe;
+}
+@media screen and (max-width: 600px) {
+  /* line 14, ../scss/_paragraphs-widget--deprecated.scss */
+  .thunder-seeds .field--widget-entity-reference-paragraphs .field-multiple-table--paragraphs--deprecated > tbody > tr {
+    border-bottom-color: #eaf6fe;
+  }
+}
+/* line 22, ../scss/_paragraphs-widget--deprecated.scss */
+[dir="rtl"] .thunder-seeds .field--widget-entity-reference-paragraphs .field-multiple-table--paragraphs--deprecated .paragraph-form-item--has-subform .paragraph-type-add-modal.first-button {
+  margin-left: 0;
+  margin-right: -19px;
+}
+
 /* line 3, ../scss/component/_breadcrumb.scss */
 .thunder-seeds .breadcrumb a {
   font-size: 12px;
@@ -34,25 +153,32 @@
   background-color: #fafafa;
   background-image: linear-gradient(0deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
+  background-color: #fafafa;
+  border-color: #aecf79;
 }
-/* line 8, ../scss/component/_buttons.scss */
+/* line 10, ../scss/component/_buttons.scss */
+.thunder-seeds .button.button--icon-only {
+  background-image: none;
+  background-color: transparent;
+}
+/* line 14, ../scss/component/_buttons.scss */
 .thunder-seeds .button:focus, .thunder-seeds .button:hover {
   background-color: #dae0e3;
   background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
   text-decoration: none;
 }
-/* line 14, ../scss/component/_buttons.scss */
+/* line 20, ../scss/component/_buttons.scss */
 .thunder-seeds .button:hover {
   outline: none;
 }
-/* line 18, ../scss/component/_buttons.scss */
+/* line 24, ../scss/component/_buttons.scss */
 .thunder-seeds .button--primary {
   border-color: #8ac538;
   background-color: #aecf79;
   background-image: linear-gradient(180deg, #8ac538 0%, #aecf79 100%);
   color: #fff;
 }
-/* line 24, ../scss/component/_buttons.scss */
+/* line 30, ../scss/component/_buttons.scss */
 .thunder-seeds .button--primary:hover,
 .thunder-seeds .button--primary:focus {
   border-color: #aecf79;
@@ -60,7 +186,7 @@
   background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
   color: #fff;
 }
-/* line 31, ../scss/component/_buttons.scss */
+/* line 37, ../scss/component/_buttons.scss */
 .thunder-seeds .button-action:before {
   margin-left: -0.2em;
   /* LTR */
@@ -70,12 +196,12 @@
   line-height: 16px;
   -webkit-font-smoothing: auto;
 }
-/* line 40, ../scss/component/_buttons.scss */
+/* line 46, ../scss/component/_buttons.scss */
 .thunder-seeds .no-touchevents .button--small {
   font-size: 0.75rem;
   min-height: 0px;
 }
-/* line 45, ../scss/component/_buttons.scss */
+/* line 51, ../scss/component/_buttons.scss */
 .thunder-seeds .button--danger {
   display: inline;
   cursor: pointer;
@@ -90,7 +216,7 @@
   font-weight: 400;
   text-decoration: underline;
 }
-/* line 60, ../scss/component/_buttons.scss */
+/* line 66, ../scss/component/_buttons.scss */
 .thunder-seeds .button--danger:hover,
 .thunder-seeds .button--danger:focus,
 .thunder-seeds .button--danger:active {
@@ -102,7 +228,7 @@
   box-shadow: none;
   background: none;
 }
-/* line 72, ../scss/component/_buttons.scss */
+/* line 78, ../scss/component/_buttons.scss */
 .thunder-seeds .button--danger:disabled,
 .thunder-seeds .button--danger.is-disabled {
   color: #737373;
@@ -114,18 +240,18 @@
   box-shadow: none;
   background: none;
 }
-/* line 85, ../scss/component/_buttons.scss */
+/* line 91, ../scss/component/_buttons.scss */
 .thunder-seeds .button__icon,
 .thunder-seeds .button__text {
   display: inline-block;
 }
-/* line 95, ../scss/component/_buttons.scss */
+/* line 101, ../scss/component/_buttons.scss */
 .thunder-seeds button .button__icon svg path,
 .thunder-seeds button .details__toggle-description .button__icon svg path,
 .thunder-seeds button .form-item__toggle-description .button__icon svg path {
   fill: #74a333;
 }
-/* line 103, ../scss/component/_buttons.scss */
+/* line 109, ../scss/component/_buttons.scss */
 .button--highlight .thunder-seeds button .button__icon svg path, .button:focus .thunder-seeds button .button__icon svg path, .button:hover .thunder-seeds button .button__icon svg path, .button--highlight
 .thunder-seeds button .details__toggle-description .button__icon svg path, .button:focus
 .thunder-seeds button .details__toggle-description .button__icon svg path, .button:hover
@@ -135,7 +261,7 @@
 .thunder-seeds button .form-item__toggle-description .button__icon svg path {
   fill: #74a333;
 }
-/* line 110, ../scss/component/_buttons.scss */
+/* line 116, ../scss/component/_buttons.scss */
 .thunder-seeds button .button__icon:hover svg path, .thunder-seeds button .button__icon:active svg path, .thunder-seeds button .button__icon:focus svg path,
 .thunder-seeds button .details__toggle-description .button__icon:hover svg path,
 .thunder-seeds button .details__toggle-description .button__icon:active svg path,
@@ -145,138 +271,284 @@
 .thunder-seeds button .form-item__toggle-description .button__icon:focus svg path {
   fill: #aecf79;
 }
-/* line 119, ../scss/component/_buttons.scss */
+/* line 125, ../scss/component/_buttons.scss */
 .thunder-seeds button:hover .button__icon svg path, .thunder-seeds button:active .button__icon svg path, .thunder-seeds button:focus .button__icon svg path {
   fill: #aecf79;
 }
 
-/* line 129, ../scss/component/_buttons.scss */
+/* line 2, ../scss/component/_links.scss */
+.thunder-seeds a,
+.thunder-seeds .link {
+  color: #74a333;
+}
+
+/* line 1, ../scss/component/_form.scss */
+[dir="rtl"] label {
+  margin: 0 0.3em 0 0;
+}
+
+/* line 6, ../scss/component/_form.scss */
+.thunder-seeds input.form-autocomplete,
+.thunder-seeds input.form-text,
+.thunder-seeds input.form-tel,
+.thunder-seeds input.form-email,
+.thunder-seeds input.form-url,
+.thunder-seeds input.form-search,
+.thunder-seeds input.form-number,
+.thunder-seeds input.form-color,
+.thunder-seeds input.form-file,
+.thunder-seeds input.form-date,
+.thunder-seeds input.form-time,
+.thunder-seeds textarea.form-textarea {
+  border-color: #dae0e3;
+  color: #333;
+}
+
+/* line 4, ../scss/component/_form-element.scss */
+[dir="rtl"].no-touchevents .thunder-seeds .details__toggle-description, [dir="rtl"].no-touchevents
+.thunder-seeds .form-item__toggle-description {
+  left: 0;
+  right: 2px;
+}
+
+/* line 14, ../scss/component/_form-element.scss */
+[dir="rtl"] .thunder-seeds .form-item__field-wrapper .field-suffix {
+  padding-left: 0px;
+  padding-right: 5px;
+}
+/* line 19, ../scss/component/_form-element.scss */
+[dir="rtl"] .thunder-seeds .details__toggle-description {
+  float: left;
+}
+/* line 26, ../scss/component/_form-element.scss */
+[dir="rtl"] .thunder-seeds #edit-title-wrapper .form-item__toggle-description,
+[dir="rtl"] .thunder-seeds #edit-field-seo-title-wrapper .form-item__toggle-description,
+[dir="rtl"] .thunder-seeds #edit-field-tags-wrapper .form-item__toggle-description,
+[dir="rtl"] .thunder-seeds #edit-field-teaser-text-wrapper .form-item__toggle-description {
+  margin-right: 0px;
+  margin-left: -22px;
+}
+
+/* line 3, ../scss/component/_dialog.scss */
+.thunder-seeds .ui-dialog .ui-dialog-titlebar {
+  background: #333;
+}
+/* line 7, ../scss/component/_dialog.scss */
+.thunder-seeds .ui-dialog .ui-dialog-title:before {
+  content: "";
+  background: #8ac538;
+}
+/* line 10, ../scss/component/_dialog.scss */
+[dir="rtl"] .thunder-seeds .ui-dialog .ui-dialog-title:before {
+  margin-left: 5px;
+  margin-right: 0;
+}
+/* line 16, ../scss/component/_dialog.scss */
+.thunder-seeds .ui-dialog .ui-widget-content.ui-dialog-content {
+  background: #fafafa;
+}
+
+/* line 3, ../scss/component/_tabs.scss */
+.thunder-seeds .is-collapse-enabled .tabs.primary.is-open .tabs__tab.is-active {
+  border-bottom-color: #8ac538;
+}
+/* line 7, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs__tab {
+  border: 1px solid #8ac538;
+  background-color: #e2f3c8;
+}
+/* line 10, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs__tab:focus {
+  background-color: #e2f3c8;
+}
+/* line 13, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs__tab:hover {
+  color: #8ac538;
+  background-color: #fafafa;
+}
+/* line 19, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs.primary .tabs__tab.is-active {
+  border-color: #8ac538;
+}
+/* line 23, ../scss/component/_tabs.scss */
+.thunder-seeds .is-horizontal .tabs__tab {
+  border-bottom: 1px solid #8ac538;
+}
+/* line 27, ../scss/component/_tabs.scss */
+[dir="rtl"] .thunder-seeds .is-horizontal .tabs.primary .tabs__tab:last-child {
+  border-bottom-color: #8ac538;
+}
+/* line 31, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs.secondary .tabs__tab.is-active {
+  color: #8ac538;
+}
+/* line 33, ../scss/component/_tabs.scss */
+[dir="rtl"] .thunder-seeds .tabs.secondary .tabs__tab.is-active {
+  border-right: 2px solid #8ac538;
+  border-left: 0;
+}
+/* line 38, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab {
+  border-top: 1px solid #8ac538;
+}
+/* line 40, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab:hover, .thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab:focus {
+  border-bottom-color: #8ac538 !important;
+}
+/* line 45, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs.secondary a {
+  color: #333;
+}
+/* line 48, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs.secondary .is-active a {
+  color: #8ac538;
+}
+/* line 51, ../scss/component/_tabs.scss */
+.thunder-seeds .is-horizontal .tabs.secondary .tabs__tab + .tabs__tab {
+  border-top: 0;
+}
+/* line 54, ../scss/component/_tabs.scss */
+.thunder-seeds .is-horizontal .tabs.secondary .tabs__tab.is-active {
+  border-right-color: transparent;
+  border-bottom-color: #8ac538;
+}
+/* line 59, ../scss/component/_tabs.scss */
+[dir="rtl"] .thunder-seeds .is-horizontal {
+  text-align: right;
+}
+/* line 62, ../scss/component/_tabs.scss */
+.thunder-seeds .is-horizontal.position-container {
+  border-bottom: 1px solid #8ac538;
+}
+
+/* line 2, ../scss/component/_field-ui.scss */
+.thunder-seeds #field-display-overview tr.field-plugin-settings-editing {
+  background-color: #f1fbe1;
+}
+
+/* line 3, ../scss/component/_dropbutton.scss */
+.js .thunder-seeds .dropbutton .dropbutton-action > input,
+.js .thunder-seeds .dropbutton .dropbutton-action > a,
+.js .thunder-seeds .dropbutton .dropbutton-action > button {
+  color: #aecf79;
+}
+/* line 8, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .dropbutton-multiple .dropbutton-widget {
   border: 1px solid #8ac538;
-  background-color: #fafafa;
-  background-image: linear-gradient(0deg, #74a333 0%, #fafafa 100%);
+  background-image: linear-gradient(0deg, #eaf6fe 0%, #fafafa 100%);
 }
-/* line 134, ../scss/component/_buttons.scss */
+/* line 12, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:hover,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:hover,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:hover,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:focus,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:focus,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:focus {
-  background-image: linear-gradient(180deg, #74a333 0%, #fafafa 100%);
+  background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
 }
-/* line 143, ../scss/component/_buttons.scss */
-.js .thunder-seeds .dropbutton-single .dropbutton-action a {
-  background-color: #fafafa;
-  background-image: linear-gradient(0deg, #74a333 0%, #fafafa 100%);
-  color: #aecf79;
-}
-/* line 148, ../scss/component/_buttons.scss */
-.js .thunder-seeds .dropbutton-single .dropbutton-action a:hover,
-.js .thunder-seeds .dropbutton-single .dropbutton-action a:focus {
-  background-color: #dae0e3;
-  background-image: linear-gradient(180deg, #74a333 0%, #fafafa 100%);
-  color: #aecf79;
-}
-/* line 154, ../scss/component/_buttons.scss */
-.js .thunder-seeds .dropbutton-single .dropbutton-action a:active {
-  background-color: #dae0e3;
-  background-image: linear-gradient(180deg, #74a333 0%, #fafafa 100%);
-}
-/* line 158, ../scss/component/_buttons.scss */
+/* line 21, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
-  background-color: #dae0e3;
-  background-image: linear-gradient(180deg, #74a333 0%, #fafafa 100%);
+  background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
 }
-/* line 164, ../scss/component/_buttons.scss */
+/* line 26, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:active {
-  background-color: #dae0e3;
-  background-image: linear-gradient(180deg, #74a333 0%, #fafafa 100%);
+  background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
 }
-/* line 168, ../scss/component/_buttons.scss */
-.js .thunder-seeds .dropbutton-multiple.open .dropbutton-arrow {
-  border-bottom: 0.3333em solid #aecf79;
-}
-/* line 171, ../scss/component/_buttons.scss */
+/* line 29, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-widget {
-  border-color: #74a333;
+  border-color: #8ac538;
   background-color: #aecf79;
-  background-image: linear-gradient(180deg, #74a333 0%, #aecf79 100%);
+  background-image: linear-gradient(180deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 176, ../scss/component/_buttons.scss */
-.js .thunder-seeds .form-actions .dropbutton-multiple.open .dropbutton-widget {
-  background-image: linear-gradient(180deg, #74a333 0%, #aecf79 100%);
-}
-/* line 179, ../scss/component/_buttons.scss */
+/* line 34, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:hover,
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:focus {
-  background-color: #74a333;
-  background-image: linear-gradient(0deg, #74a333 0%, #aecf79 100%);
+  background-color: #8ac538;
+  background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 184, ../scss/component/_buttons.scss */
+/* line 39, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:active {
-  background-image: linear-gradient(0deg, #74a333 0%, #aecf79 100%);
+  background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 187, ../scss/component/_buttons.scss */
-.js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button,
-.js .thunder-seeds .form-actions .dropbutton .secondary-action {
-  border-color: #74a333;
-}
-/* line 191, ../scss/component/_buttons.scss */
+/* line 42, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
-  background-image: linear-gradient(180deg, #74a333 0%, #aecf79 100%);
+  background-image: linear-gradient(180deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 194, ../scss/component/_buttons.scss */
+/* line 45, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
-  background-color: #74a333;
-  background-image: linear-gradient(0deg, #74a333 0%, #aecf79 100%);
+  background-color: #8ac538;
+  background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 199, ../scss/component/_buttons.scss */
+/* line 50, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:active {
-  background-color: #74a333;
-  background-image: linear-gradient(0deg, #74a333 0%, #aecf79 100%);
+  background-color: #8ac538;
+  background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
   border-color: #aecf79;
 }
-
-/* line 1, ../scss/component/_links.scss */
-a, .link {
-  color: #74a333;
+/* line 55, ../scss/component/_dropbutton.scss */
+.js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
+  border-color: #8ac538;
+}
+/* line 59, ../scss/component/_dropbutton.scss */
+.thunder-seeds .dropbutton-single .dropbutton-action a {
+  background-image: linear-gradient(0deg, #eaf6fe 0%, #fafafa 100%);
+  color: #aecf79;
+}
+/* line 63, ../scss/component/_dropbutton.scss */
+.thunder-seeds .dropbutton-single .dropbutton-action a:hover,
+.thunder-seeds .dropbutton-single .dropbutton-action a:focus {
+  background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
+  color: #aecf79;
+}
+/* line 68, ../scss/component/_dropbutton.scss */
+.thunder-seeds .dropbutton-single .dropbutton-action a:active {
+  background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
+}
+/* line 71, ../scss/component/_dropbutton.scss */
+.thunder-seeds .dropbutton-arrow {
+  border-top-color: #aecf79;
+}
+/* line 74, ../scss/component/_dropbutton.scss */
+.thunder-seeds .dropbutton-multiple.open .dropbutton-arrow {
+  border-bottom: 0.3333em solid #aecf79;
+}
+/* line 77, ../scss/component/_dropbutton.scss */
+.thunder-seeds .form-actions .dropbutton-multiple.open .dropbutton-widget {
+  background-image: linear-gradient(180deg, #8ac538 0%, #aecf79 100%);
+}
+/* line 80, ../scss/component/_dropbutton.scss */
+.thunder-seeds .form-actions .dropbutton .secondary-action {
+  border-color: #8ac538;
 }
 
-/* line 4, ../scss/layout/_content-form.scss */
-.thunder-seeds .content-form__advanced-toggle, .thunder-seeds .content-form__advanced-toggle:active, .thunder-seeds .content-form__advanced-toggle:hover, .thunder-seeds .content-form__advanced-toggle:focus,
-.thunder-seeds .content-form__advanced,
-.thunder-seeds .content-form__advanced:active,
-.thunder-seeds .content-form__advanced:hover,
-.thunder-seeds .content-form__advanced:focus {
-  background: #333;
+/* line 1, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .vertical-tabs__menu-item.is-selected a {
+  color: #000;
 }
-/* line 9, ../scss/layout/_content-form.scss */
-.thunder-seeds .content-form__advanced-toggle:active, .thunder-seeds .content-form__advanced-toggle:hover, .thunder-seeds .content-form__advanced-toggle:focus {
-  background: #74a333;
-}
-/* line 12, ../scss/layout/_content-form.scss */
-.thunder-seeds .content-form__advanced-toggle:active svg path, .thunder-seeds .content-form__advanced-toggle:hover svg path, .thunder-seeds .content-form__advanced-toggle:focus svg path {
-  fill: #eaf6fe;
-}
-/* line 19, ../scss/layout/_content-form.scss */
-.thunder-seeds .entity-meta--advanced details {
-  border-top: 2px solid #74a333;
-  border-bottom: 2px solid #74a333;
-}
-/* line 22, ../scss/layout/_content-form.scss */
-.thunder-seeds .entity-meta--advanced details + details {
-  border-top: 0;
+/* line 3, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .vertical-tabs__menu-item.is-selected a:hover, .thunder-seeds .vertical-tabs__menu-item.is-selected a:focus {
+  color: #000;
 }
 
-@media (min-width: 600px) {
-  /* Fixed action bar */
-  /* line 31, ../scss/layout/_content-form.scss */
-  .thunder-seeds .content-form__actions {
-    background: #333;
-  }
+/* line 3, ../scss/component/_entity_browser.tabs.scss */
+.thunder-seeds .eb-tabs ul {
+  margin: 0;
+}
+/* line 6, ../scss/component/_entity_browser.tabs.scss */
+.thunder-seeds .eb-tabs ul li a {
+  color: #8ac538;
+}
+/* line 10, ../scss/component/_entity_browser.tabs.scss */
+[dir="rtl"] .thunder-seeds .eb-tabs ul li:first-child {
+  padding: .75em;
+  padding-right: 0;
+}
+/* line 15, ../scss/component/_entity_browser.tabs.scss */
+.thunder-seeds .eb-tabs ul li.active a {
+  color: #8ac538;
+  border-bottom: 3px solid #8ac538;
 }

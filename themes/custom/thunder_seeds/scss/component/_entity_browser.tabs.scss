@@ -1,0 +1,22 @@
+.thunder-seeds {
+    .eb-tabs {
+        ul {
+            margin: 0;
+            li {
+                a {
+                    color: $primary-color-intense;
+                }
+                [dir="rtl"] & {
+                    &:first-child {
+                        padding: .75em;
+                        padding-right: 0;
+                    }
+                }
+                &.active a {
+                    color: $primary-color-intense;
+                    border-bottom: 3px solid $primary-color-intense;
+                }
+            }
+        }
+    }
+}

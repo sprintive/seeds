@@ -1,0 +1,21 @@
+[dir="rtl"] label {
+    margin: 0 0.3em 0 0;
+}
+
+.thunder-seeds {
+    input.form-autocomplete,
+    input.form-text,
+    input.form-tel,
+    input.form-email,
+    input.form-url,
+    input.form-search,
+    input.form-number,
+    input.form-color,
+    input.form-file,
+    input.form-date,
+    input.form-time,
+    textarea.form-textarea {
+        border-color: $gray-lighter;
+        color: $text-color;
+    }
+}

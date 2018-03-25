@@ -1,0 +1,66 @@
+.thunder-seeds {
+    .is-collapse-enabled {
+        .tabs.primary.is-open .tabs__tab.is-active {
+            border-bottom-color: $primary-color-intense;
+        }
+    }
+    .tabs__tab {
+        border: 1px solid $primary-color-intense;
+        background-color: $primary-color-lighter; // Removed :focus since this hover is same as active.
+        &:focus {
+            background-color: $primary-color-lighter;
+        }
+        &:hover {
+            color: $primary-color-intense;
+            background-color: $gray-lightest;
+        }
+    }
+    .tabs.primary {
+        .tabs__tab.is-active {
+            border-color: $primary-color-intense;
+        }
+    }
+    .is-horizontal .tabs__tab {
+        border-bottom: 1px solid $primary-color-intense;
+    }
+    [dir="rtl"] & {
+        .is-horizontal .tabs.primary .tabs__tab:last-child {
+            border-bottom-color: $primary-color-intense;
+        }
+    }
+    .tabs.secondary .tabs__tab.is-active {
+        color: $primary-color-intense;
+        [dir="rtl"] & {
+            border-right: 2px solid $primary-color-intense;
+            border-left: 0;
+        }
+    }
+    .tabs.secondary .tabs__tab+.tabs__tab {
+        border-top: 1px solid $primary-color-light;
+        &:hover,
+        &:focus {
+            border-bottom-color: $primary-color-intense !important;
+        }
+    }
+    .tabs.secondary a {
+        color: $primary-color-darker;
+    }
+    .tabs.secondary .is-active a {
+        color: $primary-color-intense;
+    }
+    .is-horizontal .tabs.secondary .tabs__tab+.tabs__tab {
+        border-top: 0;
+    }
+    .is-horizontal .tabs.secondary .tabs__tab.is-active {
+        border-right-color: transparent;
+        border-bottom-color: $primary-color-intense;
+    }
+    .is-horizontal {
+        [dir="rtl"] & {
+            text-align: right;
+        }
+        &.position-container {
+            border-bottom: 1px solid $primary-color-intense;
+        }
+    }
+}

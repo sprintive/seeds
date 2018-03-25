@@ -1,0 +1,32 @@
+.thunder-seeds {
+    .details__toggle-description,
+    .form-item__toggle-description {
+        [dir="rtl"].no-touchevents & {
+            left: 0;
+            right: 2px;
+        }
+    }
+}
+
+[dir="rtl"] {
+    .thunder-seeds {
+        .form-item__field-wrapper {
+            .field-suffix {
+                padding-left: 0px;
+                padding-right: 5px;
+            }
+        }
+        .details__toggle-description {
+            float: left;
+        }
+        #edit-title-wrapper,
+        #edit-field-seo-title-wrapper,
+        #edit-field-tags-wrapper,
+        #edit-field-teaser-text-wrapper {
+            .form-item__toggle-description {
+                margin-right: 0px;
+                margin-left: -22px;
+            }
+        }
+    }
+}
