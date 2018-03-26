@@ -1,0 +1,75 @@
+.seeds-toolbar.toolbar-fixed {
+    .toolbar-tray-horizontal {
+        .toolbar-icon-admin-toolbar-tools-help {
+            &:before {
+                background-image: url('../images/seeds.svg');
+                width: 25px;
+            }
+            &:hover {
+                &:before {
+                    background-image: url('../images/seeds-white.svg');
+                }
+            }
+        }
+        a {
+            &:active,
+            &:hover,
+            &:focus {
+                background: #74a333;
+                color: #fff !important;
+            }
+        }
+        ul {
+            box-shadow: none;
+            li {
+                &.menu-item--expanded {
+                    &:hover {
+                        >a {
+                            background: #74a333;
+                        }
+                        .toolbar-icon-admin-toolbar-tools-help {
+                            &:before {
+                                background-image: url('../images/seeds-white.svg');
+                            }
+                        }
+                    }
+                    >.toolbar-box {
+                        >a {
+                            background: #74a333;
+                        }
+                    }
+                    ul {
+                        li {
+                            &.menu-item:first-child {
+                                border-top: 1px solid #74a333;
+                            }
+                            &.menu-item--expanded {
+                                &:after {
+                                    content: url(../images/chevron-right.svg);
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                                &:hover {
+                                    &:after {
+                                        content: url(../images/white-chevron-right.svg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .toolbar-menu {
+            ul,
+            .toolbar-handle {
+              box-shadow: none;
+            }
+        }
+    }
+    .toolbar-tray-vertical {
+        .toolbar-menu ul {
+            box-shadow: none;
+        }
+    }
+}
