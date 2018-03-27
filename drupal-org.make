@@ -42,17 +42,17 @@ projects[embed][version] = 1.0
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-beta1
 
-projects[media_entity][type] = module
-projects[media_entity][version] = 1.7
+projects[media_entity_actions][type] = module
+projects[media_entity_actions][version] = 1.0-alpha2
 
-projects[media_entity_image][type] = module
-projects[media_entity_image][version] = 1.2
+projects[media_entity_generic][type] = module
+projects[media_entity_generic][version] = 1.0-alpha1
 
-projects[media_entity_document][type] = module
-projects[media_entity_document][version] = 1.1
+projects[media_entity_image_exif][type] = module
+projects[media_entity_image_exif][version] = 1.x-dev
 
 projects[video_embed_field][type] = module
-projects[video_embed_field][version] = 1.5
+projects[video_embed_field][version] = 2.0-alpha2
 
 projects[crop][type] = module
 projects[crop][version] = 1.5
