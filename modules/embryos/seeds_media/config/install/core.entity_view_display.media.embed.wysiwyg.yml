@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.wysiwyg
     - field.field.media.embed.field_media_embed
-    - media_entity.bundle.embed
+    - media.type.embed
   module:
     - text
 id: media.embed.wysiwyg

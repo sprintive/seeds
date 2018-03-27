@@ -4,14 +4,14 @@ dependencies:
   config:
     - field.storage.media.field_image
     - image.style.seeds_eb_thumbnail
-    - media_entity.bundle.document
-    - media_entity.bundle.embed
-    - media_entity.bundle.image
-    - media_entity.bundle.video
+    - media.type.document
+    - media.type.embed
+    - media.type.image
+    - media.type.video
   module:
     - entity_browser
     - image
-    - media_entity
+    - media
     - user
 id: media_browser
 label: 'Media Browser'
@@ -384,6 +384,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -702,6 +703,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1184,6 +1186,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1297,6 +1300,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''

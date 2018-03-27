@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.media.embed.field_media_embed
-    - media_entity.bundle.embed
+    - media.type.embed
   module:
     - text
 id: media.embed.default

@@ -2,10 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - media_entity.bundle.video
+    - media.type.video
+  content:
+    - 'file:file:2c4ff89e-93e1-4e53-ab32-3e266e2396f9'
   module:
     - entity_embed
-    - media_entity
+    - media
 label: Videos
 id: videos
 type_id: entity
@@ -18,4 +20,4 @@ type_settings:
   entity_browser: video_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: null
+icon_uuid: 2c4ff89e-93e1-4e53-ab32-3e266e2396f9
