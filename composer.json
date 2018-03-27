@@ -39,6 +39,7 @@
     "drupal/entity_reference_revisions": "1.4",
     "drupal/paragraphs": "1.2",
     "drupal/editor_advanced_link": "1.4",
+    "drupal/contribute": "1.0-beta7",
     "drupal/webform": "5.0-rc7",
     "drupal/rabbit_hole": "1.0-beta4",
     "drupal/field_group": "1.0",

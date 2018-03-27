@@ -90,6 +90,9 @@ projects[paragraphs][patch][] = https://www.drupal.org/files/issues/meta_support
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
+projects[contribute][type] = module
+projects[contribute][version] = 1.0-beta7
+
 projects[webform][type] = module
 projects[webform][version] = 5.0-rc7
 
