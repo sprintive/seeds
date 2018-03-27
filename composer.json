@@ -17,7 +17,6 @@
     "drupal/token": "1.1",
     "drupal/diff": "1.0-rc1",
     "drupal/ds": "3.1",
-    "drupal/page_manager": "4.0-beta2",
     "drupal/panels": "4.2",
     "drupal/bootstrap_layouts": "5.1",
     "drupal/entity": "1.0-beta3",
@@ -59,7 +58,10 @@
     "drupal/bootstrap": "3.10",
     "drupal/thunder_admin": "2.0-beta13",
     "drupal/menu_admin_per_menu": "1.0",
-    "drupal/taxonomy_access_fix": "2.5"
+    "drupal/taxonomy_access_fix": "2.5",
+    "drupal/responsive_preview": "1.0-alpha7",
+    "drupal/views_bulk_operations": "2.1",
+    "drupal/views_bulk_edit": "2.0-rc1"
   },
   "require-dev": {
     "drush/drush": "~8.1",

@@ -33,6 +33,16 @@ dependencies:
   - views_ui
   - automated_cron
   - help
+  - responsive_preview
+  - views_bulk_operations
+  - views_bulk_edit
+  - adminimal_admin_toolbar
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_tools
+  - diff
+  - menu_admin_per_menu
+  - taxonomy_access_fix
+  - toolbar_anti_flicker
 
   # Embryos
   - seeds_editor

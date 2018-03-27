@@ -19,7 +19,9 @@ projects[ds][version] = 3.1
 projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
 
 projects[page_manager][type] = module
-projects[page_manager][version] = 4.0-beta2
+projects[page_manager][download][url] = https://git.drupal.org/project/page_manager.git
+projects[page_manager][download][revision] = 0ad88858840cc99c8adef63e577c0f989bc3ab2c
+projects[page_manager][download][branch] = 8.x-4.x
 
 projects[panels][type] = module
 projects[panels][version] = 4.2
@@ -151,6 +153,14 @@ projects[menu_admin_per_menu][version] = 1.0
 projects[taxonomy_access_fix][type] = module
 projects[taxonomy_access_fix][version] = 2.5
 
+projects[responsive_preview][type] = module
+projects[responsive_preview][version] = 1.0-alpha7
+
+projects[views_bulk_operations][type] = module
+projects[views_bulk_operations][version] = 2.1
+
+projects[views_bulk_edit][type] = module
+projects[views_bulk_edit][version] = 2.0-rc1
 
 ; Themes
 projects[bootstrap][type] = theme
