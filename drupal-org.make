@@ -83,6 +83,7 @@ projects[entity_reference_revisions][version] = 1.4
 
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.2
+projects[paragraphs][patch][] = https://www.drupal.org/files/issues/meta_support-2461695-224.patch
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
@@ -102,6 +103,8 @@ projects[photoswipe][patch][] = https://www.drupal.org/files/issues/aspect_ratio
 
 projects[smtp][type] = module
 projects[smtp][version] = 1.0-beta3
+projects[smtp][patch][] = https://www.drupal.org/files/issues/2865696-fix-schema-2.patch
+
 
 
 ; Performance & SEO Modules
