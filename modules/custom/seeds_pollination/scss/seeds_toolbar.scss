@@ -32,9 +32,7 @@
                                 background-image: url('../images/seeds-white.svg');
                             }
                         }
-                    }
-                    >.toolbar-box {
-                        >a {
+                        >.toolbar-box>a {
                             background: #74a333;
                         }
                     }
@@ -63,13 +61,33 @@
         .toolbar-menu {
             ul,
             .toolbar-handle {
-              box-shadow: none;
+                box-shadow: none;
             }
         }
     }
     .toolbar-tray-vertical {
-        .toolbar-menu ul {
-            box-shadow: none;
+        .toolbar-menu {
+            ul {
+                box-shadow: none;
+            }
+            a {
+                &:hover,
+                &:focus {
+                    background: #74a333;
+                }
+            }
+        }
+    }
+}
+
+[dir="rtl"] {
+    @import url('https://fonts.googleapis.com/css?family=Changa:400,700&subset=arabic');
+    .seeds-toolbar.toolbar-fixed {
+        .toolbar {
+            font-family: 'Changa', sans-serif;
+            .toolbar-bar .user-toolbar-tab {
+                float: left;
+            }
         }
     }
 }
