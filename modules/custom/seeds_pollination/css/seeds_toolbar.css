@@ -1,70 +1,74 @@
-/* line 4, ../scss/seeds_toolbar.scss */
+/* line 5, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal .toolbar-icon-admin-toolbar-tools-help:before {
   background-image: url("../images/seeds.svg");
   width: 25px;
 }
-/* line 9, ../scss/seeds_toolbar.scss */
+/* line 10, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal .toolbar-icon-admin-toolbar-tools-help:hover:before {
   background-image: url("../images/seeds-white.svg");
 }
-/* line 15, ../scss/seeds_toolbar.scss */
+/* line 16, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:active, .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:hover, .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:focus {
   background: #74a333;
   color: #fff !important;
 }
-/* line 22, ../scss/seeds_toolbar.scss */
+/* line 23, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul {
-  box-shadow: none;
+  box-shadow: none !important;
 }
-/* line 27, ../scss/seeds_toolbar.scss */
+/* line 25, ../scss/seeds_toolbar.scss */
+.seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li {
+  border-bottom: none !important;
+}
+/* line 29, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item--expanded:hover > a {
   background: #74a333;
 }
-/* line 31, ../scss/seeds_toolbar.scss */
+/* line 33, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item--expanded:hover .toolbar-icon-admin-toolbar-tools-help:before {
   background-image: url("../images/seeds-white.svg");
 }
-/* line 35, ../scss/seeds_toolbar.scss */
+/* line 37, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item--expanded:hover > .toolbar-box > a {
   background: #74a333;
 }
-/* line 41, ../scss/seeds_toolbar.scss */
+/* line 43, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item:first-child {
   border-top: 1px solid #74a333;
 }
-/* line 45, ../scss/seeds_toolbar.scss */
+/* line 48, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:after {
   content: url(../images/chevron-right.svg);
   width: 15px;
   height: 15px;
 }
-/* line 51, ../scss/seeds_toolbar.scss */
+/* line 54, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item--expanded ul li.menu-item--expanded:hover:after {
   content: url(../images/white-chevron-right.svg);
 }
-/* line 62, ../scss/seeds_toolbar.scss */
+/* line 65, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal .toolbar-menu ul,
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal .toolbar-menu .toolbar-handle {
-  box-shadow: none;
+  box-shadow: none !important;
 }
-/* line 70, ../scss/seeds_toolbar.scss */
+/* line 73, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-vertical .toolbar-menu ul {
   box-shadow: none;
 }
-/* line 74, ../scss/seeds_toolbar.scss */
+/* line 77, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-vertical .toolbar-menu a:hover, .seeds-toolbar.toolbar-fixed .toolbar-tray-vertical .toolbar-menu a:focus {
   background: #74a333;
 }
 
-/* line 83, ../scss/seeds_toolbar.scss */
+/* line 86, ../scss/seeds_toolbar.scss */
 [dir="rtl"] {
   @import url("https://fonts.googleapis.com/css?family=Changa:400,700&subset=arabic");
 }
-/* line 86, ../scss/seeds_toolbar.scss */
+/* line 89, ../scss/seeds_toolbar.scss */
 [dir="rtl"] .seeds-toolbar.toolbar-fixed .toolbar {
   font-family: 'Changa', sans-serif;
 }
-/* line 88, ../scss/seeds_toolbar.scss */
+/* line 91, ../scss/seeds_toolbar.scss */
 [dir="rtl"] .seeds-toolbar.toolbar-fixed .toolbar .toolbar-bar .user-toolbar-tab {
   float: left;
 }

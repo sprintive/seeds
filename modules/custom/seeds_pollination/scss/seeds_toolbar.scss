@@ -1,3 +1,4 @@
+$green: #74a333;
 .seeds-toolbar.toolbar-fixed {
     .toolbar-tray-horizontal {
         .toolbar-icon-admin-toolbar-tools-help {
@@ -15,17 +16,18 @@
             &:active,
             &:hover,
             &:focus {
-                background: #74a333;
+                background: $green;
                 color: #fff !important;
             }
         }
         ul {
-            box-shadow: none;
+            box-shadow: none !important;
             li {
+                border-bottom: none !important;
                 &.menu-item--expanded {
                     &:hover {
                         >a {
-                            background: #74a333;
+                            background: $green;
                         }
                         .toolbar-icon-admin-toolbar-tools-help {
                             &:before {
@@ -33,13 +35,14 @@
                             }
                         }
                         >.toolbar-box>a {
-                            background: #74a333;
+                            background: $green;
                         }
                     }
                     ul {
                         li {
                             &.menu-item:first-child {
-                                border-top: 1px solid #74a333;
+                                border-top: 1px solid $green;
+                                ;
                             }
                             &.menu-item--expanded {
                                 &:after {
@@ -61,7 +64,7 @@
         .toolbar-menu {
             ul,
             .toolbar-handle {
-                box-shadow: none;
+                box-shadow: none !important;
             }
         }
     }
@@ -73,7 +76,7 @@
             a {
                 &:hover,
                 &:focus {
-                    background: #74a333;
+                    background: $green;
                 }
             }
         }
