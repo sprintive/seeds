@@ -94,7 +94,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc7
+projects[webform][version] = 5.0-rc9
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -117,14 +117,13 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha2
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.4
-projects[metatag][patch][] = https://www.drupal.org/files/issues/missing_serialization_dependency-2899699-6.patch
+projects[metatag][version] = 1.5
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.1
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 2.11
+projects[simple_sitemap][version] = 2.12
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.2
@@ -154,16 +153,16 @@ projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
 
 projects[taxonomy_access_fix][type] = module
-projects[taxonomy_access_fix][version] = 2.5
+projects[taxonomy_access_fix][version] = 2.6
 
 projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0-alpha7
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 2.1
+projects[views_bulk_operations][version] = 2.2
 
 projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.0-rc1
+projects[views_bulk_edit][version] = 2.0-rc2
 
 ; Themes
 projects[bootstrap][type] = theme
