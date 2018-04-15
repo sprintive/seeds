@@ -14,7 +14,7 @@ projects[panels][subdir] = utilities
 projects[jquery_update][version] = 3.0-alpha5
 projects[jquery_update][subdir] = utilities
 
-projects[views][version] = 3.18
+projects[views][version] = 3.20
 projects[views][subdir] = utilities
 
 projects[token][version] = 1.7
@@ -26,7 +26,7 @@ projects[libraries][subdir] = utilities
 projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.16
+projects[file_entity][version] = 2.20
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -75,7 +75,7 @@ projects[google_analytics][subdir] = seo
 projects[imagecache_token][version] = 1.0-rc2
 projects[imagecache_token][subdir] = seo
 
-projects[metatag][version] = 1.22
+projects[metatag][version] = 1.25
 projects[metatag][subdir] = seo
 
 projects[pathauto][version] = 1.3
@@ -124,7 +124,7 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-rc2"
+projects[media][version] = "3.0-rc3"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
