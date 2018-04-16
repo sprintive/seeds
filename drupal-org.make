@@ -249,4 +249,4 @@ libraries[fitvids][download][type] = "get"
 libraries[fitvids][download][url] = "https://raw.githubusercontent.com/davatron5000/FitVids.js/master/jquery.fitvids.js"
 
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2.2/ckeditor_4.2.2_standard.tar.gz"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.7.2/ckeditor_4.7.2_standard.tar.gz"
