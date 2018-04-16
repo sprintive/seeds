@@ -166,7 +166,7 @@ projects[hires_images][subdir] = fields
 projects[smart_trim][version] = 1.5
 projects[smart_trim][subdir] = fields
 
-projects[extlink][version] = 1.18
+projects[extlink][version] = 1.19
 projects[extlink][subdir] = fields
 
 ;;;;;;;;;;;;;;;;;;;;;
