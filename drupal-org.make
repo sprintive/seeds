@@ -19,12 +19,10 @@ projects[ds][version] = 3.1
 projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
 
 projects[page_manager][type] = module
-projects[page_manager][download][url] = https://git.drupal.org/project/page_manager.git
-projects[page_manager][download][revision] = 0ad88858840cc99c8adef63e577c0f989bc3ab2c
-projects[page_manager][download][branch] = 8.x-4.x
+projects[page_manager][version] = 4.0-beta3
 
 projects[panels][type] = module
-projects[panels][version] = 4.2
+projects[panels][version] = 4.3
 
 projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
@@ -54,7 +52,7 @@ projects[media_entity_image_exif][type] = module
 projects[media_entity_image_exif][version] = 1.x-dev
 
 projects[video_embed_field][type] = module
-projects[video_embed_field][version] = 2.0-alpha2
+projects[video_embed_field][version] = 2.0
 
 projects[crop][type] = module
 projects[crop][version] = 1.5
@@ -78,7 +76,7 @@ projects[slick_views][type] = module
 projects[slick_views][version] = 1.0-rc2
 
 projects[slick_media][type] = module
-projects[slick_media][version] = 1.0
+projects[slick_media][version] = 2.0-alpha1
 
 projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.4
@@ -162,7 +160,7 @@ projects[views_bulk_operations][type] = module
 projects[views_bulk_operations][version] = 2.2
 
 projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.0-rc2
+projects[views_bulk_edit][version] = 2.1
 
 ; Themes
 projects[bootstrap][type] = theme
