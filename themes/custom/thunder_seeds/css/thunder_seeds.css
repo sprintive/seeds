@@ -23,6 +23,7 @@
 /* 8px/16px */
 /* Device breakpoints */
 /* toolbar */
+@import url("https://fonts.googleapis.com/css?family=Tajawal:400,700&subset=arabic");
 /* line 4, ../scss/_paragraphs-widget.scss */
 .thunder-seeds .field-multiple-table > thead tr {
   border-bottom: 1px solid #aecf79;
@@ -370,53 +371,57 @@
 .thunder-seeds .tabs.primary .tabs__tab.is-active {
   border-color: #8ac538;
 }
-/* line 23, ../scss/component/_tabs.scss */
+/* line 22, ../scss/component/_tabs.scss */
+.thunder-seeds .tabs.primary a {
+  background: none !important;
+}
+/* line 26, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal .tabs__tab {
   border-bottom: 1px solid #8ac538;
 }
-/* line 27, ../scss/component/_tabs.scss */
+/* line 30, ../scss/component/_tabs.scss */
 [dir="rtl"] .thunder-seeds .is-horizontal .tabs.primary .tabs__tab:last-child {
   border-bottom-color: #8ac538;
 }
-/* line 31, ../scss/component/_tabs.scss */
+/* line 34, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .tabs__tab.is-active {
   color: #8ac538;
 }
-/* line 33, ../scss/component/_tabs.scss */
+/* line 36, ../scss/component/_tabs.scss */
 [dir="rtl"] .thunder-seeds .tabs.secondary .tabs__tab.is-active {
   border-right: 2px solid #8ac538;
   border-left: 0;
 }
-/* line 38, ../scss/component/_tabs.scss */
+/* line 41, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab {
   border-top: 1px solid #8ac538;
 }
-/* line 40, ../scss/component/_tabs.scss */
+/* line 43, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab:hover, .thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab:focus {
   border-bottom-color: #8ac538 !important;
 }
-/* line 45, ../scss/component/_tabs.scss */
+/* line 48, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary a {
   color: #333;
 }
-/* line 48, ../scss/component/_tabs.scss */
+/* line 51, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .is-active a {
   color: #8ac538;
 }
-/* line 51, ../scss/component/_tabs.scss */
+/* line 54, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal .tabs.secondary .tabs__tab + .tabs__tab {
   border-top: 0;
 }
-/* line 54, ../scss/component/_tabs.scss */
+/* line 57, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal .tabs.secondary .tabs__tab.is-active {
   border-right-color: transparent;
   border-bottom-color: #8ac538;
 }
-/* line 59, ../scss/component/_tabs.scss */
+/* line 62, ../scss/component/_tabs.scss */
 [dir="rtl"] .thunder-seeds .is-horizontal {
   text-align: right;
 }
-/* line 62, ../scss/component/_tabs.scss */
+/* line 65, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal.position-container {
   border-bottom: 1px solid #8ac538;
 }
@@ -551,4 +556,9 @@
 .thunder-seeds .eb-tabs ul li.active a {
   color: #8ac538;
   border-bottom: 3px solid #8ac538;
+}
+
+/* line 2, ../scss/base/_elements.scss */
+[dir="rtl"] body {
+  font-family: "Tajawal", sans-serif;
 }

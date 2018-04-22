@@ -83,11 +83,11 @@ $green: #74a333;
     }
 }
 
+@import url('https://fonts.googleapis.com/css?family=Tajawal:400,700&subset=arabic');
 [dir="rtl"] {
-    @import url('https://fonts.googleapis.com/css?family=Changa:400,700&subset=arabic');
     .seeds-toolbar.toolbar-fixed {
         .toolbar {
-            font-family: 'Changa', sans-serif;
+            font-family: 'Tajawal', sans-serif;
             .toolbar-bar .user-toolbar-tab {
                 float: left;
             }

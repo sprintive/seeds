@@ -19,6 +19,9 @@
         .tabs__tab.is-active {
             border-color: $primary-color-intense;
         }
+        a {
+            background: none !important;
+        }
     }
     .is-horizontal .tabs__tab {
         border-bottom: 1px solid $primary-color-intense;

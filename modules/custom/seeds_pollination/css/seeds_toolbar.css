@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Tajawal:400,700&subset=arabic");
 /* line 5, ../scss/seeds_toolbar.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal .toolbar-icon-admin-toolbar-tools-help:before {
   background-image: url("../images/seeds.svg");
@@ -60,13 +61,9 @@
   background: #74a333;
 }
 
-/* line 86, ../scss/seeds_toolbar.scss */
-[dir="rtl"] {
-  @import url("https://fonts.googleapis.com/css?family=Changa:400,700&subset=arabic");
-}
 /* line 89, ../scss/seeds_toolbar.scss */
 [dir="rtl"] .seeds-toolbar.toolbar-fixed .toolbar {
-  font-family: 'Changa', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 /* line 91, ../scss/seeds_toolbar.scss */
 [dir="rtl"] .seeds-toolbar.toolbar-fixed .toolbar .toolbar-bar .user-toolbar-tab {
