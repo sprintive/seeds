@@ -92,7 +92,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc9
+projects[webform][version] = 5.0-rc11
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
