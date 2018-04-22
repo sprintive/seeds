@@ -53,7 +53,7 @@ projects[defaultconfig][subdir] = bundling
 ;; UI Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[ds][version] = 2.14
+projects[ds][version] = 2.15
 projects[ds][subdir] = utilities
 
 projects[flexslider][version] = 2.0-rc2
@@ -124,7 +124,7 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-rc3"
+projects[media][version] = "3.0-rc4"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
@@ -166,7 +166,7 @@ projects[hires_images][subdir] = fields
 projects[smart_trim][version] = 1.5
 projects[smart_trim][subdir] = fields
 
-projects[extlink][version] = 1.19
+projects[extlink][version] = 1.20
 projects[extlink][subdir] = fields
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -228,7 +228,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.19
+projects[bootstrap][version] = 3.20
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
