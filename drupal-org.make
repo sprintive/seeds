@@ -118,7 +118,7 @@ projects[metatag][type] = module
 projects[metatag][version] = 1.5
 
 projects[pathauto][type] = module
-projects[pathauto][version] = 1.1
+projects[pathauto][version] = 1.2
 
 projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 2.12
