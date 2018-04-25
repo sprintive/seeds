@@ -192,7 +192,7 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.16
+projects[webform][version] = 4.17
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
