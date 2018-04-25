@@ -124,7 +124,7 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-rc4"
+projects[media][version] = "3.0-rc5"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
