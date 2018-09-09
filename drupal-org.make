@@ -129,6 +129,8 @@ projects[redirect][version] = 1.2
 projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.3
 
+projects[yoast_seo][type] = module
+projects[yoast_seo][version] = 2.0-alpha3
 
 ; Security Modules
 projects[honeypot][type] = module
@@ -158,6 +160,9 @@ projects[views_bulk_operations][version] = 2.4
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.2
+
+projects[masquerade][type] = module
+projects[masquerade][version] = 2.0-beta2
 
 ; Themes
 projects[bootstrap][type] = theme
