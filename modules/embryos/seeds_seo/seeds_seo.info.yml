@@ -12,3 +12,4 @@ dependencies:
   - google_analytics
   - link_attributes
   - fast404
+  - yoast_seo

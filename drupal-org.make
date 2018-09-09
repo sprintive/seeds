@@ -15,8 +15,13 @@ projects[diff][version] = 1.0-rc2
 
 ; Content Management Modules.
 projects[ds][type] = module
-projects[ds][version] = 3.1
+projects[ds][download][url] = https://git.drupal.org/project/ds.git
+projects[ds][download][revision] = 49014b82d28365614eeee7360ead50d7caa26c4a
+projects[ds][download][branch] = 8.x-3.x
+;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
+;; Issue #2966959: Value conflict with Layout Builder.
+projects[ds][patch][] = https://www.drupal.org/files/issues/2018-08-17/2966959-16.patch
 
 projects[page_manager][type] = module
 projects[page_manager][version] = 4.0-beta3
@@ -105,6 +110,12 @@ projects[photoswipe][version] = 1.0-beta8
 
 projects[smtp][type] = module
 projects[smtp][version] = 1.0-beta4
+
+projects[field_formatter][type] = module
+projects[field_formatter][version] = 1.2
+
+projects[layout_builder_restrictions][type] = module
+projects[layout_builder_restrictions][version] = 1.1
 
 
 ; Performance & SEO Modules
