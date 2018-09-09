@@ -16,7 +16,7 @@
     "drupal/ctools": "3.0",
     "drupal/token": "1.4",
     "drupal/diff": "1.0-rc2",
-    "drupal/ds": "1.x-dev#49014b82d28365614eeee7360ead50d7caa26c4a",
+    "drupal/ds": "3.x-dev#49014b82d28365614eeee7360ead50d7caa26c4a",
     "drupal/page_manager": "4.0-beta3",
     "drupal/panels": "4.3",
     "drupal/bootstrap_layouts": "5.1",
