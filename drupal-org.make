@@ -7,10 +7,10 @@ projects[ctools][type] = module
 projects[ctools][version] = 3.0
 
 projects[token][type] = module
-projects[token][version] = 1.1
+projects[token][version] = 1.4
 
 projects[diff][type] = module
-projects[diff][version] = 1.0-rc1
+projects[diff][version] = 1.0-rc2
 
 
 ; Content Management Modules.
@@ -28,10 +28,10 @@ projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
 
 projects[entity][type] = module
-projects[entity][version] = 1.0-beta3
+projects[entity][version] = 1.0-beta4
 
 projects[entity_browser][type] = module
-projects[entity_browser][version] = 1.4
+projects[entity_browser][version] = 2.0
 
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.0-beta2
@@ -40,7 +40,7 @@ projects[embed][type] = module
 projects[embed][version] = 1.0
 
 projects[inline_entity_form][type] = module
-projects[inline_entity_form][version] = 1.0-beta1
+projects[inline_entity_form][version] = 1.0-rc1
 
 projects[media_entity_actions][type] = module
 projects[media_entity_actions][version] = 1.0-alpha2
@@ -76,13 +76,13 @@ projects[slick_views][type] = module
 projects[slick_views][version] = 1.0-rc2
 
 projects[slick_media][type] = module
-projects[slick_media][version] = 2.0-alpha1
+projects[slick_media][version] = 2.0-alpha2
 
 projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = 1.4
+projects[entity_reference_revisions][version] = 1.5
 
 projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.2
+projects[paragraphs][version] = 1.3
 projects[paragraphs][patch][] = https://www.drupal.org/files/issues/meta_support-2461695-224.patch
 
 projects[editor_advanced_link][type] = module
@@ -92,7 +92,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc11
+projects[webform][version] = 5.0-rc21
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -101,48 +101,45 @@ projects[field_group][type] = module
 projects[field_group][version] = 1.0
 
 projects[photoswipe][type] = module
-projects[photoswipe][version] = 1.0-beta4
-projects[photoswipe][patch][] = https://www.drupal.org/files/issues/aspect_ratio_incorrect-2695191-7.patch
+projects[photoswipe][version] = 1.0-beta8
 
 projects[smtp][type] = module
-projects[smtp][version] = 1.0-beta3
-projects[smtp][patch][] = https://www.drupal.org/files/issues/2865696-fix-schema-2.patch
-
+projects[smtp][version] = 1.0-beta4
 
 
 ; Performance & SEO Modules
 projects[fast_404][type] = module
-projects[fast_404][version] = 1.0-alpha2
+projects[fast_404][version] = 1.0-alpha3
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.5
+projects[metatag][version] = 1.7
 
 projects[pathauto][type] = module
-projects[pathauto][version] = 1.2
+projects[pathauto][version] = 1.3
 
 projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 2.12
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = 1.2
+projects[link_attributes][version] = 1.3
 
 projects[redirect][type] = module
-projects[redirect][version] = 1.1
+projects[redirect][version] = 1.2
 
 projects[google_analytics][type] = module
-projects[google_analytics][version] = 2.2
+projects[google_analytics][version] = 2.3
 
 
 ; Security Modules
 projects[honeypot][type] = module
-projects[honeypot][version] = 1.27
+projects[honeypot][version] = 1.29
 
 ; Administration Modules.
 projects[adminimal_admin_toolbar][type] = module
-projects[adminimal_admin_toolbar][version] = 1.5
+projects[adminimal_admin_toolbar][version] = 1.8
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.23
+projects[admin_toolbar][version] = 1.24
 
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.6
@@ -157,16 +154,16 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0-alpha7
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 2.2
+projects[views_bulk_operations][version] = 2.4
 
 projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.1
+projects[views_bulk_edit][version] = 2.2
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.11
+projects[bootstrap][version] = 3.12
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.0-beta14
+projects[thunder_admin][version] = 2.0
 
 ; Libraries
 libraries[slick][download][type] = get
@@ -179,4 +176,8 @@ libraries[easing][destination] = "libraries"
 
 libraries[blazy][download][type] = get
 libraries[blazy][download][url] = "https://github.com/dinbror/blazy/archive/1.8.2.tar.gz"
-libraries[blazy][destination] = "libraries"
+libraries[blazy][destination] = "libraries"a
+
+libraries[photoswipe][download][type] = get
+libraries[photoswipe][download][url] = "https://github.com/dimsemenov/PhotoSwipe/archive/v4.1.1.zip"
+libraries[photoswipe][destination] = "libraries"
