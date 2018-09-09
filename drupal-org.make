@@ -179,5 +179,5 @@ libraries[blazy][download][url] = "https://github.com/dinbror/blazy/archive/1.8.
 libraries[blazy][destination] = "libraries"a
 
 libraries[photoswipe][download][type] = get
-libraries[photoswipe][download][url] = "https://github.com/dimsemenov/PhotoSwipe/archive/v4.1.1.zip"
+libraries[photoswipe][download][url] = "https://github.com/dimsemenov/PhotoSwipe/archive/v4.1.1.tar.gz"
 libraries[photoswipe][destination] = "libraries"
