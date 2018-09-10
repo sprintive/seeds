@@ -117,6 +117,8 @@ projects[field_formatter][version] = 1.2
 projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 1.1
 
+projects[linkit][type] = module
+projects[linkit][version] = 5.0-beta7
 
 ; Performance & SEO Modules
 projects[fast_404][type] = module
