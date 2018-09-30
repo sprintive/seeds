@@ -1,32 +1,89 @@
 .thunder-seeds {
-    .details__toggle-description,
-    .form-item__toggle-description {
-        [dir="rtl"].no-touchevents & {
-            left: 0;
-            right: 2px;
-        }
+  .details__toggle-description,
+  .form-item__toggle-description {
+    [dir="rtl"].no-touchevents & {
+      left: 0;
+      right: 2px;
     }
+  }
+  div.autocomplete-deluxe-container {
+    border-color: #e6e6e6;
+    border-radius: 0px;
+    padding: 0;
+    background: transparent;
+    .form-item {
+      margin: 0;
+      overflow: hidden;
+      background: white;
+      border-radius: 0px;
+      input {
+        margin: 0;
+        background: none;
+      }
+    }
+  }
+  #edit-field-tags-wrapper {
+    input {
+      width: 25px;
+    }
+  }
+  div.autocomplete-deluxe-throbber {
+    margin: 5px;
+  }
+  .ui-autocomplete .ui-menu-item a:hover {
+    color: #aecf79;
+  }
+  .autocomplete-deluxe-item {
+    background: #74a333;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 20px 10px 10px;
+  }
+  .field--type-entity-reference details {
+    background: #fff;
+  }
+  .filter-wrapper {
+    border-color: #e6e6e6;
+  }
+}
+
+.thunder-seeds {
+  #edit-title-wrapper,
+  #edit-field-seo-title-wrapper,
+  #edit-field-tags-wrapper,
+  #edit-field-teaser-text-wrapper {
+    max-width: 100%;
+    input {
+      height: 50px;
+      line-height: 50px;
+      font-size: 28px;
+    }
+  }
 }
 
 [dir="rtl"] {
-    .thunder-seeds {
-        .form-item__field-wrapper {
-            .field-suffix {
-                padding-left: 0px;
-                padding-right: 5px;
-            }
-        }
-        .details__toggle-description {
-            float: left;
-        }
-        #edit-title-wrapper,
-        #edit-field-seo-title-wrapper,
-        #edit-field-tags-wrapper,
-        #edit-field-teaser-text-wrapper {
-            .form-item__toggle-description {
-                margin-right: 0px;
-                margin-left: -22px;
-            }
-        }
+  .thunder-seeds {
+    .form-item__field-wrapper {
+      .field-suffix {
+        padding-left: 0px;
+        padding-right: 5px;
+      }
     }
+    .details__toggle-description {
+      float: left;
+    }
+    #edit-title-wrapper,
+    #edit-field-seo-title-wrapper,
+    #edit-field-tags-wrapper,
+    #edit-field-teaser-text-wrapper {
+      .form-item__toggle-description {
+        margin-right: 0px;
+        margin-left: -22px;
+      }
+    }
+    .autocomplete-deluxe-item {
+      padding: 10px 10px 10px 20px;
+    }
+  }
 }

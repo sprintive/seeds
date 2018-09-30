@@ -1,4 +1,15 @@
 .thunder-seeds {
+    .paragraph-form-item--has-subform .paragraphs-subform>.field--widget-entity-browser-entity-reference details {
+        border: 1px solid #ccc;
+        margin: 13px 0;
+        margin-left: 24px;
+        summary {
+            display: block;
+        }
+        .details-wrapper {
+            padding: 0.5em 1.5em;
+        }
+    }
     .field-multiple-table {
         &>thead {
             tr {

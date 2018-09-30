@@ -1,0 +1,14 @@
+.seeds-toolbar {
+  &.toolbar-fixed {
+    .toolbar-tray-horizontal {
+      ul {
+        li.menu-item {
+          &:focus,
+          &:hover {
+            background: #74a333;
+          }
+        }
+      }
+    }
+  }
+}

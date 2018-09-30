@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Tajawal:400,700&subset=arabic");
 /* Colors */
 /* #1293C9 */
 /* #009FE3 */
@@ -23,96 +24,109 @@
 /* 8px/16px */
 /* Device breakpoints */
 /* toolbar */
-@import url("https://fonts.googleapis.com/css?family=Tajawal:400,700&subset=arabic");
-/* line 4, ../scss/_paragraphs-widget.scss */
+/* line 2, ../scss/_paragraphs-widget.scss */
+.thunder-seeds .paragraph-form-item--has-subform .paragraphs-subform > .field--widget-entity-browser-entity-reference details {
+  border: 1px solid #ccc;
+  margin: 13px 0;
+  margin-left: 24px;
+}
+/* line 6, ../scss/_paragraphs-widget.scss */
+.thunder-seeds .paragraph-form-item--has-subform .paragraphs-subform > .field--widget-entity-browser-entity-reference details summary {
+  display: block;
+}
+/* line 9, ../scss/_paragraphs-widget.scss */
+.thunder-seeds .paragraph-form-item--has-subform .paragraphs-subform > .field--widget-entity-browser-entity-reference details .details-wrapper {
+  padding: 0.5em 1.5em;
+}
+/* line 15, ../scss/_paragraphs-widget.scss */
 .thunder-seeds .field-multiple-table > thead tr {
   border-bottom: 1px solid #aecf79;
 }
-/* line 8, ../scss/_paragraphs-widget.scss */
+/* line 19, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .thunder-seeds .field-multiple-table > thead .field-label {
   padding-left: 12px;
   padding-right: 0;
 }
-/* line 14, ../scss/_paragraphs-widget.scss */
+/* line 25, ../scss/_paragraphs-widget.scss */
 .thunder-seeds .field-multiple-table > tbody > tr {
   background: #e2f3c8;
   border-bottom: 1px solid #aecf79;
 }
-/* line 18, ../scss/_paragraphs-widget.scss */
+/* line 29, ../scss/_paragraphs-widget.scss */
 .thunder-seeds .field-multiple-table > tbody > tr.draggable:hover {
   background: #e2f3c8;
 }
-/* line 23, ../scss/_paragraphs-widget.scss */
+/* line 34, ../scss/_paragraphs-widget.scss */
 .js[dir="rtl"] .thunder-seeds .field-multiple-table > tbody > tr.draggable > .field-multiple-drag .tabledrag-changed {
   left: auto;
   right: 0;
 }
-/* line 28, ../scss/_paragraphs-widget.scss */
+/* line 39, ../scss/_paragraphs-widget.scss */
 .js[dir="rtl"] .thunder-seeds .field-multiple-table > tbody > tr.draggable > .field-multiple-drag .tabledrag-handle .handle {
   margin-right: 5px;
   margin-left: 0;
 }
 @media (min-width: 600px) {
-  /* line 28, ../scss/_paragraphs-widget.scss */
+  /* line 39, ../scss/_paragraphs-widget.scss */
   .js[dir="rtl"] .thunder-seeds .field-multiple-table > tbody > tr.draggable > .field-multiple-drag .tabledrag-handle .handle {
     margin-right: 2px;
     margin-left: 0;
   }
 }
-/* line 39, ../scss/_paragraphs-widget.scss */
+/* line 50, ../scss/_paragraphs-widget.scss */
 .thunder-seeds .field-multiple-table > tbody > tr.draggable.drag {
   background: #f1fbe1;
 }
-/* line 47, ../scss/_paragraphs-widget.scss */
+/* line 58, ../scss/_paragraphs-widget.scss */
 .thunder-seeds [dir="rtl"] .paragraph-form-item--has-preview .paragraph-form-item__actions {
   float: left;
   margin-right: 1em;
   margin-left: 0;
 }
-/* line 51, ../scss/_paragraphs-widget.scss */
+/* line 62, ../scss/_paragraphs-widget.scss */
 .thunder-seeds [dir="rtl"] .paragraph-form-item--has-preview .paragraph-form-item__actions .paragraph-form-item__links {
   border-left: 0;
   border-right: 1px solid #ccc;
 }
 
-/* line 61, ../scss/_paragraphs-widget.scss */
+/* line 72, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-form-item--has-subform {
   padding: 20px 020px 20px;
 }
-/* line 63, ../scss/_paragraphs-widget.scss */
+/* line 74, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-form-item--has-subform .paragraph-form-item__actions {
   margin-right: 0;
   margin-left: 24px;
 }
-/* line 67, ../scss/_paragraphs-widget.scss */
+/* line 78, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-form-item--has-subform .paragraph-form-item__actions .paragraph-form-item__links .confirm-remove {
   margin-right: 0;
   margin-left: 0.625rem;
 }
-/* line 73, ../scss/_paragraphs-widget.scss */
+/* line 84, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-form-item--has-subform .filter-wrapper {
   margin-left: 24px;
   margin-right: 0;
 }
-/* line 78, ../scss/_paragraphs-widget.scss */
+/* line 89, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-form-item--has-subform .entities-list .item-container {
   margin: 0.75rem 0.5rem 0.5rem;
 }
-/* line 85, ../scss/_paragraphs-widget.scss */
+/* line 96, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-form-item__preview .text-formatted ul {
   padding-right: 1.4em;
   padding-left: 0;
 }
-/* line 91, ../scss/_paragraphs-widget.scss */
+/* line 102, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-preview__thumbnail {
   margin-right: 0;
   margin-left: 1em;
 }
-/* line 94, ../scss/_paragraphs-widget.scss */
+/* line 105, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-preview__thumbnail .thumbnail-quadruple {
   background: #fafafa;
 }
-/* line 98, ../scss/_paragraphs-widget.scss */
+/* line 109, ../scss/_paragraphs-widget.scss */
 [dir="rtl"] .paragraph-form-item .ajax-progress {
   left: auto;
   right: 0;
@@ -146,11 +160,12 @@
 /* line 3, ../scss/component/_breadcrumb.scss */
 .thunder-seeds .breadcrumb a {
   font-size: 12px;
+  color: #7f7c7d;
 }
 
 /* line 3, ../scss/component/_buttons.scss */
 .thunder-seeds .button {
-  border-radius: 4px;
+  border-radius: 0;
   background-color: #fafafa;
   background-image: linear-gradient(0deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
@@ -301,8 +316,23 @@
 .thunder-seeds input.form-date,
 .thunder-seeds input.form-time,
 .thunder-seeds textarea.form-textarea {
-  border-color: #dae0e3;
+  border-color: #e6e6e6;
   color: #333;
+  border-radius: 0;
+}
+/* line 22, ../scss/component/_form.scss */
+.thunder-seeds .content-form__main > details,
+.thunder-seeds fieldset:not(.fieldgroup) {
+  background-color: transparent;
+  border-radius: 2px;
+  margin: 1em 0;
+  padding: 30px 18px 18px;
+  min-width: 0;
+  position: relative;
+}
+/* line 31, ../scss/component/_form.scss */
+.thunder-seeds select {
+  border-radius: 0;
 }
 
 /* line 4, ../scss/component/_form-element.scss */
@@ -311,23 +341,91 @@
   left: 0;
   right: 2px;
 }
-
+/* line 9, ../scss/component/_form-element.scss */
+.thunder-seeds div.autocomplete-deluxe-container {
+  border-color: #e6e6e6;
+  border-radius: 0px;
+  padding: 0;
+  background: transparent;
+}
 /* line 14, ../scss/component/_form-element.scss */
+.thunder-seeds div.autocomplete-deluxe-container .form-item {
+  margin: 0;
+  overflow: hidden;
+  background: white;
+  border-radius: 0px;
+}
+/* line 19, ../scss/component/_form-element.scss */
+.thunder-seeds div.autocomplete-deluxe-container .form-item input {
+  margin: 0;
+  background: none;
+}
+/* line 26, ../scss/component/_form-element.scss */
+.thunder-seeds #edit-field-tags-wrapper input {
+  width: 25px;
+}
+/* line 30, ../scss/component/_form-element.scss */
+.thunder-seeds div.autocomplete-deluxe-throbber {
+  margin: 5px;
+}
+/* line 33, ../scss/component/_form-element.scss */
+.thunder-seeds .ui-autocomplete .ui-menu-item a:hover {
+  color: #aecf79;
+}
+/* line 36, ../scss/component/_form-element.scss */
+.thunder-seeds .autocomplete-deluxe-item {
+  background: #74a333;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  padding: 10px 20px 10px 10px;
+}
+/* line 43, ../scss/component/_form-element.scss */
+.thunder-seeds .field--type-entity-reference details {
+  background: #fff;
+}
+/* line 46, ../scss/component/_form-element.scss */
+.thunder-seeds .filter-wrapper {
+  border-color: #e6e6e6;
+}
+
+/* line 52, ../scss/component/_form-element.scss */
+.thunder-seeds #edit-title-wrapper,
+.thunder-seeds #edit-field-seo-title-wrapper,
+.thunder-seeds #edit-field-tags-wrapper,
+.thunder-seeds #edit-field-teaser-text-wrapper {
+  max-width: 100%;
+}
+/* line 57, ../scss/component/_form-element.scss */
+.thunder-seeds #edit-title-wrapper input,
+.thunder-seeds #edit-field-seo-title-wrapper input,
+.thunder-seeds #edit-field-tags-wrapper input,
+.thunder-seeds #edit-field-teaser-text-wrapper input {
+  height: 50px;
+  line-height: 50px;
+  font-size: 28px;
+}
+
+/* line 68, ../scss/component/_form-element.scss */
 [dir="rtl"] .thunder-seeds .form-item__field-wrapper .field-suffix {
   padding-left: 0px;
   padding-right: 5px;
 }
-/* line 19, ../scss/component/_form-element.scss */
+/* line 73, ../scss/component/_form-element.scss */
 [dir="rtl"] .thunder-seeds .details__toggle-description {
   float: left;
 }
-/* line 26, ../scss/component/_form-element.scss */
+/* line 80, ../scss/component/_form-element.scss */
 [dir="rtl"] .thunder-seeds #edit-title-wrapper .form-item__toggle-description,
 [dir="rtl"] .thunder-seeds #edit-field-seo-title-wrapper .form-item__toggle-description,
 [dir="rtl"] .thunder-seeds #edit-field-tags-wrapper .form-item__toggle-description,
 [dir="rtl"] .thunder-seeds #edit-field-teaser-text-wrapper .form-item__toggle-description {
   margin-right: 0px;
   margin-left: -22px;
+}
+/* line 85, ../scss/component/_form-element.scss */
+[dir="rtl"] .thunder-seeds .autocomplete-deluxe-item {
+  padding: 10px 10px 10px 20px;
 }
 
 /* line 3, ../scss/component/_dialog.scss */
@@ -347,6 +445,49 @@
 /* line 16, ../scss/component/_dialog.scss */
 .thunder-seeds .ui-dialog .ui-widget-content.ui-dialog-content {
   background: #fafafa;
+}
+
+/**
+ * @file
+ * Import and override details.css provided by seven/global-styling.
+ */
+/* line 7, ../scss/component/_details.scss */
+.thunder-seeds .seven-details,
+.thunder-seeds .details {
+  background-color: #fff;
+  border-color: #dae0e3;
+  border-radius: 0px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+/* line 15, ../scss/component/_details.scss */
+.thunder-seeds .seven-details.horizontal-tabs-pane,
+.thunder-seeds .details.horizontal-tabs-pane {
+  border: 0;
+}
+/* line 19, ../scss/component/_details.scss */
+.thunder-seeds .seven-details[open] > .seven-details__summary,
+.thunder-seeds .details[open] > .seven-details__summary {
+  color: #333;
+}
+/* line 24, ../scss/component/_details.scss */
+.thunder-seeds .seven-details__summary,
+.thunder-seeds summary {
+  cursor: pointer;
+  text-shadow: 0 1px 0 white;
+  color: #74a333;
+}
+/* line 29, ../scss/component/_details.scss */
+.thunder-seeds .seven-details__summary:hover, .thunder-seeds .seven-details__summary:focus,
+.thunder-seeds summary:hover,
+.thunder-seeds summary:focus {
+  color: #333;
+}
+/* line 34, ../scss/component/_details.scss */
+.thunder-seeds .seven-details__wrapper,
+.thunder-seeds .details-wrapper {
+  padding: 0 1.5em 1em 1.5em;
 }
 
 /* line 3, ../scss/component/_tabs.scss */
@@ -378,50 +519,51 @@
 /* line 26, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal .tabs__tab {
   border-bottom: 1px solid #8ac538;
+  border-radius: 0 !important;
 }
-/* line 30, ../scss/component/_tabs.scss */
+/* line 31, ../scss/component/_tabs.scss */
 [dir="rtl"] .thunder-seeds .is-horizontal .tabs.primary .tabs__tab:last-child {
   border-bottom-color: #8ac538;
 }
-/* line 34, ../scss/component/_tabs.scss */
+/* line 35, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .tabs__tab.is-active {
   color: #8ac538;
 }
-/* line 36, ../scss/component/_tabs.scss */
+/* line 37, ../scss/component/_tabs.scss */
 [dir="rtl"] .thunder-seeds .tabs.secondary .tabs__tab.is-active {
   border-right: 2px solid #8ac538;
   border-left: 0;
 }
-/* line 41, ../scss/component/_tabs.scss */
+/* line 42, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab {
   border-top: 1px solid #8ac538;
 }
-/* line 43, ../scss/component/_tabs.scss */
+/* line 44, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab:hover, .thunder-seeds .tabs.secondary .tabs__tab + .tabs__tab:focus {
   border-bottom-color: #8ac538 !important;
 }
-/* line 48, ../scss/component/_tabs.scss */
+/* line 49, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary a {
   color: #333;
 }
-/* line 51, ../scss/component/_tabs.scss */
+/* line 52, ../scss/component/_tabs.scss */
 .thunder-seeds .tabs.secondary .is-active a {
   color: #8ac538;
 }
-/* line 54, ../scss/component/_tabs.scss */
+/* line 55, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal .tabs.secondary .tabs__tab + .tabs__tab {
   border-top: 0;
 }
-/* line 57, ../scss/component/_tabs.scss */
+/* line 58, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal .tabs.secondary .tabs__tab.is-active {
   border-right-color: transparent;
   border-bottom-color: #8ac538;
 }
-/* line 62, ../scss/component/_tabs.scss */
+/* line 63, ../scss/component/_tabs.scss */
 [dir="rtl"] .thunder-seeds .is-horizontal {
   text-align: right;
 }
-/* line 65, ../scss/component/_tabs.scss */
+/* line 66, ../scss/component/_tabs.scss */
 .thunder-seeds .is-horizontal.position-container {
   border-bottom: 1px solid #8ac538;
 }
@@ -441,8 +583,9 @@
 .js .thunder-seeds .dropbutton-multiple .dropbutton-widget {
   border: 1px solid #8ac538;
   background-image: linear-gradient(0deg, #eaf6fe 0%, #fafafa 100%);
+  border-radius: 0;
 }
-/* line 12, ../scss/component/_dropbutton.scss */
+/* line 13, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:hover,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:hover,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:hover,
@@ -452,91 +595,176 @@
   background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
 }
-/* line 21, ../scss/component/_dropbutton.scss */
+/* line 22, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
   background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
 }
-/* line 26, ../scss/component/_dropbutton.scss */
+/* line 27, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:active {
   background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
 }
-/* line 29, ../scss/component/_dropbutton.scss */
+/* line 30, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-widget {
   border-color: #8ac538;
   background-color: #aecf79;
   background-image: linear-gradient(180deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 34, ../scss/component/_dropbutton.scss */
+/* line 35, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:hover,
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:focus {
   background-color: #8ac538;
   background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 39, ../scss/component/_dropbutton.scss */
+/* line 40, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:active {
   background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 42, ../scss/component/_dropbutton.scss */
+/* line 43, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
   background-image: linear-gradient(180deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 45, ../scss/component/_dropbutton.scss */
+/* line 46, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:hover,
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:focus {
   background-color: #8ac538;
   background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 50, ../scss/component/_dropbutton.scss */
+/* line 51, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button:active {
   background-color: #8ac538;
   background-image: linear-gradient(0deg, #8ac538 0%, #aecf79 100%);
   border-color: #aecf79;
 }
-/* line 55, ../scss/component/_dropbutton.scss */
+/* line 56, ../scss/component/_dropbutton.scss */
 .js .thunder-seeds .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
   border-color: #8ac538;
 }
-/* line 59, ../scss/component/_dropbutton.scss */
+/* line 60, ../scss/component/_dropbutton.scss */
 .thunder-seeds .dropbutton-single .dropbutton-action a {
   background-image: linear-gradient(0deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
 }
-/* line 63, ../scss/component/_dropbutton.scss */
+/* line 64, ../scss/component/_dropbutton.scss */
 .thunder-seeds .dropbutton-single .dropbutton-action a:hover,
 .thunder-seeds .dropbutton-single .dropbutton-action a:focus {
   background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
   color: #aecf79;
 }
-/* line 68, ../scss/component/_dropbutton.scss */
+/* line 69, ../scss/component/_dropbutton.scss */
 .thunder-seeds .dropbutton-single .dropbutton-action a:active {
   background-image: linear-gradient(180deg, #eaf6fe 0%, #fafafa 100%);
 }
-/* line 71, ../scss/component/_dropbutton.scss */
+/* line 72, ../scss/component/_dropbutton.scss */
 .thunder-seeds .dropbutton-arrow {
   border-top-color: #aecf79;
 }
-/* line 74, ../scss/component/_dropbutton.scss */
+/* line 75, ../scss/component/_dropbutton.scss */
 .thunder-seeds .dropbutton-multiple.open .dropbutton-arrow {
   border-bottom: 0.3333em solid #aecf79;
 }
-/* line 77, ../scss/component/_dropbutton.scss */
+/* line 78, ../scss/component/_dropbutton.scss */
 .thunder-seeds .form-actions .dropbutton-multiple.open .dropbutton-widget {
   background-image: linear-gradient(180deg, #8ac538 0%, #aecf79 100%);
 }
-/* line 80, ../scss/component/_dropbutton.scss */
+/* line 81, ../scss/component/_dropbutton.scss */
 .thunder-seeds .form-actions .dropbutton .secondary-action {
   border-color: #8ac538;
 }
 
-/* line 1, ../scss/component/_vertical-tabs.scss */
+/* line 2, ../scss/component/_vertical-tabs.scss */
 .thunder-seeds .vertical-tabs__menu-item.is-selected a {
   color: #000;
 }
-/* line 3, ../scss/component/_vertical-tabs.scss */
+/* line 4, ../scss/component/_vertical-tabs.scss */
 .thunder-seeds .vertical-tabs__menu-item.is-selected a:hover, .thunder-seeds .vertical-tabs__menu-item.is-selected a:focus {
   color: #000;
+}
+/* line 9, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .vertical-tabs {
+  box-sizing: content-box;
+  border-radius: 0;
+}
+/* line 13, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .vertical-tabs__menu-item-title,
+.thunder-seeds .vertical-tabs__menu-item-summary {
+  line-height: normal;
+}
+/* line 17, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .vertical-tabs__menu-item.is-selected {
+  border-right: 1px solid #f5f5f5;
+}
+/* line 20, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds [dir="rtl"] .vertical-tabs__menu-item.is-selected {
+  border-left: 1px solid #f5f5f5;
+}
+/* line 23, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .vertical-tabs__menu-item.is-selected a,
+.thunder-seeds .vertical-tabs__menu-item a:hover,
+.thunder-seeds .vertical-tabs__menu-item a:focus {
+  background: #f5f5f5;
+}
+/* line 28, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds [data-vertical-tabs-panes] {
+  background-color: #f5f5f5;
+}
+/* line 31, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .horizontal-tabs {
+  border-color: #e6e6e6;
+}
+/* line 33, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .horizontal-tabs .horizontal-tabs-list {
+  display: block;
+  overflow: hidden;
+  background-color: #eee;
+  border: 0;
+}
+/* line 39, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .horizontal-tabs .horizontal-tab-button {
+  border-color: #e6e6e6;
+  border: 0;
+}
+/* line 43, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .horizontal-tabs .horizontal-tab-button.selected a {
+  padding: 0.8em 0.6em 0.5em 0.6em;
+}
+/* line 47, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .horizontal-tabs .horizontal-tab-button a {
+  text-transform: uppercase;
+  padding: 0.8em 0.6em 0.5em 0.6em;
+}
+/* line 50, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .horizontal-tabs .horizontal-tab-button a:hover {
+  background: transparent;
+  color: #333;
+}
+/* line 56, ../scss/component/_vertical-tabs.scss */
+.thunder-seeds .horizontal-tabs .horizontal-tab-button.selected a {
+  color: #333;
+}
+
+/* line 2, ../scss/component/_content-header.scss */
+.thunder-seeds .content-header {
+  overflow: hidden;
+  background-color: #fff;
+}
+/* line 5, ../scss/component/_content-header.scss */
+.thunder-seeds .content-header .page-title {
+  font-size: 22px;
+}
+
+/* line 2, ../scss/component/_modules-page.scss */
+.thunder-seeds .system-modules tr.even,
+.thunder-seeds .system-modules tr.odd,
+.thunder-seeds .locale-translation-status-form tr.even,
+.thunder-seeds .locale-translation-status-form tr.odd {
+  background: #eee;
+}
+
+/* line 6, ../scss/component/_menus-and-lists.scss */
+.seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item:focus, .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item:hover {
+  background: #74a333;
 }
 
 /* line 3, ../scss/component/_entity_browser.tabs.scss */
@@ -558,7 +786,8 @@
   border-bottom: 3px solid #8ac538;
 }
 
-/* line 2, ../scss/base/_elements.scss */
-[dir="rtl"] body {
-  font-family: "Tajawal", sans-serif;
+/* line 1, ../scss/base/_elements.scss */
+body.thunder-seeds {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #f5f5f5;
 }

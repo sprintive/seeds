@@ -3,8 +3,15 @@ global-styling:
   css:
     base:
       css/thunder_seeds.css: {}
+  js:
+    js/scripts.js: {}
 content-form:
   css:
     theme:
       css/content-form.css: {}
-      
+entity_browser:
+  css:
+    theme:
+      css/entity-browser.css: {}
+  js:
+    js/entity-browser.js: {}

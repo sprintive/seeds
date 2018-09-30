@@ -32,154 +32,169 @@
   background: #333;
 }
 /* line 17, ../scss/content-form.scss */
+.thunder-seeds .content-form__advanced-toggle .seven-details__summary:hover, .thunder-seeds .content-form__advanced-toggle .seven-details__summary:focus,
+.thunder-seeds .content-form__advanced-toggle summary:hover,
+.thunder-seeds .content-form__advanced-toggle summary:focus,
+.thunder-seeds .content-form__advanced .seven-details__summary:hover,
+.thunder-seeds .content-form__advanced .seven-details__summary:focus,
+.thunder-seeds .content-form__advanced summary:hover,
+.thunder-seeds .content-form__advanced summary:focus {
+  color: #fff;
+}
+/* line 24, ../scss/content-form.scss */
 .thunder-seeds .content-form__advanced-toggle:active, .thunder-seeds .content-form__advanced-toggle:hover, .thunder-seeds .content-form__advanced-toggle:focus {
   background: #74a333;
 }
-/* line 22, ../scss/content-form.scss */
+/* line 29, ../scss/content-form.scss */
 .thunder-seeds .content-form__advanced-toggle:active svg path, .thunder-seeds .content-form__advanced-toggle:hover svg path, .thunder-seeds .content-form__advanced-toggle:focus svg path {
   fill: #eaf6fe;
 }
-/* line 29, ../scss/content-form.scss */
+/* line 36, ../scss/content-form.scss */
 .thunder-seeds .entity-meta--advanced details {
   border-top: 2px solid #74a333;
   border-bottom: 2px solid #74a333;
 }
-/* line 32, ../scss/content-form.scss */
+/* line 39, ../scss/content-form.scss */
 .thunder-seeds .entity-meta--advanced details + details {
   border-top: 0;
 }
 
 @media (min-width: 600px) {
   /* Fixed action bar */
-  /* line 41, ../scss/content-form.scss */
+  /* line 48, ../scss/content-form.scss */
   .thunder-seeds .content-form__actions {
     background: #333;
   }
 }
-/* line 46, ../scss/content-form.scss */
+/* line 53, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds {
   margin-left: 40px;
   margin-right: 0;
   /* A vertical toolbar layout */
 }
-/* line 49, ../scss/content-form.scss */
+/* line 56, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds .content-form__advanced {
   left: auto;
   right: 100%;
   transform: translate3d(0, 0, 0);
 }
-/* line 53, ../scss/content-form.scss */
+/* line 60, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds .content-form__advanced details > .details-wrapper {
   padding: 0.5em 1.5em;
   padding-left: 40px;
 }
-/* line 58, ../scss/content-form.scss */
+/* line 64, ../scss/content-form.scss */
+[dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds .content-form__advanced .entity-meta__header {
+  padding-left: 40px;
+  padding-right: 1.5em;
+}
+/* line 69, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds .content-form__advanced-toggle {
   right: auto;
   left: 0;
 }
-/* line 63, ../scss/content-form.scss */
+/* line 74, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
   margin-right: 0;
   margin-left: 40px;
 }
-/* line 66, ../scss/content-form.scss */
+/* line 77, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds.toolbar-vertical.toolbar-tray-open.toolbar-fixed.advanced-sidebar-tray-toggled {
   margin-left: 40px;
 }
-/* line 72, ../scss/content-form.scss */
+/* line 83, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds .toolbar-tray-horizontal,
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds .content-form__actions {
   margin-left: 40px;
   margin-right: 0;
 }
-/* line 78, ../scss/content-form.scss */
+/* line 89, ../scss/content-form.scss */
 [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds.advanced-sidebar-tray-toggled .content-form__advanced {
   transform: translate3d(100%, 0, 0);
 }
 
 @media (min-width: 900px) {
-  /* line 86, ../scss/content-form.scss */
+  /* line 97, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray .content-form__advanced {
     width: 400px;
   }
-  /* line 89, ../scss/content-form.scss */
+  /* line 100, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray-toggled {
     margin-left: 400px;
   }
-  /* line 91, ../scss/content-form.scss */
+  /* line 102, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray-toggled .toolbar-tray-horizontal {
     margin-left: 400px;
   }
-  /* line 96, ../scss/content-form.scss */
+  /* line 107, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
     margin-right: 0;
     margin-left: 40px;
   }
-  /* line 99, ../scss/content-form.scss */
+  /* line 110, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray.toolbar-vertical.toolbar-tray-open.toolbar-fixed.advanced-sidebar-tray-toggled {
     margin-left: 400px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 108, ../scss/content-form.scss */
+  /* line 119, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray {
     margin-left: 400px;
   }
-  /* line 110, ../scss/content-form.scss */
+  /* line 121, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray .content-form__advanced {
     width: 400px;
     transform: translate3d(100%, 0, 0);
   }
-  /* line 114, ../scss/content-form.scss */
+  /* line 125, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray .toolbar-tray-horizontal {
     margin-left: 400px;
   }
-  /* line 117, ../scss/content-form.scss */
+  /* line 128, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray-toggled {
     margin-left: 40px;
   }
-  /* line 119, ../scss/content-form.scss */
+  /* line 130, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray-toggled .toolbar-tray-horizontal {
     margin-left: 40px;
   }
-  /* line 122, ../scss/content-form.scss */
+  /* line 133, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray-toggled .content-form__advanced {
     width: 40px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 132, ../scss/content-form.scss */
+  /* line 143, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     margin-right: 320px;
     margin-left: 400px;
   }
-  /* line 135, ../scss/content-form.scss */
+  /* line 146, ../scss/content-form.scss */
   [dir="rtl"].js body.thunder-seeds.advanced-sidebar-tray.toolbar-tray-open.toolbar-vertical.toolbar-fixed.advanced-sidebar-tray-toggled {
     margin-left: 40px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 145, ../scss/content-form.scss */
+  /* line 156, ../scss/content-form.scss */
   [dir="rtl"] .toolbar-vertical.toolbar-tray-open .content-form__actions {
     margin-right: 320px !important;
     margin-left: 0;
   }
 
-  /* line 152, ../scss/content-form.scss */
+  /* line 163, ../scss/content-form.scss */
   [dir="rtl"].js body.advanced-sidebar-tray.thunder-seeds.advanced-sidebar-tray-toggled .content-form__actions {
     margin-left: 40px;
     margin-right: 0;
   }
 }
-/* line 162, ../scss/content-form.scss */
+/* line 173, ../scss/content-form.scss */
 [dir="rtl"] .thunder-seeds .content-form__form-section > legend, [dir="rtl"] .thunder-seeds .content-form__form-section > summary {
   padding-right: 0.4em;
   padding-left: 0;
   border-right: 5px solid #8ac538;
   border-left: 0;
 }
-/* line 170, ../scss/content-form.scss */
+/* line 181, ../scss/content-form.scss */
 [dir="rtl"] .thunder-seeds .entity-meta--advanced {
   margin: 0.625rem 0.625rem 1.25rem 0;
 }

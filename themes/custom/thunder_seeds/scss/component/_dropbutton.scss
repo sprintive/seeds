@@ -8,6 +8,7 @@
         .dropbutton-multiple .dropbutton-widget {
             border: 1px solid $primary-color-intense;
             background-image: linear-gradient(0deg, $primary-color-lightest 0%, $gray-lightest 100%);
+            border-radius: 0;
         }
         .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:hover,
         .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:hover,
