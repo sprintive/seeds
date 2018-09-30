@@ -7,7 +7,7 @@ projects[ctools][type] = module
 projects[ctools][version] = 3.0
 
 projects[token][type] = module
-projects[token][version] = 1.4
+projects[token][version] = 1.5
 
 projects[diff][type] = module
 projects[diff][version] = 1.0-rc2
@@ -21,7 +21,7 @@ projects[ds][download][branch] = 8.x-3.x
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
 ;; Issue #2966959: Value conflict with Layout Builder.
-projects[ds][patch][] = https://www.drupal.org/files/issues/2018-08-17/2966959-16.patch
+projects[ds][patch][] = https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch
 
 projects[page_manager][type] = module
 projects[page_manager][version] = 4.0-beta3
@@ -134,7 +134,7 @@ projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 2.12
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = 1.3
+projects[link_attributes][version] = 1.5
 
 projects[redirect][type] = module
 projects[redirect][version] = 1.2
@@ -149,6 +149,11 @@ projects[yoast_seo][version] = 2.0-alpha3
 projects[honeypot][type] = module
 projects[honeypot][version] = 1.29
 
+projects[security_review][type] = module
+projects[security_review][download][url] = https://git.drupal.org/project/security_review.git
+projects[security_review][download][revision] = 9b8a34a21cac85913845df4eebb9a05c69de82d8
+projects[security_review][download][branch] = 8.x-1.x
+
 ; Administration Modules.
 projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.8
@@ -157,7 +162,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.24
 
 projects[toolbar_anti_flicker][type] = module
-projects[toolbar_anti_flicker][version] = 2.6
+projects[toolbar_anti_flicker][version] = 2.7
 
 projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
@@ -179,9 +184,10 @@ projects[masquerade][version] = 2.0-beta2
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.12
+projects[bootstrap][version] = 3.13
+
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.0
+projects[thunder_admin][version] = 2.1
 
 ; Libraries
 libraries[slick][download][type] = get
