@@ -11,9 +11,13 @@
     border-radius: 0px;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin: 0;
+    margin: 0px 0px 10px 0px;
     &.horizontal-tabs-pane {
       border: 0;
+      margin: 0px;
+    }
+    &.vertical-tabs__pane {
+      background: #F5F5F5;
     }
     &[open] {
       >.seven-details__summary {

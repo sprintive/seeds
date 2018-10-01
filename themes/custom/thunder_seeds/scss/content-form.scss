@@ -16,7 +16,7 @@ $advanced-sidebar-toggle-width: 40px;
         summary {
             &:hover,
             &:focus {
-            color: #fff;
+                color: #fff;
             }
         }
     }
@@ -36,6 +36,7 @@ $advanced-sidebar-toggle-width: 40px;
         details {
             border-top: 2px solid $primary-color-dark;
             border-bottom: 2px solid $primary-color-dark;
+            padding: 0px;
             &+details {
                 border-top: 0;
             }
@@ -154,7 +155,7 @@ $advanced-sidebar-toggle-width: 40px;
 @include for-desktop-and-up {
     [dir="rtl"] .toolbar-vertical.toolbar-tray-open {
         .content-form__actions {
-            margin-right: $toolbar-vertical-width!important;
+            margin-right: $toolbar-vertical-width !important;
             margin-left: 0;
         }
     }

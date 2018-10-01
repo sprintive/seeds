@@ -1,4 +1,20 @@
 body.thunder-seeds {
     font-family: 'Tajawal', sans-serif;
     background-color: #f5f5f5;
+    font-size: 15px;
+    .views-table {
+        background: white;
+        a {
+            color: $text-color;
+            &:hover,
+            &:focus {
+                color: $primary-color-dark;
+            }
+        }
+    }
+    .panel {
+        padding: 15px;
+        background: white;
+        border: 1px solid #e6e6e6;
+    }
 }
