@@ -20,13 +20,13 @@ projects[views][subdir] = utilities
 projects[token][version] = 1.7
 projects[token][subdir] = utilities
 
-projects[libraries][version] = 2.3
+projects[libraries][version] = 2.4
 projects[libraries][subdir] = utilities
 
 projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.20
+projects[file_entity][version] = 2.22
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -53,7 +53,7 @@ projects[defaultconfig][subdir] = bundling
 ;; UI Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[ds][version] = 2.15
+projects[ds][version] = 2.16
 projects[ds][subdir] = utilities
 
 projects[flexslider][version] = 2.0-rc2
@@ -69,7 +69,7 @@ projects[fitvids][subdir] = ui
 ;; SEO Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[google_analytics][version] = 2.4
+projects[google_analytics][version] = 2.5
 projects[google_analytics][subdir] = seo
 
 projects[imagecache_token][version] = 1.0-rc2
@@ -87,7 +87,7 @@ projects[redirect][subdir] = seo
 projects[transliteration][version] = 3.2
 projects[transliteration][subdir] = seo
 
-projects[xmlsitemap][version] = 2.3
+projects[xmlsitemap][version] = 2.5
 projects[xmlsitemap][subdir] = seo
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -116,7 +116,7 @@ projects[better_formats][subdir] = administration
 projects[admin_views][version] = 1.6
 projects[admin_views][subdir] = administration
 
-projects[views_bulk_operations][version] = 3.4
+projects[views_bulk_operations][version] = 3.5
 projects[views_bulk_operations][subdir] = administration
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -124,7 +124,7 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-rc5"
+projects[media][version] = "3.0-rc6"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
@@ -148,7 +148,7 @@ projects[wysiwyg_filter][subdir] = editor
 projects[date][version] = 2.10
 projects[date][subdir] = fields
 
-projects[link][version] = 1.4
+projects[link][version] = 1.5
 projects[link][subdir] = fields
 
 projects[field_group][version] = 1.6
@@ -192,7 +192,7 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.17
+projects[webform][version] = 4.18
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
@@ -228,7 +228,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.20
+projects[bootstrap][version] = 3.21
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
