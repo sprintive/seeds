@@ -16,7 +16,7 @@ type_settings:
   bundles:
     - image
   display_plugins:
-    - 'view_mode:media.wysiwyg'
+    - media_image
   entity_browser: image_browser
   entity_browser_settings:
     display_review: false
