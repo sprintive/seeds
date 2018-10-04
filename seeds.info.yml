@@ -5,6 +5,8 @@ version: VERSION
 core: 8.x
 distribution:
   name: Seeds
+  install:
+    theme: thunder_seeds
 
 dependencies:
   - node
