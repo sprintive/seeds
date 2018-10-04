@@ -828,3 +828,12 @@ body.thunder-seeds .panel {
   background: white;
   border: 1px solid #e6e6e6;
 }
+
+/* line 1, ../scss/theme/_install-page.scss */
+.install-page.thunder-seeds {
+  background: url("../images/amman-seeds.jpg") no-repeat center center fixed;
+}
+/* line 5, ../scss/theme/_install-page.scss */
+.install-page.thunder-seeds header .page-title img {
+  width: 180px;
+}
