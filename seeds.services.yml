@@ -1,0 +1,7 @@
+services:
+  seeds.version_command:
+    class: 'Drupal\seeds\Command\VersionCommand'
+    arguments:
+      - '@app.root'
+    tags:
+      - { name: drupal.command }
