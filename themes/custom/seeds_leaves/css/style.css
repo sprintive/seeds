@@ -1,0 +1,120 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+/* line 2, ../scss/_overrides.scss */
+body {
+  margin-top: 0px;
+}
+
+/* line 7, ../scss/_overrides.scss */
+.logo {
+  width: 80px;
+  margin: 15px 0px;
+}
+
+/* line 12, ../scss/_overrides.scss */
+.navbar-toggle {
+  width: 45px;
+  height: 45px;
+  padding: 8px 15px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  border: 0;
+}
+/* line 22, ../scss/_overrides.scss */
+.navbar-toggle .icon-bar {
+  display: block;
+  position: absolute;
+  left: 13px;
+  height: 1px;
+  margin: 0;
+  width: 18px;
+  background: #000;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+/* line 35, ../scss/_overrides.scss */
+.navbar-toggle .icon-bar:nth-child(2) {
+  top: 15px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+/* line 40, ../scss/_overrides.scss */
+.navbar-toggle .icon-bar:nth-child(3) {
+  top: 22px;
+  transition: opacity .25s ease-in-out;
+}
+/* line 44, ../scss/_overrides.scss */
+.navbar-toggle .icon-bar:nth-child(4) {
+  top: 29px;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+/* line 52, ../scss/_overrides.scss */
+.navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+  top: 16px;
+  left: 15px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 58, ../scss/_overrides.scss */
+.navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+/* line 61, ../scss/_overrides.scss */
+.navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(4) {
+  top: 29px;
+  left: 15px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 69, ../scss/_overrides.scss */
+.navbar-toggle:focus, .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+/* line 76, ../scss/_overrides.scss */
+header.navbar-default {
+  border: 0;
+  background-color: #73A331;
+}
+/* line 79, ../scss/_overrides.scss */
+header.navbar-default .navbar-brand {
+  font-size: 30px;
+  line-height: 65px;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  /* line 79, ../scss/_overrides.scss */
+  header.navbar-default .navbar-brand {
+    font-size: 26px;
+    line-height: 50px;
+  }
+}
+
+/* line 92, ../scss/_overrides.scss */
+.footer {
+  background: #474c55;
+  color: #fff;
+}
+
+/* line 97, ../scss/_overrides.scss */
+.user-login {
+  background: #73A331;
+}
