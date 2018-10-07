@@ -1,0 +1,5 @@
+seeds_media.config:
+  title: Seeds Media
+  description: Various settings for Seeds Media module.
+  parent: system.admin_config_content
+  route_name: seeds_media.config

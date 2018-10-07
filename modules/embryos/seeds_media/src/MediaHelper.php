@@ -5,7 +5,7 @@ namespace Drupal\seeds_media;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\file\FileInterface;
 use Drupal\file\Plugin\Field\FieldType\FileItem;
-use Drupal\lightning_media\Exception\IndeterminateBundleException;
+use Drupal\seeds_media\Exception\IndeterminateBundleException;
 use Drupal\media\MediaInterface;
 
 /**
@@ -46,7 +46,7 @@ class MediaHelper {
   public function getFileExtensions($check_access = FALSE, array $bundles = []) {
     $extensions = '';
 
-    // Lightning Media overrides the media_bundle storage handler with a special
+    // Seeds Media overrides the media_bundle storage handler with a special
     // one that adds an optional second parameter to loadMultiple().
     $storage = $this->entityTypeManager
       ->getStorage('media_type');
@@ -82,11 +82,11 @@ class MediaHelper {
    * @return \Drupal\media\MediaTypeInterface
    *   A media bundle that can accept the input value.
    *
-   * @throws \Drupal\lightning_media\Exception\IndeterminateBundleException if
+   * @throws \Drupal\seeds_media\Exception\IndeterminateBundleException if
    * no bundle can be matched to the input value.
    */
   public function getBundleFromInput($value, $check_access = TRUE, array $bundles = []) {
-    // Lightning Media overrides the media_bundle storage handler with a special
+    // Seeds Media overrides the media_bundle storage handler with a special
     // one that adds an optional second parameter to loadMultiple().
     $media_types = $this->entityTypeManager
       ->getStorage('media_type')
