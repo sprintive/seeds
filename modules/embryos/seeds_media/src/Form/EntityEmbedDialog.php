@@ -35,7 +35,7 @@ class EntityEmbedDialog extends BaseEntityEmbedDialog {
     // settings to override that access.
     $element = &$form['attributes']['data-entity-embed-display'];
     if ($element['#access']) {
-      $element['#access'] = $this->config('seeds_media.settings')->get('entity_embed.choose_display');
+      $element['#access'] = \Drupal::currentUser()->hasPermission('choose embed display');
     }
     return $form;
   }

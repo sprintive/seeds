@@ -1,0 +1,7 @@
+seeds_media.config:
+  path: '/admin/config/seeds_media'
+  defaults:
+    _form: '\Drupal\seeds_media\Form\SeedsMediaConfigForm'
+    _title: 'Seeds Media Configuration'
+  requirements:
+    _permission: 'administer site configuration'

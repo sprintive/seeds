@@ -37,10 +37,19 @@ class MediaImage extends ImageFieldFormatter {
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $form = parent::buildConfigurationForm($form, $form_state);
-
+    $seeds_media_settings = \Drupal::config('seeds_media.settings');
+    $allowed_images_styles = $seeds_media_settings->get('embed.allowed_image_styles');
     // Don't allow linking directly to the content.
     unset($form['image_link']['#options']['content']);
 
+    if(sizeof($allowed_images_styles) && isset($form['image_style'])){
+      $options = $form['image_style']['#options'];
+      foreach ($options as $machine_name => $val) {
+        if(!$allowed_images_styles[$machine_name]){
+          unset($form['image_style']['#options'][$machine_name]);
+        }
+      }
+    }
     return $form;
   }
 
