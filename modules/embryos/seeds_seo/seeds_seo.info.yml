@@ -13,3 +13,4 @@ dependencies:
   - link_attributes
   - fast404
   - yoast_seo
+package: 'Seeds'

@@ -7,4 +7,4 @@ dependencies:
   - entity_embed
   - filter
 core: 8.x
-project: seeds
+package: 'Seeds'

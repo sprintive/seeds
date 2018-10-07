@@ -4,7 +4,7 @@ base theme: bootstrap
 
 name: 'Seeds Leaves'
 description: 'Base theme for Seeds Distro, using the Less bootstrap starter.'
-package: 'Bootstrap'
+package: 'Seeds'
 
 regions:
   navigation: 'Navigation'
