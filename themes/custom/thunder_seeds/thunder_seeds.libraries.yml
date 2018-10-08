@@ -13,5 +13,3 @@ entity_browser:
   css:
     theme:
       css/entity-browser.css: {}
-  js:
-    js/entity-browser.js: {}

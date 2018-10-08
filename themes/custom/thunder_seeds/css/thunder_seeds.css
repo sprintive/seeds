@@ -780,6 +780,31 @@
   padding: 0px 15px;
 }
 
+@media screen and (min-width: 45em) {
+  /* 720px */
+  /* line 4, ../scss/component/_views-ui.scss */
+  .thunder-seeds .views-display-columns > * {
+    margin-left: 2%;
+  }
+  /* line 6, ../scss/component/_views-ui.scss */
+  .thunder-seeds .views-display-columns > *:first-child {
+    margin-left: 0;
+  }
+  /* line 11, ../scss/component/_views-ui.scss */
+  .thunder-seeds .view-preview-form .arguments-preview {
+    min-height: 35px;
+  }
+
+  /* line 16, ../scss/component/_views-ui.scss */
+  [dir="rtl"] .thunder-seeds .views-display-columns > * {
+    margin-right: 2%;
+    margin-left: 0;
+  }
+  /* line 19, ../scss/component/_views-ui.scss */
+  [dir="rtl"] .thunder-seeds .views-display-columns > *:first-child {
+    margin-right: 0;
+  }
+}
 /* line 6, ../scss/component/_menus-and-lists.scss */
 .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item:focus, .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal ul li.menu-item:hover {
   background: #74a333;

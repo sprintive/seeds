@@ -12,4 +12,4 @@
 # @see \Drupal\bootstrap\ThemeSettings
 
 # Disable the CDN provider so compiled source files can be used.
-cdn_provider: ''
+cdn_provider: jsdelivr

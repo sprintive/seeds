@@ -114,7 +114,113 @@ header.navbar-default .navbar-brand {
   color: #fff;
 }
 
-/* line 97, ../scss/_overrides.scss */
-.user-login {
+/* line 98, ../scss/_overrides.scss */
+#login-box {
+  max-width: 400px;
   background: #73A331;
+  margin: 50px auto 0px auto;
+  padding: 20px;
+  color: #fff;
+}
+/* line 104, ../scss/_overrides.scss */
+#login-box #login-box-top {
+  text-align: center;
+}
+/* line 106, ../scss/_overrides.scss */
+#login-box #login-box-top #login-logo {
+  width: 70px;
+  display: inline-block;
+  margin: 0;
+}
+/* line 112, ../scss/_overrides.scss */
+#login-box form {
+  margin: 20px 0;
+}
+/* line 114, ../scss/_overrides.scss */
+#login-box form input {
+  border-radius: 0;
+}
+/* line 117, ../scss/_overrides.scss */
+#login-box form .button {
+  background: #ebc147;
+  border-color: #ebc147;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  margin-top: 25px;
+}
+/* line 126, ../scss/_overrides.scss */
+#login-box #login-box-bottom {
+  text-align: center;
+}
+/* line 128, ../scss/_overrides.scss */
+#login-box #login-box-bottom a {
+  color: #fff;
+}
+
+/* line 135, ../scss/_overrides.scss */
+.modal-dialog {
+  margin: 0;
+  width: auto;
+}
+
+/* line 140, ../scss/_overrides.scss */
+.ui-dialog-off-canvas {
+  overflow: scroll;
+}
+
+/* line 144, ../scss/_overrides.scss */
+#drupal-off-canvas select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 149, ../scss/_overrides.scss */
+.modal-open {
+  overflow: scroll;
+}
+
+/* line 153, ../scss/_overrides.scss */
+#drupal-off-canvas {
+  top: 0 !important;
+}
+/* line 155, ../scss/_overrides.scss */
+#drupal-off-canvas a {
+  color: #ccc;
+}
+/* line 158, ../scss/_overrides.scss */
+#drupal-off-canvas .glyphicon {
+  display: none;
+}
+/* line 161, ../scss/_overrides.scss */
+#drupal-off-canvas *,
+#drupal-off-canvas *:not(div) {
+  background: #333333;
+}
+/* line 165, ../scss/_overrides.scss */
+#drupal-off-canvas .ui-resizable-s {
+  display: none !important;
+}
+/* line 168, ../scss/_overrides.scss */
+#drupal-off-canvas button.button {
+  position: relative;
+  height: auto;
+  padding: 4px 20px;
+  border: 0;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  background: #73A331;
+  color: #fff;
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+}
+/* line 184, ../scss/_overrides.scss */
+#drupal-off-canvas button.button:hover, #drupal-off-canvas button.button:focus {
+  background: #ebc147;
+  color: #fff;
 }
