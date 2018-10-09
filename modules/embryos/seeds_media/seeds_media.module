@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_form_alter().
@@ -13,5 +15,37 @@ use Drupal\Core\Form\FormStateInterface;
 function seeds_media_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
   if (strpos($form_id, 'entity_browser') === 0) {
     $form['#attached']['library'][] = 'seeds_media/media_pollination';
+  }
+}
+
+/**
+ * Prepares variables for entity embed container templates.
+ *
+ * Default template: entity-embed-container.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - element: An associative array containing the properties of the element.
+ *     Properties used: #attributes, #children.
+ */
+function seeds_media_preprocess_entity_embed_container(&$variables) {
+  if (!empty($variables['element']['#context']['data-entity-embed-display-settings']['link_url'])) {
+    $link = UrlHelper::filterBadProtocol($variables['element']['#context']['data-entity-embed-display-settings']['link_url']);
+    if (!UrlHelper::isExternal($link)) {
+      $link = 'internal:/' . ltrim($link, '/');
+    }
+    $link = Url::fromUri($link);
+    $attributes = [];
+    if (!empty($variables['element']['#context']['data-entity-embed-display-settings']['link_url_target']) && $variables['element']['#context']['data-entity-embed-display-settings']['link_url_target'] == 1) {
+      $attributes = ['attributes' => ['target' => '_blank']];
+    }
+    $variables['children'] = [
+      [
+        '#type' => 'link',
+        '#title' => $variables['children'],
+        '#options' => $attributes,
+        '#url' => $link,
+      ]
+    ];
   }
 }
