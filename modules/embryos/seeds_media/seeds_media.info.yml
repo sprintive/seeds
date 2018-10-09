@@ -1,6 +1,7 @@
 name: 'Seeds Media'
 description: 'Build media bundles and entity browsers with all needed embed entities for CKeditor.'
 type: module
+core: 8.x
 dependencies:
   - allowed_formats
   - embed
@@ -16,5 +17,4 @@ dependencies:
   - views
   - media_entity_generic
   - video_embed_media
-core: 8.x
 package: 'Seeds'

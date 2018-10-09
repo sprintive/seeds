@@ -182,9 +182,6 @@ projects[views_bulk_edit][version] = 2.2
 projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
-projects[betterlogin][type] = module
-projects[betterlogin][version] = 1.2
-
 projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-alpha7
 

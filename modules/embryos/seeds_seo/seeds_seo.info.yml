@@ -1,7 +1,7 @@
 name: 'Seeds SEO'
+description: Starter Module to enable all SEO modules
 type: module
 core: 8.x
-description: Starter Module to enable all SEO modules
 dependencies:
   - metatag
   - metatag_facebook

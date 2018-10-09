@@ -1,10 +1,10 @@
 name: 'Seeds Editor'
-type: module
 description: Neat editors focused on normal users UX.
+type: module
+core: 8.x
 dependencies:
   - ckeditor
   - editor
   - entity_embed
   - filter
-core: 8.x
 package: 'Seeds'
