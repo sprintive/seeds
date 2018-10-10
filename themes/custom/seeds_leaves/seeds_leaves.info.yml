@@ -3,7 +3,7 @@ type: theme
 base theme: bootstrap
 
 name: 'Seeds Leaves'
-description: 'Base theme for Seeds Distro, using the SCSS bootstrap starter.'
+description: 'Base theme for Seeds Distro, using the SCSS bootstrap starter, used to kickoff the project only, Developers should copy the starterkit and feel free to change anything without commitments.'
 package: 'Seeds'
 
 regions:

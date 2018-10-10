@@ -1,0 +1,32 @@
+// Pagination block
+.pagination {
+    li {
+        >a,
+        >span {
+            color: $seeds-green;
+            &:hover,
+            &:focus {
+                color: $seeds-green;
+            }
+        }
+        &:first-child,
+        &:last-child {
+            >a,
+            >span {
+                border-radius: 0px;
+            }
+        }
+        &.active {
+            span,
+            a {
+                background-color: $seeds-green;
+                border-color: $seeds-green;
+                &:hover,
+                &:focus {
+                    background-color: $seeds-green;
+                    border-color: $seeds-green;
+                }
+            }
+        }
+    }
+}

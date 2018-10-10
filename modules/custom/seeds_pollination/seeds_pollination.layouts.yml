@@ -1,5 +1,5 @@
 seeds_lighthouse:
-  label: Seeds Lighthouse 
+  label: Seeds Lighthouse
   category: Seeds
   template: templates/seeds-lighthouse
   class: '\Drupal\seeds_pollination\Plugin\Layout\SeedsLighthouse'
@@ -45,7 +45,7 @@ seeds_lighthouse:
     row_11_col_2:
       label: Row eleven - Column two (4)
     row_11_content:
-      label: Row eleven - Content (8) 
+      label: Row eleven - Content (8)
     row_12:
       label: Row twelve (12)
     row_13_half_1:
@@ -66,14 +66,3 @@ seeds_lighthouse:
       label: Row nineteen (12)
     row_20:
       label: Row twenty (12)
-
-seeds_card:
-  label: Seeds Card
-  category: Seeds
-  class: '\Drupal\ds\Plugin\DsLayout'
-  template: templates/seeds-card
-  regions:
-    image:
-      label: Image
-    title:
-      label: Title Wrapper
