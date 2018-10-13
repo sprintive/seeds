@@ -9,9 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "font-awesome-sass": "^4.7.0",
     "bootstrap-rtl-sass": "git+https://github.com/sprintive/bootstrap-rtl-sass.git",
+    "bootstrap-sass": "^3.3.7",
+    "del": "^3.0.0",
+    "font-awesome-sass": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-livereload": "^4.0.0",

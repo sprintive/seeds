@@ -19,19 +19,14 @@ preprocessor.
   extension, not files ending in `.css`.
 
 ## Additional Setup {#setup}
-Download and extract the **latest** 3.x.x version of
-[Bootstrap Framework Source Files] into the root of your new sub-theme. After
-it has been extracted, the directory should be renamed (if needed) so it reads
-`./THEMENAME/bootstrap`.
+Install the latest npm **[npm](https://www.npmjs.com/get-npm)**
 
-If for whatever reason you have an additional `bootstrap` directory wrapping the
-first `bootstrap` directory (e.g. `./THEMENAME/bootstrap/bootstrap`), remove the
-wrapping `bootstrap` directory. You will only ever need to touch these files if
-or when you upgrade your version of the [Bootstrap Framework].
+In your theme folder run (npm install), this will install all the required packages and libraries for this startedkit (e.g. bootstrap, fontawesome ..)
 
-{.alert.alert-warning} **WARNING:** Do not modify the files inside of
-`./THEMENAME/bootstrap` directly. Doing so may cause issues when upgrading the
-[Bootstrap Framework] in the future.
+All scss and js files are located in (`./THEMENAME/src`), to compile these files please run `gulp build` from your theme directory.
+
+for development please run `gulp watch`, which will keep buidling the scss and js files as you change them, also this command will run the livereload to update the changes live on the browser. To use the livereload please install google chrome's livereload plugin **[livereload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)**
+
 
 ## Overrides {#overrides}
 The `./THEMENAME/scss/_default-variables.scss` file is generally where you will
