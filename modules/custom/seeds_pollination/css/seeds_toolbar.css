@@ -9,7 +9,9 @@
   background-image: url("../images/seeds-white.svg");
 }
 /* line 16, ../scss/seeds_toolbar.scss */
-.seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:active, .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:hover, .seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:focus {
+.seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:active,
+.seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:hover,
+.seeds-toolbar.toolbar-fixed .toolbar-tray-horizontal a:focus {
   background: #74a333;
   color: #fff !important;
 }
@@ -57,7 +59,8 @@
   box-shadow: none;
 }
 /* line 77, ../scss/seeds_toolbar.scss */
-.seeds-toolbar.toolbar-fixed .toolbar-tray-vertical .toolbar-menu a:hover, .seeds-toolbar.toolbar-fixed .toolbar-tray-vertical .toolbar-menu a:focus {
+.seeds-toolbar.toolbar-fixed .toolbar-tray-vertical .toolbar-menu a:hover,
+.seeds-toolbar.toolbar-fixed .toolbar-tray-vertical .toolbar-menu a:focus {
   background: #74a333;
 }
 

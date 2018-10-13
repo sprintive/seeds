@@ -26,7 +26,7 @@
 .entity-browser-form .button:hover,
 .entity-browser-form .button:focus {
   background: #73a333;
-  color: #FFF;
+  color: #fff;
 }
 
 /* line 28, ../scss/entity-browser.scss */
@@ -34,7 +34,7 @@
   background: #73a333;
   border-color: #5c8e23;
   border-radius: 0;
-  color: #FFF;
+  color: #fff;
 }
 
 /* line 35, ../scss/entity-browser.scss */

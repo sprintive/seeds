@@ -4,7 +4,7 @@
  * @file
  * Functions to support theming in the Seeds Suite.
  */
-use Drupal\Core\Form;
+
 use Drupal\Core\Form\FormStateInterface;
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -15,6 +15,9 @@ function thunder_seeds_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = 'thunder-seeds';
 }
 
+/**
+ *
+ */
 function thunder_seeds_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   if (strpos($form_id, 'entity_browser') === 0) {
     $form['#attached']['library'][] = 'thunder_seeds/entity_browser';

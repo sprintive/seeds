@@ -24,7 +24,10 @@
 /* Device breakpoints */
 /* toolbar */
 /* line 9, ../scss/content-form.scss */
-.thunder-seeds .content-form__advanced-toggle, .thunder-seeds .content-form__advanced-toggle:active, .thunder-seeds .content-form__advanced-toggle:hover, .thunder-seeds .content-form__advanced-toggle:focus,
+.thunder-seeds .content-form__advanced-toggle,
+.thunder-seeds .content-form__advanced-toggle:active,
+.thunder-seeds .content-form__advanced-toggle:hover,
+.thunder-seeds .content-form__advanced-toggle:focus,
 .thunder-seeds .content-form__advanced,
 .thunder-seeds .content-form__advanced:active,
 .thunder-seeds .content-form__advanced:hover,
@@ -32,7 +35,8 @@
   background: #333;
 }
 /* line 17, ../scss/content-form.scss */
-.thunder-seeds .content-form__advanced-toggle .seven-details__summary:hover, .thunder-seeds .content-form__advanced-toggle .seven-details__summary:focus,
+.thunder-seeds .content-form__advanced-toggle .seven-details__summary:hover,
+.thunder-seeds .content-form__advanced-toggle .seven-details__summary:focus,
 .thunder-seeds .content-form__advanced-toggle summary:hover,
 .thunder-seeds .content-form__advanced-toggle summary:focus,
 .thunder-seeds .content-form__advanced .seven-details__summary:hover,
@@ -42,11 +46,15 @@
   color: #fff;
 }
 /* line 24, ../scss/content-form.scss */
-.thunder-seeds .content-form__advanced-toggle:active, .thunder-seeds .content-form__advanced-toggle:hover, .thunder-seeds .content-form__advanced-toggle:focus {
+.thunder-seeds .content-form__advanced-toggle:active,
+.thunder-seeds .content-form__advanced-toggle:hover,
+.thunder-seeds .content-form__advanced-toggle:focus {
   background: #74a333;
 }
 /* line 29, ../scss/content-form.scss */
-.thunder-seeds .content-form__advanced-toggle:active svg path, .thunder-seeds .content-form__advanced-toggle:hover svg path, .thunder-seeds .content-form__advanced-toggle:focus svg path {
+.thunder-seeds .content-form__advanced-toggle:active svg path,
+.thunder-seeds .content-form__advanced-toggle:hover svg path,
+.thunder-seeds .content-form__advanced-toggle:focus svg path {
   fill: #eaf6fe;
 }
 /* line 36, ../scss/content-form.scss */
@@ -189,7 +197,8 @@
   }
 }
 /* line 174, ../scss/content-form.scss */
-[dir="rtl"] .thunder-seeds .content-form__form-section > legend, [dir="rtl"] .thunder-seeds .content-form__form-section > summary {
+[dir="rtl"] .thunder-seeds .content-form__form-section > legend,
+[dir="rtl"] .thunder-seeds .content-form__form-section > summary {
   padding-right: 0.4em;
   padding-left: 0;
   border-right: 5px solid #8ac538;

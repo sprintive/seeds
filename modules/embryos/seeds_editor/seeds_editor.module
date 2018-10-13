@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @file
+ */
+
 use Drupal\editor\Entity\Editor;
 
 /**
@@ -13,11 +17,11 @@ function seeds_editor_ckeditor_css_alter(array &$css, Editor $editor) {
   }
   $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
   // Uncomment this line and replace THEMENAME with your frontend theme name.
-  // $css[] = drupal_get_path('theme', 'THEMENAME') . '/css/style.css';
+  // $css[] = drupal_get_path('theme', 'THEMENAME') . '/css/style.css';.
   switch ($language) {
     case 'ar':
       // Uncomment this line and replace THEMENAME with your frontend theme name.
-      // $css[] = drupal_get_path('theme', 'THEMENAME') . '/css/style-rtl.css';
+      // $css[] = drupal_get_path('theme', 'THEMENAME') . '/css/style-rtl.css';.
       break;
 
     default:

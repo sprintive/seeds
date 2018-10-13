@@ -45,7 +45,7 @@ function seeds_media_preprocess_entity_embed_container(&$variables) {
         '#title' => $variables['children'],
         '#options' => $attributes,
         '#url' => $link,
-      ]
+      ],
     ];
   }
 }

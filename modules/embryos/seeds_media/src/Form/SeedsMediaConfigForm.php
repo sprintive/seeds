@@ -1,14 +1,14 @@
 <?php
-/**
- * @file
- * Contains \Drupal\seeds_media\Form\SeedsMediaConfigForm.
- */
 
 namespace Drupal\seeds_media\Form;
+
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\image\Entity\ImageStyle;
 
+/**
+ *
+ */
 class SeedsMediaConfigForm extends ConfigFormBase {
 
   /**
@@ -25,18 +25,18 @@ class SeedsMediaConfigForm extends ConfigFormBase {
     $form = parent::buildForm($form, $form_state);
     $config = $this->config('seeds_media.settings');
     $styles = ImageStyle::loadMultiple();
-    $styles_titles = array();
+    $styles_titles = [];
 
     foreach ($styles as $machine_name => $val) {
       $styles_titles[$machine_name] = $val->label();
     }
 
-    $form['allowed_image_styles'] = array(
+    $form['allowed_image_styles'] = [
       '#type' => 'checkboxes',
       '#title' => $this->t('Allowed embed image styles'),
       '#options' => $styles_titles,
       '#default_value' => $config->get('embed.allowed_image_styles'),
-    );
+    ];
 
     return $form;
   }
@@ -60,4 +60,5 @@ class SeedsMediaConfigForm extends ConfigFormBase {
       'seeds_media.settings',
     ];
   }
+
 }

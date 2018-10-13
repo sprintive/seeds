@@ -83,14 +83,15 @@ body {
   transform: rotate(-45deg);
 }
 /* line 69, ../scss/_overrides.scss */
-.navbar-toggle:focus, .navbar-toggle:hover {
+.navbar-toggle:focus,
+.navbar-toggle:hover {
   background-color: transparent;
 }
 
 /* line 76, ../scss/_overrides.scss */
 header.navbar-default {
   border: 0;
-  background-color: #73A331;
+  background-color: #73a331;
 }
 /* line 79, ../scss/_overrides.scss */
 header.navbar-default .navbar-brand {
@@ -117,7 +118,7 @@ header.navbar-default .navbar-brand {
 /* line 98, ../scss/_overrides.scss */
 #login-box {
   max-width: 400px;
-  background: #73A331;
+  background: #73a331;
   margin: 50px auto 0px auto;
   padding: 20px;
   color: #fff;
@@ -213,14 +214,15 @@ header.navbar-default .navbar-brand {
   text-align: center;
   cursor: pointer;
   transition: background 0.5s ease;
-  background: #73A331;
+  background: #73a331;
   color: #fff;
   margin-top: 15px;
   display: block;
   width: 100%;
 }
 /* line 184, ../scss/_overrides.scss */
-#drupal-off-canvas button.button:hover, #drupal-off-canvas button.button:focus {
+#drupal-off-canvas button.button:hover,
+#drupal-off-canvas button.button:focus {
   background: #ebc147;
   color: #fff;
 }
