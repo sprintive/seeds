@@ -1,8 +1,0 @@
-@import "default-variables";
-
-@import '../node_modules/bootstrap-rtl-sass/assets/stylesheets/bootstrap';
-@import '../node_modules/bootstrap-rtl-sass/rtl';
-@import '../node_modules/bootstrap-rtl-sass/elements';
-@import '../node_modules/bootstrap-rtl-sass/layout';
-@import '../node_modules/bootstrap-rtl-sass/blocks';
-@import '../node_modules/bootstrap-rtl-sass/responsive';
