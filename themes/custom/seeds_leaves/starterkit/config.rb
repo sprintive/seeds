@@ -1,3 +1,3 @@
-css_dir = "css"
-sass_dir = "scss"
-images_dir = "images"
+css_dir = "assets/css"
+sass_dir = "assets/scss"
+images_dir = "assets/images"

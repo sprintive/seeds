@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
 	livereload = require('gulp-livereload'),
-	uglify = require('gulp-uglify'),
 	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
 	sourcemaps = require('gulp-sourcemaps'),
@@ -8,10 +7,9 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function () {
-  gulp.src('./src/scss/style.scss')
+  gulp.src('./assets/scss/style.scss')
     .pipe(sourcemaps.init())
         .pipe(sass({
-					outputStyle: 'compressed',
 					includePaths: [
 						'node_modules/bootstrap-sass/assets/stylesheets/',
 						'node_modules/bootstrap-sass-rtl/',
@@ -20,36 +18,29 @@ gulp.task('sass', function () {
 				}).on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('fonts', function() {
-	gulp.src(['node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*']).pipe(gulp.dest('fonts/font-awesome/'));
-	return gulp.src(['node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*']).pipe(gulp.dest('fonts/bootstrap/'));
+	gulp.src(['node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*']).pipe(gulp.dest('assets/fonts/font-awesome/'));
+	gulp.src(['node_modules/bootstrap-sass/assets/javascripts/bootstrap/*.js']).pipe(gulp.dest('assets/js/bootstrap/'));
+	gulp.src(['node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*']).pipe(gulp.dest('assets/fonts/bootstrap/'));
 });
 
 gulp.task('clean', function () {
-    return del(['fonts/', 'css/', 'js/']);
+    del(['assets/fonts/font-awesome/', 'assets/fonts/bootstrap/', 'assets/css/', 'assets/js/bootstrap/']);
 });
 
-//Uglifies javascript
-gulp.task('uglify', function() {
-  return gulp.src('./src/js/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./js/'));
+gulp.task('build', ['clean'], function(){
+		gulp.start(['sass', 'fonts']);
 });
 
-gulp.task('build', ['clean'],function(){
-		gulp.start(['sass', 'uglify', 'fonts']);
-});
-
-gulp.task('watch', ['clean'],function(){
-		gulp.start(['sass', 'uglify', 'fonts']);
+gulp.task('watch', ['clean'], function(){
+		gulp.start(['sass', 'fonts']);
     livereload.listen();
 
-    gulp.watch('./src/scss/**/*.scss', ['sass']);
-    gulp.watch('./src/js/**/*.js', ['eslint']);
-    gulp.watch(['./css/style.css', './**/*.html.twig', './js/*.js'], function (files){
+    gulp.watch('./assets/scss/**/*.scss', ['sass']);
+    gulp.watch(['./assets/css/style.css'], function (files){
         livereload.changed(files)
     });
 });
