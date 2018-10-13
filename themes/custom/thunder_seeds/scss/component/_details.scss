@@ -39,4 +39,9 @@
   .details-wrapper {
     padding: 0 1.5em 1em 1.5em;
   }
+  .system-modules td details {
+    height: auto;
+    overflow: visible;
+    white-space: normal;
+  }
 }

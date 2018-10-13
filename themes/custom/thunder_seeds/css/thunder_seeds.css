@@ -502,6 +502,12 @@
 .thunder-seeds .details-wrapper {
   padding: 0 1.5em 1em 1.5em;
 }
+/* line 42, ../scss/component/_details.scss */
+.thunder-seeds .system-modules td details {
+  height: auto;
+  overflow: visible;
+  white-space: normal;
+}
 
 /* line 3, ../scss/component/_tabs.scss */
 .thunder-seeds .is-collapse-enabled .tabs.primary.is-open .tabs__tab.is-active {
