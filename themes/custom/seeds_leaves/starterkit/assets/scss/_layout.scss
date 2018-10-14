@@ -5,3 +5,40 @@ header {
 footer {
 
 }
+
+// Style login page.
+#login-box {
+  max-width: 400px;
+  background: $seeds-green;
+  margin: 50px auto 0px auto;
+  padding: 20px;
+  color: #fff;
+  #login-box-top {
+    text-align: center;
+    #login-logo {
+      width: 70px;
+      display: inline-block;
+      margin: 0;
+    }
+  }
+  form {
+    margin: 20px 0;
+    input {
+      border-radius: 0;
+    }
+    .button {
+      background: $seeds-yellow;
+      border-color: $seeds-yellow;
+      display: block;
+      width: 100%;
+      border-radius: 0;
+      margin-top: 25px;
+    }
+  }
+  #login-box-bottom {
+    text-align: center;
+    a {
+      color: #fff;
+    }
+  }
+}
