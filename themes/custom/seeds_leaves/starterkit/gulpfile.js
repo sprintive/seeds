@@ -28,15 +28,14 @@ gulp.task('copy', function() {
 });
 
 gulp.task('clean', function () {
-    del(['assets/fonts/font-awesome', 'assets/fonts/bootstrap', 'assets/css', 'assets/js/bootstrap']);
+    return del(['assets/fonts/font-awesome', 'assets/fonts/bootstrap', 'assets/css', 'assets/js/bootstrap']);
 });
 
 gulp.task('build', ['clean'], function(){
 		gulp.start(['sass', 'copy']);
 });
 
-gulp.task('watch', ['clean'], function(){
-		gulp.start(['sass', 'copy']);
+gulp.task('watch', ['sass', 'copy'], function(){
     livereload.listen();
 
     gulp.watch('./assets/scss/**/*.scss', ['sass']);
