@@ -21,22 +21,21 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('fonts', function() {
+gulp.task('copy', function() {
 	gulp.src(['node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*']).pipe(gulp.dest('assets/fonts/font-awesome/'));
 	gulp.src(['node_modules/bootstrap-sass/assets/javascripts/bootstrap/*.js']).pipe(gulp.dest('assets/js/bootstrap/'));
 	gulp.src(['node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*']).pipe(gulp.dest('assets/fonts/bootstrap/'));
 });
 
 gulp.task('clean', function () {
-    del(['assets/fonts/font-awesome/', 'assets/fonts/bootstrap/', 'assets/css/', 'assets/js/bootstrap/']);
+    return del(['assets/fonts/font-awesome', 'assets/fonts/bootstrap', 'assets/css', 'assets/js/bootstrap']);
 });
 
 gulp.task('build', ['clean'], function(){
-		gulp.start(['sass', 'fonts']);
+		gulp.start(['sass', 'copy']);
 });
 
-gulp.task('watch', ['clean'], function(){
-		gulp.start(['sass', 'fonts']);
+gulp.task('watch', ['sass', 'copy'], function(){
     livereload.listen();
 
     gulp.watch('./assets/scss/**/*.scss', ['sass']);
