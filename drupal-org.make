@@ -16,7 +16,7 @@ projects[diff][version] = 1.0-rc2
 ; Content Management Modules.
 projects[ds][type] = module
 projects[ds][download][url] = https://git.drupal.org/project/ds.git
-projects[ds][download][revision] = 49014b82d28365614eeee7360ead50d7caa26c4a
+projects[ds][download][revision] = fe1da24ab36369ea2227b6e2c026fe8fb9ca1ef0
 projects[ds][download][branch] = 8.x-3.x
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
