@@ -106,7 +106,7 @@ projects[field_group][type] = module
 projects[field_group][version] = 1.0
 
 projects[photoswipe][type] = module
-projects[photoswipe][version] = 1.0-beta8
+projects[photoswipe][version] = 2.2
 
 projects[smtp][type] = module
 projects[smtp][version] = 1.0-beta4

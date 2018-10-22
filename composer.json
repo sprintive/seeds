@@ -44,7 +44,7 @@
     "drupal/webform": "5.0-rc23",
     "drupal/rabbit_hole": "1.0-beta4",
     "drupal/field_group": "1.0",
-    "drupal/photoswipe": "1.0-beta8",
+    "drupal/photoswipe": "2.2",
     "drupal/smtp": "1.0-beta4",
     "drupal/field_formatter": "1.2",
     "drupal/layout_builder_restrictions": "1.2",
