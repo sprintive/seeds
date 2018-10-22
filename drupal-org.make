@@ -33,7 +33,7 @@ projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
 
 projects[entity][type] = module
-projects[entity][version] = 1.0-beta4
+projects[entity][version] = 1.0-rc1
 
 projects[entity_browser][type] = module
 projects[entity_browser][version] = 2.0
@@ -84,7 +84,7 @@ projects[slick_media][type] = module
 projects[slick_media][version] = 2.0-alpha2
 
 projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = 1.5
+projects[entity_reference_revisions][version] = 1.6
 
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.3
@@ -97,7 +97,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc21
+projects[webform][version] = 5.0-rc23
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -115,7 +115,7 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 1.1
+projects[layout_builder_restrictions][version] = 1.2
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta7
@@ -137,7 +137,7 @@ projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.5
 
 projects[redirect][type] = module
-projects[redirect][version] = 1.2
+projects[redirect][version] = 1.3
 
 projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.3
