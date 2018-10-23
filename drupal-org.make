@@ -97,7 +97,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc23
+projects[webform][version] = 5.0-rc24
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -106,7 +106,9 @@ projects[field_group][type] = module
 projects[field_group][version] = 1.0
 
 projects[photoswipe][type] = module
-projects[photoswipe][version] = 2.2
+projects[photoswipe][download][url] = https://git.drupal.org/project/photoswipe.git
+projects[photoswipe][download][revision] = 34b844a42f8c9dd6283a6e5c682e431f9bd2654c
+projects[photoswipe][download][branch] = 8.x-2.x
 
 projects[smtp][type] = module
 projects[smtp][version] = 1.0-beta4
