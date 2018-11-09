@@ -20,13 +20,13 @@ projects[views][subdir] = utilities
 projects[token][version] = 1.7
 projects[token][subdir] = utilities
 
-projects[libraries][version] = 2.4
+projects[libraries][version] = 2.5
 projects[libraries][subdir] = utilities
 
 projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.22
+projects[file_entity][version] = 2.24
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -40,7 +40,7 @@ projects[entitycache][subdir] = utilities
 ;; Bundling Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[features][version] = 2.10
+projects[features][version] = 2.11
 projects[features][subdir] = bundling
 
 projects[strongarm][version] = 2.0
@@ -87,7 +87,7 @@ projects[redirect][subdir] = seo
 projects[transliteration][version] = 3.2
 projects[transliteration][subdir] = seo
 
-projects[xmlsitemap][version] = 2.5
+projects[xmlsitemap][version] = 2.6
 projects[xmlsitemap][subdir] = seo
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -104,7 +104,7 @@ projects[adminimal_admin_menu][subdir] = administration
 projects[date_popup_authored][version] = 1.2
 projects[date_popup_authored][subdir] = administration
 
-projects[diff][version] = 3.3
+projects[diff][version] = 3.4
 projects[diff][subdir] = administration
 
 projects[save_draft][version] = 1.4
@@ -124,12 +124,12 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-rc6"
+projects[media][version] = "3.0-rc7"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
 
-projects[media_ckeditor][version] = "2.5"
+projects[media_ckeditor][version] = "2.9"
 projects[media_ckeditor][subdir] = editor
 
 projects[pathologic][version] = 3.1
