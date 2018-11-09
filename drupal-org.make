@@ -88,7 +88,6 @@ projects[entity_reference_revisions][version] = 1.6
 
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.5
-projects[paragraphs][patch][] = https://www.drupal.org/files/issues/meta_support-2461695-224.patch
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
