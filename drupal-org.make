@@ -87,7 +87,7 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.6
 
 projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.3
+projects[paragraphs][version] = 1.5
 projects[paragraphs][patch][] = https://www.drupal.org/files/issues/meta_support-2461695-224.patch
 
 projects[editor_advanced_link][type] = module
@@ -97,7 +97,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc24
+projects[webform][version] = 5.0-rc26
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -192,7 +192,7 @@ projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.13
 
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.1
+projects[thunder_admin][version] = 2.2
 
 ; Libraries
 libraries[slick][download][type] = get
