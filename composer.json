@@ -12,7 +12,7 @@
     "cweagans/composer-patches": "1.6.2",
     "drupal-composer/drupal-scaffold": "2.3.0",
     "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.6.2",
+    "drupal/core": "8.6.3",
     "drupal/ctools": "3.0",
     "drupal/token": "1.5",
     "drupal/diff": "1.0-rc2",
@@ -87,7 +87,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-8.x-5.x": "8.5.x-dev"
+      "dev-8.x-6.x": "8.6.x-dev"
     },
     "installer-paths": {
       "public_html/core": [
