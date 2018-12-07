@@ -96,7 +96,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc26
+projects[webform][version] = 5.0-rc27
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -160,7 +160,7 @@ projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.8
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.24
+projects[admin_toolbar][version] = 1.25
 
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.7
@@ -188,10 +188,10 @@ projects[cloudflare][version] = 1.0-alpha7
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.13
+projects[bootstrap][version] = 3.16
 
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.2
+projects[thunder_admin][version] = 2.3
 
 ; Libraries
 libraries[slick][download][type] = get
