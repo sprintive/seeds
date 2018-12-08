@@ -26,7 +26,7 @@ projects[libraries][subdir] = utilities
 projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.24
+projects[file_entity][version] = 2.25
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -94,7 +94,7 @@ projects[xmlsitemap][subdir] = seo
 ;; Administration Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[admin_menu][version] = 3.0-rc5
+projects[admin_menu][version] = 3.0-rc6
 projects[admin_menu][subdir] = administration
 projects[admin_menu][patch][1910546] = "https://www.drupal.org/files/issues/sub_lists_not_show_on_rtl-1910546-1.patch"
 
@@ -228,7 +228,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.21
+projects[bootstrap][version] = 3.22
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
