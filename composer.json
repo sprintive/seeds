@@ -114,6 +114,14 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": false,
     "patches": {
+      "drupal/core": {
+        "Issue #2990664: Media library does not work when Drupal is installed into a sub-directory":
+        "https://www.drupal.org/files/issues/2018-09-10/media-library-subfolder-installation-path-error-2990664-4-d8.patch"
+      },
+      "drupal/bootstrap_layouts": {
+        "Issue #3018633: Incompatible with Layout builder drag and drop":
+        "https://www.drupal.org/files/issues/2018-09-10/media-library-subfolder-installation-path-error-2990664-4-d8.patch"
+      },
       "drupal/ds": {
         "Issue #2883928: Use absolute or external URL for link wrappers":
         "https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch",

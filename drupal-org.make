@@ -31,6 +31,8 @@ projects[panels][version] = 4.3
 
 projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
+;; Issue #3018633: Incompatible with Layout builder drag and drop
+projects[ds][patch][] = https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch
 
 projects[entity][type] = module
 projects[entity][version] = 1.0-rc1
