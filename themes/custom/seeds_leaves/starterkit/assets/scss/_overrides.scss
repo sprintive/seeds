@@ -14,56 +14,110 @@
 @import "component/table-drag";
 @import "component/tabs";
 @import "component/toolbar";
-
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
-
-ol, ul {
-  padding-left: 1.5em;
-  .popover &:last-child {
-    margin-bottom: 0;
-  }
+ol,
+ul {
+    padding-left: 1.5em;
+    .popover &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 // Page header.
 .page-header {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 // Footer.
 .footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
+    margin-top: 45px;
+    padding-top: 35px;
+    padding-bottom: 36px;
+    border-top: 1px solid #E5E5E5;
 }
 
 // Paragraphs.
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 // Help region.
 .region-help {
-  > .glyphicon {
-    font-size: $font-size-large;
-    float: left;
-    margin: -0.05em 0.5em 0 0;
-  }
-  .block {
-    overflow: hidden;
-  }
+    >.glyphicon {
+        font-size: $font-size-large;
+        float: left;
+        margin: -0.05em 0.5em 0 0;
+    }
+    .block {
+        overflow: hidden;
+    }
 }
 
+.help-block,
+.control-group .help-inline {
+    color: $gray-light;
+    font-size: 12px;
+    margin: 5px 0 10px;
+    padding: 0;
+    &:first-child {
+        margin-top: 0;
+    }
+}
 
-.help-block, .control-group .help-inline {
-  color: $gray-light;
-  font-size: 12px;
-  margin: 5px 0 10px;
-  padding: 0;
-  &:first-child {
-    margin-top: 0;
-  }
+// Fix layout builder to work with Bootstrap theme.
+.modal-open {
+    overflow-y: scroll;
+}
+
+#drupal-off-canvas {
+    top: 0 !important;
+    .modal-dialog {
+        margin: 0;
+        width: auto;
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .ui-dialog-off-canvas {
+        overflow: scroll;
+    }
+    a {
+        color: #ccc;
+    }
+    .glyphicon {
+        display: none;
+    }
+    *,
+    *:not(div) {
+        background: #333333;
+    }
+    .ui-resizable-s {
+        display: none !important;
+    }
+    button.button {
+        position: relative;
+        height: auto;
+        padding: 4px 20px;
+        border: 0;
+        border-radius: 0;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        transition: background 0.5s ease;
+        background: $seeds-green;
+        color: #fff;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        &:hover,
+        &:focus {
+            background: $seeds-yellow;
+            color: #fff;
+        }
+    }
 }
