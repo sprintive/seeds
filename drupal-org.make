@@ -22,6 +22,8 @@ projects[ds][download][branch] = 8.x-3.x
 projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
 ;; Issue #2966959: Value conflict with Layout Builder.
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch
+;; Issue #2875412: Illegal offset type in isset or empty in _ds_field_ui_table_layouts
+projects[ds][patch][] = https://www.drupal.org/files/issues/ds_layout_category-2875412-4.patch
 
 projects[page_manager][type] = module
 projects[page_manager][version] = 4.0-beta3
@@ -32,7 +34,9 @@ projects[panels][version] = 4.3
 projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
 ;; Issue #3018633: Incompatible with Layout builder drag and drop
-projects[ds][patch][] = https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch
+projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch
+;; Issue #3010952: Add a container option
+projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch
 
 projects[entity][type] = module
 projects[entity][version] = 1.0-rc1

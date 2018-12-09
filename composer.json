@@ -34,7 +34,7 @@
     "drupal/smart_trim": "1.1",
     "drupal/allowed_formats": "1.1",
     "drupal/slick": "1.0",
-    "drupal/blazy": "1.0-rc2",
+    "drupal/blazy": "1.0-rc3",
     "drupal/slick_views": "1.0-rc2",
     "drupal/slick_media": "2.0-alpha2",
     "drupal/entity_reference_revisions": "1.6",
@@ -120,13 +120,17 @@
       },
       "drupal/bootstrap_layouts": {
         "Issue #3018633: Incompatible with Layout builder drag and drop":
-        "https://www.drupal.org/files/issues/2018-09-10/media-library-subfolder-installation-path-error-2990664-4-d8.patch"
+        "https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch",
+        "Issue #3010952: Add a container option":
+        "https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch"
       },
       "drupal/ds": {
         "Issue #2883928: Use absolute or external URL for link wrappers":
         "https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch",
         "Issue #2966959: Value Conflict with Layout Builder":
-        "https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch"
+        "https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch",
+        "Issue #2875412: Illegal offset type in isset or empty in _ds_field_ui_table_layouts":
+        "https://www.drupal.org/files/issues/ds_layout_category-2875412-4.patch"
       }
     }
   },
