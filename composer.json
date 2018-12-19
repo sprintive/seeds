@@ -129,6 +129,10 @@
         "https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch",
         "Issue #2966959: Value Conflict with Layout Builder":
         "https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch"
+      },
+      "drupal/link_attributes": {
+        "Issue #2920269: Add title attribute":
+        "https://www.drupal.org/files/issues/2018-06-05/link_attributes-title-attribute-2920269-5.patch"
       }
     }
   },

@@ -140,6 +140,8 @@ projects[simple_sitemap][version] = 2.12
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.5
+;; Issue #2920269: Add title attribute
+projects[link_attributes][patch][] = https://www.drupal.org/files/issues/2018-06-05/link_attributes-title-attribute-2920269-5.patch
 
 projects[redirect][type] = module
 projects[redirect][version] = 1.3
