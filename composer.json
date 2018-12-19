@@ -16,7 +16,7 @@
     "drupal/ctools": "3.0",
     "drupal/token": "1.5",
     "drupal/diff": "1.0-rc2",
-    "drupal/ds": "3.x-dev#fe1da24ab36369ea2227b6e2c026fe8fb9ca1ef0",
+    "drupal/ds": "3.2",
     "drupal/page_manager": "4.0-beta3",
     "drupal/panels": "4.3",
     "drupal/bootstrap_layouts": "5.1",
@@ -41,7 +41,7 @@
     "drupal/paragraphs": "1.5",
     "drupal/editor_advanced_link": "1.4",
     "drupal/contribute": "1.0-beta7",
-    "drupal/webform": "5.0-rc27",
+    "drupal/webform": "5.0-rc31",
     "drupal/rabbit_hole": "1.0-beta4",
     "drupal/field_group": "1.0",
     "drupal/photoswipe": "2.x-dev#34b844a42f8c9dd6283a6e5c682e431f9bd2654c",
@@ -128,9 +128,7 @@
         "Issue #2883928: Use absolute or external URL for link wrappers":
         "https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch",
         "Issue #2966959: Value Conflict with Layout Builder":
-        "https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch",
-        "Issue #2875412: Illegal offset type in isset or empty in _ds_field_ui_table_layouts":
-        "https://www.drupal.org/files/issues/ds_layout_category-2875412-4.patch"
+        "https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch"
       }
     }
   },

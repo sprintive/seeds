@@ -17,13 +17,11 @@ projects[diff][version] = 1.0-rc2
 projects[ds][type] = module
 projects[ds][download][url] = https://git.drupal.org/project/ds.git
 projects[ds][download][revision] = fe1da24ab36369ea2227b6e2c026fe8fb9ca1ef0
-projects[ds][download][branch] = 8.x-3.x
+projects[ds][download][branch] = 3.2
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
 ;; Issue #2966959: Value conflict with Layout Builder.
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch
-;; Issue #2875412: Illegal offset type in isset or empty in _ds_field_ui_table_layouts
-projects[ds][patch][] = https://www.drupal.org/files/issues/ds_layout_category-2875412-4.patch
 
 projects[page_manager][type] = module
 projects[page_manager][version] = 4.0-beta3
@@ -102,7 +100,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc27
+projects[webform][version] = 5.0-rc31
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
