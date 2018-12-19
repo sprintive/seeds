@@ -83,15 +83,14 @@ body {
   transform: rotate(-45deg);
 }
 /* line 69, ../scss/_overrides.scss */
-.navbar-toggle:focus,
-.navbar-toggle:hover {
+.navbar-toggle:focus, .navbar-toggle:hover {
   background-color: transparent;
 }
 
 /* line 76, ../scss/_overrides.scss */
 header.navbar-default {
   border: 0;
-  background-color: #73a331;
+  background-color: #73A331;
 }
 /* line 79, ../scss/_overrides.scss */
 header.navbar-default .navbar-brand {
@@ -118,7 +117,7 @@ header.navbar-default .navbar-brand {
 /* line 98, ../scss/_overrides.scss */
 #login-box {
   max-width: 400px;
-  background: #73a331;
+  background: #73A331;
   margin: 50px auto 0px auto;
   padding: 20px;
   color: #fff;
@@ -160,49 +159,55 @@ header.navbar-default .navbar-brand {
 }
 
 /* line 135, ../scss/_overrides.scss */
-.modal-dialog {
+.modal-open {
+  overflow-y: scroll;
+}
+
+/* line 139, ../scss/_overrides.scss */
+#drupal-off-canvas {
+  top: 0 !important;
+  position: relative;
+}
+/* line 142, ../scss/_overrides.scss */
+#drupal-off-canvas .modal-dialog {
   margin: 0;
   width: auto;
 }
-
-/* line 140, ../scss/_overrides.scss */
-.ui-dialog-off-canvas {
-  overflow: scroll;
+/* line 146, ../scss/_overrides.scss */
+#drupal-off-canvas .ui-dialog-titlebar {
+  position: relative;
 }
-
-/* line 144, ../scss/_overrides.scss */
+/* line 148, ../scss/_overrides.scss */
+#drupal-off-canvas .ui-dialog-titlebar .ui-dialog-title {
+  padding-left: 25px;
+}
+/* line 152, ../scss/_overrides.scss */
 #drupal-off-canvas select {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
-/* line 149, ../scss/_overrides.scss */
-.modal-open {
+/* line 156, ../scss/_overrides.scss */
+#drupal-off-canvas .ui-dialog-off-canvas {
   overflow: scroll;
 }
-
-/* line 153, ../scss/_overrides.scss */
-#drupal-off-canvas {
-  top: 0 !important;
-}
-/* line 155, ../scss/_overrides.scss */
+/* line 159, ../scss/_overrides.scss */
 #drupal-off-canvas a {
   color: #ccc;
 }
-/* line 158, ../scss/_overrides.scss */
+/* line 162, ../scss/_overrides.scss */
 #drupal-off-canvas .glyphicon {
   display: none;
 }
-/* line 161, ../scss/_overrides.scss */
+/* line 165, ../scss/_overrides.scss */
 #drupal-off-canvas *,
 #drupal-off-canvas *:not(div) {
   background: #333333;
 }
-/* line 165, ../scss/_overrides.scss */
+/* line 169, ../scss/_overrides.scss */
 #drupal-off-canvas .ui-resizable-s {
   display: none !important;
 }
-/* line 168, ../scss/_overrides.scss */
+/* line 172, ../scss/_overrides.scss */
 #drupal-off-canvas button.button {
   position: relative;
   height: auto;
@@ -214,15 +219,14 @@ header.navbar-default .navbar-brand {
   text-align: center;
   cursor: pointer;
   transition: background 0.5s ease;
-  background: #73a331;
+  background: #73A331;
   color: #fff;
   margin-top: 15px;
   display: block;
   width: 100%;
 }
-/* line 184, ../scss/_overrides.scss */
-#drupal-off-canvas button.button:hover,
-#drupal-off-canvas button.button:focus {
+/* line 188, ../scss/_overrides.scss */
+#drupal-off-canvas button.button:hover, #drupal-off-canvas button.button:focus {
   background: #ebc147;
   color: #fff;
 }
