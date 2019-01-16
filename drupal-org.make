@@ -76,16 +76,16 @@ projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.1
 
 projects[slick][type] = module
-projects[slick][version] = 1.0
+projects[slick][version] = 1.1
 
 projects[blazy][type] = module
-projects[blazy][version] = 1.0-rc3
+projects[blazy][version] = 1.0-rc4
 
 projects[slick_views][type] = module
-projects[slick_views][version] = 1.0-rc2
+projects[slick_views][version] = 1.0
 
 projects[slick_media][type] = module
-projects[slick_media][version] = 2.0-alpha2
+projects[slick_media][version] = 2.0-alpha3
 
 projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.6
@@ -100,7 +100,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.0-rc31
+projects[webform][version] = 5.1
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta4
@@ -109,9 +109,7 @@ projects[field_group][type] = module
 projects[field_group][version] = 1.0
 
 projects[photoswipe][type] = module
-projects[photoswipe][download][url] = https://git.drupal.org/project/photoswipe.git
-projects[photoswipe][download][revision] = 34b844a42f8c9dd6283a6e5c682e431f9bd2654c
-projects[photoswipe][download][branch] = 8.x-2.x
+projects[photoswipe][download][branch] = 2.6
 
 projects[smtp][type] = module
 projects[smtp][version] = 1.0-beta4
@@ -120,14 +118,14 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 1.2
+projects[layout_builder_restrictions][version] = 1.3
 
 projects[linkit][type] = module
-projects[linkit][version] = 5.0-beta7
+projects[linkit][version] = 5.0-beta8
 
 ; Performance & SEO Modules
 projects[fast_404][type] = module
-projects[fast_404][version] = 1.0-alpha3
+projects[fast_404][version] = 1.0-alpha4
 
 projects[metatag][type] = module
 projects[metatag][version] = 1.7
@@ -161,6 +159,9 @@ projects[security_review][download][url] = https://git.drupal.org/project/securi
 projects[security_review][download][revision] = 9b8a34a21cac85913845df4eebb9a05c69de82d8
 projects[security_review][download][branch] = 8.x-1.x
 
+projects[cloudflare][type] = module
+projects[cloudflare][version] = 1.0-alpha7
+
 ; Administration Modules.
 projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.8
@@ -177,6 +178,9 @@ projects[menu_admin_per_menu][version] = 1.0
 projects[taxonomy_access_fix][type] = module
 projects[taxonomy_access_fix][version] = 2.6
 
+projects[block_content_permissions][type] = module
+projects[block_content_permissions][version] = 1.6
+
 projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0-alpha7
 
@@ -188,9 +192,6 @@ projects[views_bulk_edit][version] = 2.2
 
 projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
-
-projects[cloudflare][type] = module
-projects[cloudflare][version] = 1.0-alpha7
 
 ; Themes
 projects[bootstrap][type] = theme

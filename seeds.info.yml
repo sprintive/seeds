@@ -46,6 +46,7 @@ dependencies:
   - menu_admin_per_menu
   - taxonomy_access_fix
   - toolbar_anti_flicker
+  - masquerade
 
   # Embryos
   - seeds_editor
