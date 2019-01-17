@@ -180,6 +180,8 @@ projects[taxonomy_access_fix][version] = 2.6
 
 projects[block_content_permissions][type] = module
 projects[block_content_permissions][version] = 1.6
+;; Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission
+projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
 projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0-alpha7
