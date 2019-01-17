@@ -109,7 +109,7 @@ function seeds_pollination_preprocess_page(&$vars) {
   $type=$route_match->getParameters();
 
   foreach($type as $entity_type => $entity) {
-    if(in_array($entity_type, array_values(ENTITIES))) {
+    if(in_array($entity_type, array_values(ENTITIES)) && is_object(($entity))) {
       $vars['is_full_width'] = $config->get($entity_type . '_' . $entity->bundle()) ? TRUE : FALSE;
     }
   }
