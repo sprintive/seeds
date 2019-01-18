@@ -201,7 +201,6 @@ projects[owlcarousel][patch][2736713] = "https://www.drupal.org/files/issues/rtl
 
 projects[slick][version] = 2.1
 projects[slick][subdir] = contrib
-projects[slick][patch][2764893] = "https://www.drupal.org/files/issues/_slick_error-after-d750_2764893_9.patch"
 
 projects[slick_views][version] = 2.1
 projects[slick_views][subdir] = contrib
