@@ -192,21 +192,21 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.18
+projects[webform][version] = 4.19
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
 projects[owlcarousel][subdir] = contrib
 projects[owlcarousel][patch][2736713] = "https://www.drupal.org/files/issues/rtl_support_carousel_2-2736713-6.patch"
 
-projects[slick][version] = 2.0
+projects[slick][version] = 2.1
 projects[slick][subdir] = contrib
 projects[slick][patch][2764893] = "https://www.drupal.org/files/issues/_slick_error-after-d750_2764893_9.patch"
 
-projects[slick_views][version] = 2.0
+projects[slick_views][version] = 2.1
 projects[slick_views][subdir] = contrib
 
-projects[photoswipe][version] = 2.0-beta3
+projects[photoswipe][version] = 2.0-beta4
 projects[photoswipe][subdir] = contrib
 
 projects[menu_attributes][version] = 1.0
