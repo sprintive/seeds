@@ -5,7 +5,7 @@ core = 7.x
 ;; Utilities Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[ctools][version] = 1.14
+projects[ctools][version] = 1.15
 projects[ctools][subdir] = utilities
 
 projects[panels][version] = 3.9
@@ -69,7 +69,7 @@ projects[fitvids][subdir] = ui
 ;; SEO Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[google_analytics][version] = 2.5
+projects[google_analytics][version] = 2.6
 projects[google_analytics][subdir] = seo
 
 projects[imagecache_token][version] = 1.0-rc2
@@ -157,7 +157,7 @@ projects[field_group][subdir] = fields
 projects[linkit][version] = 3.5
 projects[linkit][subdir] = fields
 
-projects[focal_point][version] = 1.1
+projects[focal_point][version] = 1.2
 projects[focal_point][subdir] = fields
 
 projects[hires_images][version] = 1.1
@@ -219,7 +219,7 @@ projects[media_oembed][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[adminimal_theme][type] = theme
-projects[adminimal_theme][version] = 1.24
+projects[adminimal_theme][version] = 1.25
 projects[adminimal_theme][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -227,7 +227,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.22
+projects[bootstrap][version] = 3.23
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;

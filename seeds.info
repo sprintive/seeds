@@ -3,7 +3,7 @@ description = Kickoff distribution for SMEs, Curated by Sprintive.
 core = 7.x
 
 ; System Requirements
-php = 5.3
+php = 7.1
 php_memory_limit = 256M
 
 ; Core Modules
