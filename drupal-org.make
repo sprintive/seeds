@@ -19,7 +19,7 @@ projects[ds][download][url] = https://git.drupal.org/project/ds.git
 projects[ds][download][revision] = fe1da24ab36369ea2227b6e2c026fe8fb9ca1ef0
 projects[ds][download][branch] = 3.2
 ;; Issue #2883928: Use absolute or external URL for link wrappers
-projects[ds][patch][] = https://www.drupal.org/files/issues/use_absolute_or-2883928-7.patch
+projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 ;; Issue #2966959: Value conflict with Layout Builder.
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch
 
@@ -118,7 +118,7 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 1.3
+projects[layout_builder_restrictions][version] = 1.4
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta8
@@ -164,10 +164,10 @@ projects[cloudflare][version] = 1.0-alpha7
 
 ; Administration Modules.
 projects[adminimal_admin_toolbar][type] = module
-projects[adminimal_admin_toolbar][version] = 1.8
+projects[adminimal_admin_toolbar][version] = 1.9
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.25
+projects[admin_toolbar][version] = 1.26
 
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.7
@@ -197,10 +197,10 @@ projects[masquerade][version] = 2.0-beta2
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.16
+projects[bootstrap][version] = 3.17
 
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.3
+projects[thunder_admin][version] = 2.4
 
 ; Libraries
 libraries[slick][download][type] = get
