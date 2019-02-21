@@ -4,7 +4,7 @@ defaults[projects][subdir] = contrib
 
 ; Utilities Modules
 projects[ctools][type] = module
-projects[ctools][version] = 3.0
+projects[ctools][version] = 3.1
 
 projects[token][type] = module
 projects[token][version] = 1.5
@@ -40,7 +40,7 @@ projects[entity][type] = module
 projects[entity][version] = 1.0-rc1
 
 projects[entity_browser][type] = module
-projects[entity_browser][version] = 2.0
+projects[entity_browser][version] = 2.1
 
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.0-beta2
@@ -91,7 +91,7 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.6
 
 projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.5
+projects[paragraphs][version] = 1.6
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
@@ -128,7 +128,7 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha4
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.7
+projects[metatag][version] = 1.8
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.3
@@ -145,7 +145,7 @@ projects[redirect][type] = module
 projects[redirect][version] = 1.3
 
 projects[google_analytics][type] = module
-projects[google_analytics][version] = 2.3
+projects[google_analytics][version] = 2.4
 
 projects[yoast_seo][type] = module
 projects[yoast_seo][version] = 2.0-alpha3
