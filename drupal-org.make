@@ -72,7 +72,7 @@ projects[fitvids][subdir] = ui
 projects[google_analytics][version] = 2.6
 projects[google_analytics][subdir] = seo
 
-projects[imagecache_token][version] = 1.0-rc2
+projects[imagecache_token][version] = 1.0-rc3
 projects[imagecache_token][subdir] = seo
 
 projects[metatag][version] = 1.25
@@ -148,7 +148,7 @@ projects[wysiwyg_filter][subdir] = editor
 projects[date][version] = 2.10
 projects[date][subdir] = fields
 
-projects[link][version] = 1.5
+projects[link][version] = 1.6
 projects[link][subdir] = fields
 
 projects[field_group][version] = 1.6
