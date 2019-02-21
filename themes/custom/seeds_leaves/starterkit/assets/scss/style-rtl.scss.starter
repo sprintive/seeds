@@ -3,3 +3,13 @@
 @import 'bootstrap';
 
 @import '../../node_modules/bootstrap-rtl-sass/rtl';
+
+// Import rtl sass files
+@import 'rtl/mixin';
+@import 'rtl/overrides';
+@import 'rtl/elements';
+@import 'rtl/fields';
+@import 'rtl/displays';
+@import 'rtl/views';
+@import 'rtl/blocks';
+@import 'rtl/layout';

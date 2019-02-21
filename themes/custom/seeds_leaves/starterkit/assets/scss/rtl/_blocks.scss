@@ -1,0 +1,14 @@
+// rtl styling for layout builder operations
+.tabs .tabs--secondary {
+    li {
+        a {
+            padding-right: 3em;
+        }
+        &::before {
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+            left: auto;
+        }
+    }
+}

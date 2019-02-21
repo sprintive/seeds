@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function () {
-  gulp.src('./assets/scss/style.scss')
+    gulp.src('./assets/scss/style.scss')
+    // gulp.src(['./assets/scss/style.scss', './assets/scss/style-rtl.scss'])
     .pipe(sourcemaps.init())
         .pipe(sass({
 					includePaths: [
@@ -38,8 +39,9 @@ gulp.task('build', ['clean'], function(){
 gulp.task('watch', ['sass', 'copy'], function(){
     livereload.listen();
 
-    gulp.watch('./assets/scss/**/*.scss', ['sass']);
-    gulp.watch(['./assets/css/style.css'], function (files){
+	gulp.watch('./assets/scss/**/*.scss', ['sass']);
+	gulp.watch(['./assets/css/style.css'], function (files){
+    // gulp.watch(['./assets/css/style.css','./assets/css/style-rtl.css'], function (files){
         livereload.changed(files)
     });
 });

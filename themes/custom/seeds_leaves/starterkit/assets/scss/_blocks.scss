@@ -30,3 +30,68 @@
         }
     }
 }
+
+// Layout builder operation buttons to be more friendly.
+.tabs .tabs--secondary {
+    margin: 0;
+    background: #333333;
+    border-radius: 0;
+    position: fixed;
+    z-index: 1031;
+    bottom: 0;
+    left: 0;
+    font-family: 'Open Sans';
+    padding: 0 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    li {
+      position: relative;
+      display: inline;
+      a {
+        background: transparent;
+        border: 0;
+        color: #ccc;
+        font-size: small;
+        padding: 0.8em 1.3333em;
+        padding-left: 3em;
+        transition: 0.20s;
+        &::before{
+          position: absolute;
+          top:0.28em;
+          left: 0.5em;
+          font-family: 'FontAwesome';
+          z-index: 10;
+          font-size: 20px
+        }
+      }
+
+      &:hover {
+        a {
+          background: $seeds-green;
+          color: $white;
+        }
+        &::before {
+          color: $white;
+        }
+      }
+
+      &:nth-of-type(1){
+        a::before {
+          content: '\f0c7';
+        }
+      }
+
+      &:nth-of-type(2){
+        a::before {
+          content: '\f05e';
+        }
+      }
+
+      &:nth-of-type(3){
+        a::before {
+          content: '\f122';
+        }
+      }
+    }
+  }
