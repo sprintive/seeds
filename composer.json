@@ -123,7 +123,6 @@
         "https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
         "Issue #3028821: Layout builder doesn't redirect properly to the translation.":
         "https://www.drupal.org/files/issues/2019-01-28/layout_builder_redirect_language_fixed-3028821-5.patch"
-        }
       },
       "drupal/bootstrap_layouts": {
         "Issue #3018633: Incompatible with Layout builder drag and drop":
