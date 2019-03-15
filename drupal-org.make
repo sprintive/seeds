@@ -14,7 +14,7 @@ projects[panels][subdir] = utilities
 projects[jquery_update][version] = 3.0-alpha5
 projects[jquery_update][subdir] = utilities
 
-projects[views][version] = 3.20
+projects[views][version] = 3.21
 projects[views][subdir] = utilities
 
 projects[token][version] = 1.7
@@ -174,10 +174,10 @@ projects[extlink][subdir] = fields
 ;; Modules used in sapling features but necessary in all projects.
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[rabbit_hole][version] = 2.24
+projects[rabbit_hole][version] = 2.25
 projects[rabbit_hole][subdir] = contrib
 
-projects[fieldable_panels_panes][version] = 1.11
+projects[fieldable_panels_panes][version] = 1.13
 projects[fieldable_panels_panes][subdir] = contrib
 
 projects[panelizer][version] = "3.4"
