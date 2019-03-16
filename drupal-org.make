@@ -18,8 +18,6 @@ projects[ds][type] = module
 projects[ds][version] = 3.3
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
-;; Issue #2966959: Value conflict with Layout Builder.
-projects[ds][patch][] = https://www.drupal.org/files/issues/2018-09-24/2966959-22.patch
 
 projects[page_manager][type] = module
 projects[page_manager][version] = 4.0-beta3
