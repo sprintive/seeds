@@ -4,7 +4,7 @@ defaults[projects][subdir] = contrib
 
 ; Utilities Modules
 projects[ctools][type] = module
-projects[ctools][version] = 3.1
+projects[ctools][version] = 3.2
 
 projects[token][type] = module
 projects[token][version] = 1.5
@@ -15,9 +15,7 @@ projects[diff][version] = 1.0-rc2
 
 ; Content Management Modules.
 projects[ds][type] = module
-projects[ds][download][url] = https://git.drupal.org/project/ds.git
-projects[ds][download][revision] = fe1da24ab36369ea2227b6e2c026fe8fb9ca1ef0
-projects[ds][download][branch] = 3.2
+projects[ds][version] = 3.3
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 ;; Issue #2966959: Value conflict with Layout Builder.
@@ -103,7 +101,7 @@ projects[webform][type] = module
 projects[webform][version] = 5.1
 
 projects[rabbit_hole][type] = module
-projects[rabbit_hole][version] = 1.0-beta4
+projects[rabbit_hole][version] = 1.0-beta5
 
 projects[field_group][type] = module
 projects[field_group][version] = 1.0
@@ -160,7 +158,7 @@ projects[security_review][download][revision] = 9b8a34a21cac85913845df4eebb9a05c
 projects[security_review][download][branch] = 8.x-1.x
 
 projects[cloudflare][type] = module
-projects[cloudflare][version] = 1.0-alpha7
+projects[cloudflare][version] = 1.0-alpha11
 
 ; Administration Modules.
 projects[adminimal_admin_toolbar][type] = module
@@ -187,7 +185,7 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0-alpha7
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 2.4
+projects[views_bulk_operations][version] = 2.5
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.2
@@ -200,7 +198,7 @@ projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.17
 
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.4
+projects[thunder_admin][version] = 2.5
 
 ; Libraries
 libraries[slick][download][type] = get
