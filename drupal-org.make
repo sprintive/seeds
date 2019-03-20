@@ -87,7 +87,7 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.6
 
 projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.6
+projects[paragraphs][version] = 1.7
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
@@ -114,7 +114,7 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 1.4
+projects[layout_builder_restrictions][version] = 1.5
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta8
