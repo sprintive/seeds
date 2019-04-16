@@ -3,6 +3,5 @@ description: Custom functions on seeds.
 type: module
 core: 8.x
 dependencies:
-  - adminimal_admin_toolbar
-  - admin_toolbar_tools
+  - admin_toolbar:admin_toolbar_tools
 package: 'Seeds'
