@@ -14,7 +14,7 @@ projects[panels][subdir] = utilities
 projects[jquery_update][version] = 3.0-alpha5
 projects[jquery_update][subdir] = utilities
 
-projects[views][version] = 3.21
+projects[views][version] = 3.22
 projects[views][subdir] = utilities
 
 projects[token][version] = 1.7
@@ -72,7 +72,7 @@ projects[fitvids][subdir] = ui
 projects[google_analytics][version] = 2.6
 projects[google_analytics][subdir] = seo
 
-projects[imagecache_token][version] = 1.0-rc3
+projects[imagecache_token][version] = 1.0
 projects[imagecache_token][subdir] = seo
 
 projects[metatag][version] = 1.25
@@ -183,7 +183,7 @@ projects[fieldable_panels_panes][subdir] = contrib
 projects[panelizer][version] = "3.4"
 projects[panelizer][subdir] = contrib
 
-projects[module_filter][version] = 2.1
+projects[module_filter][version] = 2.2
 projects[module_filter][subdir] = contrib
 
 projects[copyprevention][version] = 1.1
@@ -205,7 +205,7 @@ projects[slick][subdir] = contrib
 projects[slick_views][version] = 2.1
 projects[slick_views][subdir] = contrib
 
-projects[photoswipe][version] = 2.0-beta4
+projects[photoswipe][version] = 2.0-beta5
 projects[photoswipe][subdir] = contrib
 
 projects[menu_attributes][version] = 1.0
