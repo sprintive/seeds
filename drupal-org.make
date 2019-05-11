@@ -199,7 +199,7 @@ projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.19
 
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.7
+projects[thunder_admin][version] = 2.5
 
 projects[root][type] = theme
 projects[root][version] = 1.0
