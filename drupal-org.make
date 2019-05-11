@@ -39,7 +39,7 @@ projects[entity_browser][type] = module
 projects[entity_browser][version] = 2.1
 
 projects[entity_embed][type] = module
-projects[entity_embed][version] = 1.0-beta2
+projects[entity_embed][version] = 1.0-beta3
 
 projects[embed][type] = module
 projects[embed][version] = 1.0
@@ -99,13 +99,13 @@ projects[webform][type] = module
 projects[webform][version] = 5.2
 
 projects[rabbit_hole][type] = module
-projects[rabbit_hole][version] = 1.0-beta5
+projects[rabbit_hole][version] = 1.0-beta6
 
 projects[field_group][type] = module
 projects[field_group][version] = 1.0
 
 projects[photoswipe][type] = module
-projects[photoswipe][version] = 2.6
+projects[photoswipe][version] = 2.9
 
 projects[smtp][type] = module
 projects[smtp][version] = 1.0-beta4
@@ -192,17 +192,17 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.x-dev
+projects[seeds_toolbar][version] = 1.0
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.17
+projects[bootstrap][version] = 3.19
 
 projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.5
+projects[thunder_admin][version] = 2.7
 
 projects[root][type] = theme
-projects[root][version] = 1.x-dev
+projects[root][version] = 1.0
 
 ; Libraries
 libraries[slick][download][type] = get
