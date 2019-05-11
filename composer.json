@@ -72,8 +72,8 @@
     "drupal/views_bulk_edit": "2.2",
     "drupal/masquerade": "2.0-beta2",
 		"drupal/cloudflare": "1.0-alpha11",
-		"drupal/root": "1.x-dev",
-		"drupal/seeds_toolbar": "1.x-dev"
+		"drupal/root": "^1.0",
+		"drupal/seeds_toolbar": "^1.0"
   },
   "require-dev": {
     "drush/drush": "~8.1",

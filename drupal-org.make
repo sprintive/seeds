@@ -192,7 +192,7 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.x-dev
+projects[seeds_toolbar][version] = 1.0
 
 ; Themes
 projects[bootstrap][type] = theme
@@ -202,7 +202,7 @@ projects[thunder_admin][type] = theme
 projects[thunder_admin][version] = 2.7
 
 projects[root][type] = theme
-projects[root][version] = 1.x-dev
+projects[root][version] = 1.0
 
 ; Libraries
 libraries[slick][download][type] = get

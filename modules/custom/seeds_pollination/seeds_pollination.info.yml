@@ -3,5 +3,5 @@ description: Custom functions on seeds.
 type: module
 core: 8.x
 dependencies:
-  - admin_toolbar:admin_toolbar_tools
+  - seeds_toolbar:seeds_toolbar
 package: 'Seeds'
