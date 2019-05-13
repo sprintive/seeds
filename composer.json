@@ -40,7 +40,6 @@
     "drupal/entity_reference_revisions": "1.6",
     "drupal/paragraphs": "1.8",
     "drupal/editor_advanced_link": "1.4",
-    "drupal/contribute": "1.0-beta7",
     "drupal/webform": "5.2",
     "drupal/rabbit_hole": "1.0-beta6",
     "drupal/field_group": "1.0",
@@ -59,11 +58,8 @@
     "drupal/yoast_seo": "2.0-alpha3",
     "drupal/honeypot": "1.29",
     "drupal/security_review": "1.x-dev#9b8a34a21cac85913845df4eebb9a05c69de82d8",
-    "drupal/adminimal_admin_toolbar": "1.9",
     "drupal/admin_toolbar": "1.26",
-    "drupal/toolbar_anti_flicker": "2.7",
     "drupal/bootstrap": "3.19",
-    "drupal/thunder_admin": "2.7",
     "drupal/menu_admin_per_menu": "1.0",
     "drupal/taxonomy_access_fix": "2.6",
     "drupal/block_content_permissions": "1.6",
@@ -91,7 +87,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-8.x-6.x": "8.6.x-dev"
+      "dev-8.x-6.x": "8.7.x-dev"
     },
     "installer-paths": {
       "public_html/core": [
@@ -118,14 +114,6 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": false,
     "patches": {
-      "drupal/core": {
-        "Issue #2990664: Media library does not work when Drupal is installed into a sub-directory":
-        "https://www.drupal.org/files/issues/2018-09-10/media-library-subfolder-installation-path-error-2990664-4-d8.patch",
-        "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.":
-        "https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
-        "Issue #3028821: Layout builder doesn't redirect properly to the translation.":
-        "https://www.drupal.org/files/issues/2019-01-28/layout_builder_redirect_language_fixed-3028821-5.patch"
-      },
       "drupal/bootstrap_layouts": {
         "Issue #3018633: Incompatible with Layout builder drag and drop":
         "https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch",

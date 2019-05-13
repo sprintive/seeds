@@ -92,9 +92,6 @@ projects[paragraphs][version] = 1.8
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
-projects[contribute][type] = module
-projects[contribute][version] = 1.0-beta7
-
 projects[webform][type] = module
 projects[webform][version] = 5.2
 
@@ -159,14 +156,8 @@ projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-alpha11
 
 ; Administration Modules.
-projects[adminimal_admin_toolbar][type] = module
-projects[adminimal_admin_toolbar][version] = 1.9
-
 projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 1.26
-
-projects[toolbar_anti_flicker][type] = module
-projects[toolbar_anti_flicker][version] = 2.7
 
 projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
@@ -197,9 +188,6 @@ projects[seeds_toolbar][version] = 1.0
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.19
-
-projects[thunder_admin][type] = theme
-projects[thunder_admin][version] = 2.7
 
 projects[root][type] = theme
 projects[root][version] = 1.0
