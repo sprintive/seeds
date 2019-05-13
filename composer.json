@@ -114,6 +114,10 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": false,
     "patches": {
+			"drupal/core": {
+				"Issue #2990664: Media library does not work when Drupal is installed into a sub-directory":
+				"https://www.drupal.org/files/issues/2019-03-31/2990664-17-3044656-2.patch"
+			},
       "drupal/bootstrap_layouts": {
         "Issue #3018633: Incompatible with Layout builder drag and drop":
         "https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch",
