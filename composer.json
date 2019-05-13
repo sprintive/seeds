@@ -116,7 +116,9 @@
     "patches": {
 			"drupal/core": {
 				"Issue #2990664: Media library does not work when Drupal is installed into a sub-directory":
-				"https://www.drupal.org/files/issues/2019-03-31/2990664-17-3044656-2.patch"
+				"https://www.drupal.org/files/issues/2019-03-31/2990664-17-3044656-2.patch",
+				"Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.":
+				"https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch"
 			},
       "drupal/bootstrap_layouts": {
         "Issue #3018633: Incompatible with Layout builder drag and drop":
