@@ -2,6 +2,4 @@ name: Seeds Pollination
 description: Custom functions on seeds.
 type: module
 core: 8.x
-dependencies:
-  - seeds_toolbar:seeds_toolbar
 package: 'Seeds'

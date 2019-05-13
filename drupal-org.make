@@ -143,6 +143,9 @@ projects[google_analytics][version] = 2.4
 projects[yoast_seo][type] = module
 projects[yoast_seo][version] = 2.0-alpha3
 
+projects[length_indicator][type] = module
+projects[length_indicator][version] = 1.0-rc3
+
 ; Security Modules
 projects[honeypot][type] = module
 projects[honeypot][version] = 1.29

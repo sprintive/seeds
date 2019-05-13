@@ -44,6 +44,7 @@ dependencies:
   - diff:diff
   - menu_admin_per_menu:menu_admin_per_menu
   - taxonomy_access_fix:taxonomy_access_fix
+  - seeds_toolbar:seeds_toolbar
   - masquerade:masquerade
 
   # Embryos
