@@ -14,7 +14,7 @@ projects[panels][subdir] = utilities
 projects[jquery_update][version] = 3.0-alpha5
 projects[jquery_update][subdir] = utilities
 
-projects[views][version] = 3.22
+projects[views][version] = 3.23
 projects[views][subdir] = utilities
 
 projects[token][version] = 1.7
@@ -219,7 +219,7 @@ projects[media_oembed][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[adminimal_theme][type] = theme
-projects[adminimal_theme][version] = 1.25
+projects[adminimal_theme][version] = 1.26
 projects[adminimal_theme][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -227,7 +227,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.23
+projects[bootstrap][version] = 3.25
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
