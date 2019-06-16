@@ -20,7 +20,7 @@ projects[ds][version] = 3.3
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
 projects[page_manager][type] = module
-projects[page_manager][version] = 4.0-beta3
+projects[page_manager][version] = 4.0-beta4
 
 projects[panels][type] = module
 projects[panels][version] = 4.4
@@ -33,13 +33,13 @@ projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-
 projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch
 
 projects[entity][type] = module
-projects[entity][version] = 1.0-rc2
+projects[entity][version] = 1.0-rc3
 
 projects[entity_browser][type] = module
 projects[entity_browser][version] = 2.1
 
 projects[entity_embed][type] = module
-projects[entity_embed][version] = 1.0-beta3
+projects[entity_embed][version] = 1.0-rc2
 
 projects[embed][type] = module
 projects[embed][version] = 1.0
@@ -57,7 +57,7 @@ projects[media_entity_image_exif][type] = module
 projects[media_entity_image_exif][version] = 1.x-dev
 
 projects[video_embed_field][type] = module
-projects[video_embed_field][version] = 2.0
+projects[video_embed_field][version] = 2.1
 
 projects[crop][type] = module
 projects[crop][version] = 1.5
@@ -133,9 +133,7 @@ projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 2.12
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = 1.6
-;; Issue #2920269: Add title attribute
-projects[link_attributes][patch][] = https://www.drupal.org/files/issues/2018-06-05/link_attributes-title-attribute-2920269-5.patch
+projects[link_attributes][version] = 1.8
 
 projects[redirect][type] = module
 projects[redirect][version] = 1.3
@@ -163,7 +161,7 @@ projects[adminimal_admin_toolbar][type] = module
 projects[adminimal_admin_toolbar][version] = 1.9
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.26
+projects[admin_toolbar][version] = 1.27
 
 projects[toolbar_anti_flicker][type] = module
 projects[toolbar_anti_flicker][version] = 2.7
@@ -186,13 +184,13 @@ projects[views_bulk_operations][type] = module
 projects[views_bulk_operations][version] = 2.5
 
 projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.2
+projects[views_bulk_edit][version] = 2.3
 
 projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.0
+projects[seeds_toolbar][version] = 1.1
 
 ; Themes
 projects[bootstrap][type] = theme
@@ -202,7 +200,7 @@ projects[thunder_admin][type] = theme
 projects[thunder_admin][version] = 2.5
 
 projects[root][type] = theme
-projects[root][version] = 1.0
+projects[root][version] = 1.1
 
 ; Libraries
 libraries[slick][download][type] = get
