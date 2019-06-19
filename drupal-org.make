@@ -190,7 +190,7 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.1
+projects[seeds_toolbar][version] = 1.3
 
 ; Themes
 projects[bootstrap][type] = theme
