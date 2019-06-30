@@ -72,13 +72,13 @@ projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.1
 
 projects[slick][type] = module
-projects[slick][version] = 1.1
+projects[slick][version] = 2.0-rc3
 
 projects[blazy][type] = module
-projects[blazy][version] = 1.0-rc4
+projects[blazy][version] = 2.0-rc3
 
 projects[slick_views][type] = module
-projects[slick_views][version] = 1.0
+projects[slick_views][version] = 2.0
 
 projects[slick_media][type] = module
 projects[slick_media][version] = 2.0-alpha3
@@ -99,7 +99,7 @@ projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
 
 projects[field_group][type] = module
-projects[field_group][version] = 1.0
+projects[field_group][version] = 3.0
 
 projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
@@ -127,7 +127,7 @@ projects[pathauto][type] = module
 projects[pathauto][version] = 1.4
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 2.12
+projects[simple_sitemap][version] = 3.2
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.8
@@ -189,6 +189,9 @@ projects[seeds_toolbar][version] = 1.1
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.19
+
+projects[bootstrap][type] = theme
+projects[bootstrap_barrio][version] = 4.22
 
 projects[root][type] = theme
 projects[root][version] = 1.1
