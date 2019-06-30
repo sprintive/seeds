@@ -49,14 +49,8 @@ projects[embed][version] = 1.0
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-rc1
 
-projects[media_entity_actions][type] = module
-projects[media_entity_actions][version] = 1.0-alpha2
-
 projects[media_entity_generic][type] = module
 projects[media_entity_generic][version] = 1.0
-
-projects[media_entity_image_exif][type] = module
-projects[media_entity_image_exif][version] = 1.x-dev
 
 projects[video_embed_field][type] = module
 projects[video_embed_field][version] = 2.1
@@ -145,6 +139,8 @@ projects[yoast_seo][version] = 2.0-alpha3
 
 projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.0-rc3
+;; Issue #3048286: Add cursor position direction support for RTL
+projects[length_indicator][patch][] = https://www.drupal.org/files/issues/2019-04-15/3048286-3.patch
 
 ; Security Modules
 projects[honeypot][type] = module
