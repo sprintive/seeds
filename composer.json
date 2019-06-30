@@ -27,7 +27,6 @@
     "drupal/inline_entity_form": "^1.0-rc1",
     "drupal/media_entity_actions": "^1.0-alpha2",
     "drupal/media_entity_generic": "^1.0",
-    "drupal/media_entity_image_exif": "^1.x-dev",
     "drupal/video_embed_field": "^2.1",
     "drupal/crop": "^1.5",
     "drupal/focal_point": "^1.0",
@@ -126,7 +125,9 @@
         "Issue #3018633: Incompatible with Layout builder drag and drop":
         "https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch",
         "Issue #3010952: Add a container option":
-        "https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch"
+				"https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch",
+				"Issues #2863131: Add Bootstrap 4 support":
+				"https://www.drupal.org/files/issues/2863131-bs4-layouts.patch"
       },
       "drupal/ds": {
         "Issue #2883928: Use absolute or external URL for link wrappers":
@@ -135,7 +136,7 @@
       "drupal/block_content_permissions": {
         "Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission":
         "https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch"
-      }
+			}
     }
   },
   "config": {
