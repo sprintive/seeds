@@ -107,7 +107,7 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 1.5
+projects[layout_builder_restrictions][version] = 2.1
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta8

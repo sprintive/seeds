@@ -44,7 +44,7 @@
     "drupal/photoswipe": "^2.9",
     "drupal/smtp": "^1.0",
     "drupal/field_formatter": "^1.2",
-    "drupal/layout_builder_restrictions": "^1.5",
+    "drupal/layout_builder_restrictions": "^2.0",
     "drupal/linkit": "^5.0",
     "drupal/fast_404": "^1.0",
     "drupal/metatag": "^1.8",
@@ -115,8 +115,6 @@
     "composer-exit-on-patch-failure": false,
     "patches": {
 			"drupal/core": {
-				"Issue #2990664: Media library does not work when Drupal is installed into a sub-directory":
-				"https://www.drupal.org/files/issues/2019-06-11/2990664-36-a.patch",
 				"Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.":
 				"https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
 				"Issue #3028821: Layout builder doesn't redirect properly to the translation":
@@ -141,7 +139,8 @@
         "https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch"
 			},
 			"drupal/length_indicator": {
-				"Issue #3048286: Add cursor position direction support for RTL": "https://www.drupal.org/files/issues/2019-04-15/3048286-3.patch"
+				"Issue #3048286: Add cursor position direction support for RTL":
+				"https://www.drupal.org/files/issues/2019-04-15/3048286-3.patch"
 			}
     }
   },
