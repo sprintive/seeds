@@ -185,6 +185,12 @@ projects[masquerade][version] = 2.0-beta2
 projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.3
 
+projects[imageapi_optimize][type] = module
+projects[imageapi_optimize][version] = 2.0-alpha4
+
+projects[imageapi_optimize_resmushit][type] = module
+projects[imageapi_optimize_resmushit][version] = 1.0-beta1
+
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.19
