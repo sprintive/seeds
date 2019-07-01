@@ -171,6 +171,7 @@ projects[block_content_permissions][patch][] = https://www.drupal.org/files/issu
 
 projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0-alpha7
+projects[responsive_preview][patch][] = https://www.drupal.org/files/issues/2018-11-16/2944727-3.patch
 
 projects[views_bulk_operations][type] = module
 projects[views_bulk_operations][version] = 2.5
@@ -182,7 +183,7 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.1
+projects[seeds_toolbar][version] = 1.3
 
 ; Themes
 projects[bootstrap][type] = theme

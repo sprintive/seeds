@@ -115,10 +115,10 @@
     "composer-exit-on-patch-failure": false,
     "patches": {
 			"drupal/core": {
+				"Issue #2990664: Media library does not work when Drupal is installed into a sub-directory":
+				"https://www.drupal.org/files/issues/2019-06-11/2990664-36-a.patch",
 				"Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.":
 				"https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
-				"Issue #3028821: Layout builder doesn't redirect properly to the translation":
-				"https://www.drupal.org/files/issues/2019-06-30/layout_builder_redirect_to_langauge-3028821-12.patch",
 				"Issue #2985168: Allow media items to be edited in a modal when using the field widget":
 				"https://www.drupal.org/files/issues/2019-05-06/2985168-11.patch"
 			},
@@ -141,6 +141,10 @@
 			"drupal/length_indicator": {
 				"Issue #3048286: Add cursor position direction support for RTL":
 				"https://www.drupal.org/files/issues/2019-04-15/3048286-3.patch"
+			},
+			"drupal/responsive_preview": {
+				"Issue #2944727: Drupal.debounce is not a function / Drupal.displace is not a function":
+				"https://www.drupal.org/files/issues/2018-11-16/2944727-3.patch"
 			}
     }
   },
