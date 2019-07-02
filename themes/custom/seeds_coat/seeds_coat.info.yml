@@ -7,6 +7,7 @@ base theme: bootstrap_barrio
 
 libraries:
   - seeds_coat/global-styling
+  - seeds_coat/seeds-fixes
 libraries-override:
   bootstrap_barrio/global-styling: false
 regions:
