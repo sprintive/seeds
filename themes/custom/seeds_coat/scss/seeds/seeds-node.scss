@@ -1,0 +1,231 @@
+// Layout Builder.
+.node-layout-builder-form {
+    #edit-actions {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        z-index: 2;
+        background-color: $seeds;
+        padding: 10px 0px;
+        #edit-preview-toggle {
+            display: none;
+        }
+        button {
+            border: none;
+            border-radius: 0;
+            margin: 0px 5px;
+            &#edit-submit {
+                background-color: $green;
+            }
+            &#edit-discard-changes {
+                background-color: $blue;
+            }
+            &#edit-revert {
+                background-color: $red;
+            }
+            &:hover,
+            &:focus {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.layout-builder {
+    border: 0px;
+    padding: 0px;
+}
+
+.layout-builder__section {
+    padding: 0px;
+}
+
+.layout-builder__link--remove {
+    margin-left: -1px;
+    border-radius: 0px;
+    background: url(../images/ex.svg) $red center center / 16px 16px no-repeat;
+    border: 0px;
+}
+
+.layout-builder__add-section {
+    outline: 1px dashed #ccc;
+}
+
+.layout-builder__region {
+    outline: 1px dashed $blue;
+}
+
+.layout-builder--content-preview-disabled .layout-builder-block {
+    outline: 1px dashed #ccc;
+    border: 0px;
+}
+
+// Model fixes.
+.ui-dialog.ui-corner-all {
+    background: none;
+    border: 0 !important;
+    box-shadow: none;
+    #drupal-off-canvas {
+        top: 0 !important;
+        position: relative;
+        background-color: #f7f7f7;
+        padding: 15px;
+        & * {
+            background-color: #f7f7f7;
+            color: #333
+        }
+        input,
+        text,
+        select {
+            background: $white;
+            $color: #333;
+        }
+        .form-group {
+            padding: 0px;
+        }
+        details,
+        summary,
+        .details-wrapper {
+            margin: 0px -25px;
+        }
+        form.layout-builder-configure-section {
+            .form-wrapper {
+                margin: 0px -10px;
+                padding: 0px 20px;
+                .details-wrapper {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            .form-group,
+            .form-wrapper {
+                .form-check {
+                    padding: 0;
+                    margin: 10px 0px;
+                    input,
+                    label {
+                        &.form-check {
+                            width: 90%;
+                        }
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                .js-form-type-select {
+                    select {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        .ui-dialog-off-canvas {
+            overflow: scroll;
+        }
+        a {
+            color: $blue;
+            text-align: center;
+            font-size: 14px;
+            &.use-ajax {
+                display: flex !important;
+                position: relative;
+                flex-direction: row;
+                align-items: center;
+                img,
+                div {
+                    display: inline-block;
+                }
+            }
+        }
+        .glyphicon {
+            display: none;
+        }
+        .ui-resizable-s {
+            display: none !important;
+        }
+        button.button {
+            position: relative;
+            height: auto;
+            padding: 4px 20px;
+            border: 0;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.5s ease;
+            background: $green;
+            color: $white;
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+            &:hover,
+            &:focus {
+                background: #333;
+                color: $blue;
+            }
+        }
+    }
+}
+
+// Tabs styling
+body:not(.path-user) {
+    nav.tabs {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 35px;
+        z-index: 100;
+        h2 {
+            width: 70px;
+            height: 70px;
+            background: #333;
+            border-radius: 35px;
+            display: block;
+            position: relative !important;
+            text-indent: -30000px;
+            margin: 0px;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .primary.nav-tabs {
+            display: none;
+            position: absolute;
+            bottom: 35px;
+            background-color: $seeds;
+            padding: 35px 0px 45px 0px;
+            border: 0;
+            z-index: 99;
+            border-radius: 35px 35px 0px 0px;
+            li {
+                margin: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                a {
+                    font-size: 12px;
+                    border: 0;
+                    background-color: transparent;
+                    padding: 10px 8px;
+                    color: $white;
+                    &:hover {
+                        background-color: #444;
+                    }
+                }
+                &.active {
+                    a {
+                        color: $blue;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

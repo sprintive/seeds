@@ -11,6 +11,9 @@ global-styling:
     - core/jquery
     - core/drupal
 seeds-fixes:
+  version: VERSION
+  js:
+    js/seeds_coat.js: {}
   css:
     component:
       css/seeds.css: {}
