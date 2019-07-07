@@ -1,0 +1,22 @@
+uuid: e8915e53-30b7-4822-8b0a-531ab777d4d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seeds_coat
+_core:
+  default_config_hash: D2ZHC3i0u0OYr1NSPo-FI_n2gus44rxaVGb3DmnpMOg
+id: seeds_coat_messages
+theme: seeds_coat
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -147,6 +147,10 @@
 			"drupal/responsive_preview": {
 				"Issue #2944727: Drupal.debounce is not a function / Drupal.displace is not a function":
 				"https://www.drupal.org/files/issues/2018-11-16/2944727-3.patch"
+			},
+			"drupal/seeds_toolbar": {
+				"Issue #3065737: Enabling seeds_toolbar in Umami breaks the theme":
+				"https://www.drupal.org/files/issues/2019-07-07/fix-Maxwidth-issue-for-themes-bs4-3065737-4.patch"
 			}
     }
   },

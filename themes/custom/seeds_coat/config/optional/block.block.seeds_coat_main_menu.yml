@@ -1,0 +1,27 @@
+uuid: e38de60e-eeec-4ff0-a0e1-ad825469e3ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - seeds_coat
+_core:
+  default_config_hash: kbKPFQFX2lddKVorLWtH88lyPXxDh1dEop7pffzL97I
+id: seeds_coat_main_menu
+theme: seeds_coat
+region: header_form
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

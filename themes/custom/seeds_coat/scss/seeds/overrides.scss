@@ -1,0 +1,99 @@
+// Header.
+@media (max-width: 991px) {
+    .navbar-brand {
+        width: 80px;
+    }
+    .navbar-collapse {
+        margin: 0px -20px;
+        background: $seeds;
+        >div,
+        >nav {
+            padding: 20px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-brand {
+        width: 120px;
+    }
+}
+
+.navbar-toggler {
+    background: transparent;
+    outline: 0;
+    width: 45px;
+    height: 45px;
+    padding: 8px 15px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin-right: -15px;
+    &:focus {
+        outline: none;
+    }
+    .icon-bar {
+        display: block;
+        position: absolute;
+        left: 13px;
+        height: 1px;
+        margin: 0;
+        width: 18px;
+        background: #000;
+        border-radius: 9px;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        &:nth-child(1) {
+            top: 15px;
+            -webkit-transform-origin: left center;
+            transform-origin: left center;
+        }
+        &:nth-child(2) {
+            top: 22px;
+            transition: opacity .25s ease-in-out;
+        }
+        &:nth-child(3) {
+            top: 29px;
+            -webkit-transform-origin: left center;
+            transform-origin: left center;
+        }
+    }
+    &[aria-expanded="true"] {
+        .icon-bar {
+            &:nth-child(1) {
+                top: 16px;
+                left: 15px;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                top: 29px;
+                left: 15px;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+// Footer.
+.site-footer {
+    background: $seeds !important;
+}
+
+// Seeds Toolbar fixes.
+.toolbar-menu-administration.col-auto {
+	padding: 0px;
+}

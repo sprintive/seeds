@@ -2,13 +2,13 @@
 .node-layout-builder-form {
     #edit-actions {
         position: fixed;
-        top: 0;
+        bottom: 0;
         width: 100%;
         left: 0;
         right: 0;
         margin: auto;
         text-align: center;
-        z-index: 2;
+        z-index: 501;
         background-color: $seeds;
         padding: 10px 0px;
         #edit-preview-toggle {
@@ -179,7 +179,7 @@
 body:not(.path-user) {
     nav.tabs {
         position: fixed;
-        bottom: 30px;
+        bottom: 50px;
         right: 30px;
         border-radius: 35px;
         z-index: 100;
@@ -194,6 +194,15 @@ body:not(.path-user) {
             margin: 0px;
             cursor: pointer;
             z-index: 100;
+            &:after {
+                width: 70px;
+                height: 70px;
+                content: "";
+                background: url(../images/pencil.svg) transparent center center/30px 30px no-repeat;
+                display: block;
+                position: absolute;
+                top: 0px;
+            }
         }
         .primary.nav-tabs {
             display: none;

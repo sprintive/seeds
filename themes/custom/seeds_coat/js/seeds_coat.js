@@ -9,7 +9,7 @@
 
 	Drupal.behaviors.seeds_coat = {
 		attach: function (context, settings) {
-			$(".tabs").click(function () {
+			$(".tabs").once('seeds-coat-node-edit').click(function () {
 				$(this).children(".nav-tabs.primary").slideToggle('slow', function () { });
 			});
 		}

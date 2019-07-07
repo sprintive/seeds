@@ -1,0 +1,22 @@
+uuid: 6ca7fadc-41f5-4b6e-b6ed-83d1d2bbd99b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seeds_coat
+_core:
+  default_config_hash: bPKbTNWRoAkfHQrMZEMVQTW8rMBNDFoH-UpsRf0_GP8
+id: seeds_coat_breadcrumbs
+theme: seeds_coat
+region: breadcrumb
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
