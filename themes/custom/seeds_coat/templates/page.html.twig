@@ -99,7 +99,7 @@
           {% if container_navbar %}
           <div class="container">
           {% endif %}
-            {% if page.collapse_only or page.navigation %}
+						{% if page.collapse_only or page.navigation or page.header_collapse%}
               <div class="collapse navbar-collapse" id="CollapsingNavbar">
                 {% if page.navigation|render %}
                   <div class="navbar-form">
@@ -107,11 +107,12 @@
                   </div>
                 {% endif %}
 
-                 {% if page.collapse_only|render %}
+								{# {% if page.collapse_only or page.header_collapse %} #}
                   <div class="collapse-only d-flex d-lg-none">
                       {{ page.collapse_only }}
+											{{ page.header_collapse }}
                   </div>
-                {% endif %}
+                {# {% endif %} #}
 	          </div>
             {% endif %}
             {% if sidebar_collapse %}

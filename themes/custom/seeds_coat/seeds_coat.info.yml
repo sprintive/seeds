@@ -12,10 +12,10 @@ libraries:
 libraries-override:
   bootstrap_barrio/global-styling: false
 regions:
-  header: Header
-  header_collapse: "Header Collapse"
-  navigation: 'Navigation Bar'
-  collapse_only: 'Collapse Only'
+  header: 'Header | Show on Desktop and Mobile headers.'
+  header_collapse: 'Header Collapse | Show on Desktop header and collapsed on mobile.'
+  navigation: 'Navigation Bar | Show under the header and horizantal bar on Descktop and collpased on mobile.'
+  collapse_only: 'Collapse Only | Show on mobile collaspsed only.'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
   highlighted: Highlighted
