@@ -88,6 +88,11 @@
     }
 }
 
+#navbar-main {
+	background: $seeds;
+	padding: 0px;
+}
+
 // Footer.
 .site-footer {
     background: $seeds !important;
@@ -95,5 +100,5 @@
 
 // Seeds Toolbar fixes.
 .toolbar-menu-administration.col-auto {
-	padding: 0px;
+    padding: 0px;
 }

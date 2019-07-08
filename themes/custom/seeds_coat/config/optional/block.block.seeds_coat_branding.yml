@@ -10,8 +10,8 @@ _core:
   default_config_hash: MA3BWuQBnzIrpJB3KkicbQprmdo0v7bQYw74AU8FVjo
 id: seeds_coat_branding
 theme: seeds_coat
-region: top_header
-weight: 0
+region: header
+weight: -5
 provider: null
 plugin: system_branding_block
 settings:

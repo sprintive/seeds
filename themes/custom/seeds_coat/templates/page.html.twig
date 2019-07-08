@@ -33,13 +33,10 @@
  *   comment/reply/12345).
  *
  * Regions:
- * - page.top_header: Items for the top header region.
- * - page.top_header_form: Items for the top header form region.
  * - page.header: Items for the header region.
- * - page.header_form: Items for the header form region.
  * - page.highlighted: Items for the highlighted region.
- * - page.primary_menu: Items for the primary menu region.
- * - page.secondary_menu: Items for the secondary menu region.
+ * - page.collapse_only: Items for the primary menu region.
+ * - page.navigation_bar: Items for the secondary menu region.
  * - page.featured_top: Items for the featured top region.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
@@ -71,20 +68,23 @@
   <div id="page">
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
-        {% if page.secondary_menu or page.top_header or page.top_header_form %}
+				{% if page.header_collapse or page.header %}
           <nav{{ navbar_top_attributes }}>
           {% if container_navbar %}
           <div class="container">
           {% endif %}
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
-              {% if page.top_header_form %}
-                <div class="form-inline navbar-form">
-                  {{ page.top_header_form }}
+              {% if page.header|render %}
+                <div class="navbar-form">
+                  {{ page.header }}
                 </div>
               {% endif %}
-							{% if page.primary_menu or page.header_form %}
-									<button class="navbar-toggler navbar-toggler-right float-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+								{% if page.header_collapse | render %}
+                <div class="navigation-bar d-none d-lg-flex">
+									{{ page.header_collapse }}
+                 </div>
+              {% endif %}
+							{% if page.collapse_only or page.header_collapse or page.navigation %}
+									<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
@@ -99,12 +99,17 @@
           {% if container_navbar %}
           <div class="container">
           {% endif %}
-            {% if page.primary_menu or page.header_form %}
+            {% if page.collapse_only or page.navigation %}
               <div class="collapse navbar-collapse" id="CollapsingNavbar">
-                {{ page.primary_menu }}
-                {% if page.header_form %}
-                  <div class="form-inline navbar-form float-right">
-                    {{ page.header_form }}
+                {% if page.navigation|render %}
+                  <div class="navbar-form">
+                    {{ page.navigation }}
+                  </div>
+                {% endif %}
+
+                 {% if page.collapse_only|render %}
+                  <div class="collapse-only d-flex d-lg-none">
+                      {{ page.collapse_only }}
                   </div>
                 {% endif %}
 	          </div>

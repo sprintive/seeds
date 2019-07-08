@@ -12,7 +12,7 @@ _core:
   default_config_hash: kbKPFQFX2lddKVorLWtH88lyPXxDh1dEop7pffzL97I
 id: seeds_coat_main_menu
 theme: seeds_coat
-region: header_form
+region: navigation
 weight: -4
 provider: null
 plugin: 'system_menu_block:main'
