@@ -1,6 +1,11 @@
-global-styling:
+scripts:
   js:
     js/main.js: {}
+ltr:
   css:
     component:
       css/style.css: {}
+rtl:
+  css:
+    component:
+      css/style-rtl.css: {}

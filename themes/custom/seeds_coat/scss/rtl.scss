@@ -2,6 +2,9 @@
 [dir="rtl"] {
     text-align: right;
     direction: rtl;
+    body {
+        text-align: right;
+    }
     .nav {
         padding-right: 0;
     }

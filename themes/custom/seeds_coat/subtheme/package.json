@@ -31,6 +31,5 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
 		"gulp-rtlcss": "^1.4.0"
-
   }
 }

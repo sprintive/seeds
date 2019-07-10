@@ -27,8 +27,11 @@ function THEMENAME_preprocess_html(&$variables) {
   $current_path = \Drupal::service('path.current')->getPath();
   $variables['attributes']['class'][] = Html::cleanCssIdentifier(ltrim($current_path, '/'));
 
-  /* Comment out and change "THEMENAME" to enable rtl style  */
-  // if ($variables['html_attributes']['dir'] == 'rtl') {
-  //   $variables['page']['#attached']['library'][] = 'THEMENAME/rtl';
-  // }
+	if ($variables['html_attributes']['dir'] == 'ltr') {
+		$variables['page']['#attached']['library'][] = 'THEMENAME/ltr';
+	}
+	else {
+		/* Comment out and change "THEMENAME" to enable rtl style  */
+		// $variables['page']['#attached']['library'][] = 'THEMENAME/rtl';
+	}
 }

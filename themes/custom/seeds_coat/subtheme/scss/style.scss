@@ -1,16 +1,12 @@
 // Default variables.
-@import "default-variables";
-
+@import "theme-variables";
 // Bootstrap Framework.
-//@import 'bootstrap';
-
+@import "../node_modules/bootstrap/scss/bootstrap";
 //Please uncomment this line if you need FontAwesome Library.
 //@import 'font-awesome';
-
 // Base-theme overrides.
-@import 'overrides';
-
 // Project style.
+@import 'overrides';
 @import 'mixin';
 @import 'elements';
 @import 'fields';
