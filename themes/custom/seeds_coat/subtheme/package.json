@@ -12,25 +12,25 @@
     "Drupal",
     "Seeds",
     "Sprintive",
-    "Barrio"
-  ],
+    "Seeds coat"
+	],
+	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"popper.js": "^1.14.3"
+	},
   "author": "@sprintive",
   "license": "MIT",
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
-  },
   "devDependencies": {
-    "browser-sync": "^2.24.7",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-scss-lint": "^1.0.0",
     "gulp-clean-css": "3.9.4",
-    "gulp-rename": "^1.2.2",
+    "gulp-livereload": "^4.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-		"font-awesome-sass": "^4.7.0"
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+		"gulp-rtlcss": "^1.4.0"
+
   }
 }

@@ -1,0 +1,6 @@
+global-styling:
+  js:
+    js/main.js: {}
+  css:
+    component:
+      css/style.css: {}
