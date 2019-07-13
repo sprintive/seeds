@@ -183,7 +183,7 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.3
+projects[seeds_toolbar][version] = 1.4
 
 projects[imageapi_optimize][type] = module
 projects[imageapi_optimize][version] = 2.0-alpha4
@@ -199,7 +199,7 @@ projects[bootstrap][type] = theme
 projects[bootstrap_barrio][version] = 4.22
 
 projects[root][type] = theme
-projects[root][version] = 1.1
+projects[root][version] = 1.2
 
 ; Libraries
 libraries[slick][download][type] = get

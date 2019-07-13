@@ -1,7 +1,7 @@
 api = 2
 core = 8.x
 projects[drupal][type] = core
-projects[drupal][version] = 8.7.3
+projects[drupal][version] = 8.7.4
 ;; Issue #2990664: Media library does not work when Drupal is installed into a sub-directory
 projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-06-11/2990664-36-a.patch
 ;; Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.
