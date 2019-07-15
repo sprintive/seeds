@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - seeds_coat
+    - THEMENAME
 _core:
   default_config_hash: gYlD8yK95xVNVDz4gU9S1P2_BJdOirdm17BRLF80Qb4
-id: seeds_coat_local_tasks
-theme: seeds_coat
+id: THEMENAME_local_tasks
+theme: THEMENAME
 region: content
 weight: -4
 provider: null

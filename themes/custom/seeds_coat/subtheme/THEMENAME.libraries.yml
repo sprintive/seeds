@@ -1,6 +1,7 @@
 scripts:
   js:
     js/main.js: {}
+    js/bootstrap/bootstrap.min.js: {}
 ltr:
   css:
     component:

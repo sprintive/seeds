@@ -1,0 +1,22 @@
+uuid: db6a70c6-43ea-429a-925a-0a6914f03086
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - THEMENAME
+_core:
+  default_config_hash: zsey5GJyVmP7erF8n5PgqE5I4LdfIBVtpBHa9yRsMf0
+id: THEMENAME_content
+theme: THEMENAME
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
