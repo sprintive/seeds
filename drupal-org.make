@@ -79,6 +79,9 @@ projects[slick_views][version] = 2.0
 projects[slick_media][type] = module
 projects[slick_media][version] = 2.0-alpha3
 
+projects[slick_paragraphs][type] = module
+projects[slick_paragraphs][version] = 2.0
+
 projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.6
 
@@ -135,7 +138,7 @@ projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.4
 
 projects[yoast_seo][type] = module
-projects[yoast_seo][version] = 2.0-alpha3
+projects[yoast_seo][version] = 1.5
 
 projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.0-rc3
