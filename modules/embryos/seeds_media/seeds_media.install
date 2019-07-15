@@ -12,10 +12,10 @@ use Drupal\file\Entity\File;
  * Implements hook_install().
  */
 function seeds_media_install() {
-	$path = \Drupal::moduleHandler()->getModule('seeds_media')->getPath();
-	$fs = \Drupal::service('file_system');
+  $path = \Drupal::moduleHandler()->getModule('seeds_media')->getPath();
+  $fs = \Drupal::service('file_system');
 
-	// Set icons for seeds embed entities.
+  // Set icons for seeds embed entities.
   $icon = $path . '/images/embed_icon.png';
   $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
 

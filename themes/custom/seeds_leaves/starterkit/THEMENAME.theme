@@ -32,5 +32,5 @@ function THEMENAME_preprocess_html(&$variables) {
   /* Comment out and change "THEMENAME" to enable rtl style  */
   // if ($variables['html_attributes']['dir'] == 'rtl') {
   //   $variables['page']['#attached']['library'][] = 'THEMENAME/rtl';
-  // }
+  // }.
 }

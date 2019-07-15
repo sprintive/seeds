@@ -9,7 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 define('ENTITIES',
   [
     'node_type' => 'node',
-    'taxonomy_vocabulary' => 'taxonomy_term'
+    'taxonomy_vocabulary' => 'taxonomy_term',
   ]
 );
 
@@ -19,7 +19,7 @@ define('ENTITIES',
  */
 
 /**
- * Implements hook_form_alter().
+ * Implements HOOK_form_node_form_alter().
  */
 function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   $title = $form['title']['widget'][0]['value']['#title'];
@@ -27,49 +27,56 @@ function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface
   $form['title']['widget'][0]['value']['#placeholder'] = $title;
 }
 
+/**
+ * Implements of HOOK_form_alter().
+ */
 function seeds_pollination_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   $form_object = $form_state->getFormObject();
 
-  if(method_exists($form_object, 'getEntity')) {
+  if (method_exists($form_object, 'getEntity')) {
 
-    // Get current status of container
+    // Get current status of container.
     $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
 
     $entity = $form_object->getEntity();
     $entity_type = $entity->getEntityTypeId();
 
-    if(in_array($entity_type, array_keys(ENTITIES))) {
+    if (in_array($entity_type, array_keys(ENTITIES))) {
 
-       $container_settings = ($entity->getOriginalId()) ? $config->get(ENTITIES[$entity_type] . '_' . $entity->getOriginalId()) : 0;
+      $container_settings = ($entity->getOriginalId()) ? $config->get(ENTITIES[$entity_type] . '_' . $entity->getOriginalId()) : 0;
 
-      // Define field set in additional settings group
-      $form['container_settings'] = array(
+      // Define field set in additional settings group.
+      $form['container_settings'] = [
         '#type' => 'details',
         '#title' => t('Container settings'),
         '#group' => isset($form['additional_settings']) ? 'additional_settings' : 'advanced',
-      );
-      // Add checkbox option
-      $form['container_settings']['fluid_container'] = array(
+      ];
+      // Add checkbox option.
+      $form['container_settings']['fluid_container'] = [
         '#type' => 'checkbox',
         '#title' => t('Fluid Container'),
-        '#default_value' => $container_settings
-      );
+        '#default_value' => $container_settings,
+      ];
 
       if (isset($form['actions']['submit']['#submit'])) {
-      foreach (array_keys($form['actions']) as $action) {
-        if ($action !== 'preview'
+        foreach (array_keys($form['actions']) as $action) {
+          if ($action !== 'preview'
           && isset($form['actions'][$action]['#type'])
           && $form['actions'][$action]['#type'] === 'submit') {
-          $form['actions'][$action]['#submit'][] = 'container_settings_form_submit';
+            $form['actions'][$action]['#submit'][] = 'container_settings_form_submit';
+          }
         }
       }
-      }else {
+      else {
         $form['#submit'][] = 'container_settings_form_submit';
       }
     }
   }
 }
 
+/**
+ * Implements of HOOK_form_submit().
+ */
 function container_settings_form_submit(&$form, FormStateInterface &$form_state) {
   // Get container configations.
   $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
@@ -79,17 +86,20 @@ function container_settings_form_submit(&$form, FormStateInterface &$form_state)
 
   $value = $form_state->getValue('fluid_container');
 
-  $config->set(ENTITIES[$entity_type]. '_' . $entity->getOriginalId(), $value)->save();
+  $config->set(ENTITIES[$entity_type] . '_' . $entity->getOriginalId(), $value)->save();
 }
 
+/**
+ * Implements of HOOK_preprocess_page()
+ */
 function seeds_pollination_preprocess_page(&$vars) {
   $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
 
   $route_match = \Drupal::routeMatch();
-  $type=$route_match->getParameters();
+  $type = $route_match->getParameters();
 
-  foreach($type as $entity_type => $entity) {
-    if(in_array($entity_type, array_values(ENTITIES)) && is_object(($entity))) {
+  foreach ($type as $entity_type => $entity) {
+    if (in_array($entity_type, array_values(ENTITIES)) && is_object(($entity))) {
       $vars['is_full_width'] = $config->get($entity_type . '_' . $entity->bundle()) ? TRUE : FALSE;
     }
   }
