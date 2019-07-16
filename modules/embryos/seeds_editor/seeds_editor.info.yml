@@ -8,7 +8,7 @@ dependencies:
   - entity_embed
   - filter
   - linkit
-  - advanced_link
+  - editor_advanced_link
   - ckeditor_bidi
   - ace_editor
 package: Seeds
