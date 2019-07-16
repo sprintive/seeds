@@ -1,5 +1,5 @@
 name: 'Seeds Editor'
-description: Neat editors focused on normal users UX.
+description: 'Neat editors focused on normal users UX.'
 type: module
 core: 8.x
 dependencies:
@@ -7,4 +7,8 @@ dependencies:
   - editor
   - entity_embed
   - filter
-package: 'Seeds'
+  - linkit
+  - advanced_link
+  - ckeditor_bidi
+  - ace_editor
+package: Seeds

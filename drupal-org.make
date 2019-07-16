@@ -194,6 +194,12 @@ projects[imageapi_optimize][version] = 2.0-alpha4
 projects[imageapi_optimize_resmushit][type] = module
 projects[imageapi_optimize_resmushit][version] = 1.0-beta1
 
+projects[ace_editor][type] = module
+projects[ace_editor][version] = 1.1
+
+projects[ckeditor_bidi][type] = module
+projects[ckeditor_bidi][version] = 2.1
+
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.19
