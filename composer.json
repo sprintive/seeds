@@ -57,7 +57,6 @@
 		"drupal/yoast_seo": "^1.5",
 		"drupal/length_indicator": "^1.0",
     "drupal/honeypot": "^1.29",
-    "drupal/security_review": "1.x-dev#9b8a34a21cac85913845df4eebb9a05c69de82d8",
     "drupal/admin_toolbar": "^1.27",
 		"drupal/bootstrap": "^3.19",
 		"drupal/bootstrap_barrio": "^4.22",

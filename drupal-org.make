@@ -149,11 +149,6 @@ projects[length_indicator][patch][] = https://www.drupal.org/files/issues/2019-0
 projects[honeypot][type] = module
 projects[honeypot][version] = 1.29
 
-projects[security_review][type] = module
-projects[security_review][download][url] = https://git.drupal.org/project/security_review.git
-projects[security_review][download][revision] = 9b8a34a21cac85913845df4eebb9a05c69de82d8
-projects[security_review][download][branch] = 8.x-1.x
-
 projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-alpha11
 
