@@ -1,7 +1,27 @@
+uuid: edd0f983-9b3c-43a7-94aa-41815cfd742f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - ace_editor
+_core:
+  default_config_hash: 6NPNRw0Xnv-KibcqFV-tq1Q1vqJLZGJxD5TBUsqGvSs
 name: 'Advanced Editor'
 format: advanced_editor
 weight: 0
-filters: {  }
+filters:
+  ace_filter:
+    id: ace_filter
+    provider: ace_editor
+    status: false
+    weight: 0
+    settings:
+      theme: cobalt
+      syntax: html
+      height: 500px
+      width: 700px
+      font_size: 12pt
+      line_numbers: '1'
+      print_margins: '1'
+      show_invisibles: '0'
+      use_wrap_mode: '1'
