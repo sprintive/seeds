@@ -1,11 +1,8 @@
-uuid: 3099f568-c0fe-48b9-b6ae-dbd6d9b9bdd5
 langcode: en
 status: true
 dependencies:
   theme:
     - THEMENAME
-_core:
-  default_config_hash: bnWrwnTUFIZ-t_wleB7FDGULA64XmGsqEGHUO3nlkIs
 id: THEMENAME_page_title
 theme: THEMENAME
 region: content

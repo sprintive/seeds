@@ -1,4 +1,3 @@
-uuid: c05178e1-c41e-4778-b27d-68951b87b534
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - system
   theme:
     - THEMENAME
-_core:
-  default_config_hash: 8m90Sh_rHLY-RQMQT-fjVYCFSME323NkL_c3fxQuL3o
 id: THEMENAME_footer
 theme: THEMENAME
 region: footer_first

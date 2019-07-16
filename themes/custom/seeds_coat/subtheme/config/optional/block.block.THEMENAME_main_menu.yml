@@ -1,4 +1,3 @@
-uuid: e38de60e-eeec-4ff0-a0e1-ad825469e3ed
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - system
   theme:
     - THEMENAME
-_core:
-  default_config_hash: kbKPFQFX2lddKVorLWtH88lyPXxDh1dEop7pffzL97I
 id: THEMENAME_main_menu
 theme: THEMENAME
 region: navigation
