@@ -238,3 +238,65 @@ body:not(.path-user) {
         }
     }
 }
+
+// contextual links.
+.contextual-region.focus {
+    outline: 1px dashed #4D4D4F;
+    outline-offset: 5px;
+}
+
+.view,
+.node,
+.taxonomy-term,
+.block-content,
+.field--name-field-image {
+    .contextual {
+        top: 5px;
+        right: 0px;
+        z-index: 99;
+    }
+}
+
+.view {
+    >.contextual {
+        top: -25px;
+        overflow: visible;
+        .trigger {
+            background-image: url('../images/view.png');
+        }
+    }
+}
+
+.node,
+.taxonomy-term {
+    header {
+        >.contextual {
+            display: none;
+        }
+    }
+    >.contextual {
+        .trigger {
+            background-image: url('../images/node.png');
+        }
+    }
+}
+
+.block-content {
+    .contextual {
+        .trigger {
+            background-image: url('../images/gears.png');
+        }
+    }
+}
+
+.field--name-field-image {
+    .contextual {
+        left: 10px;
+        right: auto;
+        .trigger,
+        .focusable {
+            float: left !important;
+            background-image: url('../images/img.png');
+        }
+    }
+}
