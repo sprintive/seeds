@@ -74,7 +74,7 @@ gulp.task(
 gulp.task(
   "clean",
   gulp.series(function(done) {
-    del(["fonts/font-awesome", "fonts/bootstrap", "css"]);
+    del(["fonts/font-awesome/*","css"]);
     done();
   })
 );
