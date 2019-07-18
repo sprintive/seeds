@@ -31,3 +31,6 @@ regions:
 
 libraries:
   - THEMENAME/scripts
+
+ckeditor_stylesheets:
+  - css/style.css

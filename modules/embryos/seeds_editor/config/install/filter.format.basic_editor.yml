@@ -1,3 +1,4 @@
+uuid: 6690a524-9456-46a0-9296-987fe895b08c
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - editor
     - entity_embed
     - linkit
+_core:
+  default_config_hash: jWbo8Ic0pd8pXeyGGcXkiQFriKC8zgXgHRTtWNJrxZs
 name: 'Basic Editor'
 format: basic_editor
 weight: 0
@@ -40,7 +43,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang title class id target> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class> <drupal-entity alt title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr><ace theme height font-size print-margin>'
+      allowed_html: '<a href hreflang title class id target> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class> <drupal-entity alt title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <table class> <caption> <tbody> <thead> <tfoot> <th class> <td> <tr class><ace theme height font-size print-margin>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:

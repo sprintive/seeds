@@ -1,3 +1,4 @@
+uuid: 48ad6b54-daf7-465f-b694-3798afe7f584
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - filter.format.basic_editor
   module:
     - ckeditor
+_core:
+  default_config_hash: 7j7U-Z1az5eQQHv7WtKNUWgS8kL9rBaBn_G5xRGxoeE
 format: basic_editor
 editor: ckeditor
 settings:
@@ -51,7 +54,6 @@ settings:
         -
           name: Media
           items:
-            - DrupalImage
             - media_image
             - videos
             - documents
@@ -81,7 +83,7 @@ settings:
             - Maximize
   plugins:
     stylescombo:
-      styles: ''
+      styles: "a.btn.btn-outline-primary|Primary Link\r\na.btn.btn-outline-secondary|Secondary Link\r\na.btn.btn-outline-success|Success Link\r\na.btn.btn-outline-warning|Warning Link\r\na.btn.btn-outline-light|Light Link\r\na.btn.btn-outline-info|Info Link\r\na.btn.btn-outline-danger|Danger Link\r\na.btn.btn-outline-dark|Dark Link\r\na.btn.btn-primary|Primary Button\r\na.btn.btn-secondary|Secondary Button\r\na.btn.btn-success|Success Button\r\na.btn.btn-warning|Warning Button\r\na.btn.btn-light|Light Button\r\na.btn.btn-info|Info Button\r\na.btn.btn-danger|Danger Button\r\na.btn.btn-dark|Dark Button\r\np.alert.alert-primary|Primary Paragraph\r\np.alert.alert-secondary|Secondary Paragraph\r\np.alert.alert-info|Info Paragraph\r\np.alert.alert-warning|Warning Paragraph\r\np.alert.alert-danger|Danger Paragraph\r\np.alert.alert-dark|Dark Paragraph\r\np.alert.alert-light|Light Paragraph\r\np.jumbotron|Jumbotron Paragraph\r\ntable.table|Base Table\r\ntable.table.table-dark|Dark Table\r\ntable.table.thead-light|Light Header Table\r\ntable.table.thead-dark|Dark Header Table\r\ntable.table.table-striped|Striped Rows\r\ntable.table.table-bordered|Bordered Table\r\ntable.table.table-hover|Hoverable Rows\r\ntable.table.table-sm|Small Table\r\ntable.table.table-responsive|Responsive Table\r\ntr.table-primary|Primary Row\r\ntr.table-secondary|Secondary Row\r\ntr.table-success|Success Row\r\ntr.table-warning|Warning Row\r\ntr.table-light|Light Row\r\ntr.table-info|Info Row\r\ntr.table-danger|Danger Row\r\ntr.table-dark|Dark Row"
     drupallink:
       linkit_enabled: true
       linkit_profile: default
