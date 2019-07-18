@@ -1,0 +1,15 @@
+uuid: e10e8d28-0c1c-4cc8-99ee-8c7b5d74d649
+langcode: en
+status: true
+dependencies: {  }
+name: ckeditor_medium
+label: 'Medium Embedded Image (Half width)'
+effects:
+  62b0c564-d1c1-424d-afd5-115a2ec15c47:
+    uuid: 62b0c564-d1c1-424d-afd5-115a2ec15c47
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false

@@ -1,11 +1,8 @@
-uuid: edd0f983-9b3c-43a7-94aa-41815cfd742f
 langcode: en
 status: true
 dependencies:
   module:
     - ace_editor
-_core:
-  default_config_hash: 6NPNRw0Xnv-KibcqFV-tq1Q1vqJLZGJxD5TBUsqGvSs
 name: 'Advanced Editor'
 format: advanced_editor
 weight: 0

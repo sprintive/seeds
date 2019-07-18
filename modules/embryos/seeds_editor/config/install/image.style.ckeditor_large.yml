@@ -1,0 +1,15 @@
+uuid: 5d83e8cc-49fb-46a9-9369-a8b5d8a01f38
+langcode: en
+status: true
+dependencies: {  }
+name: ckeditor_large
+label: 'Large Embedded Image'
+effects:
+  d0dbcd7c-d7e0-4348-8c2e-793e3f2c7ec3:
+    uuid: d0dbcd7c-d7e0-4348-8c2e-793e3f2c7ec3
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: true

@@ -1,0 +1,10 @@
+embed:
+  allowed_image_styles:
+    ckeditor_large: ckeditor_large
+    ckeditor_medium: ckeditor_medium
+    ckeditor_small: ckeditor_small
+    large: 0
+    linkit_result_thumbnail: 0
+    medium: 0
+    seeds_eb_thumbnail: 0
+    thumbnail: 0
