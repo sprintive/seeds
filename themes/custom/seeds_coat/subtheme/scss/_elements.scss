@@ -1,0 +1,54 @@
+body {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+div {
+    outline: none;
+}
+
+a {
+    color: $primary-color;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+*[onclick^="location"] {
+    cursor: pointer;
+}
+
+// Heading.
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h5 {}
+
+h6 {}
+
+.text-formatted {
+    h1,
+    h2,
+    h2,
+    h4,
+    h5,
+    h6 {
+        color: $primary-color;
+    }
+}
+
+// Some general style.
+blockquote {
+    padding-left: 30px;
+    border-left: 5px solid $primary-color;
+}
