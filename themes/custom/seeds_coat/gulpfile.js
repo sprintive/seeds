@@ -4,8 +4,7 @@ let gulp = require('gulp'),
   cleanCss = require('gulp-clean-css'),
   rename = require('gulp-rename'),
   postcss = require('gulp-postcss'),
-  autoprefixer = require('autoprefixer'),
-  browserSync = require('browser-sync').create()
+  autoprefixer = require('autoprefixer');
 
 const paths = {
   scss: {
@@ -17,7 +16,6 @@ const paths = {
   },
   js: {
     bootstrap: './node_modules/bootstrap/dist/js/bootstrap.min.js',
-    jquery: './node_modules/jquery/dist/jquery.min.js',
     popper: 'node_modules/popper.js/dist/umd/popper.min.js',
     dest: './js'
   }
@@ -45,29 +43,17 @@ function styles () {
     .pipe(cleanCss())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(paths.scss.dest))
-    .pipe(browserSync.stream())
 }
 
 // Move the javascript files into our js folder
 function js () {
-  return gulp.src([paths.js.bootstrap, paths.js.jquery, paths.js.popper])
+  return gulp.src([paths.js.bootstrap, paths.js.popper])
     .pipe(gulp.dest(paths.js.dest))
-    .pipe(browserSync.stream())
 }
 
-// Static Server + watching scss/html files
-function serve () {
-  browserSync.init({
-    proxy: 'http://localhost/seeds/public_html',
-  })
-
-  gulp.watch([paths.scss.watch, paths.scss.bootstrap], styles).on('change', browserSync.reload)
-}
-
-const build = gulp.series(styles, gulp.parallel(js, serve))
+const build = gulp.series(styles, gulp.parallel(js))
 
 exports.styles = styles
 exports.js = js
-exports.serve = serve
 
 exports.default = build

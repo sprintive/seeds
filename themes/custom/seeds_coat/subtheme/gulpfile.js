@@ -66,8 +66,8 @@ gulp.task(
       .src([
         "node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*"
       ])
-      .pipe(gulp.dest("fonts/font-awesome/"));
-    done();
+			.pipe(gulp.dest("fonts/font-awesome/"));
+		done();
   })
 );
 

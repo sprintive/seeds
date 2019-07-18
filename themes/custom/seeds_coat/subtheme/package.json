@@ -16,8 +16,7 @@
 	],
 	"dependencies": {
 		"font-awesome-sass": "^4.7.0",
-		"bootstrap": "^4.3.1",
-		"popper.js": "^1.14.3"
+		"bootstrap": "^4.3.1"
 	},
   "author": "@sprintive",
   "license": "MIT",
