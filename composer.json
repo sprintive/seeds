@@ -73,7 +73,8 @@
 		"drupal/imageapi_optimize": "^2.0",
 		"drupal/imageapi_optimize_resmushit": "^1.0",
 		"drupal/ace_editor": "^1.1",
-		"drupal/ckeditor_bidi": "^2.1"
+		"drupal/ckeditor_bidi": "^2.1",
+		"drupal/url_embed": "^1.0"
   },
   "require-dev": {
     "drush/drush": "~8.1",
@@ -147,6 +148,12 @@
 			"drupal/responsive_preview": {
 				"Issue #2944727: Drupal.debounce is not a function / Drupal.displace is not a function":
 				"https://www.drupal.org/files/issues/2018-11-16/2944727-3.patch"
+			},
+			"drupal/url_embed": {
+				"Use Markup instead of inline_template": "https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch",
+				"Responsive Embed": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
+				"Validation to url embed": "https://www.drupal.org/files/issues/2864302-10.patch",
+				"Themable embedded iframes": "https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch"
 			}
     }
   },

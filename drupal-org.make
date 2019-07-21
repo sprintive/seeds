@@ -195,6 +195,17 @@ projects[ace_editor][version] = 1.1
 projects[ckeditor_bidi][type] = module
 projects[ckeditor_bidi][version] = 2.1
 
+projects[url_embed][type] = module
+projects[url_embed][version] = 1.0-alpha1
+;; Use Markup instead of inline_template
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
+;; Responsive embed
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch
+;; Validation to url embed
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
+;; Themable embedded iframes
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch
+
 ; Themes
 projects[bootstrap][type] = theme
 projects[bootstrap][version] = 3.19
