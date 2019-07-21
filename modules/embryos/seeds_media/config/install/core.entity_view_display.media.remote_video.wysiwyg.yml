@@ -3,21 +3,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.wysiwyg
-    - field.field.media.document.field_media_document
-    - media.type.document
+    - field.field.media.remote_video.field_media_oembed_video
+    - media.type.remote_video
   module:
-    - file
-id: media.document.wysiwyg
+    - media
+id: media.remote_video.wysiwyg
 targetEntityType: media
-bundle: document
+bundle: remote_video
 mode: wysiwyg
 content:
-  field_media_document:
+  field_media_oembed_video:
+    type: oembed
     weight: 0
     label: hidden
-    settings: {  }
+    settings:
+      max_width: 0
+      max_height: 0
     third_party_settings: {  }
-    type: file_default
     region: content
 hidden:
   created: true

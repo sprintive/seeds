@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - media
-id: media.field_media_generic
-field_name: field_media_generic
+id: media.field_media_oembed_video
+field_name: field_media_oembed_video
 entity_type: media
 type: string
 settings:
@@ -17,4 +17,4 @@ cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
-custom_storage: true
+custom_storage: false

@@ -2,9 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - media.type.document
+    - core.entity_view_mode.media.wysiwyg
+    - entity_browser.browser.document_browser
+    - media.type.file
   content:
-    - 'file:file:56d933fb-f1ce-4f05-a9be-6c59f93d7064'
+    - 'file:file:d651a51b-1edc-4036-ad13-28a7b4536b53'
   module:
     - entity_embed
     - media
@@ -14,10 +16,10 @@ type_id: entity
 type_settings:
   entity_type: media
   bundles:
-    - document
+    - file
   display_plugins:
     - 'view_mode:media.wysiwyg'
   entity_browser: document_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: 56d933fb-f1ce-4f05-a9be-6c59f93d7064
+icon_uuid: d651a51b-1edc-4036-ad13-28a7b4536b53

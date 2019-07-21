@@ -2,51 +2,52 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.video.field_media_video_embed_field
-    - media.type.video
+    - field.field.media.remote_video.field_media_oembed_video
+    - image.style.thumbnail
+    - media.type.remote_video
   module:
+    - image
+    - media
     - user
-    - video_embed_field
-id: media.video.default
+id: media.remote_video.default
 targetEntityType: media
-bundle: video
+bundle: remote_video
 mode: default
 content:
   created:
     label: hidden
     type: timestamp
-    weight: 1
+    weight: 0
+    region: content
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    region: content
-  field_media_video_embed_field:
-    type: video_embed_field_video
-    weight: 3
+  field_media_oembed_video:
+    type: oembed
+    weight: 6
     label: hidden
     settings:
-      responsive: true
-      width: 854
-      height: 480
-      autoplay: true
+      max_width: 0
+      max_height: 0
     third_party_settings: {  }
     region: content
-  name:
+  thumbnail:
+    type: image
+    weight: 5
     label: hidden
-    type: string
-    weight: 0
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
+      image_style: thumbnail
+      image_link: ''
     region: content
+    third_party_settings: {  }
   uid:
     label: hidden
     type: author
-    weight: 2
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
-  thumbnail: true
+  name: true

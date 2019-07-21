@@ -3,34 +3,34 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.entity_browser
-    - field.field.media.embed.field_media_embed
-    - image.style.thumbnail
-    - media.type.embed
+    - field.field.media.local_video.field_media_video_file
+    - image.style.seeds_eb_thumbnail
+    - media.type.local_video
   module:
     - image
-id: media.embed.entity_browser
+id: media.local_video.entity_browser
 targetEntityType: media
-bundle: embed
+bundle: local_video
 mode: entity_browser
 content:
   name:
-    label: hidden
     type: string
     weight: 1
+    region: content
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    region: content
   thumbnail:
     type: image
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: seeds_eb_thumbnail
       image_link: ''
-    third_party_settings: {  }
     region: content
+    third_party_settings: {  }
 hidden:
   created: true
-  field_media_embed: true
+  field_media_video_file: true
   uid: true

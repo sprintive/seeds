@@ -2,11 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.image_browser
     - media.type.image
   content:
-    - 'file:file:6be1fe26-371c-4bfd-9741-dbfb7e4f53a5'
+    - 'file:file:6353216b-8014-4287-986b-31246971fffc'
   module:
     - entity_embed
+    - image
     - media
 label: 'Media Image'
 id: media_image
@@ -20,4 +22,4 @@ type_settings:
   entity_browser: image_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: 6be1fe26-371c-4bfd-9741-dbfb7e4f53a5
+icon_uuid: 6353216b-8014-4287-986b-31246971fffc

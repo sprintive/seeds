@@ -3,26 +3,29 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.wysiwyg
-    - field.field.media.video.field_media_video_embed_field
-    - media.type.video
+    - field.field.media.local_video.field_media_video_file
+    - media.type.local_video
   module:
-    - video_embed_field
-id: media.video.wysiwyg
+    - file
+id: media.local_video.wysiwyg
 targetEntityType: media
-bundle: video
+bundle: local_video
 mode: wysiwyg
 content:
-  field_media_video_embed_field:
-    type: video_embed_field_video
+  field_media_video_file:
+    type: file_video
     weight: 0
-    region: content
     label: hidden
     settings:
-      responsive: true
-      width: 854
+      muted: false
+      width: 640
       height: 480
+      controls: true
       autoplay: false
+      loop: false
+      multiple_file_display_type: tags
     third_party_settings: {  }
+    region: content
 hidden:
   created: true
   name: true

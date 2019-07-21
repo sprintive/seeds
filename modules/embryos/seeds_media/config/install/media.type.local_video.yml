@@ -1,14 +1,12 @@
 langcode: en
 status: true
-dependencies:
-  module:
-    - video_embed_media
-id: video
+dependencies: {  }
+id: local_video
 label: Video
 description: ''
-source: video_embed_field
+source: video_file
 queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
-  source_field: field_media_video_embed_field
+  source_field: field_media_video_file
 field_map: {  }

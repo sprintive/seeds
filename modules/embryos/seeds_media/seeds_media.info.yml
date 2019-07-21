@@ -11,10 +11,12 @@ dependencies:
   - field
   - file
   - image
+  - media
+  - path
+  - seeds_media
   - text
   - user
   - video_embed_field
-  - views
-  - media_entity_generic
   - video_embed_media
-package: 'Seeds'
+  - views
+package: Seeds

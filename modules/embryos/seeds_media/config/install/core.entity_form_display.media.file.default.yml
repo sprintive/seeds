@@ -2,33 +2,37 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_image
-    - image.style.thumbnail
-    - media.type.image
+    - field.field.media.file.field_media_file_1
+    - media.type.file
   module:
-    - image
+    - file
     - path
-id: media.image.default
+id: media.file.default
 targetEntityType: media
-bundle: image
+bundle: file
 mode: default
 content:
-  field_image:
-    weight: 1
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_file_1:
+    weight: 0
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
+    type: file_generic
     region: content
   name:
     type: string_textfield
-    weight: 0
+    weight: -5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 30
@@ -42,6 +46,13 @@ content:
     weight: 100
     region: content
     third_party_settings: {  }
-hidden:
-  created: true
-  uid: true
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

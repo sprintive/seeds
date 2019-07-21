@@ -1,4 +1,3 @@
-uuid: 6690a524-9456-46a0-9296-987fe895b08c
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - editor
     - entity_embed
     - linkit
-_core:
-  default_config_hash: jWbo8Ic0pd8pXeyGGcXkiQFriKC8zgXgHRTtWNJrxZs
 name: 'Basic Editor'
 format: basic_editor
 weight: 0

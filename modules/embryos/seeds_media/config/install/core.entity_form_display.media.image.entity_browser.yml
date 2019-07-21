@@ -2,29 +2,32 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.document.field_media_document
-    - media.type.document
+    - core.entity_form_mode.media.entity_browser
+    - field.field.media.image.field_image
+    - image.style.thumbnail
+    - media.type.image
   module:
-    - file
+    - image
     - path
-id: media.document.default
+id: media.image.entity_browser
 targetEntityType: media
-bundle: document
-mode: default
+bundle: image
+mode: entity_browser
 content:
-  field_media_document:
+  field_image:
     weight: 1
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: file_generic
+    type: image_image
     region: content
   name:
     type: string_textfield
     weight: 0
     settings:
       size: 60
-      placeholder: 'Insert name here ..'
+      placeholder: ''
     third_party_settings: {  }
     region: content
   path:
@@ -32,6 +35,13 @@ content:
     weight: 30
     region: content
     settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
     third_party_settings: {  }
 hidden:
   created: true

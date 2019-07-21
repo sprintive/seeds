@@ -2,9 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - media.type.video
+    - core.entity_view_mode.media.wysiwyg
+    - entity_browser.browser.video_browser
+    - media.type.local_video
+    - media.type.remote_video
   content:
-    - 'file:file:2c4ff89e-93e1-4e53-ab32-3e266e2396f9'
+    - 'file:file:9d434f50-6ffc-49b6-be42-7a9634d1a922'
   module:
     - entity_embed
     - media
@@ -14,10 +17,11 @@ type_id: entity
 type_settings:
   entity_type: media
   bundles:
-    - video
+    - remote_video
+    - local_video
   display_plugins:
     - 'view_mode:media.wysiwyg'
   entity_browser: video_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: 2c4ff89e-93e1-4e53-ab32-3e266e2396f9
+icon_uuid: 9d434f50-6ffc-49b6-be42-7a9634d1a922

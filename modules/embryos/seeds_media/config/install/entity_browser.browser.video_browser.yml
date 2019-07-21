@@ -22,20 +22,40 @@ widgets:
   7987dce7-2a5d-4dc5-87c5-cc82c469bbeb:
     settings:
       entity_type: media
-      bundle: video
+      bundle: remote_video
       form_mode: default
-      submit_text: Insert
+      submit_text: Import
     uuid: 7987dce7-2a5d-4dc5-87c5-cc82c469bbeb
-    weight: -9
-    label: Insert
+    weight: -10
+    label: 'Import Video'
     id: entity_form
   7623a337-97c6-4088-a16a-e5a2244cf3b6:
     settings:
       view: media_browser
       view_display: video
-      submit_text: Insert
+      submit_text: Select
       auto_select: false
     uuid: 7623a337-97c6-4088-a16a-e5a2244cf3b6
-    weight: -10
+    weight: -8
     label: Choose
     id: view
+  d6f1db8b-e4a9-4c0e-b54d-437ef569631f:
+    settings:
+      entity_type: media
+      bundle: local_video
+      form_mode: default
+      submit_text: Upload
+    uuid: d6f1db8b-e4a9-4c0e-b54d-437ef569631f
+    weight: -9
+    label: 'Upload Video'
+    id: entity_form
+  ee0c36c7-8381-49b0-b5a8-f48e9da7239a:
+    settings:
+      entity_type: media
+      bundle: audio
+      form_mode: default
+      submit_text: Upload
+    uuid: ee0c36c7-8381-49b0-b5a8-f48e9da7239a
+    weight: 4
+    label: 'Upload Audio'
+    id: entity_form

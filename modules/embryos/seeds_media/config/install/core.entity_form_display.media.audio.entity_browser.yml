@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.entity_browser
+    - field.field.media.audio.field_media_audio_file
+    - media.type.audio
+  module:
+    - file
+id: media.audio.entity_browser
+targetEntityType: media
+bundle: audio
+mode: entity_browser
+content:
+  field_media_audio_file:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  name: true
+  path: true
+  status: true
+  uid: true

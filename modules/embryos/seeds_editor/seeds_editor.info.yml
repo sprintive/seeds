@@ -3,12 +3,13 @@ description: 'Neat editors focused on normal users UX.'
 type: module
 core: 8.x
 dependencies:
+  - ace_editor
   - ckeditor
+  - ckeditor_bidi
   - editor
+  - editor_advanced_link
   - entity_embed
   - filter
+  - image
   - linkit
-  - editor_advanced_link
-  - ckeditor_bidi
-  - ace_editor
 package: Seeds
