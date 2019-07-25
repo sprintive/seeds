@@ -15,19 +15,6 @@ function seeds_media_install() {
   $path = \Drupal::moduleHandler()->getModule('seeds_media')->getPath();
   $fs = \Drupal::service('file_system');
 
-  // Set icons for seeds embed entities.
-  $icon = $path . '/images/embed_icon.png';
-  $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
-
-  if ($destination) {
-    $file = File::create(['uri' => $destination]);
-    $file->save();
-
-    EmbedButton::load('embed')
-      ->set('icon_uuid', $file->uuid())
-      ->save();
-  }
-
   // Set icons for seeds document entities.
   $icon = $path . '/images/document_icon.png';
   $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
