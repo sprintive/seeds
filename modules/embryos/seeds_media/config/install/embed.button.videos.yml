@@ -7,7 +7,7 @@ dependencies:
     - media.type.local_video
     - media.type.remote_video
   content:
-    - 'file:file:9d434f50-6ffc-49b6-be42-7a9634d1a922'
+    - 'file:file:34403c59-46fa-464c-b349-d155f1477e56'
   module:
     - entity_embed
     - media
@@ -24,4 +24,4 @@ type_settings:
   entity_browser: video_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: 9d434f50-6ffc-49b6-be42-7a9634d1a922
+icon_uuid: 34403c59-46fa-464c-b349-d155f1477e56

@@ -6,7 +6,7 @@ dependencies:
     - entity_browser.browser.document_browser
     - media.type.file
   content:
-    - 'file:file:d651a51b-1edc-4036-ad13-28a7b4536b53'
+    - 'file:file:25d5325d-1eae-4ec1-8775-f038fc80a853'
   module:
     - entity_embed
     - media
@@ -22,4 +22,4 @@ type_settings:
   entity_browser: document_browser
   entity_browser_settings:
     display_review: false
-icon_uuid: d651a51b-1edc-4036-ad13-28a7b4536b53
+icon_uuid: 25d5325d-1eae-4ec1-8775-f038fc80a853

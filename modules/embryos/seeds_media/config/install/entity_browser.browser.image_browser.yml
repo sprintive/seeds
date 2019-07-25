@@ -23,10 +23,10 @@ widgets:
     settings:
       entity_type: media
       bundle: image
-      form_mode: default
+      form_mode: entity_browser
       submit_text: Insert
     uuid: 9834425a-2a57-4d16-b904-202323639035
-    weight: -9
+    weight: -10
     label: 'Upload '
     id: entity_form
   04fb6580-b64c-4fc1-8b31-a0c52a88a4c8:
@@ -36,6 +36,6 @@ widgets:
       submit_text: Insert
       auto_select: false
     uuid: 04fb6580-b64c-4fc1-8b31-a0c52a88a4c8
-    weight: -10
+    weight: -9
     label: Choose
     id: view

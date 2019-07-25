@@ -23,7 +23,7 @@ widgets:
     settings:
       entity_type: media
       bundle: remote_video
-      form_mode: default
+      form_mode: entity_browser
       submit_text: Import
     uuid: 7987dce7-2a5d-4dc5-87c5-cc82c469bbeb
     weight: -10
@@ -36,14 +36,14 @@ widgets:
       submit_text: Select
       auto_select: false
     uuid: 7623a337-97c6-4088-a16a-e5a2244cf3b6
-    weight: -8
+    weight: -7
     label: Choose
     id: view
   d6f1db8b-e4a9-4c0e-b54d-437ef569631f:
     settings:
       entity_type: media
       bundle: local_video
-      form_mode: default
+      form_mode: entity_browser
       submit_text: Upload
     uuid: d6f1db8b-e4a9-4c0e-b54d-437ef569631f
     weight: -9
@@ -53,9 +53,9 @@ widgets:
     settings:
       entity_type: media
       bundle: audio
-      form_mode: default
+      form_mode: entity_browser
       submit_text: Upload
     uuid: ee0c36c7-8381-49b0-b5a8-f48e9da7239a
-    weight: 4
+    weight: -8
     label: 'Upload Audio'
     id: entity_form
