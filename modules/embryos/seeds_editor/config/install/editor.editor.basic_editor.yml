@@ -54,7 +54,7 @@ settings:
             - media_image
             - videos
             - documents
-            - embed
+            - url
         -
           name: Table
           items:

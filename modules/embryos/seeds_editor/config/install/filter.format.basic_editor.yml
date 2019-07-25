@@ -6,6 +6,7 @@ dependencies:
     - editor
     - entity_embed
     - linkit
+    - url_embed
 name: 'Basic Editor'
 format: basic_editor
 weight: 0
@@ -40,7 +41,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang title class id target> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class> <drupal-entity alt title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <table class> <caption> <tbody> <thead> <tfoot> <th class> <td> <tr class><ace theme height font-size print-margin>'
+      allowed_html: '<a href hreflang title class id target> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class> <drupal-entity alt title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <table class> <caption> <tbody> <thead> <tfoot> <th class> <td> <tr class><ace theme height font-size print-margin><drupal-url data-*>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
@@ -66,26 +67,26 @@ filters:
     id: filter_html_image_secure
     provider: filter
     status: false
-    weight: -40
+    weight: -37
     settings: {  }
   filter_html_escape:
     id: filter_html_escape
     provider: filter
     status: false
-    weight: -42
+    weight: -38
     settings: {  }
   linkit:
     id: linkit
     provider: linkit
     status: true
-    weight: -41
+    weight: -42
     settings:
       title: true
   ace_filter:
     id: ace_filter
     provider: ace_editor
     status: true
-    weight: 0
+    weight: -41
     settings:
       theme: terminal
       syntax: html
@@ -93,7 +94,20 @@ filters:
       width: 700px
       font_size: 12pt
       line_numbers: '1'
-      show_invisibles: '1'
       print_margins: '1'
-      auto_complete: true
+      show_invisibles: '1'
       use_wrap_mode: '1'
+  url_embed:
+    id: url_embed
+    provider: url_embed
+    status: true
+    weight: -39
+    settings:
+      enable_responsive: '1'
+  url_embed_convert_links:
+    id: url_embed_convert_links
+    provider: url_embed
+    status: false
+    weight: -40
+    settings:
+      url_prefix: ''
