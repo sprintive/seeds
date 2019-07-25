@@ -1,7 +1,4 @@
 media_pollination:
-  css:
-    theme:
-      css/seeds_media.css: {}
   js:
     js/seeds_media.js: {}
   dependencies:
