@@ -36,7 +36,7 @@ projects[entity][type] = module
 projects[entity][version] = 1.0-rc3
 
 projects[entity_browser][type] = module
-projects[entity_browser][version] = 2.1
+projects[entity_browser][version] = 2.2
 
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.0-rc2
@@ -96,7 +96,7 @@ projects[contribute][type] = module
 projects[contribute][version] = 1.0-beta7
 
 projects[webform][type] = module
-projects[webform][version] = 5.2
+projects[webform][version] = 5.3
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
@@ -117,14 +117,14 @@ projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 1.5
 
 projects[linkit][type] = module
-projects[linkit][version] = 5.0-beta8
+projects[linkit][version] = 5.0-beta9
 
 ; Performance & SEO Modules
 projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha4
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.8
+projects[metatag][version] = 1.9
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.4
@@ -133,10 +133,10 @@ projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 2.12
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = 1.8
+projects[link_attributes][version] = 1.9
 
 projects[redirect][type] = module
-projects[redirect][version] = 1.3
+projects[redirect][version] = 1.4
 
 projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.4
@@ -178,7 +178,7 @@ projects[block_content_permissions][version] = 1.6
 projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
 projects[responsive_preview][type] = module
-projects[responsive_preview][version] = 1.0-alpha7
+projects[responsive_preview][version] = 1.0-beta1
 
 projects[views_bulk_operations][type] = module
 projects[views_bulk_operations][version] = 2.5
@@ -190,17 +190,17 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.3
+projects[seeds_toolbar][version] = 1.4
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.19
+projects[bootstrap][version] = 3.20
 
 projects[thunder_admin][type] = theme
 projects[thunder_admin][version] = 2.5
 
 projects[root][type] = theme
-projects[root][version] = 1.1
+projects[root][version] = 1.2
 
 ; Libraries
 libraries[slick][download][type] = get
