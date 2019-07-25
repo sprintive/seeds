@@ -98,7 +98,7 @@ projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
 
 projects[field_group][type] = module
-projects[field_group][version] = 3.0
+projects[field_group][version] = 3.0-rc1
 
 projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
