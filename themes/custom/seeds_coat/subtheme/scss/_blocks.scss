@@ -1,20 +1,23 @@
 .pagination {
     user-select: none;
+
     li {
+
         .page-link {
             border-color: $primary-color;
             background: $white;
             color: $primary-color;
-            &:hover,
-            &:focus {
+
+            &:hover, &:focus {
                 background-color: $primary-color;
                 color: $white;
                 box-shadow: none;
             }
         }
+
         &.active {
-            .page-link,
-            .page-link:hover {
+
+            .page-link, .page-link:hover {
                 border-color: $primary-color;
                 color: $white;
                 background: $primary-color;

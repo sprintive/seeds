@@ -1,41 +1,45 @@
+
+
 const gulp = require("gulp"),
-  sass = require("gulp-sass"),
-  cleanCss = require("gulp-clean-css"),
-  autoprefixer = require("gulp-autoprefixer"),
-  sourcemaps = require("gulp-sourcemaps"),
-  livereload = require("gulp-livereload"),
-  rtlcss = require("gulp-rtlcss"),
-  rename = require("gulp-rename"),
-  del = require("del"),
-  gulpStylelint = require("gulp-stylelint"),
-  cache = require("gulp-cached");
-​
+sass = require("gulp-sass"),
+cleanCss = require("gulp-clean-css"),
+autoprefixer = require("gulp-autoprefixer"),
+sourcemaps = require("gulp-sourcemaps"),
+livereload = require("gulp-livereload"),
+rtlcss = require("gulp-rtlcss"),
+rename = require("gulp-rename"),
+del = require("del"),
+gulpStylelint = require("gulp-stylelint"),
+cache = require("gulp-cached");
+
+
 gulp.task(
-  "lint",
-  gulp.series(done => {
-    let lintError = false;
-    const src = gulp
-      .src(["./scss/*.scss"])
-      .pipe(cache("lint"))
-      .pipe(
-        gulpStylelint({
-          reporters: [{ formatter: "string", console: true }],
-          fix: true
-        }).on("error", () => {
-          delete cache.caches.lint;
-          lintError = true;
-        })
-      )
-      .pipe(cache("lint"))
-      .pipe(gulp.dest("./scss"))
-      .on("end", () => {
-        if (!lintError) {
-          gulp.task("sass")();
-        }
-        done();
-      });
-  })
+"lint",
+gulp.series(done => {
+  let lintError = false;
+  const src = gulp
+    .src(["./scss/*.scss"])
+    .pipe(cache("lint"))
+    .pipe(
+      gulpStylelint({
+        reporters: [{ formatter: "string", console: true }],
+        fix: true
+      }).on("error", () => {
+        delete cache.caches.lint;
+        lintError = true;
+      })
+    )
+    .pipe(cache("lint"))
+    .pipe(gulp.dest("./scss"))
+    .on("end", () => {
+      if (!lintError) {
+        gulp.task("sass")();
+      }
+      done();
+    });
+})
 );
+
 gulp.task(
   "sass",
   gulp.series(done => {
@@ -65,7 +69,6 @@ gulp.task(
       .pipe(sourcemaps.write("./"))
       .pipe(gulp.dest("./css"))
       .pipe(livereload());
-​
     gulp
       .src(["./scss/style.scss"])
       .pipe(sourcemaps.init())
@@ -94,7 +97,6 @@ gulp.task(
     done();
   })
 );
-​
 gulp.task(
   "clean",
   gulp.series(done => {
@@ -102,14 +104,12 @@ gulp.task(
     done();
   })
 );
-​
 gulp.task(
   "build",
-  gulp.series("clean", "copy", "sass", done => {
+  gulp.series("clean", "copy", "lint", done => {
     done();
   })
 );
-​
 gulp.task(
   "watch",
   gulp.series("copy", done => {
