@@ -1,35 +1,40 @@
 {
-  "name": "seeds_coat",
-  "version": "8.4.1",
-  "description": "Starter Theme for Seeds Distribution",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "SASS",
-    "Bootstrap",
-    "Drupal",
-    "Seeds",
-    "Sprintive",
-    "Seeds coat"
+	"name": "seeds_coat",
+	"version": "8.4.1",
+	"description": "Starter Theme for Seeds Distribution",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"SASS",
+		"Bootstrap",
+		"Drupal",
+		"Seeds",
+		"Sprintive",
+		"Seeds coat"
 	],
 	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"popper.js": "^1.14.3",
 		"font-awesome-sass": "^4.7.0",
-		"bootstrap": "^4.3.1"
 	},
-  "author": "@sprintive",
-  "license": "MIT",
-  "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-clean-css": "3.9.4",
-    "gulp-livereload": "^4.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-		"gulp-rtlcss": "^1.4.0"
-  }
+	"author": "@sprintive",
+	"license": "MIT",
+	"devDependencies": {
+		"del": "^3.0.0",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^4.1.0",
+		"gulp-cached": "^1.1.1",
+		"gulp-clean-css": "3.9.4",
+		"gulp-livereload": "^4.0.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-rtlcss": "^1.4.0",
+		"gulp-sass": "^4.0.1",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-stylelint": "^9.0.0",
+		"stylelint": "^10.1.0",
+		"stylelint-config-recommended": "^2.2.0"
+	}
 }

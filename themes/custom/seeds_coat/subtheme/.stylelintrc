@@ -1,0 +1,21 @@
+{
+  "extends": "stylelint-config-recommended",
+    "rules": {
+    "at-rule-no-unknown": [ null ],
+    "no-eol-whitespace": true,
+    "no-empty-source": null,
+    "no-empty-first-line": true,
+    "selector-list-comma-space-after": "always",
+    "selector-attribute-brackets-space-inside": "always",
+    "selector-attribute-operator-space-after": "always",
+    "selector-attribute-operator-space-before": "never",
+    "block-opening-brace-space-before":"always",
+    "block-closing-brace-newline-after":"always",
+    "block-closing-brace-empty-line-before":"never",
+    "max-nesting-depth": 3,
+    "max-empty-lines": 1,
+    "at-rule-empty-line-before": "always",
+    "declaration-empty-line-before":"never",
+    "rule-empty-line-before": "always-multi-line",
+  }
+}

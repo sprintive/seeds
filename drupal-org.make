@@ -168,8 +168,7 @@ projects[block_content_permissions][version] = 1.6
 projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
 projects[responsive_preview][type] = module
-projects[responsive_preview][version] = 1.0-alpha7
-projects[responsive_preview][patch][] = https://www.drupal.org/files/issues/2018-11-16/2944727-3.patch
+projects[responsive_preview][version] = 1.0-beta1
 
 projects[views_bulk_operations][type] = module
 projects[views_bulk_operations][version] = 2.5

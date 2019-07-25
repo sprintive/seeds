@@ -145,10 +145,6 @@
 				"Issue #3048286: Add cursor position direction support for RTL":
 				"https://www.drupal.org/files/issues/2019-04-15/3048286-3.patch"
 			},
-			"drupal/responsive_preview": {
-				"Issue #2944727: Drupal.debounce is not a function / Drupal.displace is not a function":
-				"https://www.drupal.org/files/issues/2018-11-16/2944727-3.patch"
-			},
 			"drupal/url_embed": {
 				"Use Markup instead of inline_template": "https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch",
 				"Responsive Embed": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
