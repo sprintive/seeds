@@ -3,5 +3,5 @@ description: Starter Module to enable all security modules
 type: module
 core: 8.x
 dependencies:
-  - honeypot
+  - honeypot:honeypot
 package: 'Seeds'
