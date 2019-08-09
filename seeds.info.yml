@@ -55,6 +55,6 @@ dependencies:
   - seeds_pollination:seeds_pollination
 
 themes:
-  - root:root
-  - bootstrap_barrio:bootstrap_barrio
-  - seeds_coat:seeds_coat
+  - root
+  - bootstrap_barrio
+  - seeds_coat
