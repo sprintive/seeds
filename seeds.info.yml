@@ -48,13 +48,13 @@ dependencies:
   - masquerade:masquerade
 
   # Embryos
-  - seeds_editor
-  - seeds_media
+  - seeds_editor:seeds_editor
+  - seeds_media:seeds_media
 
   # Pollination
-  - seeds_pollination
+  - seeds_pollination:seeds_pollination
 
 themes:
-  - root
-  - bootstrap_barrio
-  - seeds_coat
+  - root:root
+  - bootstrap_barrio:bootstrap_barrio
+  - seeds_coat:seeds_coat

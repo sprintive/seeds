@@ -110,7 +110,7 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.1
+projects[layout_builder_restrictions][version] = 2.2
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta9
@@ -180,7 +180,7 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.4
+projects[seeds_toolbar][version] = 1.5
 
 projects[imageapi_optimize][type] = module
 projects[imageapi_optimize][version] = 2.0-alpha4

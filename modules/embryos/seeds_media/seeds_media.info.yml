@@ -17,5 +17,6 @@ dependencies:
   - entity_browser:entity_browser
   - entity_browser:entity_browser_entity_form
   - entity_embed:entity_embed
+  - link_attributes:link_attributes
   - seeds_media:seeds_media
 package: Seeds
