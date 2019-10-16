@@ -12,7 +12,7 @@
     "cweagans/composer-patches": "^1.6.4",
     "drupal-composer/drupal-scaffold": "2.3.0",
     "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.7.6",
+    "drupal/core": "8.7.8",
     "drupal/ctools": "3.2",
     "drupal/token": "1.5",
     "drupal/diff": "1.0-rc2",
@@ -123,7 +123,9 @@
 				"Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.":
 				"https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
 				"Issue #2985168: Allow media items to be edited in a modal when using the field widget":
-				"https://www.drupal.org/files/issues/2019-05-06/2985168-11.patch"
+				"https://www.drupal.org/files/issues/2019-05-06/2985168-11.patch",
+				"Issue #3045171: Form blocks rendered inside layout builder break save":
+				"https://www.drupal.org/files/issues/2019-08-01/drupal-layout_builder_unable_to_save-3045171-77.patch"
 			},
       "drupal/bootstrap_layouts": {
         "Issue #3018633: Incompatible with Layout builder drag and drop":
