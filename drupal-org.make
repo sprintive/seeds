@@ -15,7 +15,7 @@ projects[diff][version] = 1.0-rc2
 
 ; Content Management Modules.
 projects[ds][type] = module
-projects[ds][version] = 3.3
+projects[ds][version] = 3.4
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
@@ -47,7 +47,7 @@ projects[embed][type] = module
 projects[embed][version] = 1.0
 
 projects[inline_entity_form][type] = module
-projects[inline_entity_form][version] = 1.0-rc1
+projects[inline_entity_form][version] = 1.0-rc2
 
 projects[media_entity_generic][type] = module
 projects[media_entity_generic][version] = 1.0
@@ -59,7 +59,7 @@ projects[crop][type] = module
 projects[crop][version] = 1.5
 
 projects[focal_point][type] = module
-projects[focal_point][version] = 1.0
+projects[focal_point][version] = 1.2
 
 projects[smart_trim][type] = module
 projects[smart_trim][version] = 1.1
@@ -68,10 +68,10 @@ projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.1
 
 projects[slick][type] = module
-projects[slick][version] = 2.0-rc3
+projects[slick][version] = 2.0-rc4
 
 projects[blazy][type] = module
-projects[blazy][version] = 2.0-rc3
+projects[blazy][version] = 2.0-rc5
 
 projects[slick_views][type] = module
 projects[slick_views][version] = 2.0
@@ -83,16 +83,16 @@ projects[slick_paragraphs][type] = module
 projects[slick_paragraphs][version] = 2.0
 
 projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = 1.6
+projects[entity_reference_revisions][version] = 1.7
 
 projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.8
+projects[paragraphs][version] = 1.9
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.3
+projects[webform][version] = 5.4
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
@@ -104,7 +104,7 @@ projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
 
 projects[smtp][type] = module
-projects[smtp][version] = 1.0-beta4
+projects[smtp][version] = 1.0-beta6
 
 projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
@@ -120,13 +120,13 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha4
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.9
+projects[metatag][version] = 1.10
 
 projects[pathauto][type] = module
-projects[pathauto][version] = 1.4
+projects[pathauto][version] = 1.5
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.3
+projects[simple_sitemap][version] = 3.4
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.9
@@ -163,7 +163,7 @@ projects[taxonomy_access_fix][type] = module
 projects[taxonomy_access_fix][version] = 2.6
 
 projects[block_content_permissions][type] = module
-projects[block_content_permissions][version] = 1.6
+projects[block_content_permissions][version] = 1.7
 ;; Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission
 projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
@@ -174,13 +174,13 @@ projects[views_bulk_operations][type] = module
 projects[views_bulk_operations][version] = 2.5
 
 projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.3
+projects[views_bulk_edit][version] = 2.4
 
 projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta2
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.5
+projects[seeds_toolbar][version] = 1.6
 
 projects[imageapi_optimize][type] = module
 projects[imageapi_optimize][version] = 2.0-alpha4
@@ -213,7 +213,7 @@ projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.22
 
 projects[root][type] = theme
-projects[root][version] = 1.2
+projects[root][version] = 1.3
 
 ; Libraries
 libraries[slick][download][type] = get

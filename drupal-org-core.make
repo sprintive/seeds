@@ -8,3 +8,5 @@ projects[drupal][patch][] = https://www.drupal.org/files/issues/2018-03-29/27713
 ;;projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-05-06/2985168-11.patch
 ;; Issue #3045171: Form blocks rendered inside layout builder break save
 ;;projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-08-01/drupal-layout_builder_unable_to_save-3045171-77.patch
+;; Issue #2955392: EntityViewBuilder::viewField() does not respect entity current language when used with an entity reference field
+;;projects[drupal][patch][] = https://www.drupal.org/files/issues/2019-10-11/2955392-85.patch
