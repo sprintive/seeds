@@ -74,7 +74,8 @@
 		"drupal/imageapi_optimize_resmushit": "1.0-beta1",
 		"drupal/ace_editor": "1.1",
 		"drupal/ckeditor_bidi": "2.1",
-		"drupal/url_embed": "1.0-alpha1"
+		"drupal/url_embed": "1.0-alpha1",
+		"drupal/shariff": "1.5"
   },
   "require-dev": {
     "drush/drush": "~8.1",
@@ -150,14 +151,18 @@
 				"https://www.drupal.org/files/issues/2019-04-15/3048286-3.patch"
 			},
 			"drupal/url_embed": {
-				"Use Markup instead of inline_template":
+				"Issue #2779157: Use Markup instead of inline_template":
 				"https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch",
-				"Responsive Embed":
+				"Issue #2825602: Responsive Embed":
 				"https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
-				"Validation to url embed":
+				"Issue #2864302: Validation to url embed":
 				"https://www.drupal.org/files/issues/2864302-10.patch",
-				"Themable embedded iframes":
+				"Issue #3069224: Themable embedded iframes":
 				"https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch"
+			},
+			"drupal/shariff": {
+				"Issue #3060551: data-url should be the url of the node.":
+				"https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch"
 			}
     }
   },

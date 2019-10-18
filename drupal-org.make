@@ -196,14 +196,19 @@ projects[ckeditor_bidi][version] = 2.1
 
 projects[url_embed][type] = module
 projects[url_embed][version] = 1.0-alpha1
-;; Use Markup instead of inline_template
+;; Issue #2779157: Use Markup instead of inline_template
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
-;; Responsive embed
+;; Issue #2825602: Responsive embed
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch
-;; Validation to url embed
+;; Issue #2864302: Validation to url embed
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
-;; Themable embedded iframes
+;; Issue #3069224: Themable embedded iframes
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch
+
+projects[shariff][type] = module
+projects[shariff][version] = 1.5
+;; Issue #3060551: data-url should be the url of the node.
+projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
 ; Themes
 projects[bootstrap][type] = theme
