@@ -65,7 +65,7 @@ projects[smart_trim][type] = module
 projects[smart_trim][version] = 1.1
 
 projects[allowed_formats][type] = module
-projects[allowed_formats][version] = 1.1
+projects[allowed_formats][version] = 1.2
 
 projects[slick][type] = module
 projects[slick][version] = 2.0-rc4
@@ -86,13 +86,13 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.7
 
 projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.9
+projects[paragraphs][version] = 1.10
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.4
+projects[webform][version] = 5.5
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
@@ -110,10 +110,10 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.2
+projects[layout_builder_restrictions][version] = 2.3
 
 projects[linkit][type] = module
-projects[linkit][version] = 5.0-beta9
+projects[linkit][version] = 5.0-beta10
 
 ; Performance & SEO Modules
 projects[fast_404][type] = module
@@ -154,7 +154,7 @@ projects[cloudflare][version] = 1.0-alpha11
 
 ; Administration Modules.
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 1.27
+projects[admin_toolbar][version] = 2.0
 
 projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
