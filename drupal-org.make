@@ -26,7 +26,7 @@ projects[libraries][subdir] = utilities
 projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.25
+projects[file_entity][version] = 2.27
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -113,7 +113,7 @@ projects[save_draft][subdir] = administration
 projects[better_formats][version] = 1.0-beta2
 projects[better_formats][subdir] = administration
 
-projects[admin_views][version] = 1.6
+projects[admin_views][version] = 1.7
 projects[admin_views][subdir] = administration
 
 projects[views_bulk_operations][version] = 3.5
@@ -124,12 +124,12 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-rc7"
+projects[media][version] = "3.0-rc9"
 
 projects[ckeditor][version] = 1.18
 projects[ckeditor][subdir] = editor
 
-projects[media_ckeditor][version] = "2.9"
+projects[media_ckeditor][version] = "2.10"
 projects[media_ckeditor][subdir] = editor
 
 projects[pathologic][version] = 3.1
@@ -148,7 +148,7 @@ projects[wysiwyg_filter][subdir] = editor
 projects[date][version] = 2.10
 projects[date][subdir] = fields
 
-projects[link][version] = 1.6
+projects[link][version] = 1.7
 projects[link][subdir] = fields
 
 projects[field_group][version] = 1.6
@@ -192,7 +192,7 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.19
+projects[webform][version] = 4.20
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
@@ -227,7 +227,7 @@ projects[adminimal_theme][subdir] = contrib
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.25
+projects[bootstrap][version] = 3.26
 projects[bootstrap][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
