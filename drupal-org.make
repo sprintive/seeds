@@ -15,7 +15,7 @@ projects[diff][version] = 1.0-rc2
 
 ; Content Management Modules.
 projects[ds][type] = module
-projects[ds][version] = 3.4
+projects[ds][version] = 3.5
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
@@ -44,7 +44,7 @@ projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.0
 
 projects[embed][type] = module
-projects[embed][version] = 1.0
+projects[embed][version] = 1.2
 
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-rc2
@@ -56,13 +56,13 @@ projects[video_embed_field][type] = module
 projects[video_embed_field][version] = 2.2
 
 projects[crop][type] = module
-projects[crop][version] = 1.5
+projects[crop][version] = 2.0-rc1
 
 projects[focal_point][type] = module
 projects[focal_point][version] = 1.2
 
 projects[smart_trim][type] = module
-projects[smart_trim][version] = 1.1
+projects[smart_trim][version] = 1.2
 
 projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.2
@@ -92,13 +92,13 @@ projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.4
 
 projects[webform][type] = module
-projects[webform][version] = 5.5
+projects[webform][version] = 5.6
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
 
 projects[field_group][type] = module
-projects[field_group][version] = 3.0-rc1
+projects[field_group][version] = 3.0-rc2
 
 projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
@@ -110,7 +110,7 @@ projects[field_formatter][type] = module
 projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.3
+projects[layout_builder_restrictions][version] = 2.4
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta10
@@ -123,7 +123,7 @@ projects[metatag][type] = module
 projects[metatag][version] = 1.10
 
 projects[pathauto][type] = module
-projects[pathauto][version] = 1.5
+projects[pathauto][version] = 1.6
 
 projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 3.4
@@ -141,9 +141,7 @@ projects[yoast_seo][type] = module
 projects[yoast_seo][version] = 1.5
 
 projects[length_indicator][type] = module
-projects[length_indicator][version] = 1.0-rc3
-;; Issue #3048286: Add cursor position direction support for RTL
-projects[length_indicator][patch][] = https://www.drupal.org/files/issues/2019-04-15/3048286-3.patch
+projects[length_indicator][version] = 1.0
 
 ; Security Modules
 projects[honeypot][type] = module
@@ -160,7 +158,7 @@ projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
 
 projects[taxonomy_access_fix][type] = module
-projects[taxonomy_access_fix][version] = 2.6
+projects[taxonomy_access_fix][version] = 2.7
 
 projects[block_content_permissions][type] = module
 projects[block_content_permissions][version] = 1.7
@@ -212,13 +210,13 @@ projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shar
 
 ; Themes
 projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.20
+projects[bootstrap][version] = 3.21
 
 projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.22
 
 projects[root][type] = theme
-projects[root][version] = 1.3
+projects[root][version] = 1.4
 
 ; Libraries
 libraries[slick][download][type] = get
