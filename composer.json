@@ -55,7 +55,7 @@
     "drupal/redirect": "1.4",
     "drupal/google_analytics": "2.4",
 		"drupal/yoast_seo": "1.5",
-		"drupal/length_indicator": "1.0-rc3",
+		"drupal/length_indicator": "1.0",
     "drupal/honeypot": "1.29",
     "drupal/admin_toolbar": "2.0",
 		"drupal/bootstrap": "3.21",
