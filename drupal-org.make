@@ -7,7 +7,7 @@ projects[ctools][type] = module
 projects[ctools][version] = 3.2
 
 projects[token][type] = module
-projects[token][version] = 1.5
+projects[token][version] = 1.6
 
 projects[diff][type] = module
 projects[diff][version] = 1.0-rc2
@@ -44,7 +44,7 @@ projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.0
 
 projects[embed][type] = module
-projects[embed][version] = 1.2
+projects[embed][version] = 1.3
 
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-rc2
@@ -71,7 +71,7 @@ projects[slick][type] = module
 projects[slick][version] = 2.0-rc4
 
 projects[blazy][type] = module
-projects[blazy][version] = 2.0-rc5
+projects[blazy][version] = 2.0-rc6
 
 projects[slick_views][type] = module
 projects[slick_views][version] = 2.0
@@ -89,7 +89,7 @@ projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.10
 
 projects[editor_advanced_link][type] = module
-projects[editor_advanced_link][version] = 1.4
+projects[editor_advanced_link][version] = 1.6
 
 projects[webform][type] = module
 projects[webform][version] = 5.6
@@ -120,19 +120,19 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha4
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.10
+projects[metatag][version] = 1.11
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.6
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.4
+projects[simple_sitemap][version] = 3.5
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.9
 
 projects[redirect][type] = module
-projects[redirect][version] = 1.4
+projects[redirect][version] = 1.5
 
 projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.4
@@ -145,7 +145,7 @@ projects[length_indicator][version] = 1.0
 
 ; Security Modules
 projects[honeypot][type] = module
-projects[honeypot][version] = 1.29
+projects[honeypot][version] = 1.30
 
 projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-alpha11
@@ -161,7 +161,7 @@ projects[taxonomy_access_fix][type] = module
 projects[taxonomy_access_fix][version] = 2.7
 
 projects[block_content_permissions][type] = module
-projects[block_content_permissions][version] = 1.7
+projects[block_content_permissions][version] = 1.8
 ;; Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission
 projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
