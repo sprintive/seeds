@@ -75,7 +75,7 @@ projects[google_analytics][subdir] = seo
 projects[imagecache_token][version] = 1.0
 projects[imagecache_token][subdir] = seo
 
-projects[metatag][version] = 1.25
+projects[metatag][version] = 1.26
 projects[metatag][subdir] = seo
 
 projects[pathauto][version] = 1.3
@@ -192,7 +192,7 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.20
+projects[webform][version] = 4.21
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
