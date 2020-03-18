@@ -12,7 +12,7 @@
     "cweagans/composer-patches": "^1.6.4",
     "drupal-composer/drupal-scaffold": "2.3.0",
     "drupal/drupal-library-installer-plugin": "0.3",
-    "drupal/core": "8.8.1",
+    "drupal/core": "8.8.3",
     "drupal/ctools": "3.2",
     "drupal/token": "1.6",
     "drupal/diff": "1.0-rc2",
@@ -21,7 +21,7 @@
     "drupal/panels": "4.4",
     "drupal/bootstrap_layouts": "5.1",
     "drupal/entity": "1.0-rc3",
-    "drupal/entity_browser": "2.2",
+    "drupal/entity_browser": "2.4",
     "drupal/entity_embed": "1.0",
     "drupal/embed": "1.3",
     "drupal/inline_entity_form": "1.0-rc2",
@@ -34,8 +34,8 @@
     "drupal/slick": "2.0-rc4",
     "drupal/blazy": "2.0-rc6",
     "drupal/slick_views": "2.0",
-		"drupal/slick_media": "2.0-alpha3",
-		"drupal/slick_paragraphs": "2.0",
+    "drupal/slick_media": "2.0-alpha3",
+    "drupal/slick_paragraphs": "2.0",
     "drupal/entity_reference_revisions": "1.7",
     "drupal/paragraphs": "1.10",
     "drupal/editor_advanced_link": "1.6",
@@ -54,28 +54,28 @@
     "drupal/link_attributes": "1.9",
     "drupal/redirect": "1.5",
     "drupal/google_analytics": "2.4",
-		"drupal/yoast_seo": "1.5",
-		"drupal/length_indicator": "1.0",
+    "drupal/yoast_seo": "1.5",
+    "drupal/length_indicator": "1.0",
     "drupal/honeypot": "1.30",
     "drupal/admin_toolbar": "2.0",
-		"drupal/bootstrap": "3.21",
-		"drupal/bootstrap_barrio": "4.22",
+    "drupal/bootstrap": "3.21",
+    "drupal/bootstrap_barrio": "4.22",
     "drupal/menu_admin_per_menu": "1.0",
     "drupal/taxonomy_access_fix": "2.7",
     "drupal/block_content_permissions": "1.8",
     "drupal/responsive_preview": "1.0-beta1",
-    "drupal/views_bulk_operations": "2.5",
+    "drupal/views_bulk_operations": "3.6",
     "drupal/views_bulk_edit": "2.4",
-    "drupal/masquerade": "2.0-beta2",
-		"drupal/cloudflare": "1.0-alpha11",
-		"drupal/root": "1.4",
-		"drupal/seeds_toolbar": "1.6",
-		"drupal/imageapi_optimize": "2.0-alpha4",
-		"drupal/imageapi_optimize_resmushit": "1.0-beta1",
-		"drupal/ace_editor": "1.1",
-		"drupal/ckeditor_bidi": "2.1",
-		"drupal/url_embed": "1.0-alpha1",
-		"drupal/shariff": "1.5"
+    "drupal/masquerade": "2.0-beta3",
+    "drupal/cloudflare": "1.0-alpha11",
+    "drupal/root": "1.4",
+    "drupal/seeds_toolbar": "1.6",
+    "drupal/imageapi_optimize": "2.0-alpha4",
+    "drupal/imageapi_optimize_resmushit": "1.0-beta1",
+    "drupal/ace_editor": "1.1",
+    "drupal/ckeditor_bidi": "2.1",
+    "drupal/url_embed": "1.0-alpha1",
+    "drupal/shariff": "1.5"
   },
   "require-dev": {
     "drush/drush": "~8.1",
@@ -120,44 +120,34 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": false,
     "patches": {
-			"drupal/core": {
-				"Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.":
-				"https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
-				"Issue #2985168: Allow media items to be edited in a modal when using the field widget":
-				"https://www.drupal.org/files/issues/2019-10-18/2985168-21.patch",
-				"Issue #3045171: Form blocks rendered inside layout builder break save":
-				"https://www.drupal.org/files/issues/2019-08-01/drupal-layout_builder_unable_to_save-3045171-77.patch"
-			},
+      "drupal/core": {
+        "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
+        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2019-10-18/2985168-21.patch",
+        "Issue #3045171: Form blocks rendered inside layout builder break save": "https://www.drupal.org/files/issues/2020-02-04/layout-builder-save-issue-3045171-140.patch"
+      },
       "drupal/bootstrap_layouts": {
-        "Issue #3018633: Incompatible with Layout builder drag and drop":
-        "https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch",
-        "Issue #3010952: Add a container option":
-				"https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch",
-				"Issues #2863131: Add Bootstrap 4 support":
-				"https://www.drupal.org/files/issues/2863131-bs4-layouts.patch"
+        "Issue #3018633: Incompatible with Layout builder drag and drop": "https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch",
+        "Issue #3010952: Add a container option": "https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch",
+        "Issues #2863131: Add Bootstrap 4 support": "https://www.drupal.org/files/issues/2863131-bs4-layouts.patch"
       },
       "drupal/ds": {
-        "Issue #2883928: Use absolute or external URL for link wrappers":
-        "https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch"
+        "Issue #2883928: Use absolute or external URL for link wrappers": "https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch"
+      },
+      "drupal/focal_point": {
+        "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
       },
       "drupal/block_content_permissions": {
-        "Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission":
-        "https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch"
-			},
-			"drupal/url_embed": {
-				"Issue #2779157: Use Markup instead of inline_template":
-				"https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch",
-				"Issue #2825602: Responsive Embed":
-				"https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
-				"Issue #2864302: Validation to url embed":
-				"https://www.drupal.org/files/issues/2864302-10.patch",
-				"Issue #3069224: Themable embedded iframes":
-				"https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch"
-			},
-			"drupal/shariff": {
-				"Issue #3060551: data-url should be the url of the node.":
-				"https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch"
-			}
+        "Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission": "https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch"
+      },
+      "drupal/url_embed": {
+        "Issue #2779157: Use Markup instead of inline_template": "https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch",
+        "Issue #2825602: Responsive Embed": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
+        "Issue #2864302: Validation to url embed": "https://www.drupal.org/files/issues/2864302-10.patch",
+        "Issue #3069224: Themable embedded iframes": "https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch"
+      },
+      "drupal/shariff": {
+        "Issue #3060551: data-url should be the url of the node.": "https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch"
+      }
     }
   },
   "config": {

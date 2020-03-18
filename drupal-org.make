@@ -38,7 +38,7 @@ projects[entity][type] = module
 projects[entity][version] = 1.0-rc3
 
 projects[entity_browser][type] = module
-projects[entity_browser][version] = 2.2
+projects[entity_browser][version] = 2.4
 
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.0
@@ -60,6 +60,8 @@ projects[crop][version] = 2.0-rc1
 
 projects[focal_point][type] = module
 projects[focal_point][version] = 1.2
+;; Issue #3094478: Integrate focal point with media_library
+projects[focal_point][patch][] = https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch
 
 projects[smart_trim][type] = module
 projects[smart_trim][version] = 1.2
@@ -169,13 +171,13 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0-beta1
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 2.5
+projects[views_bulk_operations][version] = 3.6
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.4
 
 projects[masquerade][type] = module
-projects[masquerade][version] = 2.0-beta2
+projects[masquerade][version] = 2.0-beta3
 
 projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.6
