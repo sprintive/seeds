@@ -1,0 +1,8 @@
+.rtl,[dir="rtl"] {
+	body:not(.path-user) {
+        nav.tabs {
+            left: 30px;
+            right: auto;
+        }
+    }
+}

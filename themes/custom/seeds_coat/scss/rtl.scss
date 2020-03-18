@@ -5,12 +5,6 @@
     body {
         text-align: right;
     }
-    body:not(.path-user) {
-        nav.tabs {
-            left: 30px;
-            right: auto;
-        }
-    }
     .nav {
         padding-right: 0;
     }
