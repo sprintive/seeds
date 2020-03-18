@@ -84,7 +84,7 @@ function seeds_media_install() {
     ],
   ];
   $menu = Menu::create([
-    'id' => 'seeds_social_media',
+    'id' => 'seeds-social-media',
     'label' => "Social Media",
     'description' => "Social media links.",
   ]);
@@ -101,7 +101,7 @@ function seeds_media_install() {
           ],
         ],
       ],
-      'menu_name' => 'seeds_social_media',
+      'menu_name' => 'seeds-social-media',
       'expanded' => FALSE,
     ]);
     $link->save();
