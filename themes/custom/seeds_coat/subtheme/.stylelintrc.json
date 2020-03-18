@@ -1,0 +1,25 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "no-empty-source": null,
+    "no-duplicate-selectors": null,
+    "no-descending-specificity": null,
+    "declaration-no-important": [true,{
+      "message": "Using \"!important\" is not allowed"
+    }],
+    "declaration-block-no-shorthand-property-overrides": true,
+    "declaration-block-no-duplicate-properties": true,
+    "color-no-invalid-hex": true,
+    "max-nesting-depth": [4, {
+      "ignoreAtRules": ["media","include"]
+    }],
+    "unit-no-unknown" : true,
+    "unit-blacklist": ["rem"],
+    "selector-class-pattern": ["^((?!_).)*$", {
+      "message": "Using \"_\" is not allowed in a class selector"
+    }],
+    "selector-max-id": [0,{
+      "message": "Using id selectors is not allowed"
+    }]
+  }
+}

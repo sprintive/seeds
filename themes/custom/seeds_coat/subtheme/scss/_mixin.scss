@@ -1,7 +1,6 @@
 //mixin
 
 @mixin image-shadow() {
-
     .field--name-field-image {
         position: relative;
 
@@ -17,7 +16,51 @@
     }
 }
 
-@mixin equal-height () {
+@mixin equal-height() {
     display: flex;
     flex-wrap: wrap;
+}
+
+// Helper classes for forms.
+@mixin inline-form($gutter: 5px, $break: 761px) {
+    @extend .form-inline;
+    margin: 0 -$gutter;
+    display: flex;
+    flex-wrap: wrap;
+    .col-auto {
+        flex: 1;
+    }
+    .form-group {
+        padding: $gutter;
+        @media (max-width: $break) {
+            flex: 100%;
+        }
+    }
+    .form-control {
+        margin: 0;
+        width: 100%;
+    }
+}
+@mixin form($gutter: 15px, $min-width: 180px) {
+    .form-group {
+        padding: 0;
+        input[type="submit"] {
+            width: auto;
+        }
+    }
+    @for $i from 2 through 4 {
+        .form-#{$i}col {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -$gutter;
+            margin-bottom: $gutter;
+            .form-group {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: #{(100 / $i)}#{"%"};
+                padding: 0 $gutter;
+                min-width: $min-width;
+            }
+        }
+    }
 }

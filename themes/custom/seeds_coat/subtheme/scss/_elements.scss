@@ -7,20 +7,22 @@ img {
     height: auto;
 }
 
-a, div {
+a,
+div {
     outline: none;
 }
 
 a {
     color: $primary-color;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         text-decoration: none;
         color: $primary-color;
     }
 }
 
-*[ onclick^= "location" ] {
+*[onclick^="location"] {
     cursor: pointer;
 }
 
@@ -47,8 +49,12 @@ h6 {
 }
 
 .text-formatted {
-
-    h1, h2, h2, h4, h5, h6 {
+    h1,
+    h2,
+    h2,
+    h4,
+    h5,
+    h6 {
         color: $primary-color;
     }
 }
