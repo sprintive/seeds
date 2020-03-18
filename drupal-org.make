@@ -10,7 +10,7 @@ projects[token][type] = module
 projects[token][version] = 1.6
 
 projects[diff][type] = module
-projects[diff][version] = 1.0-rc2
+projects[diff][version] = 1.0
 
 
 ; Content Management Modules.
@@ -47,13 +47,13 @@ projects[embed][type] = module
 projects[embed][version] = 1.3
 
 projects[inline_entity_form][type] = module
-projects[inline_entity_form][version] = 1.0-rc2
+projects[inline_entity_form][version] = 1.0-rc3
 
 projects[media_entity_generic][type] = module
 projects[media_entity_generic][version] = 1.0
 
 projects[video_embed_field][type] = module
-projects[video_embed_field][version] = 2.2
+projects[video_embed_field][version] = 2.3
 
 projects[crop][type] = module
 projects[crop][version] = 2.0-rc1
@@ -131,7 +131,7 @@ projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 3.5
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = 1.9
+projects[link_attributes][version] = 1.10
 
 projects[redirect][type] = module
 projects[redirect][version] = 1.5
