@@ -70,7 +70,8 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
             $form['actions'][$action]['#submit'][] = 'container_settings_form_submit';
           }
         }
-      } else {
+      }
+      else {
         $form['#submit'][] = 'container_settings_form_submit';
       }
     }
@@ -111,8 +112,7 @@ function seeds_pollination_preprocess_page(&$vars) {
 /**
  * Implements hook_field_widget_form_alter().
  */
-
-function seeds_pollination_field_widget_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+function seeds_pollination_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
   if ($context["widget"]->getPluginId() == "media_library_widget") {
     foreach ($element["selection"] as $delta => &$media_selection) {
       // Check if it is a media selection.
@@ -127,9 +127,11 @@ function seeds_pollination_field_widget_form_alter(&$element, \Drupal\Core\Form\
           '#attributes' => [
             'type' => 'button',
             'class' => ['edit-media', 'button', 'btn', 'btn-primary', 'use-ajax', 'form-item'],
-            'href' => Url::fromRoute('entity.media.canonical', ['media' => $media_id], ['query' => [
-              'selector' => "edit-field-media-selection-$delta-rendered-entity",
-            ]])->toString(),
+            'href' => Url::fromRoute('entity.media.canonical', ['media' => $media_id], [
+              'query' => [
+                'selector' => "edit-field-media-selection-$delta-rendered-entity",
+              ],
+            ])->toString(),
             'data-dialog-type' => 'modal',
             'data-dialog-options' => '{"width":"1100"}',
             'value' => t("Edit Media"),
@@ -141,7 +143,7 @@ function seeds_pollination_field_widget_form_alter(&$element, \Drupal\Core\Form\
 }
 
 /**
- * Implements hook_form_FORM_ID_alter
+ * Implements hook_form_FORM_ID_alter.
  */
 function seeds_pollination_form_media_form_alter(&$form) {
   $wrapper_format = \Drupal::request()->query->get(MainContentViewSubscriber::WRAPPER_FORMAT);
@@ -153,11 +155,10 @@ function seeds_pollination_form_media_form_alter(&$form) {
 }
 
 /**
- * Handles the ajax submit of the media form
- *
+ * Handles the ajax submit of the media form.
  */
 function seeds_pollination_media_form_ajax_submit($form, FormStateInterface $form_state) {
-  // Call the original media library ajax submit
+  // Call the original media library ajax submit.
   $response = media_library_media_form_ajax_submit($form, $form_state);
 
   // Render the current media and return it.
@@ -165,7 +166,7 @@ function seeds_pollination_media_form_ajax_submit($form, FormStateInterface $for
   $render_array = \Drupal::entityTypeManager()->getViewBuilder('media')->view($entity, 'media_library');
   $response->addCommand(new ReplaceCommand('article.selected-media', $render_array));
 
-  // Empty message status
+  // Empty message status.
   \Drupal::messenger()->deleteAll();
 
   return $response;

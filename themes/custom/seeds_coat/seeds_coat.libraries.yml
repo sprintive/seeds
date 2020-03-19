@@ -16,3 +16,8 @@ seeds-fixes:
   dependencies:
     - core/jquery
     - core/drupal
+blazy-loader:
+  version: VERSION
+  css:
+    component:
+      css/blazy-loader.css: {}

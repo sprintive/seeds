@@ -8,3 +8,6 @@ embed:
     medium: 0
     seeds_eb_thumbnail: 0
     thumbnail: 0
+override_blazy_loader: 1
+blazy_loader: '/profiles/contrib/seeds/themes/custom/seeds_coat/login-logo.svg'
+blazy_background: '#333333'

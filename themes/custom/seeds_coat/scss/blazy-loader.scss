@@ -1,0 +1,56 @@
+.media--blazy {
+  .blazy-loader {
+    content: "";
+    background-size: 30%;
+    background-repeat: no-repeat;
+    -webkit-animation: none;
+    animation: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    animation: loading 1s ease-in-out 0s infinite alternate;
+    transition: 0.4s;
+    opacity: 0;
+    z-index: 2;
+  }
+  .blazy-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 1;
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.media--loading {
+  .blazy-loader,.blazy-background {
+    opacity: 1;
+  }
+  img {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+  }
+}
+
+.media--blazy .b-loaded {
+  transition: 0.4s;
+}

@@ -1,9 +1,13 @@
 <?php
 
 /**
+ * @file
  * Set the ckeditor css.
  */
 
+/**
+ *
+ */
 function seeds_editor_update_8801() {
   $config = \Drupal::configFactory()->getEditable('seeds_editor.settings');
   $active_theme = \Drupal::config('system.theme')->get('default');

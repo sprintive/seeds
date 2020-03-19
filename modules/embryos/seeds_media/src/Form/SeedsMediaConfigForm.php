@@ -38,6 +38,41 @@ class SeedsMediaConfigForm extends ConfigFormBase {
       '#default_value' => $config->get('embed.allowed_image_styles'),
     ];
 
+    $form['blazy'] = [
+      '#type' => 'fieldset',
+      '#tree' => TRUE,
+      '#title' => t("Blazy"),
+    ];
+
+    $form['blazy']['override'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Override blazy loader?'),
+      '#default_value' => $config->get('blazy')['override'],
+    ];
+
+    $form['blazy']['loader'] = [
+      '#type' => 'textfield',
+      '#title' => t('Loader Image URI'),
+      '#default_value' => $config->get('blazy')['loader'],
+      '#states' => [
+        'disabled' => [
+          '[name="override_blazy_loader"]' => ['checked' => FALSE],
+        ],
+      ],
+    ];
+
+    $form['blazy']['background_color'] = [
+      '#type' => 'color',
+      '#title' => t('Background Color'),
+      '#default_value' => $config->get('blazy')['background_color'],
+      '#description' => t('Use css background, e.g. "#333333"'),
+      '#states' => [
+        'disabled' => [
+          '[name="override_blazy_loader"]' => ['checked' => FALSE],
+        ],
+      ],
+    ];
+
     return $form;
   }
 
@@ -46,7 +81,9 @@ class SeedsMediaConfigForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $config = $this->config('seeds_media.settings');
-    $config->set('embed.allowed_image_styles', $form_state->getValue('allowed_image_styles'));
+    $values = $form_state->getValues();
+    $config->set('embed.allowed_image_styles', $values['allowed_image_styles']);
+    $config->set('blazy', $values['blazy']);
     $config->save();
 
     return parent::submitForm($form, $form_state);
