@@ -14,10 +14,13 @@
         #edit-preview-toggle {
             display: none;
         }
-        button {
+        button,
+        input {
             border: none;
             border-radius: 0;
             margin: 0px 5px;
+            display: inline-block;
+            width: auto;
             &#edit-submit {
                 background-color: $green;
             }
@@ -150,10 +153,11 @@
         .ui-resizable-s {
             display: none !important;
         }
-        button.button {
+        button.button,
+        input.button {
             position: relative;
             height: auto;
-            padding: 4px 20px;
+            padding: 6px 20px;
             border: 0;
             border-radius: 0;
             font-weight: 600;
@@ -161,7 +165,7 @@
             text-align: center;
             cursor: pointer;
             transition: background 0.5s ease;
-            background: $green;
+            background: $blue;
             color: $white;
             margin-top: 15px;
             display: block;
