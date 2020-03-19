@@ -3,3 +3,19 @@
 /**
  * @file
  */
+
+/**
+ * Implements hook_ckeditor_css_alter().
+ */
+function seeds_editor_ckeditor_css_alter(array &$css, \Drupal\editor\EditorInterface $editor) {
+  $config = \Drupal::config('seeds_editor.settings');
+  if (\Drupal::languageManager()->getCurrentLanguage()->getDirection() == "ltr") {
+    if ($ltr_css = $config->get('ltr_style')) {
+      $css[] = $ltr_css;
+    }
+  } else {
+    if ($rtl_css = $config->get('rtl_style')) {
+      $css[] = $rtl_css;
+    }
+  }
+}

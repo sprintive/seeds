@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Set the ckeditor css.
+ */
+
+function seeds_editor_update_8801() {
+  $config = \Drupal::configFactory()->getEditable('seeds_editor.settings');
+  $active_theme = \Drupal::config('system.theme')->get('default');
+  $config->set('ltr_style', '/' . drupal_get_path('theme', $active_theme) . '/css/style.css');
+  $config->set('rtl_style', '/' . drupal_get_path('theme', $active_theme) . '/css/style-rtl.css');
+  $config->save();
+}
