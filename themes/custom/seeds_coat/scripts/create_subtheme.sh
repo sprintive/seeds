@@ -47,10 +47,11 @@ cd $THEMES_DIRECTORY/$CUSTOM_SEEDS_THEME;
 for file in *THEMENAME.*; do mv $file ${file//THEMENAME/$CUSTOM_SEEDS_THEME}; done
 for file in config/*/*THEMENAME*; do mv $file ${file//THEMENAME/$CUSTOM_SEEDS_THEME}; done
 
-grep -Rl THEMENAME .|xargs sed -i '' -e "s/THEMENAME/$CUSTOM_SEEDS_THEME/"
+grep -Rl . .|xargs sed -i '' -e "s/THEMENAME/$CUSTOM_SEEDS_THEME/"
 
 cd $THEMES_DIRECTORY/$CUSTOM_SEEDS_THEME;
-npm install
+npm install 2>/dev/null
+npm rebuild node-sass 2>/dev/null
 gulp build
 drush en $CUSTOM_SEEDS_THEME -y
 drush config-set system.theme default $CUSTOM_SEEDS_THEME -y
