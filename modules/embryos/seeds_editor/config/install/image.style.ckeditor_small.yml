@@ -3,4 +3,12 @@ status: true
 dependencies: {  }
 name: ckeditor_small
 label: 'Small Embedded Image'
-effects: {  }
+effects:
+  84ac1b40-e237-4847-9d99-1b060e00ccb4:
+    uuid: 84ac1b40-e237-4847-9d99-1b060e00ccb4
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: null
+      upscale: false
