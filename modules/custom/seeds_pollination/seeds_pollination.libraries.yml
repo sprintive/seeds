@@ -1,0 +1,3 @@
+media-library:
+  js:
+    js/seeds-media-library.js: {}

@@ -4,7 +4,10 @@
  * @file
  */
 
+use Drupal\Core\Ajax\ReplaceCommand;
+use Drupal\Core\EventSubscriber\MainContentViewSubscriber;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 
 define('ENTITIES',
   [
@@ -62,13 +65,12 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
       if (isset($form['actions']['submit']['#submit'])) {
         foreach (array_keys($form['actions']) as $action) {
           if ($action !== 'preview'
-          && isset($form['actions'][$action]['#type'])
-          && $form['actions'][$action]['#type'] === 'submit') {
+            && isset($form['actions'][$action]['#type'])
+            && $form['actions'][$action]['#type'] === 'submit') {
             $form['actions'][$action]['#submit'][] = 'container_settings_form_submit';
           }
         }
-      }
-      else {
+      } else {
         $form['#submit'][] = 'container_settings_form_submit';
       }
     }
@@ -104,4 +106,68 @@ function seeds_pollination_preprocess_page(&$vars) {
       $vars['is_full_width'] = $config->get($entity_type . '_' . $entity->bundle()) ? TRUE : FALSE;
     }
   }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+
+function seeds_pollination_field_widget_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  if ($context["widget"]->getPluginId() == "media_library_widget") {
+    foreach ($element["selection"] as $delta => &$media_selection) {
+      // Check if it is a media selection.
+      if (isset($media_selection['#theme']) && $element["selection"][0]["#theme"] == "media_library_item__widget") {
+        $media_id = $media_selection["target_id"]["#value"];
+        $media_selection['edit'] = [
+          '#type' => 'html_tag',
+          '#tag' => 'input',
+          '#attached' => [
+            'library' => ['seeds_pollination/media-library'],
+          ],
+          '#attributes' => [
+            'type' => 'button',
+            'class' => ['edit-media', 'button', 'btn', 'btn-primary', 'use-ajax', 'form-item'],
+            'href' => Url::fromRoute('entity.media.canonical', ['media' => $media_id], ['query' => [
+              'selector' => "edit-field-media-selection-$delta-rendered-entity",
+            ]])->toString(),
+            'data-dialog-type' => 'modal',
+            'data-dialog-options' => '{"width":"1100"}',
+            'value' => t("Edit Media"),
+          ],
+        ];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter
+ */
+function seeds_pollination_form_media_form_alter(&$form) {
+  $wrapper_format = \Drupal::request()->query->get(MainContentViewSubscriber::WRAPPER_FORMAT);
+  if ($wrapper_format === 'drupal_modal' || ($wrapper_format === 'drupal_ajax')) {
+    $form["actions"]["submit"]["#ajax"] = [
+      'callback' => 'seeds_pollination_media_form_ajax_submit',
+    ];
+  }
+}
+
+/**
+ * Handles the ajax submit of the media form
+ *
+ */
+function seeds_pollination_media_form_ajax_submit($form, FormStateInterface $form_state) {
+  // Call the original media library ajax submit
+  $response = media_library_media_form_ajax_submit($form, $form_state);
+
+  // Render the current media and return it.
+  $entity = $form_state->getFormObject()->getEntity();
+  $render_array = \Drupal::entityTypeManager()->getViewBuilder('media')->view($entity, 'media_library');
+  $response->addCommand(new ReplaceCommand('article.selected-media', $render_array));
+
+  // Empty message status
+  \Drupal::messenger()->deleteAll();
+
+  return $response;
+
 }
