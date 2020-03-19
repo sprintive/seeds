@@ -19,12 +19,6 @@ projects[ds][version] = 3.5
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
-projects[page_manager][type] = module
-projects[page_manager][version] = 4.0-beta4
-
-projects[panels][type] = module
-projects[panels][version] = 4.4
-
 projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
 ;; Issue #3018633: Incompatible with Layout builder drag and drop
@@ -48,9 +42,6 @@ projects[embed][version] = 1.3
 
 projects[inline_entity_form][type] = module
 projects[inline_entity_form][version] = 1.0-rc3
-
-projects[media_entity_generic][type] = module
-projects[media_entity_generic][version] = 1.0
 
 projects[video_embed_field][type] = module
 projects[video_embed_field][version] = 2.3
@@ -78,9 +69,6 @@ projects[blazy][version] = 2.0-rc6
 projects[slick_views][type] = module
 projects[slick_views][version] = 2.0
 
-projects[slick_media][type] = module
-projects[slick_media][version] = 2.0-alpha3
-
 projects[slick_paragraphs][type] = module
 projects[slick_paragraphs][version] = 2.0
 
@@ -107,9 +95,6 @@ projects[photoswipe][version] = 2.9
 
 projects[smtp][type] = module
 projects[smtp][version] = 1.0-beta6
-
-projects[field_formatter][type] = module
-projects[field_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 2.4
@@ -146,9 +131,6 @@ projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.0
 
 ; Security Modules
-projects[honeypot][type] = module
-projects[honeypot][version] = 1.30
-
 projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-alpha11
 
@@ -211,9 +193,6 @@ projects[shariff][version] = 1.5
 projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
 ; Themes
-projects[bootstrap][type] = theme
-projects[bootstrap][version] = 3.21
-
 projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.22
 

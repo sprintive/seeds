@@ -22,6 +22,7 @@ define('ENTITIES',
  * Implements HOOK_form_node_form_alter().
  */
 function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  // Hide title label in all content types and make it as a placeholder.
   $title = $form['title']['widget'][0]['value']['#title'];
   $form['title']['widget'][0]['value']['#title_display'] = 'hidden';
   $form['title']['widget'][0]['value']['#placeholder'] = $title;

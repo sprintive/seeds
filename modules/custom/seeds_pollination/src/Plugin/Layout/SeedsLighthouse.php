@@ -7,7 +7,6 @@ use Drupal\Core\Plugin\PluginFormInterface;
 use Drupal\Core\Layout\LayoutDefault;
 
 /**
- * Ne
  * Layout class for all Foundation layouts.
  */
 class SeedsLighthouse extends LayoutDefault implements PluginFormInterface {
