@@ -9,18 +9,20 @@
 // Base-theme overrides.
 // Project style.
 
-@import 'overrides';
+@import "overrides";
 
-@import 'mixin';
+@import "mixin";
 
-@import 'elements';
+@import "elements";
 
-@import 'fields';
+@import "fields";
 
-@import 'displays';
+@import "general";
 
-@import 'views';
+@import "displays";
 
-@import 'blocks';
+@import "views";
 
-@import 'layout';
+@import "blocks";
+
+@import "layout";
