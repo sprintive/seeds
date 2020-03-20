@@ -13,4 +13,5 @@ dependencies:
   - link_attributes:link_attributes
   - fast404:fast404
   - yoast_seo:yoast_seo
+  - length_indicator:length_indicator
 package: 'Seeds'

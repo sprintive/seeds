@@ -46,6 +46,7 @@ dependencies:
   - taxonomy_access_fix:taxonomy_access_fix
   - seeds_toolbar:seeds_toolbar
   - masquerade:masquerade
+  - ds:ds
 
   # Embryos
   - seeds_editor:seeds_editor

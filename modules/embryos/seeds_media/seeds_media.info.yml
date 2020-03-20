@@ -11,6 +11,7 @@ dependencies:
   - drupal:text
   - drupal:user
   - drupal:views
+  - drupal:media_library
   - allowed_formats:allowed_formats
   - embed:embed
   - video_embed_field:video_embed_field
