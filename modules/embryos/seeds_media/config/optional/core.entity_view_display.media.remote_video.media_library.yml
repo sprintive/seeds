@@ -2,27 +2,28 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.media.entity_browser
+    - core.entity_view_mode.media.media_library
     - field.field.media.remote_video.field_media_oembed_video
+    - image.style.medium
     - media.type.remote_video
   module:
-    - media
-id: media.remote_video.entity_browser
+    - image
+id: media.remote_video.media_library
 targetEntityType: media
 bundle: remote_video
-mode: entity_browser
+mode: media_library
 content:
-  field_media_oembed_video:
-    type: oembed_textfield
-    weight: 0
+  thumbnail:
+    type: image
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      image_style: medium
+      image_link: ''
+    weight: 0
     third_party_settings: {  }
     region: content
 hidden:
   created: true
+  field_media_oembed_video: true
   name: true
-  path: true
-  status: true
   uid: true

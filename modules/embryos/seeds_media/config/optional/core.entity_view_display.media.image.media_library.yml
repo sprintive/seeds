@@ -2,27 +2,28 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.wysiwyg
+    - core.entity_view_mode.media.media_library
     - field.field.media.image.field_image
+    - image.style.medium
     - media.type.image
   module:
     - image
-id: media.image.wysiwyg
+id: media.image.media_library
 targetEntityType: media
 bundle: image
-mode: wysiwyg
+mode: media_library
 content:
-  field_image:
+  thumbnail:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
+    weight: 0
     third_party_settings: {  }
+    region: content
 hidden:
   created: true
+  field_image: true
   name: true
-  thumbnail: true
   uid: true

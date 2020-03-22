@@ -2,26 +2,28 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.media.entity_browser
+    - core.entity_view_mode.media.media_library
     - field.field.media.local_video.field_media_video_file
+    - image.style.medium
     - media.type.local_video
   module:
-    - file
-id: media.local_video.entity_browser
+    - image
+id: media.local_video.media_library
 targetEntityType: media
 bundle: local_video
-mode: entity_browser
+mode: media_library
 content:
-  field_media_video_file:
-    weight: 0
+  thumbnail:
+    type: image
+    label: hidden
     settings:
-      progress_indicator: throbber
+      image_style: medium
+      image_link: ''
+    weight: 0
     third_party_settings: {  }
-    type: file_generic
     region: content
 hidden:
   created: true
+  field_media_video_file: true
   name: true
-  path: true
-  status: true
   uid: true

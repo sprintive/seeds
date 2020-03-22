@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.file.field_media_file_1
+    - field.field.media.file.field_media_file
     - image.style.thumbnail
     - media.type.file
   module:
@@ -24,7 +24,7 @@ content:
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-  field_media_file_1:
+  field_media_file:
     weight: 6
     label: above
     settings:

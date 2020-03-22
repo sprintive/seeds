@@ -1,23 +1,26 @@
 name: 'Seeds Media'
-description: 'Build media bundles and entity browsers with all needed embed entities for CKeditor.'
+description: 'Build all needed media types.'
 type: module
 core: 8.x
 dependencies:
-  - drupal:field
-  - drupal:file
-  - drupal:image
-  - drupal:media
-  - drupal:path
-  - drupal:text
-  - drupal:user
-  - drupal:views
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:media'
+  - 'drupal:path'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'embed:embed'
   - drupal:media_library
-  - allowed_formats:allowed_formats
-  - embed:embed
-  - video_embed_field:video_embed_field
-  - entity_browser:entity_browser
-  - entity_browser:entity_browser_entity_form
-  - entity_embed:entity_embed
-  - link_attributes:link_attributes
-  - seeds_media:seeds_media
+  - field
+  - file
+  - focal_point:focal_point
+  - image
+  - media
+  - path
+  - seeds_media
+  - user
+  - views
 package: Seeds
+core_incompatible: false
