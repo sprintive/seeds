@@ -19,7 +19,7 @@
     });
   }
 
-  Drupal.behaviors.seedsMedia = {
+  Drupal.behaviors.seedsEntityBrowser = {
     attach: function (context, settings) {
       bindButtonClick(context);
     }

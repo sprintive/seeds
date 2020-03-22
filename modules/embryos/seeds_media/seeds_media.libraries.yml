@@ -1,6 +1,9 @@
 media_pollination:
   js:
-    js/seeds_media.js: {}
+    js/seeds-entity-browser.js: {}
   dependencies:
     - core/jquery
     - core/drupal
+media-library:
+  js:
+    js/seeds-media-library.js: {}
