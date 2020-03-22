@@ -4,10 +4,9 @@
  * @file
  */
 
-use Drupal\Core\Ajax\ReplaceCommand;
-use Drupal\Core\EventSubscriber\MainContentViewSubscriber;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Url;
 
 /**
  * @file
@@ -17,37 +16,34 @@ use Drupal\Core\Url;
 /**
  * Implements HOOK_form_node_form_alter().
  */
-function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface $form_state, $form_id)
-{
+function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   // Hide title label in all content types and make it as a placeholder.
   $title = $form['title']['widget'][0]['value']['#title'];
   $form['title']['widget'][0]['value']['#title_display'] = 'hidden';
   $form['title']['widget'][0]['value']['#placeholder'] = $title;
 }
 
-
 /**
  * Implements of HOOK_form_alter().
  */
-function seeds_pollination_form_alter(array &$form, FormStateInterface $form_state, $form_id)
-{
+function seeds_pollination_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   $form_object = $form_state->getFormObject();
-  
-  // If the form is an entity bundle form and the type is not 'delete'
-  if ($form_object instanceof \Drupal\Core\Entity\EntityForm && $form_object->getOperation() != "delete") {
+
+  // If the form is an entity bundle form and the type is not 'delete'.
+  if ($form_object instanceof EntityForm && $form_object->getOperation() != "delete") {
 
     // Get current status of container.
     $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
 
-    // Get the current entity, which is a bundle entity
+    // Get the current entity, which is a bundle entity.
     $entity = $form_object->getEntity();
 
-    // Get the bundle of this bundle entity type
+    // Get the bundle of this bundle entity type.
     $definition = \Drupal::entityTypeManager()->getDefinition($entity->getEntityTypeId());
     $bundle_of = $definition->get('bundle_of') ?: $entity->id();
     $form_state->set('bundle_of', $bundle_of);
 
-    // Check if the entity has a canonical route
+    // Check if the entity has a canonical route.
     $route_provider = \Drupal::service('router.route_provider');
     $canonical = $route_provider->getRoutesByNames(["entity.{$bundle_of}.canonical"]);
 
@@ -58,7 +54,7 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
       return;
     }
 
-    // Get the value
+    // Get the value.
     $container_settings = (bool) $config->get("{$bundle_of}_{$entity->id()}");
 
     // Define field set in additional settings group.
@@ -75,7 +71,7 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
       '#default_value' => $container_settings,
     ];
 
-    // Add the custom submit to the form
+    // Add the custom submit to the form.
     $form['actions']['submit']['#submit'][] = 'container_settings_form_submit';
   }
 }
@@ -83,36 +79,34 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
 /**
  * Implements of HOOK_form_submit().
  */
-function container_settings_form_submit(&$form, FormStateInterface &$form_state)
-{
-  // Get container configations
+function container_settings_form_submit(&$form, FormStateInterface &$form_state) {
+  // Get container configations.
   $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
 
-  // Get the 'bundle_of' value
+  // Get the 'bundle_of' value.
   $bundle_of = $form_state->get('bundle_of');
 
-  // Get the entity bundle
+  // Get the entity bundle.
   $entity = $form_state->getFormObject()->getEntity();
 
-  // Get the submitted value
+  // Get the submitted value.
   $value = (bool) $form_state->getValue('fluid_container');
 
-  // Set and save to configuration
+  // Set and save to configuration.
   $config->set("{$bundle_of}_{$entity->id()}", $value)->save();
 }
 
 /**
  * Implements of HOOK_preprocess_page()
  */
-function seeds_pollination_preprocess_page(&$vars)
-{
+function seeds_pollination_preprocess_page(&$vars) {
   $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
 
   $route_match = \Drupal::routeMatch();
   $parameters = $route_match->getParameters();
 
   foreach ($parameters as $parameter) {
-    if ($parameter instanceof \Drupal\Core\Entity\EntityInterface) {
+    if ($parameter instanceof EntityInterface) {
       $vars['is_full_width'] = (bool) $config->get("{$parameter->getEntityTypeId()}_{$parameter->bundle()}");
     }
   }

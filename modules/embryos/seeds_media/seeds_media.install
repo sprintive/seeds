@@ -5,14 +5,14 @@
  * Contains install Seeds Media.
  */
 
+use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\system\Entity\Menu;
 
 /**
  * Implements hook_install().
  */
-function seeds_media_install()
-{
+function seeds_media_install() {
 
   // Create Social Media Menu.
   $social_media_links = [
@@ -67,11 +67,10 @@ function seeds_media_install()
 }
 
 /**
- * Add "is_default" field to media entity
+ * Add "is_default" field to media entity.
  */
-function seeds_media_update_8801()
-{
-  $storage_definition = \Drupal\Core\Field\BaseFieldDefinition::create('boolean')
+function seeds_media_update_8801() {
+  $storage_definition = BaseFieldDefinition::create('boolean')
     ->setLabel(t('Is Default'))
     ->setDescription(t('A boolean that indicates if the media is a default one'))
     ->setDefaultValue(FALSE)
