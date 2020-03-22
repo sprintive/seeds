@@ -1,0 +1,8 @@
+status: true
+dependencies:
+  module:
+    - media
+id: media.medium_embedded_media
+label: 'Medium Embedded Media'
+targetEntityType: media
+cache: true

@@ -1,11 +1,16 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.large_embedded_media
+    - core.entity_view_mode.media.medium_embedded_media_
+    - core.entity_view_mode.media.small_embedded_media
   module:
     - ace_editor
     - editor
     - entity_embed
     - linkit
+    - media
     - url_embed
 name: 'Basic Editor'
 format: basic_editor
@@ -41,7 +46,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang title class id target> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class> <drupal-entity alt title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <table class> <caption> <tbody> <thead> <tfoot> <th class> <td> <tr class><ace theme height font-size print-margin><drupal-url data-*>'
+      allowed_html: '<a href hreflang title class id target> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class> <drupal-entity alt title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <table class> <caption> <tbody> <thead> <tfoot> <th class> <td> <tr class><ace theme height font-size print-margin><drupal-url data-*><drupal-media data-entity-type data-entity-uuid data-view-mode>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
@@ -111,3 +116,17 @@ filters:
     weight: -40
     settings:
       url_prefix: ''
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types:
+        image: image
+      allowed_view_modes:
+        default: default
+        large_embedded_media: large_embedded_media
+        medium_embedded_media_: medium_embedded_media
+        small_embedded_media: small_embedded_media

@@ -1,0 +1,8 @@
+status: true
+dependencies:
+  module:
+    - media
+id: media.large_embedded_media
+label: 'Large Embedded Media'
+targetEntityType: media
+cache: true

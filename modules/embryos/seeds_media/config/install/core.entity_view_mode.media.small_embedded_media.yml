@@ -1,0 +1,8 @@
+status: true
+dependencies:
+  module:
+    - media
+id: media.small_embedded_media
+label: 'Small Embedded Media'
+targetEntityType: media
+cache: true

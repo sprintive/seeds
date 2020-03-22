@@ -1,24 +1,22 @@
-uuid: 5db7ae40-9514-44e7-97c3-20bccf5ffb72
-langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.small_embedded_media
     - field.field.media.image.field_image
+    - image.style.ckeditor_small
     - media.type.image
   module:
     - image
-_core:
-  default_config_hash: YQnyDq-d9ad3hxvDJ_sSB7JgMn4E8tWI4yxzvX4Kx74
-id: media.image.default
+id: media.image.small_embedded_media
 targetEntityType: media
 bundle: image
-mode: default
+mode: small_embedded_media
 content:
   field_image:
     weight: 0
     label: visually_hidden
     settings:
-      image_style: ''
+      image_style: ckeditor_small
       image_link: ''
     third_party_settings: {  }
     type: image
