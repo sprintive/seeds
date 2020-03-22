@@ -1,5 +1,5 @@
 name: Seeds Pollination
-description: Custom functions on seeds.
+description: Miscellaneous enhancements on seeds distribution.
 type: module
 core: 8.x
 package: 'Seeds'

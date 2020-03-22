@@ -1,26 +1,16 @@
 name: 'Seeds Media'
-description: 'Build all needed media types.'
+description: 'Build all needed media types, with some amendment on Media behaviour.'
 type: module
 core: 8.x
 dependencies:
-  - 'drupal:field'
-  - 'drupal:file'
-  - 'drupal:image'
-  - 'drupal:media'
-  - 'drupal:path'
-  - 'drupal:text'
-  - 'drupal:user'
-  - 'drupal:views'
-  - 'embed:embed'
+  - drupal:field
+  - drupal:file
+  - drupal:image
+  - drupal:media
+  - drupal:path
+  - drupal:text
+  - drupal:user'
+  - drupal:views
   - drupal:media_library
-  - field
-  - file
   - focal_point:focal_point
-  - image
-  - media
-  - path
-  - seeds_media
-  - user
-  - views
 package: Seeds
-core_incompatible: false
