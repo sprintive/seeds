@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+
 /**
  * Implements hook_theme().
  */
@@ -31,7 +32,8 @@ function seeds_coat_form_system_theme_settings_alter(&$form, FormStateInterface 
     'bg-dark' => t('Dark'),
     'bg-white' => t('White'),
     'bg-transparent' => t('Transparent'),
-  ];
+	];
+
   $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
     'bg-primary' => t('Primary'),
     'bg-secondary' => t('Secondary'),
@@ -39,41 +41,42 @@ function seeds_coat_form_system_theme_settings_alter(&$form, FormStateInterface 
     'bg-dark' => t('Dark'),
     'bg-white' => t('White'),
     'bg-transparent' => t('Transparent'),
-  ];
-      $form['components']['blazy'] = [
-      '#type' => 'details',
-      '#tree' => TRUE,
-      '#title' => t("Blazy"),
-    ];
+	];
 
-    $form['components']['blazy']['override'] = [
-      '#type' => 'checkbox',
-      '#title' => t('Override blazy loader?'),
-      '#default_value' => theme_get_setting('blazy')['override'],
-    ];
+	$form['components']['blazy'] = [
+		'#type' => 'details',
+		'#tree' => TRUE,
+		'#title' => t("Blazy"),
+	];
 
-    $form['components']['blazy']['loader'] = [
-      '#type' => 'textfield',
-      '#title' => t('Loader Image URI'),
-      '#default_value' => theme_get_setting('blazy')['loader'],
-      '#states' => [
-        'disabled' => [
-          '[name="override_blazy_loader"]' => ['checked' => FALSE],
-        ],
-      ],
-    ];
+	$form['components']['blazy']['override'] = [
+		'#type' => 'checkbox',
+		'#title' => t('Override blazy loader?'),
+		'#default_value' => theme_get_setting('blazy')['override'],
+	];
 
-    $form['components']['blazy']['background_color'] = [
-      '#type' => 'color',
-      '#title' => t('Background Color'),
-      '#default_value' => theme_get_setting('blazy')['background_color'],
-      '#description' => t('Use css background, e.g. "#333333"'),
-      '#states' => [
-        'disabled' => [
-          '[name="override_blazy_loader"]' => ['checked' => FALSE],
-        ],
-      ],
-    ];
+	$form['components']['blazy']['loader'] = [
+		'#type' => 'textfield',
+		'#title' => t('Loader Image URI'),
+		'#default_value' => theme_get_setting('blazy')['loader'],
+		'#states' => [
+			'disabled' => [
+				'[name="override_blazy_loader"]' => ['checked' => FALSE],
+			],
+		],
+	];
+
+	$form['components']['blazy']['background_color'] = [
+		'#type' => 'color',
+		'#title' => t('Background Color'),
+		'#default_value' => theme_get_setting('blazy')['background_color'],
+		'#description' => t('Use css background, e.g. "#333333"'),
+		'#states' => [
+			'disabled' => [
+				'[name="override_blazy_loader"]' => ['checked' => FALSE],
+			],
+		],
+	];
 }
 /**
  * Implements hook_preprocess_HOOK().

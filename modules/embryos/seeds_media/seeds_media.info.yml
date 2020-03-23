@@ -1,5 +1,5 @@
 name: 'Seeds Media'
-description: 'Build all needed media types, with some amendment on Media behaviour.'
+description: 'Provide needed media types and enhance out of the box media experience.'
 type: module
 core: 8.x
 dependencies:
