@@ -68,7 +68,7 @@ class SeedsMediaConfigForm extends ConfigFormBase {
     $config = $this->config('seeds_media.settings');
     $values = $form_state->getValues();
     $config->set('embed.allowed_image_styles', $values['allowed_image_styles']);
-    $config->set('check_media_useability', $values['check_media_useability']);
+    $config->set('check_media_usability', $values['check_media_usability']);
     $config->save();
 
     return parent::submitForm($form, $form_state);
