@@ -9,15 +9,18 @@ use Drupal\editor\EditorInterface;
  * Implements hook_ckeditor_css_alter().
  */
 function seeds_editor_ckeditor_css_alter(array &$css, EditorInterface $editor) {
-  $config = \Drupal::config('seeds_editor.settings');
-  if (\Drupal::languageManager()->getCurrentLanguage()->getDirection() == "ltr") {
-    if ($ltr_css = $config->get('ltr_style')) {
-      $css[] = $ltr_css;
-    }
-  }
-  else {
-    if ($rtl_css = $config->get('rtl_style')) {
-      $css[] = $rtl_css;
-    }
-  }
+	$config = \Drupal::config('seeds_editor.settings');
+	$load_styles = $config->get('check_media_usability');
+	if ((bool)$load_styles) {
+		if (\Drupal::languageManager()->getCurrentLanguage()->getDirection() == "ltr") {
+			if ($ltr_css = $config->get('ltr_style')) {
+				$css[] = $ltr_css;
+			}
+		} else {
+			if ($rtl_css = $config->get('rtl_style')) {
+				$css[] = $rtl_css;
+			}
+		}
+	}
+
 }

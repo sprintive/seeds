@@ -24,6 +24,20 @@ class SeedsMediaConfigForm extends ConfigFormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form = parent::buildForm($form, $form_state);
     $config = $this->config('seeds_media.settings');
+
+    $form['media_library'] = [
+      '#type' => 'fieldset',
+      '#title' => t('Media Library'),
+      '#tree' => FALSE,
+    ];
+
+    $form['media_library']['check_media_usability'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t("Check Media Usability"),
+      '#description' => $this->t("Use this if you want to warn the user if the current media which is being edited is used in another entity on the website."),
+      '#default_value' => $config->get('check_media_usability'),
+    ];
+
     $styles = ImageStyle::loadMultiple();
     $styles_titles = [];
 
@@ -31,18 +45,17 @@ class SeedsMediaConfigForm extends ConfigFormBase {
       $styles_titles[$machine_name] = $val->label();
     }
 
-    $form['allowed_image_styles'] = [
-      '#type' => 'checkboxes',
-      '#title' => $this->t('Allowed embed image styles'),
-      '#options' => $styles_titles,
-      '#default_value' => $config->get('embed.allowed_image_styles'),
+    $form['image_styles'] = [
+      '#type' => 'fieldset',
+      '#title' => t('Deprecated: Allowed Embed Media Image Styles'),
+      '#tree' => FALSE,
     ];
 
-    $form['check_media_useability'] = [
-      '#type' => 'checkbox',
-      '#title' => $this->t("Check Media Useability"),
-      '#description' => $this->t("Use this if you want to warn the user if the current media which is being edited is used anywhere in the website"),
-      '#default_value' => $config->get('check_media_useability'),
+    $form['image_styles']['allowed_image_styles'] = [
+      '#type' => 'checkboxes',
+      '#title' => $this->t('Select allowed image styles to choose from when you embed media images using entity browser.'),
+      '#options' => $styles_titles,
+      '#default_value' => $config->get('embed.allowed_image_styles'),
     ];
 
     $form['blazy'] = [
@@ -105,4 +118,5 @@ class SeedsMediaConfigForm extends ConfigFormBase {
       'seeds_media.settings',
     ];
   }
+
 }

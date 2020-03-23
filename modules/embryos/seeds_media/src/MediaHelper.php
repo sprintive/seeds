@@ -4,7 +4,6 @@ namespace Drupal\seeds_media;
 
 use Drupal\Core\Entity\EntityFieldManagerInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\file\FileInterface;
 use Drupal\file\Plugin\Field\FieldType\FileItem;
 use Drupal\media\MediaInterface;
@@ -78,17 +77,16 @@ class MediaHelper {
   }
 
   /**
-   * Determines the use count of the media entity in all fields
+   * Determines the use count of the media entity in all fields.
    *
    * @param \Drupal\media\MediaInterface $media
-   *   The media entity
+   *   The media entity.
    *
    * @return int
    *   The number of times this media is used in all fields
-   *
    */
-  public function mediaUseablity(\Drupal\media\MediaInterface $media) {
-    // Get all entity reference fields that target media entities
+  public function mediaUseablity(MediaInterface $media) {
+    // Get all entity reference fields that target media entities.
     /** @var \Drupal\field\FieldStorageConfigInterface[] $fields */
     $fields = $this->entityTypeManager->getStorage('field_storage_config')->loadByProperties([
       'type' => 'entity_reference',
@@ -97,7 +95,7 @@ class MediaHelper {
       ],
     ]);
 
-    // Get each query for each table
+    // Get each query for each table.
     $queries = [];
     foreach ($fields as $field) {
       $name = $field->getName();
@@ -109,7 +107,7 @@ class MediaHelper {
       $queries[] = $query;
     }
 
-    // Begin a union query
+    // Begin a union query.
     $union = NULL;
     $union = array_reduce($queries, function ($prev, $curr) {
       if ($prev == NULL) {
@@ -118,7 +116,7 @@ class MediaHelper {
       return $prev->union($curr);
     });
 
-    // Execute the union query
+    // Execute the union query.
     $result = $union->execute()->fetchAll();
     return count($result);
   }
@@ -214,13 +212,15 @@ class MediaHelper {
 
     if ($destination == $file->getFileUri()) {
       return $file;
-    } else {
+    }
+    else {
       $file = file_move($file, $destination, $replace);
 
       if ($file) {
         $field->setValue($file);
         return $file;
-      } else {
+      }
+      else {
         return FALSE;
       }
     }
@@ -246,7 +246,8 @@ class MediaHelper {
 
     if ($is_ready) {
       return $dir;
-    } else {
+    }
+    else {
       throw new \RuntimeException('Could not prepare ' . $dir . ' for writing');
     }
   }
@@ -283,4 +284,5 @@ class MediaHelper {
     ? $entity->get($field->getName())
     : NULL;
   }
+
 }

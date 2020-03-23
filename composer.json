@@ -70,7 +70,14 @@
 		"drupal/url_embed": "1.0-alpha1",
 		"drupal/ckeditor_iframe": "2.0",
 		"drupal/fakeobjects": "1.0",
-    "drupal/shariff": "1.5"
+		"drupal/shariff": "1.5",
+		"drupal/captcha":"1.0",
+		"drupal/recaptcha": "2.5",
+		"drupal/password_policy":"3.0-alpha5",
+		"drupal/genpass":"1.0",
+		"drupal/ultimate_cron":"2.0-alpha4",
+		"drupal/username_enumeration_prevention":"1.0",
+		"drupal/events_log_track":"1.1"
   },
   "require-dev": {
     "drush/drush": "~8.1",

@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Class SeedsSettings.
  */
-class SeedsEditorSettings extends ConfigFormBase {
+class SeedsEditorConfigForm extends ConfigFormBase {
 
   /**
    *
@@ -34,7 +34,7 @@ class SeedsEditorSettings extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'seeds_settings';
+    return 'seeds_editor_settings';
   }
 
   /**
@@ -42,7 +42,6 @@ class SeedsEditorSettings extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config("seeds_editor.settings");
-    $blazy_config = $this->config('seeds_editor.blazy');
 
     $form['ckeditor'] = [
       '#type' => 'fieldset',
@@ -50,20 +49,36 @@ class SeedsEditorSettings extends ConfigFormBase {
       '#tree' => FALSE,
     ];
 
-    $form['ckeditor']['ltr_style'] = [
+    $form['ckeditor']['load_ckeditor_styles'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Load custom styles for CKeditor?'),
+      '#default_value' => $config->get('load_ckeditor_styles'),
+    ];
+
+    $form['ckeditor']['ckeditor_ltr_style'] = [
       '#type' => 'textfield',
       '#title' => $this->t('LTR Style'),
       '#maxlength' => 128,
       '#size' => 32,
-      '#default_value' => $config->get('ltr_style'),
+      '#default_value' => $config->get('ckeditor_ltr_style'),
+      '#states' => [
+        'visible' => [
+          '[name="load_ckeditor_styles"]' => ['checked' => TRUE],
+        ],
+      ],
     ];
 
-    $form['ckeditor']['rtl_style'] = [
+    $form['ckeditor']['ckeditor_rtl_style'] = [
       '#type' => 'textfield',
       '#title' => $this->t('RTL Style'),
       '#maxlength' => 128,
       '#size' => 32,
-      '#default_value' => $config->get('rtl_style'),
+      '#default_value' => $config->get('ckeditor_rtl_style'),
+      '#states' => [
+        'visible' => [
+          '[name="load_ckeditor_styles"]' => ['checked' => TRUE],
+        ],
+      ],
     ];
 
     return parent::buildForm($form, $form_state);
@@ -81,8 +96,9 @@ class SeedsEditorSettings extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->config('seeds_editor.settings')
-      ->set('ltr_style', $form_state->getValue('ltr_style'))
-      ->set('rtl_style', $form_state->getValue('rtl_style'))
+      ->set('load_ckeditor_styles', $form_state->getValue('load_ckeditor_styles'))
+      ->set('ckeditor_ltr_style', $form_state->getValue('ckeditor_ltr_style'))
+      ->set('ckeditor_rtl_style', $form_state->getValue('ckeditor_rtl_style'))
       ->save();
     $this->messenger()->addStatus($this->t("Seeds configuration has been saved successfully"));
   }

@@ -2,7 +2,7 @@
 seeds_editor.settings:
   path: '/admin/config/content/seeds-editor'
   defaults:
-    _form: '\Drupal\seeds_editor\Form\SeedsEditorSettings'
+    _form: '\Drupal\seeds_editor\Form\SeedsEditorConfigForm'
     _title: 'Seeds Editor'
   requirements:
     _permission: 'administer seeds editor'
