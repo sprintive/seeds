@@ -49,8 +49,8 @@ dependencies:
   - ds:ds
 
   # Embryos
-  - seeds_editor:seeds_editor
   - seeds_media:seeds_media
+  - seeds_editor:seeds_editor
 
   # Pollination
   - seeds_pollination:seeds_pollination

@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.large_embedded_media
-    - core.entity_view_mode.media.medium_embedded_media_
+    - core.entity_view_mode.media.medium_embedded_media
     - core.entity_view_mode.media.small_embedded_media
   module:
     - ace_editor

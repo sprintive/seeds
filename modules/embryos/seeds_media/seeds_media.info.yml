@@ -9,7 +9,7 @@ dependencies:
   - drupal:media
   - drupal:path
   - drupal:text
-  - drupal:user'
+  - drupal:user
   - drupal:views
   - drupal:media_library
   - focal_point:focal_point

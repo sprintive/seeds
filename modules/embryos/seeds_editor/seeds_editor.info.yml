@@ -13,4 +13,5 @@ dependencies:
   - linkit:linkit
   - url_embed:url_embed
   - ace_editor:ace_editor
+  - seeds_media:seeds_media
 package: Seeds
