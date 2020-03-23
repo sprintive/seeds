@@ -242,7 +242,11 @@ body:not(.path-user) {
         }
     }
 }
-
+body.path-user {
+    nav.tabs {
+        display: none;
+    }
+}
 // contextual links.
 .contextual-region.focus {
     outline: 1px dashed #4D4D4F;

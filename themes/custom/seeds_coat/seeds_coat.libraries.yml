@@ -3,13 +3,14 @@ global-styling:
   css:
     component:
       css/style.css: {}
+  js:
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}    
 seeds-fixes:
   version: VERSION
   js:
     js/seeds_coat.js: {}
-    js/popper.min.js: {}
     js/global.js: {}
-    js/bootstrap.min.js: {}
   css:
     component:
       css/seeds.css: {}

@@ -33,12 +33,13 @@
     margin: 0 -$gutter;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
     .col-auto {
         flex: 1;
     }
     .form-group {
         padding: $gutter;
-        @media (max-width: $break) {
+        @media (max-width: $break) { /* stylelint-disable-line */ 
             flex: 100%;
         }
     }
@@ -122,38 +123,11 @@
     .media--responsive {
         @extend %blazy-image;
         padding-top: get-ratio-percentage(map-get($lg, "w"), map-get($lg, "h"));
-        @media (max-width: 991px) {
+        @include media-breakpoint-down(lg) {
             padding-top: get-ratio-percentage(map-get($md, "w"), map-get($md, "h"));
         }
-        @media (max-width: 767px) {
+        @include media-breakpoint-down(md) {
             padding-top: get-ratio-percentage(map-get($sm, "w"), map-get($sm, "h"));
-        }
-    }
-}
-
-.seeds_coat_blazy {
-    $medias: (
-        "lg": 1199px,
-        "md": 991px,
-        "sm": 767px,
-    );
-    $ratios: (
-        "16_9": 56.52%,
-        "4_3": 75%,
-        "3_2": 66.64%,
-        "1_1": 100%,
-    );
-    @extend %blazy-image;
-    @each $ratio, $padding in $ratios {
-        &.seeds_coat_#{$ratio} {
-            padding-top: $padding;
-        }
-        @each $media, $max-width in $medias {
-            &.seeds_coat_#{$media}_#{$ratio} {
-                @media (max-width: $max-width) {
-                    padding-top: $padding;
-                }
-            }
         }
     }
 }

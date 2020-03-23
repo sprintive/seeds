@@ -1,11 +1,11 @@
 .media--blazy .blazy-loader {
   content: "";
   -webkit-background-size: 30% 30%;
-  background-size: 30%;
+          background-size: 30%;
   background-repeat: no-repeat;
   -webkit-animation: none;
   -o-animation: none;
-  animation: none;
+     animation: none;
   margin: 0;
   position: absolute;
   top: 0;
@@ -14,55 +14,62 @@
   bottom: 0;
   background-position: center center;
   -webkit-animation: loading 1s ease-in-out 0s infinite alternate;
-  -o-animation: loading 1s ease-in-out 0s infinite alternate;
-  animation: loading 1s ease-in-out 0s infinite alternate;
-}
+       -o-animation: loading 1s ease-in-out 0s infinite alternate;
+          animation: loading 1s ease-in-out 0s infinite alternate;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  z-index: 2; }
+
+.media--blazy .blazy-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 1; }
 
 @-webkit-keyframes loading {
   from {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-}
+            transform: scale(0.9); }
   to {
     -webkit-transform: scale(1);
-    transform: scale(1);
-} }
+            transform: scale(1); } }
 
 @-o-keyframes loading {
   from {
     -o-transform: scale(0.9);
-    transform: scale(0.9);
-}
+       transform: scale(0.9); }
   to {
     -o-transform: scale(1);
-    transform: scale(1);
-} }
+       transform: scale(1); } }
 
 @keyframes loading {
   from {
     -webkit-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-}
+         -o-transform: scale(0.9);
+            transform: scale(0.9); }
   to {
     -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-} }
+         -o-transform: scale(1);
+            transform: scale(1); } }
+
+.media--loading .blazy-loader, .media--loading .blazy-background {
+  opacity: 1; }
 
 .media--loading img {
   position: absolute;
+  z-index: 0;
   left: 0;
-  top: 0;
-  opacity: 0;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
+  top: 0; }
 
 .media--blazy .b-loaded {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
-  transition: 0.4s;
-  opacity: 1;
-}
+  transition: 0.4s; }

@@ -107,14 +107,23 @@ function minifyCss() {
 function copy() {
   return gulp
     .src([
-      "node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*"
+      "node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*",
     ])
     .pipe(gulp.dest("fonts/font-awesome/"));
+}
+// Move the javascript files into our js folder
+function copyJs() {
+  return gulp
+  .src([
+    "node_modules/bootstrap/dist/js/bootstrap.min.js",
+    "node_modules/popper.js/dist/umd/popper.min.js"
+  ])
+  .pipe(gulp.dest("js/"));
 }
 
 function clean() {
   // Clean old folders.
-  del(["fonts/font-awesome/*", "fonts/bootstrap", "css", "js/bootstrap"]);
+  del(["fonts/font-awesome/*", "fonts/bootstrap", "css", "js/bootstrap",'js/popper']);
   // Clean sourcemap files.
   del("css/*.map");
 }
@@ -133,6 +142,7 @@ gulp.task(
     isDevelopment = false;
     clean();
     copy();
+    copyJs();
     gulp.series(styles, gulpIf(rtlEnabled, stylesRtl), minifyCss)();
     done();
   })
@@ -143,6 +153,7 @@ gulp.task(
   gulp.series(done => {
     clean();
     copy();
+    copyJs();
     gulp.parallel(styles, gulpIf(rtlEnabled, stylesRtl))();
     portInUse(livereloadPort, inUse => {
       if (inUse) {

@@ -1,5 +1,7 @@
 scripts:
   js:
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {} 
     js/main.js: {}
 ltr:
   css:

@@ -4,20 +4,22 @@
     "no-empty-source": null,
     "no-duplicate-selectors": null,
     "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword":null,
     "declaration-no-important": [true,{
       "message": "Using \"!important\" is not allowed"
     }],
     "declaration-block-no-shorthand-property-overrides": true,
     "declaration-block-no-duplicate-properties": true,
     "color-no-invalid-hex": true,
-    "max-nesting-depth": [4, {
-      "ignoreAtRules": ["media","include"]
+    "max-nesting-depth": [3, {
+      "ignoreAtRules": ["include"],
+      "ignore":["pseudo-classes"]
+    }],
+    "at-rule-blacklist":["media", {
+      "message" : "Using @media query is not allowed"
     }],
     "unit-no-unknown" : true,
-    "unit-blacklist": ["rem"],
-    "selector-class-pattern": ["^((?!_).)*$", {
-      "message": "Using \"_\" is not allowed in a class selector"
-    }],
+    "unit-blacklist": ["rem","em","cm"],
     "selector-max-id": [0,{
       "message": "Using id selectors is not allowed"
     }]
