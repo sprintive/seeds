@@ -2,9 +2,11 @@ core = 8.x
 api = 2
 defaults[projects][subdir] = contrib
 
-; Utilities Modules
 projects[entity][type] = module
 projects[entity][version] = 1.0-rc3
+
+projects[entity_reference_revisions][type] = module
+projects[entity_reference_revisions][version] = 1.7
 
 projects[ctools][type] = module
 projects[ctools][version] = 3.2
@@ -12,15 +14,19 @@ projects[ctools][version] = 3.2
 projects[token][type] = module
 projects[token][version] = 1.6
 
-projects[diff][type] = module
-projects[diff][version] = 1.0
+projects[webform][type] = module
+projects[webform][version] = 5.9
 
-
-; Content Management Modules.
 projects[ds][type] = module
 projects[ds][version] = 3.5
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
+
+projects[field_group][type] = module
+projects[field_group][version] = 3.0
+
+projects[linkit][type] = module
+projects[linkit][version] = 5.0-beta10
 
 projects[bootstrap_layouts][type] = module
 projects[bootstrap_layouts][version] = 5.1
@@ -31,27 +37,11 @@ projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-
 ;; Issue #2863131: Add Bootstrap 4 support
 projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2863131-bs4-layouts.patch
 
-
-projects[entity_browser][type] = module
-projects[entity_browser][version] = 2.4
-
-projects[entity_embed][type] = module
-projects[entity_embed][version] = 1.0
-
-projects[embed][type] = module
-projects[embed][version] = 1.3
-
-projects[inline_entity_form][type] = module
-projects[inline_entity_form][version] = 1.0-rc3
-
-projects[video_embed_field][type] = module
-projects[video_embed_field][version] = 2.3
-
 projects[crop][type] = module
-projects[crop][version] = 2.0-rc1
+projects[crop][version] = 2.0
 
 projects[focal_point][type] = module
-projects[focal_point][version] = 1.2
+projects[focal_point][version] = 1.3
 ;; Issue #3094478: Integrate focal point with media_library
 projects[focal_point][patch][] = https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch
 
@@ -61,49 +51,99 @@ projects[smart_trim][version] = 1.2
 projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.2
 
+projects[paragraphs][type] = module
+projects[paragraphs][version] = 1.11
+
 projects[slick][type] = module
-projects[slick][version] = 2.0-rc4
+projects[slick][version] = 2.1
 
 projects[blazy][type] = module
-projects[blazy][version] = 2.0-rc6
+projects[blazy][version] = 2.0
 
 projects[slick_views][type] = module
-projects[slick_views][version] = 2.0
+projects[slick_views][version] = 2.2
 
 projects[slick_paragraphs][type] = module
 projects[slick_paragraphs][version] = 2.0
 
-projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = 1.7
+projects[photoswipe][type] = module
+projects[photoswipe][version] = 2.9
 
-projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.10
+projects[layout_builder_restrictions][type] = module
+projects[layout_builder_restrictions][version] = 2.5
 
-projects[editor_advanced_link][type] = module
-projects[editor_advanced_link][version] = 1.6
+projects[shariff][type] = module
+projects[shariff][version] = 1.5
+;; Issue #3060551: data-url should be the url of the node.
+projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
-projects[webform][type] = module
-projects[webform][version] = 5.6
+projects[admin_toolbar][type] = module
+projects[admin_toolbar][version] = 2.0
+
+projects[seeds_toolbar][type] = module
+projects[seeds_toolbar][version] = 1.6
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
 
-projects[field_group][type] = module
-projects[field_group][version] = 3.0-rc2
+projects[menu_admin_per_menu][type] = module
+projects[menu_admin_per_menu][version] = 1.0
 
-projects[photoswipe][type] = module
-projects[photoswipe][version] = 2.9
+projects[taxonomy_access_fix][type] = module
+projects[taxonomy_access_fix][version] = 2.7
 
-projects[smtp][type] = module
-projects[smtp][version] = 1.0-beta6
+projects[block_content_permissions][type] = module
+projects[block_content_permissions][version] = 1.8
+;; Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission.
+projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
-projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.4
+projects[masquerade][type] = module
+projects[masquerade][version] = 2.0-beta3
 
-projects[linkit][type] = module
-projects[linkit][version] = 5.0-beta10
+projects[responsive_preview][type] = module
+projects[responsive_preview][version] = 1.0-beta1
 
-; Performance & SEO Modules
+projects[views_bulk_operations][type] = module
+projects[views_bulk_operations][version] = 3.6
+
+projects[views_bulk_edit][type] = module
+projects[views_bulk_edit][version] = 2.4
+
+projects[diff][type] = module
+projects[diff][version] = 1.0
+
+projects[embed][type] = module
+projects[embed][version] = 1.3
+
+projects[entity_embed][type] = module
+projects[entity_embed][version] = 1.0
+
+projects[url_embed][type] = module
+projects[url_embed][version] = 1.0-alpha1
+;; Issue #2779157: Use Markup instead of inline_template
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
+;; Issue #2825602: Responsive embed
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch
+;; Issue #2864302: Validation to url embed
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
+;; Issue #3069224: Themable embedded iframes
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch
+
+projects[editor_advanced_link][type] = module
+projects[editor_advanced_link][version] = 1.6
+
+projects[ace_editor][type] = module
+projects[ace_editor][version] = 1.1
+
+projects[ckeditor_bidi][type] = module
+projects[ckeditor_bidi][version] = 2.1
+
+projects[ckeditor_iframe][type] = module
+projects[ckeditor_iframe][version] = 2.0
+
+projects[fakeobjects][type] = module
+projects[fakeobjects][version] = 1.0
+
 projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha4
 
@@ -129,41 +169,7 @@ projects[yoast_seo][type] = module
 projects[yoast_seo][version] = 1.5
 
 projects[length_indicator][type] = module
-projects[length_indicator][version] = 1.0
-
-; Security Modules
-projects[cloudflare][type] = module
-projects[cloudflare][version] = 1.0-alpha11
-
-; Administration Modules.
-projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 2.0
-
-projects[menu_admin_per_menu][type] = module
-projects[menu_admin_per_menu][version] = 1.0
-
-projects[taxonomy_access_fix][type] = module
-projects[taxonomy_access_fix][version] = 2.7
-
-projects[block_content_permissions][type] = module
-projects[block_content_permissions][version] = 1.8
-;; Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission
-projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
-
-projects[responsive_preview][type] = module
-projects[responsive_preview][version] = 1.0-beta1
-
-projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.6
-
-projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.4
-
-projects[masquerade][type] = module
-projects[masquerade][version] = 2.0-beta3
-
-projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.6
+projects[length_indicator][version] = 1.1
 
 projects[imageapi_optimize][type] = module
 projects[imageapi_optimize][version] = 2.0-alpha4
@@ -171,34 +177,39 @@ projects[imageapi_optimize][version] = 2.0-alpha4
 projects[imageapi_optimize_resmushit][type] = module
 projects[imageapi_optimize_resmushit][version] = 1.0-beta1
 
-projects[ace_editor][type] = module
-projects[ace_editor][version] = 1.1
+projects[cloudflare][type] = module
+projects[cloudflare][version] = 1.0-alpha11
 
-projects[ckeditor_bidi][type] = module
-projects[ckeditor_bidi][version] = 2.1
+projects[ultimate_cron][type] = module
+projects[ultimate_cron][version] = 2.0-alpha4
 
-projects[url_embed][type] = module
-projects[url_embed][version] = 1.0-alpha1
-;; Issue #2779157: Use Markup instead of inline_template
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
-;; Issue #2825602: Responsive embed
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch
-;; Issue #2864302: Validation to url embed
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
-;; Issue #3069224: Themable embedded iframes
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch
+projects[smtp][type] = module
+projects[smtp][version] = 1.0-beta7
 
-projects[shariff][type] = module
-projects[shariff][version] = 1.5
-;; Issue #3060551: data-url should be the url of the node.
-projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
+projects[captcha][type] = module
+projects[captcha][version] = 1.0
 
-; Themes
+projects[recaptcha][type] = module
+projects[recaptcha][version] = 2.5
+
+projects[password_policy][type] = module
+projects[password_policy][version] = 3.0-alpha5
+
+projects[genpass][type] = module
+projects[genpass][version] = 1.0
+
+projects[username_enumeration_prevention][type] = module
+projects[username_enumeration_prevention][version] = 1.0
+
+projects[events_log_track][type] = module
+projects[events_log_track][version] = 1.1
+
 projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.22
 
 projects[root][type] = theme
 projects[root][version] = 1.4
+
 
 ; Libraries
 libraries[slick][download][type] = get
@@ -213,3 +224,10 @@ libraries[blazy][download][type] = get
 libraries[blazy][download][url] = "https://github.com/dinbror/blazy/archive/1.8.2.tar.gz"
 libraries[blazy][destination] = "libraries"
 
+libraries[fakeobjects][download][type] = get
+libraries[fakeobjects][download][url] = "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.14.0.zip"
+libraries[fakeobjects][destination] = "libraries"
+
+libraries[iframe][download][type] = get
+libraries[iframe][download][url] = "https://download.ckeditor.com/iframe/releases/iframe_4.14.0.zip"
+libraries[iframe][destination] = "libraries"
