@@ -78,7 +78,7 @@ projects[shariff][version] = 1.5
 projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 2.0
+projects[admin_toolbar][version] = 2.1
 
 projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.6
@@ -194,9 +194,6 @@ projects[recaptcha][version] = 2.5
 
 projects[password_policy][type] = module
 projects[password_policy][version] = 3.0-alpha5
-
-projects[genpass][type] = module
-projects[genpass][version] = 1.0
 
 projects[username_enumeration_prevention][type] = module
 projects[username_enumeration_prevention][version] = 1.0

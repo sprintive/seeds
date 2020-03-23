@@ -1,7 +1,16 @@
-name: 'Seeds Security'
+name: 'Seeds Security & Performance'
 description: Starter Module to enable all security modules
 type: module
 core: 8.x
 dependencies:
-  - honeypot:honeypot
+  - username_enumeration_prevention:username_enumeration_prevention
+  - events_log_track:events_log_track
+  - events_log_track:events_log_track_node
+  - events_log_track:events_log_track_user
+  - events_log_track:events_log_track_auth
+  - events_log_track:events_log_track_menu
+  - events_log_track:events_log_track_taxonomy
+  - captcha:captcha
+  - recaptcha:recaptcha
+  - password_policy:password_policy
 package: 'Seeds'
