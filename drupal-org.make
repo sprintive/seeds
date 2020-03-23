@@ -72,6 +72,9 @@ projects[photoswipe][version] = 2.9
 projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 2.5
 
+projects[layout_builder_modal][type] = module
+projects[layout_builder_modal][version] = 1.0
+
 projects[shariff][type] = module
 projects[shariff][version] = 1.5
 ;; Issue #3060551: data-url should be the url of the node.
