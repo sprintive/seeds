@@ -38,6 +38,13 @@ class SeedsMediaConfigForm extends ConfigFormBase {
       '#default_value' => $config->get('embed.allowed_image_styles'),
     ];
 
+    $form['check_media_useability'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t("Check Media Useability"),
+      '#description' => $this->t("Use this if you want to warn the user if the current media which is being edited is used anywhere in the website"),
+      '#default_value' => $config->get('check_media_useability'),
+    ];
+
     $form['blazy'] = [
       '#type' => 'fieldset',
       '#tree' => TRUE,
@@ -83,6 +90,7 @@ class SeedsMediaConfigForm extends ConfigFormBase {
     $config = $this->config('seeds_media.settings');
     $values = $form_state->getValues();
     $config->set('embed.allowed_image_styles', $values['allowed_image_styles']);
+    $config->set('check_media_useability', $values['check_media_useability']);
     $config->set('blazy', $values['blazy']);
     $config->save();
 
@@ -97,5 +105,4 @@ class SeedsMediaConfigForm extends ConfigFormBase {
       'seeds_media.settings',
     ];
   }
-
 }

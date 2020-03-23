@@ -2,11 +2,13 @@
 
 namespace Drupal\seeds_media;
 
+use Drupal\Core\Entity\EntityFieldManagerInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\file\FileInterface;
 use Drupal\file\Plugin\Field\FieldType\FileItem;
-use Drupal\seeds_media\Exception\IndeterminateBundleException;
 use Drupal\media\MediaInterface;
+use Drupal\seeds_media\Exception\IndeterminateBundleException;
 
 /**
  * Provides helper methods for dealing with media entities.
@@ -21,13 +23,21 @@ class MediaHelper {
   protected $entityTypeManager;
 
   /**
+   * The entity field manager.
+   *
+   * @var \Drupal\Core\Entity\EntityFieldManagerInterface
+   */
+  protected $entityFieldManager;
+
+  /**
    * MediaHelper constructor.
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    *   The entity type manager.
    */
-  public function __construct(EntityTypeManagerInterface $entity_type_manager) {
+  public function __construct(EntityTypeManagerInterface $entity_type_manager, EntityFieldManagerInterface $entity_field_manager) {
     $this->entityTypeManager = $entity_type_manager;
+    $this->entityFieldManager = $entity_field_manager;
   }
 
   /**
@@ -65,6 +75,52 @@ class MediaHelper {
     }
     $extensions = preg_split('/,?\s+/', rtrim($extensions));
     return array_unique($extensions);
+  }
+
+  /**
+   * Determines the use count of the media entity in all fields
+   *
+   * @param \Drupal\media\MediaInterface $media
+   *   The media entity
+   *
+   * @return int
+   *   The number of times this media is used in all fields
+   *
+   */
+  public function mediaUseablity(\Drupal\media\MediaInterface $media) {
+    // Get all entity reference fields that target media entities
+    /** @var \Drupal\field\FieldStorageConfigInterface[] $fields */
+    $fields = $this->entityTypeManager->getStorage('field_storage_config')->loadByProperties([
+      'type' => 'entity_reference',
+      'settings' => [
+        'target_type' => 'media',
+      ],
+    ]);
+
+    // Get each query for each table
+    $queries = [];
+    foreach ($fields as $field) {
+      $name = $field->getName();
+      $entity_type = $field->get('entity_type');
+      $table_name = "{$entity_type}__{$name}";
+      $query = \Drupal::database()->select($table_name, 'T');
+      $query->fields('T', ['entity_id', "{$name}_target_id"]);
+      $query->where("{$name}_target_id = :id", [':id' => $media->id()]);
+      $queries[] = $query;
+    }
+
+    // Begin a union query
+    $union = NULL;
+    $union = array_reduce($queries, function ($prev, $curr) {
+      if ($prev == NULL) {
+        return $curr;
+      }
+      return $prev->union($curr);
+    });
+
+    // Execute the union query
+    $result = $union->execute()->fetchAll();
+    return count($result);
   }
 
   /**
@@ -158,15 +214,13 @@ class MediaHelper {
 
     if ($destination == $file->getFileUri()) {
       return $file;
-    }
-    else {
+    } else {
       $file = file_move($file, $destination, $replace);
 
       if ($file) {
         $field->setValue($file);
         return $file;
-      }
-      else {
+      } else {
         return FALSE;
       }
     }
@@ -192,8 +246,7 @@ class MediaHelper {
 
     if ($is_ready) {
       return $dir;
-    }
-    else {
+    } else {
       throw new \RuntimeException('Could not prepare ' . $dir . ' for writing');
     }
   }
@@ -227,8 +280,7 @@ class MediaHelper {
     $field = $entity->getSource()->getSourceFieldDefinition($entity->bundle->entity);
 
     return $field
-      ? $entity->get($field->getName())
-      : NULL;
+    ? $entity->get($field->getName())
+    : NULL;
   }
-
 }
