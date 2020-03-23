@@ -74,7 +74,7 @@
 		"drupal/username_enumeration_prevention":"1.0",
 		"drupal/events_log_track":"1.1",
 		"drupal/bootstrap_barrio": "4.22",
-		"drupal/root": "1.4"
+		"drupal/root": "1.5"
   },
   "require-dev": {
     "drush/drush": "~8.1",

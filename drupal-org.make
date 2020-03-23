@@ -208,7 +208,7 @@ projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.22
 
 projects[root][type] = theme
-projects[root][version] = 1.4
+projects[root][version] = 1.5
 
 
 ; Libraries
