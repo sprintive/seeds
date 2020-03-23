@@ -3,6 +3,9 @@ api = 2
 defaults[projects][subdir] = contrib
 
 ; Utilities Modules
+projects[entity][type] = module
+projects[entity][version] = 1.0-rc3
+
 projects[ctools][type] = module
 projects[ctools][version] = 3.2
 
@@ -28,8 +31,6 @@ projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-
 ;; Issue #2863131: Add Bootstrap 4 support
 projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2863131-bs4-layouts.patch
 
-projects[entity][type] = module
-projects[entity][version] = 1.0-rc3
 
 projects[entity_browser][type] = module
 projects[entity_browser][version] = 2.4
