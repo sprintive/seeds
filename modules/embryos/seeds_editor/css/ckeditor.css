@@ -1,0 +1,38 @@
+.media-library-item__edit {
+  font-size: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 0;
+  z-index: 1;
+  cursor: pointer;
+  background-color: #00aaff;
+  background-image: url(../images/pencil.svg);
+  -webkit-background-size: 16px 16px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+}
+
+html[dir="rtl"] .media-library-item__edit {
+  left: auto;
+  right: 0;
+}
+
+drupal-media {
+  display: inline-block;
+}
+drupal-media[data-align="left"] {
+  float: left;
+}
+drupal-media[data-align="right"] {
+  float: right;
+}
+
+drupal-url {
+  display: inline-block;
+}
