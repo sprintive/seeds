@@ -242,11 +242,13 @@ body:not(.path-user) {
         }
     }
 }
+
 body.path-user {
     nav.tabs {
         display: none;
     }
 }
+
 // contextual links.
 .contextual-region.focus {
     outline: 1px dashed #4D4D4F;
@@ -312,34 +314,60 @@ body.path-user {
 //CK Editor Embbed Style
 .text-formatted {
     div.align-right {
-      &.embedded-entity {
-        margin-left: 15px;
-      }
+        &.embedded-entity {
+            margin-left: 15px;
+        }
     }
     div.align-left {
-      &.embedded-entity {
-        margin-right: 15px;
-      }
+        &.embedded-entity {
+            margin-right: 15px;
+        }
     }
     div.align-center {
-      &.embedded-entity {
-        justify-content: center;
-        display: flex;
-        text-align: center;
-      }
+        &.embedded-entity {
+            justify-content: center;
+            display: flex;
+            text-align: center;
+        }
     }
-  }
+}
 
-  div.field--name-field-media-oembed-video {
-	position: relative;
-	overflow: hidden;
-	padding-top: 56.25%;
-	iframe.media-oembed-content {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		border: 0px;
-	}
+div.field--name-field-media-oembed-video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    iframe.media-oembed-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+    }
+}
+
+// Layout Builder Modal.
+.ui-widget-overlay {
+    opacity: .7;
+}
+
+#layout-builder-modal {
+    background: $light-bg;
+    .form-group {
+        padding: 0px;
+    }
+    .form-composite>legend,
+    .label,
+    .fieldset-legend {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .horizontal-tabs {
+        border-color: #EEE;
+        background: white;
+    }
+    .form-item-settings-admin-label {
+        display: none;
+    }
 }
