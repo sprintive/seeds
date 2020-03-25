@@ -696,15 +696,15 @@ figure {
   .toast-wrapper .toast.bg-success {
     background-color: rgba(40, 167, 69, 0.6) !important; }
     .toast-wrapper .toast.bg-success .toast-header::before {
-      background-image: url(../../images/success.svg); }
+      background-image: url(../images/success.svg); }
   .toast-wrapper .toast.bg-warning {
     background-color: rgba(255, 193, 7, 0.6) !important; }
     .toast-wrapper .toast.bg-warning .toast-header::before {
-      background-image: url(../../images/warning.svg); }
+      background-image: url(../images/warning.svg); }
   .toast-wrapper .toast.bg-danger {
     background-color: rgba(220, 53, 69, 0.6) !important; }
     .toast-wrapper .toast.bg-danger .toast-header::before {
-      background-image: url(../../images/error.svg); }
+      background-image: url(../images/error.svg); }
 
 .rtl body:not(.path-user) nav.tabs, [dir="rtl"] body:not(.path-user) nav.tabs {
   left: 30px;
