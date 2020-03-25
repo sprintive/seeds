@@ -14,7 +14,7 @@ projects[panels][subdir] = utilities
 projects[jquery_update][version] = 3.0-alpha5
 projects[jquery_update][subdir] = utilities
 
-projects[views][version] = 3.23
+projects[views][version] = 3.24
 projects[views][subdir] = utilities
 
 projects[token][version] = 1.7
@@ -75,7 +75,7 @@ projects[google_analytics][subdir] = seo
 projects[imagecache_token][version] = 1.0
 projects[imagecache_token][subdir] = seo
 
-projects[metatag][version] = 1.26
+projects[metatag][version] = 1.27
 projects[metatag][subdir] = seo
 
 projects[pathauto][version] = 1.3
@@ -124,12 +124,12 @@ projects[views_bulk_operations][subdir] = administration
 ;;;;;;;;;;;;;;;;;;;;;
 
 projects[media][subdir] = editor
-projects[media][version] = "3.0-rc9"
+projects[media][version] = "3.1"
 
-projects[ckeditor][version] = 1.18
+projects[ckeditor][version] = 1.19
 projects[ckeditor][subdir] = editor
 
-projects[media_ckeditor][version] = "2.10"
+projects[media_ckeditor][version] = "2.14"
 projects[media_ckeditor][subdir] = editor
 
 projects[pathologic][version] = 3.1
@@ -192,7 +192,7 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.21
+projects[webform][version] = 4.22
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
@@ -202,13 +202,13 @@ projects[owlcarousel][patch][2736713] = "https://www.drupal.org/files/issues/rtl
 projects[slick][version] = 2.1
 projects[slick][subdir] = contrib
 
-projects[slick_views][version] = 2.1
+projects[slick_views][version] = 2.2
 projects[slick_views][subdir] = contrib
 
 projects[photoswipe][version] = 2.0-beta5
 projects[photoswipe][subdir] = contrib
 
-projects[menu_attributes][version] = 1.0
+projects[menu_attributes][version] = 1.1
 projects[menu_attributes][subdir] = contrib
 
 projects[media_oembed][version] = 2.7
