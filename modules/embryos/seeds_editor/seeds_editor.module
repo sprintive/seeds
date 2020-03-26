@@ -27,10 +27,6 @@ function seeds_editor_ckeditor_css_alter(array &$css, EditorInterface $editor) {
       }
     }
   }
-
-  // Load css fixes.
-  $css[] = '/' . \Drupal::moduleHandler()->getModule('seeds_editor')->getPath() . "/css/ckeditor.css";
-
 }
 
 /**

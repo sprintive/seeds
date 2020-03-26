@@ -3,50 +3,32 @@ status: true
 dependencies:
   config:
     - field.field.media.file.field_media_file
-    - image.style.thumbnail
     - media.type.file
   module:
-    - file
-    - image
-    - user
+    - button_formatter
 id: media.file.default
 targetEntityType: media
 bundle: file
 mode: default
 content:
-  created:
-    label: hidden
-    type: timestamp
-    weight: 0
-    region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
   field_media_file:
-    weight: 6
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
-    region: content
-  thumbnail:
-    type: image
-    weight: 5
-    label: hidden
-    settings:
-      image_style: thumbnail
-      image_link: ''
-    region: content
-    third_party_settings: {  }
-  uid:
-    label: hidden
-    type: author
     weight: 0
-    region: content
-    settings: {  }
+    label: hidden
+    settings:
+      style: null
+      show_icon: true
+      icon: '<i class="fa fa-file" aria-hidden="true"></i>'
+      download: true
+      new_tab: false
+      show_custom_label: false
+      custom_label: ''
+      show_description: false
     third_party_settings: {  }
+    type: button_formatter
+    region: content
 hidden:
+  created: true
+  langcode: true
   name: true
+  thumbnail: true
+  uid: true
