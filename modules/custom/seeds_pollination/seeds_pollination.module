@@ -4,7 +4,6 @@
  * @file
  */
 
-use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
@@ -40,7 +39,7 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
 
     // Get the bundle of this bundle entity type.
     $definition = \Drupal::entityTypeManager()->getDefinition($entity->getEntityTypeId());
-    $bundle_of = $definition->get('bundle_of') ?: $entity->id();
+    $bundle_of = $definition->get('bundle_of') ? : $entity->id();
     $form_state->set('bundle_of', $bundle_of);
 
     // Check if the entity has a canonical route.
@@ -73,6 +72,15 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
 
     // Add the custom submit to the form.
     $form['actions']['submit']['#submit'][] = 'container_settings_form_submit';
+  }
+
+  // Load Root theme for layout builder Modal.
+  $modal_forms = [
+    'layout_builder_add_block',
+    'layout_builder_update_block',
+  ];
+  if (in_array($form_id, $modal_forms)) {
+    $form['#attached']['library'][] = 'root/global-styling';
   }
 }
 
