@@ -95,19 +95,3 @@ function container_settings_form_submit(&$form, FormStateInterface &$form_state)
   // Set and save to configuration.
   $config->set("{$bundle_of}_{$entity->id()}", $value)->save();
 }
-
-/**
- * Implements of HOOK_preprocess_page()
- */
-function seeds_pollination_preprocess_page(&$vars) {
-  $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
-
-  $route_match = \Drupal::routeMatch();
-  $parameters = $route_match->getParameters();
-
-  foreach ($parameters as $parameter) {
-    if ($parameter instanceof EntityInterface) {
-      $vars['is_full_width'] = (bool) $config->get("{$parameter->getEntityTypeId()}_{$parameter->bundle()}");
-    }
-  }
-}

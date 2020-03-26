@@ -69,6 +69,9 @@ projects[slick_paragraphs][version] = 2.0
 projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
 
+projects[button_formatter][type] = module
+projects[button_formatter][version] = 1.0
+
 projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 2.5
 
@@ -215,6 +218,9 @@ projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.22
+
+projects[seeds_coat][type] = theme
+projects[seeds_coat][version] = 1.x-dev
 
 projects[root][type] = theme
 projects[root][version] = 1.5

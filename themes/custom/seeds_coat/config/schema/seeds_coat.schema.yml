@@ -1,5 +1,0 @@
-# Schema for the configuration files of the Bootstrap SASS Subtheme.
-
-seeds_coat.settings:
-  type: theme_settings
-  label: 'Seeds Coat settings'
