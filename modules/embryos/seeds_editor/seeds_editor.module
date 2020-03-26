@@ -14,20 +14,21 @@ function seeds_editor_ckeditor_css_alter(array &$css, EditorInterface $editor) {
   $config = \Drupal::config('seeds_editor.settings');
   $load_styles = $config->get('load_ckeditor_styles');
 
-  // Load the custom css
+  // Load the custom css.
   if ((bool) $load_styles) {
     if (\Drupal::languageManager()->getCurrentLanguage()->getDirection() == "ltr") {
       if ($ltr_css = $config->get('ckeditor_ltr_style')) {
         $css[] = $ltr_css;
       }
-    } else {
+    }
+    else {
       if ($rtl_css = $config->get('ckeditor_rtl_style')) {
         $css[] = $rtl_css;
       }
     }
   }
 
-  // Load css fixes
+  // Load css fixes.
   $css[] = '/' . \Drupal::moduleHandler()->getModule('seeds_editor')->getPath() . "/css/ckeditor.css";
 
 }
@@ -36,6 +37,6 @@ function seeds_editor_ckeditor_css_alter(array &$css, EditorInterface $editor) {
  * Implements hook_embed_type_plugins_alter().
  */
 function seeds_editor_embed_type_plugins_alter(array &$plugins) {
-  // Change the EmbedType class to our class
+  // Change the EmbedType class to our class.
   $plugins['url']['class'] = AlteredUrlEmbed::class;
 }

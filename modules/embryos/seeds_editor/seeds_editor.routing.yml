@@ -1,5 +1,5 @@
 
-seeds_editor.settings:
+seeds_editor.config:
   path: '/admin/config/content/seeds-editor'
   defaults:
     _form: '\Drupal\seeds_editor\Form\SeedsEditorConfigForm'

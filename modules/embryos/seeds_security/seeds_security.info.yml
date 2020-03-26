@@ -4,13 +4,16 @@ type: module
 core: 8.x
 dependencies:
   - username_enumeration_prevention:username_enumeration_prevention
-  - events_log_track:events_log_track
-  - events_log_track:events_log_track_node
-  - events_log_track:events_log_track_user
-  - events_log_track:events_log_track_auth
-  - events_log_track:events_log_track_menu
-  - events_log_track:events_log_track_taxonomy
   - captcha:captcha
   - recaptcha:recaptcha
   - password_policy:password_policy
+  - restrict_by_ip:restrict_by_ip
+  - event_log_track:event_log_track
+  - event_log_track:event_log_track_user
+  - event_log_track:event_log_track_taxonomy
+  - event_log_track:event_log_track_node
+  - event_log_track:event_log_track_menu
+  - event_log_track:event_log_track_auth
+  - imageapi_optimize:imageapi_optimize
+  - imageapi_optimize_resmushit:imageapi_optimize_resmushit
 package: 'Seeds'
