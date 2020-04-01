@@ -37,8 +37,11 @@ projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-
 ;; Issue #2863131: Add Bootstrap 4 support
 projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2863131-bs4-layouts.patch
 
+projects[seeds_layouts][type] = module
+projects[seeds_layouts][version] = 1.x-dev
+
 projects[crop][type] = module
-projects[crop][version] = 2.0
+projects[crop][version] = 2.1
 
 projects[focal_point][type] = module
 projects[focal_point][version] = 1.3
@@ -220,7 +223,7 @@ projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.22
 
 projects[seeds_coat][type] = theme
-projects[seeds_coat][version] = 1.x-dev
+projects[seeds_coat][version] = 1.0
 
 projects[root][type] = theme
 projects[root][version] = 1.5
