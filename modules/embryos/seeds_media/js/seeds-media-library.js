@@ -8,8 +8,8 @@
 
           var mediaEntity = $(this)
             .parent()
-            .find(".media-library-item__preview")
-            .parent();
+            .find("article[data-drupal-selector]")
+            ;
           mediaEntity.addClass("selected-media");
         });
     }

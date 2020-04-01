@@ -150,9 +150,10 @@ function seeds_media_field_widget_form_alter(&$element, FormStateInterface $form
       ];
 
       // Check if it is a media selection.
-      if ($form_object instanceof EntityFormInterface && isset($media_selection['#theme']) && $element["selection"][0]["#theme"] == "media_library_item__widget") {
+      if (isset($media_selection['#theme']) && $element["selection"][0]["#theme"] == "media_library_item__widget") {
         $media_id = $media_selection["target_id"]["#value"];
-        $current_entity = $form_object->getEntity();
+        if ($form_object instanceof EntityFormInterface) {
+          $current_entity = $form_object->getEntity();
 
         // If the entity is old, we get its values, to accurately determine if the media is used elsewhere.
         if (!$current_entity->isNew()) {
@@ -167,7 +168,7 @@ function seeds_media_field_widget_form_alter(&$element, FormStateInterface $form
             ];
           }
         }
-
+        } 
         $media_selection['edit'] = [
           '#type' => 'html_tag',
           '#tag' => 'input',
