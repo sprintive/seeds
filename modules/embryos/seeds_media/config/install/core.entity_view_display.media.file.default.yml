@@ -1,4 +1,3 @@
-langcode: en
 status: true
 dependencies:
   config:
@@ -15,13 +14,13 @@ content:
     weight: 0
     label: hidden
     settings:
-      style: null
+      style: btn-primary
       show_icon: true
       icon: '<i class="fa fa-file" aria-hidden="true"></i>'
       download: true
-      new_tab: false
-      show_custom_label: false
       custom_label: ''
+      new_tab: false
+      show_custom_label: 0
       show_description: false
     third_party_settings: {  }
     type: button_formatter

@@ -1,4 +1,3 @@
-langcode: en
 status: true
 dependencies:
   config:
@@ -17,9 +16,9 @@ content:
     label: hidden
     settings:
       controls: true
+      multiple_file_display_type: tags
       autoplay: false
       loop: false
-      multiple_file_display_type: tags
     third_party_settings: {  }
     region: content
 hidden:

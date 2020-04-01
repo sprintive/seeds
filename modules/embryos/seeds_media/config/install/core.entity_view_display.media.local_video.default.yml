@@ -1,4 +1,3 @@
-langcode: en
 status: true
 dependencies:
   config:
@@ -16,13 +15,13 @@ content:
     weight: 0
     label: hidden
     settings:
-      muted: false
+      controls: true
+      multiple_file_display_type: tags
       width: 640
       height: 480
-      controls: true
       autoplay: false
       loop: false
-      multiple_file_display_type: tags
+      muted: false
     third_party_settings: {  }
     region: content
 hidden:
