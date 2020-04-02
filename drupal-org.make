@@ -56,6 +56,8 @@ projects[allowed_formats][version] = 1.2
 
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.11
+;; Issue #2901390: Integrity constraint violation: 1048 Column 'langcode' cannot be null
+projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch
 
 projects[slick][type] = module
 projects[slick][version] = 2.1
