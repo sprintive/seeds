@@ -202,6 +202,8 @@ projects[captcha][version] = 1.0
 
 projects[recaptcha][type] = module
 projects[recaptcha][version] = 2.5
+;; Issue #2493183: Ajax support / Use behaviors for 2.x
+projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2019-02-14/recaptcha-ajax-2493183-164.patch
 
 projects[password_policy][type] = module
 projects[password_policy][version] = 3.0-alpha5

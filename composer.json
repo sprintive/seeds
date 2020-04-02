@@ -153,6 +153,9 @@
       },
       "drupal/paragraphs": {
         "Issue #2901390: Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch"
+      },
+      "drupal/recaptcha": {
+        "Issue #2493183: Ajax support / Use behaviors for 2.x": "https://www.drupal.org/files/issues/2019-02-14/recaptcha-ajax-2493183-164.patch"
       }
     }
   },
