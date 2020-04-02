@@ -127,7 +127,7 @@ projects[embed][type] = module
 projects[embed][version] = 1.3
 
 projects[entity_embed][type] = module
-projects[entity_embed][version] = 1.0
+projects[entity_embed][version] = 1.1
 
 projects[url_embed][type] = module
 projects[url_embed][version] = 1.0-alpha1
@@ -159,7 +159,7 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 1.0-alpha4
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.11
+projects[metatag][version] = 1.12
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.6
@@ -222,7 +222,7 @@ projects[login_security][type] = module
 projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
-projects[bootstrap_barrio][version] = 4.22
+projects[bootstrap_barrio][version] = 4.23
 
 projects[seeds_coat][type] = theme
 projects[seeds_coat][version] = 1.0
