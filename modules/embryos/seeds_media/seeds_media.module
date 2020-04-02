@@ -72,7 +72,7 @@ function seeds_media_form_media_image_edit_form_alter(&$form, FormStateInterface
       '#theme' => 'status_messages',
       '#message_list' => [
         'error' => [
-          t("You can't edit this media because it is assigned as default, please press remove this media from the selection and create a new one."),
+          t("You can't edit this media because it is assigned as default, please press remove to remove this media from the selection and create a new one."),
         ],
       ],
     ];
