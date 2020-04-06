@@ -78,7 +78,7 @@
     "drupal/mass_pwreset": "^1.0-alpha5",
     "drupal/restrict_by_ip": "4.x-dev",
     "drupal/login_security": "1.5",
-    "drupal/bootstrap_barrio": "4.23",
+    "drupal/bootstrap_barrio": "4.24",
     "drupal/seeds_coat": "1.0",
     "drupal/root": "1.5"
   },
