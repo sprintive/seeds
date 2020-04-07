@@ -245,11 +245,3 @@ libraries[easing][destination] = "libraries"
 libraries[blazy][download][type] = get
 libraries[blazy][download][url] = "https://github.com/dinbror/blazy/archive/1.8.2.tar.gz"
 libraries[blazy][destination] = "libraries"
-
-libraries[fakeobjects][download][type] = get
-libraries[fakeobjects][download][url] = "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.14.0.zip"
-libraries[fakeobjects][destination] = "libraries"
-
-libraries[iframe][download][type] = get
-libraries[iframe][download][url] = "https://download.ckeditor.com/iframe/releases/iframe_4.14.0.zip"
-libraries[iframe][destination] = "libraries"
