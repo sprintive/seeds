@@ -3,10 +3,10 @@ api = 2
 defaults[projects][subdir] = contrib
 
 projects[entity][type] = module
-projects[entity][version] = 1.0-rc3
+projects[entity][version] = 1.0
 
 projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = 1.7
+projects[entity_reference_revisions][version] = 1.8
 
 projects[ctools][type] = module
 projects[ctools][version] = 3.2
@@ -38,7 +38,7 @@ projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-
 projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2863131-bs4-layouts.patch
 
 projects[seeds_layouts][type] = module
-projects[seeds_layouts][version] = 1.x-dev
+projects[seeds_layouts][version] = 1.0
 
 projects[crop][type] = module
 projects[crop][version] = 2.1
@@ -224,10 +224,10 @@ projects[login_security][type] = module
 projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
-projects[bootstrap_barrio][version] = 4.23
+projects[bootstrap_barrio][version] = 4.24
 
 projects[seeds_coat][type] = theme
-projects[seeds_coat][version] = 1.0
+projects[seeds_coat][version] = 1.1
 
 projects[root][type] = theme
 projects[root][version] = 1.5
