@@ -15,7 +15,7 @@ projects[token][type] = module
 projects[token][version] = 1.6
 
 projects[webform][type] = module
-projects[webform][version] = 5.9
+projects[webform][version] = 5.13
 
 projects[ds][type] = module
 projects[ds][version] = 3.5
@@ -63,7 +63,7 @@ projects[slick][type] = module
 projects[slick][version] = 2.1
 
 projects[blazy][type] = module
-projects[blazy][version] = 2.0
+projects[blazy][version] = 2.1
 
 projects[slick_views][type] = module
 projects[slick_views][version] = 2.2
