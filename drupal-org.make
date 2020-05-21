@@ -75,7 +75,7 @@ projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
 
 projects[button_formatter][type] = module
-projects[button_formatter][version] = 1.0
+projects[button_formatter][version] = 1.1
 
 projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 2.5
