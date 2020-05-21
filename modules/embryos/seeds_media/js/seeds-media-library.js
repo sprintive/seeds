@@ -8,7 +8,7 @@
 
           var mediaEntity = $(this)
             .parent()
-            .find("article[data-drupal-selector]")
+            .find("article")
             ;
           mediaEntity.addClass("selected-media");
         });
