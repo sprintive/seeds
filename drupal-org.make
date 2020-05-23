@@ -18,7 +18,7 @@ projects[webform][type] = module
 projects[webform][version] = 5.13
 
 projects[ds][type] = module
-projects[ds][version] = 3.5
+projects[ds][version] = 3.6
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
@@ -44,12 +44,12 @@ projects[crop][type] = module
 projects[crop][version] = 2.1
 
 projects[focal_point][type] = module
-projects[focal_point][version] = 1.3
+projects[focal_point][version] = 1.4
 ;; Issue #3094478: Integrate focal point with media_library
 projects[focal_point][patch][] = https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch
 
 projects[smart_trim][type] = module
-projects[smart_trim][version] = 1.2
+projects[smart_trim][version] = 1.3
 
 projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.2
@@ -124,7 +124,7 @@ projects[diff][type] = module
 projects[diff][version] = 1.0
 
 projects[embed][type] = module
-projects[embed][version] = 1.3
+projects[embed][version] = 1.4
 
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.1
@@ -141,7 +141,7 @@ projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.pa
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch
 
 projects[editor_advanced_link][type] = module
-projects[editor_advanced_link][version] = 1.6
+projects[editor_advanced_link][version] = 1.8
 
 projects[ace_editor][type] = module
 projects[ace_editor][version] = 1.1
@@ -224,10 +224,10 @@ projects[login_security][type] = module
 projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
-projects[bootstrap_barrio][version] = 4.24
+projects[bootstrap_barrio][version] = 4.28
 
 projects[seeds_coat][type] = theme
-projects[seeds_coat][version] = 1.1
+projects[seeds_coat][version] = 1.2
 
 projects[root][type] = theme
 projects[root][version] = 1.5
