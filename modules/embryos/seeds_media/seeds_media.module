@@ -152,22 +152,22 @@ function seeds_media_field_widget_form_alter(&$element, FormStateInterface $form
       if (isset($media_selection['#theme']) && $element["selection"][0]["#theme"] == "media_library_item__widget") {
         $media_id = $media_selection["target_id"]["#value"];
         if ($form_object instanceof EntityFormInterface) {
-          $current_entity =$context['items']->getEntity();
+          $current_entity = $context['items']->getEntity();
 
-        // If the entity is old, we get its values, to accurately determine if the media is used elsewhere.
-        if (!$current_entity->isNew()) {
-          $current_entity = $current_entity->load($current_entity->id());
-          $field_name = $context['items']->getName();
-          $default_medias = explode(', ', $current_entity->{$field_name}->getString());
-          
-          // Use a query to talk to the media edit form.
-          if (in_array($media_id, $default_medias)) {
-            $query = [
-              'status' => 'current',
-            ];
+          // If the entity is old, we get its values, to accurately determine if the media is used elsewhere.
+          if (!$current_entity->isNew()) {
+            $current_entity = $current_entity->load($current_entity->id());
+            $field_name = $context['items']->getName();
+            $default_medias = explode(', ', $current_entity->{$field_name}->getString());
+
+            // Use a query to talk to the media edit form.
+            if (in_array($media_id, $default_medias)) {
+              $query = [
+                'status' => 'current',
+              ];
+            }
           }
         }
-        } 
         $media_selection['edit'] = [
           '#type' => 'html_tag',
           '#tag' => 'input',

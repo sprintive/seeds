@@ -9,10 +9,10 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.8
 
 projects[ctools][type] = module
-projects[ctools][version] = 3.2
+projects[ctools][version] = 3.4
 
 projects[token][type] = module
-projects[token][version] = 1.6
+projects[token][version] = 1.7
 
 projects[webform][type] = module
 projects[webform][version] = 5.13
@@ -27,15 +27,6 @@ projects[field_group][version] = 3.0
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta10
-
-projects[bootstrap_layouts][type] = module
-projects[bootstrap_layouts][version] = 5.1
-;; Issue #3018633: Incompatible with Layout builder drag and drop
-projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-12-06/3018633-draggable.patch
-;; Issue #3010952: Add a container option
-projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2018-11-21/3010952-bootstrap-container-3.patch
-;; Issue #2863131: Add Bootstrap 4 support
-projects[bootstrap_layouts][patch][] = https://www.drupal.org/files/issues/2863131-bs4-layouts.patch
 
 projects[seeds_layouts][type] = module
 projects[seeds_layouts][version] = 1.0
@@ -55,18 +46,18 @@ projects[allowed_formats][type] = module
 projects[allowed_formats][version] = 1.2
 
 projects[paragraphs][type] = module
-projects[paragraphs][version] = 1.11
+projects[paragraphs][version] = 1.12
 ;; Issue #2901390: Integrity constraint violation: 1048 Column 'langcode' cannot be null
 projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch
 
 projects[slick][type] = module
-projects[slick][version] = 2.1
+projects[slick][version] = 2.2
 
 projects[blazy][type] = module
 projects[blazy][version] = 2.1
 
 projects[slick_views][type] = module
-projects[slick_views][version] = 2.2
+projects[slick_views][version] = 2.3
 
 projects[slick_paragraphs][type] = module
 projects[slick_paragraphs][version] = 2.0
@@ -78,13 +69,13 @@ projects[button_formatter][type] = module
 projects[button_formatter][version] = 1.1
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.5
+projects[layout_builder_restrictions][version] = 2.7
 
 projects[layout_builder_modal][type] = module
-projects[layout_builder_modal][version] = 1.0
+projects[layout_builder_modal][version] = 1.1
 
 projects[shariff][type] = module
-projects[shariff][version] = 1.5
+projects[shariff][version] = 1.6
 ;; Issue #3060551: data-url should be the url of the node.
 projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
@@ -96,6 +87,7 @@ projects[seeds_toolbar][version] = 1.6
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta6
+projects[rabbit_hole][patch][] = https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch
 
 projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.0
@@ -156,22 +148,22 @@ projects[fakeobjects][type] = module
 projects[fakeobjects][version] = 1.0
 
 projects[fast_404][type] = module
-projects[fast_404][version] = 1.0-alpha4
+projects[fast_404][version] = 1.0-alpha5
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.12
+projects[metatag][version] = 1.13
 
 projects[pathauto][type] = module
-projects[pathauto][version] = 1.6
+projects[pathauto][version] = 1.8
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.5
+projects[simple_sitemap][version] = 3.6
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.10
 
 projects[redirect][type] = module
-projects[redirect][version] = 1.5
+projects[redirect][version] = 1.6
 
 projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.4
@@ -183,19 +175,19 @@ projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.1
 
 projects[imageapi_optimize][type] = module
-projects[imageapi_optimize][version] = 2.0-alpha4
+projects[imageapi_optimize][version] = 2.0-beta1
 
 projects[imageapi_optimize_resmushit][type] = module
 projects[imageapi_optimize_resmushit][version] = 1.0-beta1
 
 projects[cloudflare][type] = module
-projects[cloudflare][version] = 1.0-alpha11
+projects[cloudflare][version] = 1.0-beta1
 
 projects[ultimate_cron][type] = module
 projects[ultimate_cron][version] = 2.0-alpha4
 
 projects[smtp][type] = module
-projects[smtp][version] = 1.0-beta7
+projects[smtp][version] = 1.0-rc2
 
 projects[captcha][type] = module
 projects[captcha][version] = 1.0
@@ -206,7 +198,7 @@ projects[recaptcha][version] = 2.5
 projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2019-02-14/recaptcha-ajax-2493183-164.patch
 
 projects[password_policy][type] = module
-projects[password_policy][version] = 3.0-alpha5
+projects[password_policy][version] = 3.0-beta1
 
 projects[username_enumeration_prevention][type] = module
 projects[username_enumeration_prevention][version] = 1.0
