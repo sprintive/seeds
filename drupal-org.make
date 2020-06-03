@@ -190,7 +190,7 @@ projects[smtp][type] = module
 projects[smtp][version] = 1.0-rc2
 
 projects[captcha][type] = module
-projects[captcha][version] = 1.0
+projects[captcha][version] = 1.1
 
 projects[recaptcha][type] = module
 projects[recaptcha][version] = 2.5

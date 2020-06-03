@@ -69,7 +69,7 @@
     "drupal/cloudflare": "1.0-beta1",
     "drupal/ultimate_cron": "2.0-alpha4",
     "drupal/smtp": "1.0-rc2",
-    "drupal/captcha": "1.0",
+    "drupal/captcha": "1.1",
     "drupal/recaptcha": "2.5",
     "drupal/password_policy": "3.0-beta1",
     "drupal/username_enumeration_prevention": "1.0",
