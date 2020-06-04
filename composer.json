@@ -153,7 +153,10 @@
 			},
 			"drupal/rabbit_hole": {
 				"Issue #3114466: Type hint should use AccountProxyInterface": "https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch"
-			}
+      },
+      "drupal/field_group": {
+        "Issue #3145717: Empty tab labels Drupal 8.9.0": "https://www.drupal.org/files/issues/2020-06-04/missing_label-3145717-5.patch"
+      }
     }
   },
   "config": {

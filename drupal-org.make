@@ -24,6 +24,8 @@ projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absol
 
 projects[field_group][type] = module
 projects[field_group][version] = 3.0
+;; Issue #3145717: Empty tab labels Drupal 8.9.0
+projects[field_group][patch][] = https://www.drupal.org/files/issues/2020-06-04/missing_label-3145717-5.patch
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta10
