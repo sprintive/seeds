@@ -15,10 +15,10 @@ projects[token][type] = module
 projects[token][version] = 1.7
 
 projects[webform][type] = module
-projects[webform][version] = 5.13
+projects[webform][version] = 5.16
 
 projects[ds][type] = module
-projects[ds][version] = 3.6
+projects[ds][version] = 3.7
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
@@ -90,7 +90,7 @@ projects[rabbit_hole][version] = 1.0-beta6
 projects[rabbit_hole][patch][] = https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch
 
 projects[menu_admin_per_menu][type] = module
-projects[menu_admin_per_menu][version] = 1.0
+projects[menu_admin_per_menu][version] = 1.1
 
 projects[taxonomy_access_fix][type] = module
 projects[taxonomy_access_fix][version] = 2.7
@@ -101,13 +101,13 @@ projects[block_content_permissions][version] = 1.8
 projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
 projects[masquerade][type] = module
-projects[masquerade][version] = 2.0-beta3
+projects[masquerade][version] = 2.0-beta4
 
 projects[responsive_preview][type] = module
-projects[responsive_preview][version] = 1.0-beta1
+projects[responsive_preview][version] = 1.0
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.6
+projects[views_bulk_operations][version] = 3.7
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.4
@@ -136,7 +136,7 @@ projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.8
 
 projects[ace_editor][type] = module
-projects[ace_editor][version] = 1.1
+projects[ace_editor][version] = 1.2
 
 projects[ckeditor_bidi][type] = module
 projects[ckeditor_bidi][version] = 2.1
@@ -181,7 +181,7 @@ projects[imageapi_optimize_resmushit][type] = module
 projects[imageapi_optimize_resmushit][version] = 1.0-beta1
 
 projects[cloudflare][type] = module
-projects[cloudflare][version] = 1.0-beta1
+projects[cloudflare][version] = 1.0-beta2
 
 projects[ultimate_cron][type] = module
 projects[ultimate_cron][version] = 2.0-alpha4
@@ -201,7 +201,7 @@ projects[password_policy][type] = module
 projects[password_policy][version] = 3.0-beta1
 
 projects[username_enumeration_prevention][type] = module
-projects[username_enumeration_prevention][version] = 1.0
+projects[username_enumeration_prevention][version] = 1.1
 
 projects[events_log_track][type] = module
 projects[events_log_track][version] = 1.1
