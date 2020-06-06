@@ -26,7 +26,7 @@ projects[libraries][subdir] = utilities
 projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.27
+projects[file_entity][version] = 2.29
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -116,7 +116,7 @@ projects[better_formats][subdir] = administration
 projects[admin_views][version] = 1.7
 projects[admin_views][subdir] = administration
 
-projects[views_bulk_operations][version] = 3.5
+projects[views_bulk_operations][version] = 3.6
 projects[views_bulk_operations][subdir] = administration
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -163,10 +163,10 @@ projects[focal_point][subdir] = fields
 projects[hires_images][version] = 1.1
 projects[hires_images][subdir] = fields
 
-projects[smart_trim][version] = 1.5
+projects[smart_trim][version] = 1.6
 projects[smart_trim][subdir] = fields
 
-projects[extlink][version] = 1.20
+projects[extlink][version] = 1.21
 projects[extlink][subdir] = fields
 
 ;;;;;;;;;;;;;;;;;;;;;
