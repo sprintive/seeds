@@ -86,10 +86,16 @@
     "drupal/coder": "8.2.12",
     "symfony/css-selector": "~2.8"
   },
-  "repositories": [{
-    "type": "composer",
-    "url": "https://packages.drupal.org/8"
-  }],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
   "conflict": {
     "drupal/drupal": "*"
   },
@@ -150,9 +156,9 @@
       },
       "drupal/recaptcha": {
         "Issue #2493183: Ajax support / Use behaviors for 2.x": "https://www.drupal.org/files/issues/2019-02-14/recaptcha-ajax-2493183-164.patch"
-			},
-			"drupal/rabbit_hole": {
-				"Issue #3114466: Type hint should use AccountProxyInterface": "https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch"
+      },
+      "drupal/rabbit_hole": {
+        "Issue #3114466: Type hint should use AccountProxyInterface": "https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch"
       },
       "drupal/field_group": {
         "Issue #3145717: Empty tab labels Drupal 8.9.0": "https://www.drupal.org/files/issues/2020-06-04/missing_label-3145717-5.patch"
@@ -170,7 +176,8 @@
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
     ]
   },
-  "authors": [{
+  "authors": [
+    {
       "name": "Sprintive",
       "homepage": "http://sprintive.com",
       "role": "Supporting Organization"
