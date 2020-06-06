@@ -5,11 +5,9 @@
  * The module file for seeds_media.
  */
 
-use Drupal\Core\Entity\EntityFormInterface;
 use Drupal\Component\Utility\UrlHelper;
-use Drupal\Core\Ajax\ReplaceCommand;
+use Drupal\Core\Entity\EntityFormInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
-use Drupal\Core\EventSubscriber\MainContentViewSubscriber;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
@@ -116,8 +114,7 @@ function seeds_media_default_media(&$form, FormStateInterface $form_state) {
   try {
     $media->set('is_default', (bool) $is_default);
     $media->save();
-  }
-  catch (InvalidArgumentException $e) {
+  } catch (InvalidArgumentException $e) {
     \Drupal::messenger()->addWarning(t("Couldn't set \"is_default\" value on media."));
   }
 }
@@ -144,9 +141,7 @@ function seeds_media_field_widget_form_alter(&$element, FormStateInterface $form
   if ($context["widget"]->getPluginId() == "media_library_widget") {
     foreach ($element["selection"] as &$media_selection) {
       $form_object = $form_state->getFormObject();
-      $query = [
-        'status' => 'new',
-      ];
+      $status = "new";
 
       // Check if it is a media selection.
       if (isset($media_selection['#theme']) && $element["selection"][0]["#theme"] == "media_library_item__widget") {
@@ -162,58 +157,12 @@ function seeds_media_field_widget_form_alter(&$element, FormStateInterface $form
 
             // Use a query to talk to the media edit form.
             if (in_array($media_id, $default_medias)) {
-              $query = [
-                'status' => 'current',
-              ];
+              $status = "current";
             }
           }
         }
-        $media_selection['edit'] = [
-          '#type' => 'html_tag',
-          '#tag' => 'input',
-          '#attached' => [
-            'library' => ['seeds_media/media-library'],
-          ],
-          '#attributes' => [
-            'type' => 'button',
-            'class' => ['edit-media', 'button', 'btn', 'btn-primary', 'use-ajax', 'form-item'],
-            'href' => Url::fromRoute('entity.media.edit_form', ['media' => $media_id], ['query' => $query])->toString(),
-            'data-dialog-type' => 'modal',
-            'data-dialog-options' => '{"width":"1100","max-width":"95%"}',
-            'value' => t("Edit Media"),
-          ],
-        ];
+        $media_selection["edit_button"]["#attributes"]["href"] .= "?status=$status";
       }
     }
   }
-}
-
-/**
- * Implements hook_form_FORM_ID_alter.
- */
-function seeds_media_form_media_form_alter(&$form) {
-  $wrapper_format = \Drupal::request()->query->get(MainContentViewSubscriber::WRAPPER_FORMAT);
-  if ($wrapper_format === 'drupal_modal' || ($wrapper_format === 'drupal_ajax')) {
-    $form["actions"]["submit"]["#ajax"] = [
-      'callback' => 'seeds_media_media_form_ajax_submit',
-    ];
-  }
-}
-
-/**
- * Handles the ajax submit of the media form.
- */
-function seeds_media_media_form_ajax_submit($form, FormStateInterface $form_state) {
-  // Call the original media library ajax submit.
-  $response = media_library_media_form_ajax_submit($form, $form_state);
-
-  // Render the current media and return it.
-  $entity = $form_state->getFormObject()->getEntity();
-  $render_array = \Drupal::entityTypeManager()->getViewBuilder('media')->view($entity, 'media_library');
-  $response->addCommand(new ReplaceCommand('article.selected-media', $render_array));
-
-  // Empty message status.
-  \Drupal::messenger()->deleteAll();
-
-  return $response;
 }

@@ -4,6 +4,3 @@ media_pollination:
   dependencies:
     - core/jquery
     - core/drupal
-media-library:
-  js:
-    js/seeds-media-library.js: {}
