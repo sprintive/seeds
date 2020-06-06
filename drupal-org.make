@@ -109,7 +109,7 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.7
+projects[views_bulk_operations][version] = 3.8
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.4
@@ -189,7 +189,7 @@ projects[ultimate_cron][type] = module
 projects[ultimate_cron][version] = 2.0-alpha4
 
 projects[smtp][type] = module
-projects[smtp][version] = 1.0-rc2
+projects[smtp][version] = 1.0-rc3
 
 projects[captcha][type] = module
 projects[captcha][version] = 1.1
