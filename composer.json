@@ -157,6 +157,9 @@
       },
       "drupal/field_group": {
         "Issue #3145717: Empty tab labels Drupal 8.9.0": "https://www.drupal.org/files/issues/2020-06-04/missing_label-3145717-5.patch"
+      },
+      "drupal/slick": {
+        "Issues #3137067: Extra thumbnail after upgrade 8.x-2.1 >> 8.x-2.2": "https://www.drupal.org/files/issues/2020-06-07/extra_thumbnail-3137067-9.patch"
       }
     }
   },

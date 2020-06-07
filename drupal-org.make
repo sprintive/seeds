@@ -54,6 +54,8 @@ projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2019-08-10/p
 
 projects[slick][type] = module
 projects[slick][version] = 2.2
+;; Issues #3137067: Extra thumbnail after upgrade 8.x-2.1 >> 8.x-2.2
+projects[slick][patch][] = https://www.drupal.org/files/issues/2020-06-07/extra_thumbnail-3137067-9.patch
 
 projects[blazy][type] = module
 projects[blazy][version] = 2.1
