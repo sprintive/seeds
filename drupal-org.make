@@ -152,7 +152,7 @@ projects[fakeobjects][type] = module
 projects[fakeobjects][version] = 1.0
 
 projects[fast_404][type] = module
-projects[fast_404][version] = 1.0-alpha5
+projects[fast_404][version] = 2.0-alpha5
 
 projects[metatag][type] = module
 projects[metatag][version] = 1.13
@@ -170,7 +170,7 @@ projects[redirect][type] = module
 projects[redirect][version] = 1.6
 
 projects[google_analytics][type] = module
-projects[google_analytics][version] = 2.4
+projects[google_analytics][version] = 2.5
 
 projects[yoast_seo][type] = module
 projects[yoast_seo][version] = 1.5
