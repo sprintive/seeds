@@ -26,7 +26,7 @@ projects[libraries][subdir] = utilities
 projects[entity][version] = 1.9
 projects[entity][subdir] = utilities
 
-projects[file_entity][version] = 2.29
+projects[file_entity][version] = 2.30
 projects[file_entity][subdir] = utilities
 
 projects[variable][version] = 2.5
@@ -192,7 +192,7 @@ projects[copyprevention][subdir] = contrib
 projects[autocomplete_deluxe][version] = 2.3
 projects[autocomplete_deluxe][subdir] = contrib
 
-projects[webform][version] = 4.22
+projects[webform][version] = 4.23
 projects[webform][subdir] = contrib
 
 projects[owlcarousel][version] = 2.x-dev
