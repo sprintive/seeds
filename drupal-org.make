@@ -23,12 +23,10 @@ projects[ds][version] = 3.7
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
 projects[field_group][type] = module
-projects[field_group][version] = 3.0
-;; Issue #3145717: Empty tab labels Drupal 8.9.0
-projects[field_group][patch][] = https://www.drupal.org/files/issues/2020-06-04/missing_label-3145717-5.patch
+projects[field_group][version] = 3.1
 
 projects[linkit][type] = module
-projects[linkit][version] = 5.0-beta10
+projects[linkit][version] = 5.0-beta11
 
 projects[seeds_layouts][type] = module
 projects[seeds_layouts][version] = 1.0
@@ -90,7 +88,8 @@ projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.7
 
 projects[rabbit_hole][type] = module
-projects[rabbit_hole][version] = 1.0-beta6
+projects[rabbit_hole][version] = 1.0-beta7
+;; Issue #3114466: Type hint should use AccountProxyInterface
 projects[rabbit_hole][patch][] = https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch
 
 projects[menu_admin_per_menu][type] = module
@@ -100,7 +99,7 @@ projects[taxonomy_access_fix][type] = module
 projects[taxonomy_access_fix][version] = 2.7
 
 projects[block_content_permissions][type] = module
-projects[block_content_permissions][version] = 1.8
+projects[block_content_permissions][version] = 1.9
 ;; Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission.
 projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
@@ -161,7 +160,7 @@ projects[pathauto][type] = module
 projects[pathauto][version] = 1.8
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.6
+projects[simple_sitemap][version] = 3.7
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.10
@@ -220,7 +219,7 @@ projects[login_security][type] = module
 projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
-projects[bootstrap_barrio][version] = 4.28
+projects[bootstrap_barrio][version] = 4.29
 
 projects[seeds_coat][type] = theme
 projects[seeds_coat][version] = 1.3
