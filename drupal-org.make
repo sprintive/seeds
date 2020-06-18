@@ -219,7 +219,7 @@ projects[login_security][type] = module
 projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
-projects[bootstrap_barrio][version] = 4.29
+projects[bootstrap_barrio][version] = 4.28
 
 projects[seeds_coat][type] = theme
 projects[seeds_coat][version] = 1.3
