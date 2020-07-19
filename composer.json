@@ -49,7 +49,7 @@
     "drupal/diff": "1.0",
     "drupal/embed": "1.4",
     "drupal/entity_embed": "1.1",
-    "drupal/url_embed": "1.0-beta1",
+    "drupal/url_embed": "1.0-alpha1",
     "drupal/editor_advanced_link": "1.8",
     "drupal/ace_editor": "1.2",
     "drupal/ckeditor_bidi": "2.1",
@@ -139,7 +139,7 @@
       },
       "drupal/url_embed": {
         "Issue #2779157: Use Markup instead of inline_template": "https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch",
-        "Issue #2825602: Responsive Embed": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
+        "Issue #2825602: Responsive Embed": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
         "Issue #2864302: Validation to url embed": "https://www.drupal.org/files/issues/2864302-10.patch",
         "Issue #3069224: Themable embedded iframes": "https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch"
       },
