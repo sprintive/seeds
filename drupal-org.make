@@ -15,7 +15,7 @@ projects[token][type] = module
 projects[token][version] = 1.7
 
 projects[webform][type] = module
-projects[webform][version] = 5.16
+projects[webform][version] = 5.19
 
 projects[ds][type] = module
 projects[ds][version] = 3.7
@@ -43,7 +43,7 @@ projects[smart_trim][type] = module
 projects[smart_trim][version] = 1.3
 
 projects[allowed_formats][type] = module
-projects[allowed_formats][version] = 1.2
+projects[allowed_formats][version] = 1.3
 
 projects[paragraphs][type] = module
 projects[paragraphs][version] = 1.12
@@ -82,7 +82,7 @@ projects[shariff][version] = 1.6
 projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 2.2
+projects[admin_toolbar][version] = 2.3
 
 projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.7
@@ -93,13 +93,13 @@ projects[rabbit_hole][version] = 1.0-beta7
 projects[rabbit_hole][patch][] = https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch
 
 projects[menu_admin_per_menu][type] = module
-projects[menu_admin_per_menu][version] = 1.1
+projects[menu_admin_per_menu][version] = 1.3
 
 projects[taxonomy_access_fix][type] = module
-projects[taxonomy_access_fix][version] = 2.7
+projects[taxonomy_access_fix][version] = 2.8
 
 projects[block_content_permissions][type] = module
-projects[block_content_permissions][version] = 1.9
+projects[block_content_permissions][version] = 1.10
 ;; Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission.
 projects[block_content_permissions][patch][] = https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch
 
@@ -125,7 +125,7 @@ projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.1
 
 projects[url_embed][type] = module
-projects[url_embed][version] = 1.0-alpha1
+projects[url_embed][version] = 1.0-beta1
 ;; Issue #2779157: Use Markup instead of inline_template
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
 ;; Issue #2825602: Responsive embed
@@ -145,10 +145,10 @@ projects[ckeditor_bidi][type] = module
 projects[ckeditor_bidi][version] = 2.1
 
 projects[ckeditor_iframe][type] = module
-projects[ckeditor_iframe][version] = 2.0
+projects[ckeditor_iframe][version] = 2.1
 
 projects[fakeobjects][type] = module
-projects[fakeobjects][version] = 1.0
+projects[fakeobjects][version] = 1.1
 
 projects[fast_404][type] = module
 projects[fast_404][version] = 2.0-alpha5
@@ -219,7 +219,7 @@ projects[login_security][type] = module
 projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
-projects[bootstrap_barrio][version] = 4.28
+projects[bootstrap_barrio][version] = 4.32
 
 projects[seeds_coat][type] = theme
 projects[seeds_coat][version] = 1.3
