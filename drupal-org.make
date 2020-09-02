@@ -127,11 +127,9 @@ projects[url_embed][version] = 1.0-beta1
 ;; Issue #2779157: Use Markup instead of inline_template
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
 ;; Issue #2825602: Responsive embed
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch
 ;; Issue #2864302: Validation to url embed
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
-;; Issue #3069224: Themable embedded iframes
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/2019-07-21/themable_url_embeded_iframe_with_responsive_option-3069224-8.patch
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.8
