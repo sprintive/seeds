@@ -3,7 +3,7 @@ api = 2
 defaults[projects][subdir] = contrib
 
 projects[entity][type] = module
-projects[entity][version] = 1.0
+projects[entity][version] = 1.1
 
 projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.8
@@ -18,7 +18,7 @@ projects[webform][type] = module
 projects[webform][version] = 5.19
 
 projects[ds][type] = module
-projects[ds][version] = 3.7
+projects[ds][version] = 3.9
 ;; Issue #2883928: Use absolute or external URL for link wrappers
 projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
@@ -29,7 +29,7 @@ projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta11
 
 projects[seeds_layouts][type] = module
-projects[seeds_layouts][version] = 1.0
+projects[seeds_layouts][version] = 1.1
 
 projects[crop][type] = module
 projects[crop][version] = 2.1
@@ -68,7 +68,7 @@ projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
 
 projects[button_formatter][type] = module
-projects[button_formatter][version] = 1.1
+projects[button_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 2.7
@@ -85,7 +85,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 2.3
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.7
+projects[seeds_toolbar][version] = 1.8
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta7
@@ -110,7 +110,7 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.8
+projects[views_bulk_operations][version] = 3.9
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.4
@@ -125,7 +125,7 @@ projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.1
 
 projects[url_embed][type] = module
-projects[url_embed][version] = 1.0-alpha1
+projects[url_embed][version] = 1.0-beta1
 ;; Issue #2779157: Use Markup instead of inline_template
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
 ;; Issue #2825602: Responsive embed
@@ -154,7 +154,7 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 2.0-alpha5
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.13
+projects[metatag][version] = 1.14
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.8
@@ -163,7 +163,7 @@ projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 3.7
 
 projects[link_attributes][type] = module
-projects[link_attributes][version] = 1.10
+projects[link_attributes][version] = 1.11
 
 projects[redirect][type] = module
 projects[redirect][version] = 1.6
@@ -190,7 +190,7 @@ projects[ultimate_cron][type] = module
 projects[ultimate_cron][version] = 2.0-alpha4
 
 projects[smtp][type] = module
-projects[smtp][version] = 1.0-rc3
+projects[smtp][version] = 1.0-rc4
 
 projects[captcha][type] = module
 projects[captcha][version] = 1.1
