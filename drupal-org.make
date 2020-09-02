@@ -123,7 +123,7 @@ projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.1
 
 projects[url_embed][type] = module
-projects[url_embed][version] = 1.0-beta1
+projects[url_embed][version] = 1.0-alpha1
 ;; Issue #2779157: Use Markup instead of inline_template
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
 ;; Issue #2825602: Responsive embed
