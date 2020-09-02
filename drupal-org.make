@@ -19,8 +19,6 @@ projects[webform][version] = 5.19
 
 projects[ds][type] = module
 projects[ds][version] = 3.9
-;; Issue #2883928: Use absolute or external URL for link wrappers
-projects[ds][patch][] = https://www.drupal.org/files/issues/2018-05-03/use_absolute_or-2883928-9.patch
 
 projects[field_group][type] = module
 projects[field_group][version] = 3.1
@@ -129,7 +127,7 @@ projects[url_embed][version] = 1.0-beta1
 ;; Issue #2779157: Use Markup instead of inline_template
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
 ;; Issue #2825602: Responsive embed
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch
 ;; Issue #2864302: Validation to url embed
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
 ;; Issue #3069224: Themable embedded iframes
@@ -198,7 +196,7 @@ projects[captcha][version] = 1.1
 projects[recaptcha][type] = module
 projects[recaptcha][version] = 2.5
 ;; Issue #2493183: Ajax support / Use behaviors for 2.x
-projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2019-02-14/recaptcha-ajax-2493183-164.patch
+projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch
 
 projects[password_policy][type] = module
 projects[password_policy][version] = 3.0-beta1
