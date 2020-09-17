@@ -8,7 +8,7 @@ core = 7.x
 projects[ctools][version] = 1.15
 projects[ctools][subdir] = utilities
 
-projects[panels][version] = 3.9
+projects[panels][version] = 3.10
 projects[panels][subdir] = utilities
 
 projects[jquery_update][version] = 3.0-alpha5
@@ -186,7 +186,7 @@ projects[panelizer][subdir] = contrib
 projects[module_filter][version] = 2.2
 projects[module_filter][subdir] = contrib
 
-projects[copyprevention][version] = 1.1
+projects[copyprevention][version] = 1.2
 projects[copyprevention][subdir] = contrib
 
 projects[autocomplete_deluxe][version] = 2.3
