@@ -146,7 +146,8 @@
         "Issue #2901390: Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch"
       },
       "drupal/recaptcha": {
-        "Issue #2493183: Ajax support / Use behaviors for 2.x": "https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch"
+        "Issue #2493183: Ajax support / Use behaviors for 2.x": "https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch",
+        "Issue #3035883: CAPTCHA validation error: unknown CAPTCHA session ID": "https://www.drupal.org/files/issues/2019-11-15/3035883-29-workaround.patch"
       },
       "drupal/rabbit_hole": {
         "Issue #3114466: Type hint should use AccountProxyInterface": "https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch"

@@ -195,6 +195,8 @@ projects[recaptcha][type] = module
 projects[recaptcha][version] = 2.5
 ;; Issue #2493183: Ajax support / Use behaviors for 2.x
 projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch
+;; Issue #3035883: CAPTCHA validation error: unknown CAPTCHA session ID
+projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2019-11-15/3035883-29-workaround.patch
 
 projects[password_policy][type] = module
 projects[password_policy][version] = 3.0-beta1
