@@ -1,17 +1,16 @@
 name: 'Seeds SEO'
 description: Starter Module to enable all SEO modules
 type: module
-core: 8.x
+version: '9.0.1'
+core_version_requirement: '^9'
 dependencies:
-  - metatag:metatag
-  - metatag:metatag_facebook
-  - metatag:metatag_open_graph
-  - simple_sitemap:simple_sitemap
-  - redirect:redirect
-  - pathauto:pathauto
-  - google_analytics:google_analytics
-  - link_attributes:link_attributes
-  - fast404:fast404
-  - yoast_seo:yoast_seo
-  - length_indicator:length_indicator
+  - metatag
+  - metatag_facebook
+  - metatag_open_graph
+  - simple_sitemap
+  - redirect
+  - pathauto
+  - google_analytics
+  - link_attributes
+  - length_indicator
 package: 'Seeds'

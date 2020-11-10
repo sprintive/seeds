@@ -1,5 +1,6 @@
 name: Seeds Pollination
 description: Miscellaneous enhancements on seeds distribution.
 type: module
-core: 8.x
+version: '9.0.1'
+core_version_requirement: '^9'
 package: 'Seeds'

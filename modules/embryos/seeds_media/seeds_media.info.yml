@@ -1,18 +1,19 @@
 name: 'Seeds Media'
 description: 'Provide needed media types and enhance out of the box media experience.'
 type: module
-core: 8.x
+version: '9.0.1'
+core_version_requirement: '^9'
 configure: seeds_media.config
 dependencies:
-  - drupal:field
-  - drupal:file
-  - drupal:image
-  - drupal:media
-  - drupal:path
-  - drupal:text
-  - drupal:user
-  - drupal:views
-  - drupal:media_library
+  - field
+  - file
+  - image
+  - media
+  - path
+  - text
+  - user
+  - views
+  - media_library
   - focal_point:focal_point
   - button_formatter:button_formatter
 package: Seeds

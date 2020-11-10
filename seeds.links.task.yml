@@ -1,0 +1,5 @@
+seeds.optional_modules_form:
+  route_name: seeds.optional_modules_form
+  base_route: system.modules_list
+  title: 'Optional Seeds modules'
+  weight: 20
