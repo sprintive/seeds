@@ -15,7 +15,7 @@ projects[token][type] = module
 projects[token][version] = 1.7
 
 projects[webform][type] = module
-projects[webform][version] = 5.19
+projects[webform][version] = 5.22
 
 projects[ds][type] = module
 projects[ds][version] = 3.9
@@ -33,7 +33,7 @@ projects[crop][type] = module
 projects[crop][version] = 2.1
 
 projects[focal_point][type] = module
-projects[focal_point][version] = 1.4
+projects[focal_point][version] = 1.5
 ;; Issue #3094478: Integrate focal point with media_library
 projects[focal_point][patch][] = https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch
 
@@ -75,7 +75,7 @@ projects[layout_builder_modal][type] = module
 projects[layout_builder_modal][version] = 1.1
 
 projects[shariff][type] = module
-projects[shariff][version] = 1.6
+projects[shariff][version] = 1.7
 ;; Issue #3060551: data-url should be the url of the node.
 projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
@@ -83,7 +83,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 2.3
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.10
+projects[seeds_toolbar][version] = 1.11
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta7
@@ -168,7 +168,7 @@ projects[google_analytics][type] = module
 projects[google_analytics][version] = 2.5
 
 projects[yoast_seo][type] = module
-projects[yoast_seo][version] = 1.5
+projects[yoast_seo][version] = 1.7
 
 projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.1
@@ -183,10 +183,10 @@ projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-beta2
 
 projects[ultimate_cron][type] = module
-projects[ultimate_cron][version] = 2.0-alpha4
+projects[ultimate_cron][version] = 2.0-alpha5
 
 projects[smtp][type] = module
-projects[smtp][version] = 1.0-rc4
+projects[smtp][version] = 1.0
 
 projects[captcha][type] = module
 projects[captcha][version] = 1.1
