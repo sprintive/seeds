@@ -27,7 +27,7 @@ projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta11
 
 projects[seeds_layouts][type] = module
-projects[seeds_layouts][version] = 1.1
+projects[seeds_layouts][version] = 1.3
 
 projects[crop][type] = module
 projects[crop][version] = 2.1
@@ -94,7 +94,7 @@ projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.3
 
 projects[taxonomy_access_fix][type] = module
-projects[taxonomy_access_fix][version] = 2.8
+projects[taxonomy_access_fix][version] = 3.x-dev#a0f825c0934dbbbc08abcf0845235a97ec7c4aba
 
 projects[block_content_permissions][type] = module
 projects[block_content_permissions][version] = 1.10
