@@ -94,7 +94,7 @@ projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.3
 
 projects[taxonomy_access_fix][type] = module
-projects[taxonomy_access_fix][version] = 3.x-dev#a0f825c0934dbbbc08abcf0845235a97ec7c4aba
+projects[taxonomy_access_fix][version] = 3.x-dev
 
 projects[block_content_permissions][type] = module
 projects[block_content_permissions][version] = 1.10
