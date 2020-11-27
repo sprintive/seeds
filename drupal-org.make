@@ -5,7 +5,7 @@ core = 7.x
 ;; Utilities Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[ctools][version] = 1.15
+projects[ctools][version] = 1.17
 projects[ctools][subdir] = utilities
 
 projects[panels][version] = 3.10
@@ -40,7 +40,7 @@ projects[entitycache][subdir] = utilities
 ;; Bundling Modules
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[features][version] = 2.11
+projects[features][version] = 2.13
 projects[features][subdir] = bundling
 
 projects[strongarm][version] = 2.0
@@ -205,13 +205,13 @@ projects[slick][subdir] = contrib
 projects[slick_views][version] = 2.2
 projects[slick_views][subdir] = contrib
 
-projects[photoswipe][version] = 2.0-beta5
+projects[photoswipe][version] = 2.0-beta6
 projects[photoswipe][subdir] = contrib
 
 projects[menu_attributes][version] = 1.1
 projects[menu_attributes][subdir] = contrib
 
-projects[media_oembed][version] = 2.7
+projects[media_oembed][version] = 2.8
 projects[media_oembed][subdir] = contrib
 
 ;;;;;;;;;;;;;;;;;;;;;
