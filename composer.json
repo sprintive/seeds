@@ -28,7 +28,7 @@
     "drupal/slick": "2.2",
     "drupal/blazy": "2.1",
     "drupal/slick_views": "2.3",
-    "drupal/slick_paragraphs":"2.x-dev",
+    "drupal/slick_paragraphs": "2.x-dev",
     "drupal/photoswipe": "^3.0@alpha",
     "drupal/button_formatter": "1.2",
     "drupal/layout_builder_restrictions": "2.7",
@@ -41,7 +41,7 @@
     "drupal/taxonomy_access_fix": "3.0",
     "drupal/block_content_permissions": "1.10",
     "drupal/masquerade": "2.0-beta4",
-    "drupal/override_node_options":"^2.5",
+    "drupal/override_node_options": "^2.5",
     "drupal/responsive_preview": "1.0",
     "drupal/views_bulk_operations": "3.9",
     "drupal/diff": "1.0",
@@ -71,7 +71,7 @@
     "drupal/password_policy": "3.0-beta1",
     "drupal/username_enumeration_prevention": "1.1",
     "drupal/views_bulk_edit": "2.x-dev",
-    "drupal/yoast_seo":"^1.6",
+    "drupal/yoast_seo": "^1.6",
     "drupal/bootstrap_barrio": "4.32",
     "drupal/seeds_coat": "1.3",
     "drupal/root": "1.6"
@@ -80,7 +80,7 @@
     "drupal/core-composer-scaffold": "*",
     "drush/drush": "^9.0||^10.0",
     "drupal/coder": "8.3.10"
-    },
+  },
   "repositories": [
     {
       "type": "composer",
@@ -127,7 +127,6 @@
     },
     "patches": {
       "drupal/core": {
-        "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
         "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2020-07-22/2985168-44-d9.patch"
       },
       "drupal/focal_point": {
