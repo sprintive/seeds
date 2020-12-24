@@ -123,13 +123,13 @@ projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.1
 
 projects[url_embed][type] = module
-projects[url_embed][version] = 1.0-alpha1
-;; Issue #2779157: Use Markup instead of inline_template
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/replace-inline-template-by-markup-2779157-5.patch
+projects[url_embed][version] = 1.x-dev
 ;; Issue #2825602: Responsive embed
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch
 ;; Issue #2864302: Validation to url embed
 projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
+;; Issue #3177860: Support for Facebook/Instagram API changes - add access token settings
+projects[url_embed][patch][] = https://www.drupal.org/files/issues/2020-12-13/url_embed-add-facebook-access-token-config-3177860-16.patch
 
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.8
