@@ -10,7 +10,7 @@ function seeds_pollination_update_8101(&$sandbox) {
   if ($module_handler->moduleExists('views_ui')) {
     /** @var \Drupal\Core\Extension\ModuleInstallerInterface $module_installer */
     $module_installer = \Drupal::service('module_installer');
-    $module_installer->install(['ultimate_cron']);
+    $module_installer->install(['seeds_development']);
   }
 }
 
