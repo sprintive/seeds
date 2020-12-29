@@ -18,6 +18,7 @@
     "drupal/webform": "6.0-alpha12",
     "drupal/ds": "3.9",
     "drupal/field_group": "3.1",
+    "drupal/jquery_ui_accordion":"^1.1",
     "drupal/linkit": "5.0-beta11",
     "drupal/seeds_layouts": "1.1",
     "drupal/crop": "2.1",
