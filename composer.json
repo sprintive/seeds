@@ -79,7 +79,7 @@
   },
   "require-dev": {
     "drupal/core-composer-scaffold": "*",
-    "drush/drush": "^9.0||^10.0",
+    "drush/drush": "^10.0",
     "drupal/coder": "8.3.10"
   },
   "repositories": [
