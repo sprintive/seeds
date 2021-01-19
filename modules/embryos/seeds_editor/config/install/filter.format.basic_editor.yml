@@ -11,7 +11,6 @@ dependencies:
     - entity_embed
     - linkit
     - media
-    - url_embed
 name: 'Basic Editor'
 format: basic_editor
 weight: 0
@@ -102,20 +101,6 @@ filters:
       print_margins: '1'
       show_invisibles: '1'
       use_wrap_mode: '1'
-  url_embed:
-    id: url_embed
-    provider: url_embed
-    status: true
-    weight: -39
-    settings:
-      enable_responsive: '1'
-  url_embed_convert_links:
-    id: url_embed_convert_links
-    provider: url_embed
-    status: false
-    weight: -40
-    settings:
-      url_prefix: ''
   media_embed:
     id: media_embed
     provider: media

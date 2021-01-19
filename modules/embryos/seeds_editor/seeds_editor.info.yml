@@ -12,7 +12,6 @@ dependencies:
   - editor_advanced_link:editor_advanced_link
   - entity_embed:entity_embed
   - linkit:linkit
-  - url_embed:url_embed
   - ace_editor:ace_editor
   - seeds_media:seeds_media
   - ckeditor_iframe:ckeditor_iframe

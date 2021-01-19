@@ -8,6 +8,7 @@ use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\media\Entity\Media;
 use Drush\Commands\DrushCommands;
 use Embed\Embed;
+use Exception;
 
 /**
  * A drush command file.
@@ -24,6 +25,11 @@ class MediaEmbeddableDrushCommands extends DrushCommands {
    * @usage url_embed:migrate
    */
   public function migrateUrlEmbed() {
+    // Check if url_embed is installed.
+    if (!\Drupal::moduleHandler()->moduleExists('url_embed')) {
+      throw new Exception('Module "url_embed" does not exist');
+    }
+
     $database = \Drupal::database();
     $this->urlEmbedConfig = \Drupal::config('url_embed.settings');
 
