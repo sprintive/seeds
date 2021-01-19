@@ -30,6 +30,11 @@ class MediaEmbeddableDrushCommands extends DrushCommands {
       throw new Exception('Module "url_embed" does not exist');
     }
 
+    // Check if media_embeddable is installed.
+    if (!\Drupal::moduleHandler()->moduleExists('media_embeddable')) {
+      throw new Exception('Module "media_embeddable" does not exist');
+    }
+
     $database = \Drupal::database();
     $this->urlEmbedConfig = \Drupal::config('url_embed.settings');
 
