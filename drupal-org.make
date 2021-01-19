@@ -3,7 +3,7 @@ api = 2
 defaults[projects][subdir] = contrib
 
 projects[entity][type] = module
-projects[entity][version] = 1.1
+projects[entity][version] = 1.2
 
 projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.8
@@ -12,10 +12,10 @@ projects[ctools][type] = module
 projects[ctools][version] = 3.4
 
 projects[token][type] = module
-projects[token][version] = 1.7
+projects[token][version] = 1.9
 
 projects[webform][type] = module
-projects[webform][version] = 5.22
+projects[webform][version] = 5.23
 
 projects[ds][type] = module
 projects[ds][version] = 3.9
@@ -24,7 +24,7 @@ projects[field_group][type] = module
 projects[field_group][version] = 3.1
 
 projects[linkit][type] = module
-projects[linkit][version] = 5.0-beta11
+projects[linkit][version] = 5.0-beta12
 
 projects[seeds_layouts][type] = module
 projects[seeds_layouts][version] = 1.3
@@ -69,7 +69,7 @@ projects[button_formatter][type] = module
 projects[button_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.7
+projects[layout_builder_restrictions][version] = 2.8
 
 projects[layout_builder_modal][type] = module
 projects[layout_builder_modal][version] = 1.1
@@ -80,15 +80,16 @@ projects[shariff][version] = 1.7
 projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
 projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 2.3
+projects[admin_toolbar][version] = 2.4
 
 projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.11
 
+projects[media_embeddable][type] = module
+projects[media_embeddable][version] = 1.0.0-beta2
+
 projects[rabbit_hole][type] = module
-projects[rabbit_hole][version] = 1.0-beta7
-;; Issue #3114466: Type hint should use AccountProxyInterface
-projects[rabbit_hole][patch][] = https://www.drupal.org/files/issues/2020-02-19/rabbit_hole-type_hint_with_interface-3114466-3.patch
+projects[rabbit_hole][version] = 1.0-beta10
 
 projects[menu_admin_per_menu][type] = module
 projects[menu_admin_per_menu][version] = 1.3
@@ -108,10 +109,10 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.9
+projects[views_bulk_operations][version] = 3.10
 
 projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.4
+projects[views_bulk_edit][version] = 2.5
 
 projects[diff][type] = module
 projects[diff][version] = 1.0
@@ -122,20 +123,11 @@ projects[embed][version] = 1.4
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.1
 
-projects[url_embed][type] = module
-projects[url_embed][version] = 1.x-dev
-;; Issue #2825602: Responsive embed
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch
-;; Issue #2864302: Validation to url embed
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/2864302-10.patch
-;; Issue #3177860: Support for Facebook/Instagram API changes - add access token settings
-projects[url_embed][patch][] = https://www.drupal.org/files/issues/2020-12-13/url_embed-add-facebook-access-token-config-3177860-16.patch
-
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.8
 
 projects[ace_editor][type] = module
-projects[ace_editor][version] = 1.2
+projects[ace_editor][version] = 1.3
 
 projects[ckeditor_bidi][type] = module
 projects[ckeditor_bidi][version] = 2.1
@@ -150,13 +142,13 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 2.0-alpha5
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.14
+projects[metatag][version] = 1.15
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.8
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.7
+projects[simple_sitemap][version] = 3.8
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.11
@@ -217,13 +209,13 @@ projects[login_security][type] = module
 projects[login_security][version] = 1.5
 
 projects[bootstrap_barrio][type] = theme
-projects[bootstrap_barrio][version] = 4.32
+projects[bootstrap_barrio][version] = 4.33
 
 projects[seeds_coat][type] = theme
 projects[seeds_coat][version] = 1.3
 
 projects[root][type] = theme
-projects[root][version] = 1.5
+projects[root][version] = 1.6
 
 
 ; Libraries
