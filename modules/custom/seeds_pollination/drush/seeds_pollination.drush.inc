@@ -98,6 +98,7 @@ function seeds_pollination_url_embed_to_embeddable($entity_type, $entity_id, $fi
     $doc = new DOMDocument();
     $doc->encoding = 'UTF-8';
     $body = $entity->get($field_name)->value;
+    libxml_use_internal_errors(true);
     $success = $doc->loadHTML("<div><meta charset=\"utf-8\" />" . $body . "</div>", LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
 
     if (!$success) {
@@ -110,14 +111,20 @@ function seeds_pollination_url_embed_to_embeddable($entity_type, $entity_id, $fi
     foreach ($results as $drupal_url) {
       /** @var \DOMElement $drupal_url */
       $embed_url = $drupal_url->getAttribute('data-embed-url');
-      $embed = Embed::create($embed_url, [
-        'facebook' => [
-          'key' => $settings->get('facebook_app_id') . '|' . $settings->get('facebook_app_secret'),
-        ],
-      ]);
+      try {
+        $embed = Embed::create($embed_url, [
+          'facebook' => [
+            'key' => $settings->get('facebook_app_id') . '|' . $settings->get('facebook_app_secret'),
+          ],
+        ]);
+      } catch (InvalidArgumentException $e) {
+        echo $e->getMessage();
+        continue;
+      }
       if ($code = $embed->getCode()) {
         $element = seeds_pollination_create_media_embeddable($code, $doc);
         $drupal_url->parentNode->replaceChild($element, $drupal_url);
+        echo sprintf("Fetched '%s' succesfully!", $embed_url);
       } else {
         echo (sprintf("Failed to fetch the url \"%s\".\n", $embed_url));
       }
