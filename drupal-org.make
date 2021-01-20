@@ -86,7 +86,7 @@ projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.11
 
 projects[media_embeddable][type] = module
-projects[media_embeddable][version] = 1.0.0-beta2
+projects[media_embeddable][version] = 1.0-beta2
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta10
