@@ -17,4 +17,5 @@ dependencies:
   - ckeditor_iframe:ckeditor_iframe
   - allowed_formats:allowed_formats
   - smart_trim:smart_trim
+  - media_embeddable:media_embeddable
 package: Seeds
