@@ -131,18 +131,20 @@ function seeds_pollination_rebuild() {
  */
 function seeds_pollination_add_translation($source_string, $translated_string, $langcode) {
   // Find existing source string.
-  $storage = \Drupal::service('locale.storage');
-  $string = $storage->findString(['source' => $source_string]);
-  if (is_null($string)) {
-    $string = new SourceString();
-    $string->setString($source_string);
-    $string->setStorage($storage);
-    $string->save();
+  if (\Drupal::moduleHandler()->moduleExists('locale')) {
+    $storage = \Drupal::service('locale.storage');
+    $string = $storage->findString(['source' => $source_string]);
+    if (is_null($string)) {
+      $string = new SourceString();
+      $string->setString($source_string);
+      $string->setStorage($storage);
+      $string->save();
+    }
+    // Create translation. If one already exists, it will be replaced.
+    $storage->createTranslation([
+      'lid' => $string->lid,
+      'language' => $langcode,
+      'translation' => $translated_string,
+    ])->save();
   }
-  // Create translation. If one already exists, it will be replaced.
-  $storage->createTranslation([
-    'lid' => $string->lid,
-    'language' => $langcode,
-    'translation' => $translated_string,
-  ])->save();
 }
