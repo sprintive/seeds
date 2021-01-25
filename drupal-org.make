@@ -154,7 +154,7 @@ projects[link][subdir] = fields
 projects[field_group][version] = 1.6
 projects[field_group][subdir] = fields
 
-projects[linkit][version] = 3.5
+projects[linkit][version] = 3.6
 projects[linkit][subdir] = fields
 
 projects[focal_point][version] = 1.2
@@ -174,7 +174,7 @@ projects[extlink][subdir] = fields
 ;; Modules used in sapling features but necessary in all projects.
 ;;;;;;;;;;;;;;;;;;;;;
 
-projects[rabbit_hole][version] = 2.25
+projects[rabbit_hole][version] = 2.26
 projects[rabbit_hole][subdir] = contrib
 
 projects[fieldable_panels_panes][version] = 1.13
