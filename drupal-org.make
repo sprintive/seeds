@@ -15,7 +15,7 @@ projects[token][type] = module
 projects[token][version] = 1.9
 
 projects[webform][type] = module
-projects[webform][version] = 5.24
+projects[webform][version] = 5.25
 
 projects[ds][type] = module
 projects[ds][version] = 3.10
@@ -60,7 +60,7 @@ projects[slick_views][type] = module
 projects[slick_views][version] = 2.3
 
 projects[slick_paragraphs][type] = module
-projects[slick_paragraphs][version] = 2.0
+projects[slick_paragraphs][version] = 2.1
 
 projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
