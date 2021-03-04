@@ -6,7 +6,7 @@ projects[entity][type] = module
 projects[entity][version] = 1.2
 
 projects[entity_reference_revisions][type] = module
-projects[entity_reference_revisions][version] = 1.8
+projects[entity_reference_revisions][version] = 1.9
 
 projects[ctools][type] = module
 projects[ctools][version] = 3.4
@@ -15,10 +15,10 @@ projects[token][type] = module
 projects[token][version] = 1.9
 
 projects[webform][type] = module
-projects[webform][version] = 5.23
+projects[webform][version] = 5.24
 
 projects[ds][type] = module
-projects[ds][version] = 3.9
+projects[ds][version] = 3.10
 
 projects[field_group][type] = module
 projects[field_group][version] = 3.1
@@ -191,7 +191,7 @@ projects[password_policy][type] = module
 projects[password_policy][version] = 3.0-beta1
 
 projects[username_enumeration_prevention][type] = module
-projects[username_enumeration_prevention][version] = 1.1
+projects[username_enumeration_prevention][version] = 1.2
 
 projects[events_log_track][type] = module
 projects[events_log_track][version] = 1.1
