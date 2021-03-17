@@ -160,6 +160,8 @@ projects[yoast_seo][type] = module
 projects[yoast_seo][version] = 1.7
 ;; Issue #3204023: Style issues on mobile
 projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2021-03-17/style_issues_on_mobile-3204023-3.patch
+;; Issue #3125252: I can't translate SEO Content analysis
+projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2021-03-17/i_cant_translate_seo_content_analysis-3125252-4.patch
 
 projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.1
