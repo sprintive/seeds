@@ -143,7 +143,10 @@
         "Issue #3035883: CAPTCHA validation error: unknown CAPTCHA session ID": "https://www.drupal.org/files/issues/2019-11-15/3035883-29-workaround.patch"
       },
       "drupal/slick": {
-        "Issues #3137067: Extra thumbnail after upgrade 8.x-2.1 >> 8.x-2.2": "https://www.drupal.org/files/issues/2020-06-07/extra_thumbnail-3137067-9.patch"
+        "Issue #3137067: Extra thumbnail after upgrade 8.x-2.1 >> 8.x-2.2": "https://www.drupal.org/files/issues/2020-06-07/extra_thumbnail-3137067-9.patch"
+      },
+      "drupal/yoast_seo": {
+        "Issue #3204023: Style issues on mobile": "https://www.drupal.org/files/issues/2021-03-17/style_issues_on_mobile-3204023-3.patch"
       }
     }
   },

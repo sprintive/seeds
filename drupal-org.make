@@ -50,7 +50,7 @@ projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2019-08-10/p
 
 projects[slick][type] = module
 projects[slick][version] = 2.2
-;; Issues #3137067: Extra thumbnail after upgrade 8.x-2.1 >> 8.x-2.2
+;; Issue #3137067: Extra thumbnail after upgrade 8.x-2.1 >> 8.x-2.2
 projects[slick][patch][] = https://www.drupal.org/files/issues/2020-06-07/extra_thumbnail-3137067-9.patch
 
 projects[blazy][type] = module
@@ -158,6 +158,8 @@ projects[google_analytics][version] = 2.5
 
 projects[yoast_seo][type] = module
 projects[yoast_seo][version] = 1.7
+;; Issue #3204023: Style issues on mobile
+projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2021-03-17/style_issues_on_mobile-3204023-3.patch
 
 projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.1
