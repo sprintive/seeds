@@ -213,7 +213,7 @@ projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.33
 
 projects[seeds_coat][type] = theme
-projects[seeds_coat][version] = 1.3
+projects[seeds_coat][version] = 1.4
 
 projects[root][type] = theme
 projects[root][version] = 1.6
