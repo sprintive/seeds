@@ -18,7 +18,7 @@ projects[webform][type] = module
 projects[webform][version] = 5.25
 
 projects[ds][type] = module
-projects[ds][version] = 3.10
+projects[ds][version] = 3.12
 
 projects[field_group][type] = module
 projects[field_group][version] = 3.1
@@ -106,7 +106,7 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.10
+projects[views_bulk_operations][version] = 3.12
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.5
@@ -139,13 +139,13 @@ projects[fast_404][type] = module
 projects[fast_404][version] = 2.0-alpha5
 
 projects[metatag][type] = module
-projects[metatag][version] = 1.15
+projects[metatag][version] = 1.16
 
 projects[pathauto][type] = module
 projects[pathauto][version] = 1.8
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.8
+projects[simple_sitemap][version] = 3.9
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.11
@@ -213,7 +213,7 @@ projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.33
 
 projects[seeds_coat][type] = theme
-projects[seeds_coat][version] = 1.4
+projects[seeds_coat][version] = 1.5
 
 projects[root][type] = theme
 projects[root][version] = 1.6
