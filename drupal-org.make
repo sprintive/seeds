@@ -55,7 +55,7 @@ projects[blazy][type] = module
 projects[blazy][version] = 2.2
 
 projects[slick_views][type] = module
-projects[slick_views][version] = 2.3
+projects[slick_views][version] = 2.4
 
 projects[slick_paragraphs][type] = module
 projects[slick_paragraphs][version] = 2.1
