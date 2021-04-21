@@ -9,7 +9,7 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.9
 
 projects[ctools][type] = module
-projects[ctools][version] = 3.4
+projects[ctools][version] = 3.5
 
 projects[token][type] = module
 projects[token][version] = 1.9
@@ -49,12 +49,10 @@ projects[paragraphs][version] = 1.12
 projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch
 
 projects[slick][type] = module
-projects[slick][version] = 2.2
-;; Issue #3137067: Extra thumbnail after upgrade 8.x-2.1 >> 8.x-2.2
-projects[slick][patch][] = https://www.drupal.org/files/issues/2020-06-07/extra_thumbnail-3137067-9.patch
+projects[slick][version] = 2.3
 
 projects[blazy][type] = module
-projects[blazy][version] = 2.1
+projects[blazy][version] = 2.2
 
 projects[slick_views][type] = module
 projects[slick_views][version] = 2.3
@@ -145,7 +143,7 @@ projects[pathauto][type] = module
 projects[pathauto][version] = 1.8
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.9
+projects[simple_sitemap][version] = 3.10
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.11
