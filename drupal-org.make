@@ -9,13 +9,13 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.9
 
 projects[ctools][type] = module
-projects[ctools][version] = 3.5
+projects[ctools][version] = 3.6
 
 projects[token][type] = module
 projects[token][version] = 1.9
 
 projects[webform][type] = module
-projects[webform][version] = 5.25
+projects[webform][version] = 5.26
 
 projects[ds][type] = module
 projects[ds][version] = 3.12
@@ -83,6 +83,9 @@ projects[admin_toolbar][version] = 2.4
 projects[seeds_toolbar][type] = module
 projects[seeds_toolbar][version] = 1.12
 
+projects[media_embeddable][type] = module
+projects[media_embeddable][version] = 1.0.1
+
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta10
 
@@ -104,7 +107,7 @@ projects[responsive_preview][type] = module
 projects[responsive_preview][version] = 1.0
 
 projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.12
+projects[views_bulk_operations][version] = 3.13
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.5
@@ -180,14 +183,12 @@ projects[smtp][type] = module
 projects[smtp][version] = 1.0
 
 projects[captcha][type] = module
-projects[captcha][version] = 1.1
+projects[captcha][version] = 1.2
 
 projects[recaptcha][type] = module
 projects[recaptcha][version] = 2.5
 ;; Issue #2493183: Ajax support / Use behaviors for 2.x
 projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch
-;; Issue #3035883: CAPTCHA validation error: unknown CAPTCHA session ID
-projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2019-11-15/3035883-29-workaround.patch
 
 projects[password_policy][type] = module
 projects[password_policy][version] = 3.0-beta1
