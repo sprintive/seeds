@@ -148,7 +148,7 @@
       "drupal/photoswipe": {
         "Issue #2980534: Support for Drupal 8 responsive images": "https://www.drupal.org/files/issues/2021-02-09/photoswipe-2980534-24.patch"
       },
-      "drupal/fast404": {
+      "drupal/fast_404": {
         "Issue #2370323: Translatable html error page": "https://www.drupal.org/files/issues/2021-05-17/2370323-10.patch"
       }
     }
