@@ -62,6 +62,8 @@ projects[slick_paragraphs][version] = 2.1
 
 projects[photoswipe][type] = module
 projects[photoswipe][version] = 2.9
+;; Issue #2980534: Support for Drupal 8 responsive images
+projects[photoswipe][patch][] = https://www.drupal.org/files/issues/2021-02-09/photoswipe-2980534-24.patch
 
 projects[button_formatter][type] = module
 projects[button_formatter][version] = 1.2
