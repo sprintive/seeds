@@ -27,7 +27,7 @@ projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta12
 
 projects[seeds_layouts][type] = module
-projects[seeds_layouts][version] = 1.4
+projects[seeds_layouts][version] = 1.5
 
 projects[crop][type] = module
 projects[crop][version] = 2.1
