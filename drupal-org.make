@@ -139,7 +139,9 @@ projects[fakeobjects][type] = module
 projects[fakeobjects][version] = 1.1
 
 projects[fast_404][type] = module
-projects[fast_404][version] = 2.0-alpha5
+projects[fast_404][version] = 2.x-dev
+;; Issue #2370323: Translatable html error page
+projects[fast_404][patch][] = https://www.drupal.org/files/issues/2021-05-17/2370323-10.patch
 
 projects[metatag][type] = module
 projects[metatag][version] = 1.16
