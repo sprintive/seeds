@@ -72,7 +72,7 @@
     "drupal/username_enumeration_prevention": "1.2",
     "drupal/events_log_track": "1.1",
     "drupal/mass_pwreset": "1.0-alpha5",
-    "drupal/restrict_by_ip": "4.x-dev",
+    "drupal/restrict_by_ip": "4.x-dev#e491eb8f628687f304d77f38496b62f2f0062c43",
     "drupal/login_security": "1.5",
     "drupal/bootstrap_barrio": "4.33",
     "drupal/seeds_coat": "1.6",
@@ -149,7 +149,7 @@
         "Issue #2980534: Support for Drupal 8 responsive images": "https://www.drupal.org/files/issues/2021-02-09/photoswipe-2980534-24.patch"
       },
       "drupal/fast_404": {
-        "Issue #2370323: Translatable html error page": "https://www.drupal.org/files/issues/2021-05-17/2370323-10.patch"
+        "Issue #2370323: Translatable html error page": "https://www.drupal.org/files/issues/2021-05-18/2370323-12.patch"
       }
     }
   },
