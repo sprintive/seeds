@@ -75,8 +75,8 @@
     "drupal/restrict_by_ip": "4.x-dev",
     "drupal/login_security": "1.5",
     "drupal/bootstrap_barrio": "4.33",
-    "drupal/seeds_coat": "1.5",
-    "drupal/root": "1.6"
+    "drupal/seeds_coat": "1.6",
+    "drupal/root": "1.7"
   },
   "require-dev": {
     "drush/drush": "*",
