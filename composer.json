@@ -9,7 +9,7 @@
     "php": ">=7.1",
     "composer/composer": "^1.3",
     "cweagans/composer-patches": "^1.6.4",
-    "drupal/core": "8.9.14",
+    "drupal/core": "8.9.15",
     "drupal/entity": "1.2",
     "drupal/entity_reference_revisions": "1.9",
     "drupal/ctools": "3.6",
@@ -75,7 +75,7 @@
     "drupal/restrict_by_ip": "4.x-dev#e491eb8f628687f304d77f38496b62f2f0062c43",
     "drupal/login_security": "1.5",
     "drupal/bootstrap_barrio": "4.33",
-    "drupal/seeds_coat": "1.6",
+    "drupal/seeds_coat": "1.7",
     "drupal/root": "1.7"
   },
   "require-dev": {
