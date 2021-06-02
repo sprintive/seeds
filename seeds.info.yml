@@ -1,7 +1,7 @@
 name: Seeds
 type: profile
 description: "Kickoff distribution for SMEs, Curated by Sprintive."
-version: '11.1.3'
+version: '11.1.x-dev'
 project: seeds
 core_version_requirement: '^9'
 distribution:
@@ -10,48 +10,53 @@ distribution:
     theme: root
 
 dependencies:
-  - node
-  - history
-  - block
-  - ckeditor
-  - config
-  - contextual
-  - menu_link_content
-  - datetime
-  - block_content
-  - editor
-  - image
-  - menu_ui
-  - options
-  - path
-  - page_cache
-  - dynamic_page_cache
-  - taxonomy
-  - shortcut
-  - toolbar
-  - field_ui
-  - file
-  - rdf
-  - views
-  - views_ui
-  - automated_cron
-  - help
-  - responsive_preview
-  - views_bulk_operations
-  - views_bulk_edit
-  - admin_toolbar_links_access_filter
-  - admin_toolbar_tools
-  - diff
-  - menu_admin_per_menu
-  - taxonomy_access_fix
-  - seeds_toolbar
-  - masquerade
-  - ds
-  - field_group
-  - language
-  - config_translation
-  - content_translation
-  - locale
+  - drupal:node
+  - drupal:history
+  - drupal:block
+  - drupal:ckeditor
+  - drupal:config
+  - drupal:contextual
+  - drupal:menu_link_content
+  - drupal:datetime
+  - drupal:block_content
+  - drupal:editor
+  - drupal:image
+  - drupal:menu_ui
+  - drupal:options
+  - drupal:path
+  - drupal:page_cache
+  - drupal:dynamic_page_cache
+  - drupal:taxonomy
+  - drupal:shortcut
+  - drupal:toolbar
+  - drupal:field_ui
+  - drupal:file
+  - drupal:rdf
+  - drupal:views
+  - drupal:views_ui
+  - drupal:automated_cron
+  - drupal:help
+  - drupal:fast404
+  - responsive_preview:responsive_preview
+  - views_bulk_operations:views_bulk_operations
+  - views_bulk_edit:views_bulk_edit
+  - admin_toolbar:admin_toolbar_links_access_filter
+  - admin_toolbar:admin_toolbar_tools
+  - diff:diff
+  - menu_admin_per_menu:menu_admin_per_menu
+  - taxonomy_access_fix:taxonomy_access_fix
+  - seeds_toolbar:seeds_toolbar
+  - masquerade:masquerade
+  - ds:ds
+  - field_group:field_group
+
+  # Embryos
+  - seeds_media:seeds_media
+  - seeds_editor:seeds_editor
+
+  # Custom modules
+  - seeds_pollination:seeds_pollination
+  - seeds_development:seeds_development
 
 themes:
   - root

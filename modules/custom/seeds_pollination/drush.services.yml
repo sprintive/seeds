@@ -1,0 +1,5 @@
+services:
+  seeds_pollination.drush_commands:
+    class: \Drupal\seeds_pollination\Commands\MediaEmbeddableDrushCommands
+    tags:
+      - { name: drush.command }

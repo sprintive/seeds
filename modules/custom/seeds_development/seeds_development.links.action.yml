@@ -1,0 +1,3 @@
+seeds_development.form_groups_generator:
+  class: \Drupal\seeds_development\SeedsLocalAction
+  deriver: \Drupal\seeds_development\Plugin\Derivative\GroupsGeneratorLocalActions

@@ -28,11 +28,3 @@ function seeds_editor_ckeditor_css_alter(array &$css, EditorInterface $editor) {
     }
   }
 }
-
-/**
- * Implements hook_embed_type_plugins_alter().
- */
-function seeds_editor_embed_type_plugins_alter(array &$plugins) {
-  // Change the EmbedType class to our class.
-  $plugins['url']['class'] = AlteredUrlEmbed::class;
-}

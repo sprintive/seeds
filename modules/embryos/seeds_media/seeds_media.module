@@ -64,7 +64,7 @@ function seeds_media_form_media_image_edit_form_alter(&$form, FormStateInterface
   $media_helper = \Drupal::service('seeds_media.helper');
 
   // Check if the media is a default one, and deny access.
-  if ((bool) $media->is_default->value && !$current_user->hasPermission('bybass default media access')) {
+  if ((bool) $media->is_default->value && !$current_user->hasPermission('bypass default media access')) {
     $form = [
       '#theme' => 'status_messages',
       '#message_list' => [

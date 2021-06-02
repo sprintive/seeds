@@ -52,7 +52,6 @@ settings:
           name: Media
           items:
             - DrupalMediaLibrary
-            - url
             - Iframe
         -
           name: Table

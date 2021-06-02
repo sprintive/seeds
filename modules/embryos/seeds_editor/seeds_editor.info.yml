@@ -5,18 +5,18 @@ version: '9.0.1'
 core_version_requirement: '^9'
 configure: seeds_editor.config
 dependencies:
-  - ckeditor
-  - filter
-  - image
-  - ckeditor_bidi
-  - editor
-  - editor_advanced_link
-  - entity_embed
-  - linkit
-  - url_embed
-  - ace_editor
-  - seeds_media
-  - ckeditor_iframe
-  - allowed_formats
-  - smart_trim
+  - drupal:ckeditor
+  - drupal:filter
+  - drupal:image
+  - ckeditor_bidi:ckeditor_bidi
+  - drupal:editor
+  - editor_advanced_link:editor_advanced_link
+  - entity_embed:entity_embed
+  - linkit:linkit
+  - ace_editor:ace_editor
+  - seeds_media:seeds_media
+  - ckeditor_iframe:ckeditor_iframe
+  - allowed_formats:allowed_formats
+  - smart_trim:smart_trim
+  - media_embeddable:media_embeddable
 package: Seeds

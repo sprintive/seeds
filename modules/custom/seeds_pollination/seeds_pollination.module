@@ -1,15 +1,13 @@
 <?php
 
-/**
- * @file
- */
-
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Serialization\Yaml;
+use Drupal\locale\SourceString;
 
 /**
  * @file
- * Functions to support adminimal admin toolbar.
+ * Implements helper hooks.
  */
 
 /**
@@ -39,7 +37,7 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
 
     // Get the bundle of this bundle entity type.
     $definition = \Drupal::entityTypeManager()->getDefinition($entity->getEntityTypeId());
-    $bundle_of = $definition->get('bundle_of') ? : $entity->id();
+    $bundle_of = $definition->get('bundle_of') ?: $entity->id();
     $form_state->set('bundle_of', $bundle_of);
 
     // Check if the entity has a canonical route.
@@ -102,4 +100,51 @@ function container_settings_form_submit(&$form, FormStateInterface &$form_state)
 
   // Set and save to configuration.
   $config->set("{$bundle_of}_{$entity->id()}", $value)->save();
+}
+
+/**
+ * Implements hook_rebuild().
+ */
+
+function seeds_pollination_rebuild() {
+  $translation_path = DRUPAL_ROOT . '/' . 'translations.yml';
+  if (file_exists($translation_path)) {
+    $translations_content = file_get_contents($translation_path);
+    if ($translations_content) {
+      $decoded = Yaml::decode($translations_content);
+      foreach ($decoded as $langcode => $translations) {
+        foreach ($translations as $source => $translation) {
+          seeds_pollination_add_translation($source, $translation, $langcode);
+        }
+      }
+    } else {
+      echo "Failed to read the translation.yml file!";
+    }
+  } else {
+    echo (sprintf('"translations.yml" was not found. Consider adding "translations.yml" on your Drupal root "%s"', $translation_path));
+  }
+}
+
+/**
+ * Creates a new translation source.
+ *
+ */
+function seeds_pollination_add_translation($source_string, $translated_string, $langcode) {
+  // Find existing source string.
+  if (\Drupal::moduleHandler()->moduleExists('locale')) {
+    $storage = \Drupal::service('locale.storage');
+    $string = $storage->findString(['source' => $source_string]);
+    if (is_null($string)) {
+      $string = new SourceString();
+      $string->setString($source_string);
+      $string->setStorage($storage);
+      $string->save();
+    }
+    // Create translation. If one already exists, it will be replaced.
+    $storage->createTranslation([
+      'lid' => $string->lid,
+      'language' => $langcode,
+      'translation' => $translated_string,
+    ])->save();
+  }
 }

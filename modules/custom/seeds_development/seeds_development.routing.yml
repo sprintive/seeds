@@ -1,0 +1,25 @@
+seeds_development.image_style:
+  path: "/admin/config/media/image-styles/inspect/{image_style}"
+  defaults:
+    _controller: '\Drupal\seeds_development\Controller\SeedsDevelopmentController::inspectImageStyle'
+    _title: "Image Style Inspect"
+  requirements:
+    _permission: "access content"
+  options:
+    parameters:
+      image_style:
+        type: entity:image_style
+seeds_development.generate_field_groups:
+  path: "/admin/config/structure/{entity_type_id}/{bundle}/{form_mode}"
+  defaults:
+    _controller: '\Drupal\seeds_development\Controller\SeedsDevelopmentController::generateFieldGroups'
+    _title: "Image Style Inspect"
+  requirements:
+    _permission: "access content"
+seeds_development.view_mode:
+  path: "/admin/structure/{entity_type_id}/{bundle}/{view_mode}"
+  defaults:
+    _controller: '\Drupal\seeds_development\Controller\SeedsDevelopmentController::viewDisplayInspect'
+    _title: "View Display Inspect"
+  requirements:
+    _permission: "access content"
