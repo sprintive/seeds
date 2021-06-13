@@ -1,7 +1,0 @@
-seeds.optional_modules_form:
-  path: '/admin/modules/extend-seeds'
-  defaults:
-    _title: 'Optional Seeds modules'
-    _form: '\Drupal\seeds\Installer\Form\ModuleConfigureForm'
-  requirements:
-    _permission: 'administer modules'
