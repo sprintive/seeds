@@ -7,7 +7,6 @@ Light distribution to kick off all projects regardless scale, you can use it to 
 
 Seeds focusing on Arabic website with RTL interfaces so if you have any issue with your Arabic language website you are more than welcome to contribute with us.
 
-
 #### Sponsored and developed by:
 
 [![Sprintive](https://www.drupal.org/files/styles/grid-3/public/drupal_4.png?itok=FXajfgGW)](http://sprintive.com)
