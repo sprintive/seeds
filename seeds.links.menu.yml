@@ -1,5 +1,0 @@
-seeds.optional_modules_form:
-  title: 'Optional Seeds modules'
-  route_name: seeds.optional_modules_form
-  menu_name: admin
-  parent: system.modules_list
