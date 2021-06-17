@@ -83,7 +83,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 2.4
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.14
+projects[seeds_toolbar][version] = 1.15
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta10
