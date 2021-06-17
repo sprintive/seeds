@@ -12,7 +12,7 @@
     "drupal/core": "8.9.15",
     "drupal/entity": "1.2",
     "drupal/entity_reference_revisions": "1.9",
-    "drupal/ctools": "3.6",
+    "drupal/ctools": "3.7",
     "drupal/token": "1.9",
     "drupal/webform": "5.26",
     "drupal/ds": "3.12",
@@ -25,7 +25,7 @@
     "drupal/allowed_formats": "1.3",
     "drupal/paragraphs": "1.12",
     "drupal/slick": "2.3",
-    "drupal/blazy": "2.2",
+    "drupal/blazy": "2.3",
     "drupal/slick_views": "2.4",
     "drupal/slick_paragraphs": "2.1",
     "drupal/photoswipe": "2.9",
@@ -34,7 +34,7 @@
     "drupal/layout_builder_modal": "1.1",
     "drupal/shariff": "1.7",
     "drupal/admin_toolbar": "2.4",
-    "drupal/seeds_toolbar": "1.13",
+    "drupal/seeds_toolbar": "1.14",
     "drupal/media_embeddable": "1.0.1",
     "drupal/rabbit_hole": "1.0-beta10",
     "drupal/menu_admin_per_menu": "1.3",
@@ -43,7 +43,7 @@
     "drupal/masquerade": "2.0-beta4",
     "drupal/responsive_preview": "1.0",
     "drupal/views_bulk_operations": "3.13",
-    "drupal/views_bulk_edit": "2.5",
+    "drupal/views_bulk_edit": "2.6",
     "drupal/diff": "1.0",
     "drupal/embed": "1.4",
     "drupal/entity_embed": "1.1",
@@ -123,7 +123,7 @@
     "patches": {
       "drupal/core": {
         "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
-        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2021-05-17/drupal-n2985168-69-89x.patch"
+        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2021-06-02/2985168-70.patch"
       },
       "drupal/focal_point": {
         "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"

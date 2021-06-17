@@ -9,7 +9,7 @@ projects[entity_reference_revisions][type] = module
 projects[entity_reference_revisions][version] = 1.9
 
 projects[ctools][type] = module
-projects[ctools][version] = 3.6
+projects[ctools][version] = 3.7
 
 projects[token][type] = module
 projects[token][version] = 1.9
@@ -52,7 +52,7 @@ projects[slick][type] = module
 projects[slick][version] = 2.3
 
 projects[blazy][type] = module
-projects[blazy][version] = 2.2
+projects[blazy][version] = 2.3
 
 projects[slick_views][type] = module
 projects[slick_views][version] = 2.4
@@ -83,7 +83,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 2.4
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.13
+projects[seeds_toolbar][version] = 1.14
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta10
@@ -109,7 +109,7 @@ projects[views_bulk_operations][type] = module
 projects[views_bulk_operations][version] = 3.13
 
 projects[views_bulk_edit][type] = module
-projects[views_bulk_edit][version] = 2.5
+projects[views_bulk_edit][version] = 2.6
 
 projects[diff][type] = module
 projects[diff][version] = 1.0
