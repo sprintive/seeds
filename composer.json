@@ -123,7 +123,7 @@
     "patches": {
       "drupal/core": {
         "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2018-03-29/2771361-27.patch",
-        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2021-06-02/2985168-70.patch"
+        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2021-05-17/drupal-n2985168-69-89x.patch"
       },
       "drupal/focal_point": {
         "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
