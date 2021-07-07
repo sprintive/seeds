@@ -165,6 +165,9 @@ projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2021-03-17/st
 ;; Issue #3125252: I can't translate SEO Content analysis
 projects[yoast_seo][patch][] = https://www.drupal.org/files/issues/2021-03-17/i_cant_translate_seo_content_analysis-3125252-4.patch
 
+projects[schema_metatag][type] = module
+projects[schema_metatag][version] = 2.2
+
 projects[length_indicator][type] = module
 projects[length_indicator][version] = 1.1
 

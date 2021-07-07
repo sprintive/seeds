@@ -60,6 +60,7 @@
     "drupal/redirect": "1.6",
     "drupal/google_analytics": "2.5",
     "drupal/yoast_seo": "1.7",
+    "drupal/schema_metatag": "2.2",
     "drupal/length_indicator": "1.1",
     "drupal/imageapi_optimize": "2.0-beta1",
     "drupal/imageapi_optimize_resmushit": "1.0-beta1",
