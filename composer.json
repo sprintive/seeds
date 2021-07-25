@@ -15,7 +15,7 @@
     "drupal/ctools": "3.7",
     "drupal/token": "1.9",
     "drupal/webform": "5.27",
-    "drupal/ds": "2.16",
+    "drupal/ds": "3.13",
     "drupal/field_group": "3.1",
     "drupal/linkit": "5.0-beta12",
     "drupal/seeds_layouts": "1.6",
