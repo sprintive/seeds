@@ -15,10 +15,10 @@ projects[token][type] = module
 projects[token][version] = 1.9
 
 projects[webform][type] = module
-projects[webform][version] = 5.26
+projects[webform][version] = 5.27
 
 projects[ds][type] = module
-projects[ds][version] = 3.12
+projects[ds][version] = 3.13
 
 projects[field_group][type] = module
 projects[field_group][version] = 3.1
@@ -27,7 +27,7 @@ projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta12
 
 projects[seeds_layouts][type] = module
-projects[seeds_layouts][version] = 1.5
+projects[seeds_layouts][version] = 1.6
 
 projects[crop][type] = module
 projects[crop][version] = 2.1
@@ -69,7 +69,7 @@ projects[button_formatter][type] = module
 projects[button_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.8
+projects[layout_builder_restrictions][version] = 2.9
 
 projects[layout_builder_modal][type] = module
 projects[layout_builder_modal][version] = 1.1
@@ -83,7 +83,7 @@ projects[admin_toolbar][type] = module
 projects[admin_toolbar][version] = 2.4
 
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.15
+projects[seeds_toolbar][version] = 1.16
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta10
@@ -121,7 +121,7 @@ projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.1
 
 projects[editor_advanced_link][type] = module
-projects[editor_advanced_link][version] = 1.8
+projects[editor_advanced_link][version] = 1.9
 
 projects[ace_editor][type] = module
 projects[ace_editor][version] = 1.3
@@ -195,7 +195,7 @@ projects[recaptcha][version] = 2.5
 projects[recaptcha][patch][] = https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch
 
 projects[password_policy][type] = module
-projects[password_policy][version] = 3.0-beta1
+projects[password_policy][version] = 3.0
 
 projects[username_enumeration_prevention][type] = module
 projects[username_enumeration_prevention][version] = 1.2
