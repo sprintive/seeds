@@ -21,7 +21,7 @@ projects[ds][type] = module
 projects[ds][version] = 3.13
 
 projects[field_group][type] = module
-projects[field_group][version] = 3.1
+projects[field_group][version] = 3.2
 
 projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta12
@@ -216,7 +216,7 @@ projects[bootstrap_barrio][type] = theme
 projects[bootstrap_barrio][version] = 4.33
 
 projects[seeds_coat][type] = theme
-projects[seeds_coat][version] = 1.8
+projects[seeds_coat][version] = 1.9
 
 projects[root][type] = theme
 projects[root][version] = 1.7
