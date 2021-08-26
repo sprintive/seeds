@@ -13,6 +13,7 @@ else
     OTHER_ORIGIN="origin"
 fi
 
+
 git commit -m "$1" --author="$2"
 git push $CURRENT_ORIGIN $CURRENT_BRANCH
 git checkout $OTHER_BRANCH
