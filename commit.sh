@@ -2,8 +2,6 @@ CURRENT_BRANCH="$(git symbolic-ref HEAD 2>/dev/null)" ||
 CURRENT_BRANCH="(unnamed branch)"     # detached HEAD
 CURRENT_BRANCH=${CURRENT_BRANCH##refs/heads/}
 
-echo $CURRENT_BRANCH
-
 if [ "$CURRENT_BRANCH" == "8.x-9.x" ]    # ← see 'man test' for available unary and binary operators.
 then
     OTHER_BRANCH="8.9.x"
@@ -16,7 +14,7 @@ else
 fi
 
 git commit -m "$1" --author="$2"
-git push $CURRENT_ORIGIN $CURRENT_BRANCH;
+git push $CURRENT_ORIGIN $CURRENT_BRANCH
 git checkout $OTHER_BRANCH
 git merge $CURRENT_BRANCH --no-edit
 git push $OTHER_ORIGIN $OTHER_BRANCH
