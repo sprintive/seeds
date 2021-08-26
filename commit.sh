@@ -18,6 +18,6 @@ fi
 git commit -m "$1" --author="$2"
 git push $CURRENT_ORIGIN $CURRENT_BRANCH;
 git checkout $OTHER_BRANCH
-git merge $CURRENT_ORIGIN --no-edit
+git merge $CURRENT_BRANCH --no-edit
 git push $OTHER_ORIGIN $OTHER_BRANCH
-git checkout $CURRENT_ORIGIN
+git checkout $CURRENT_BRANCH
