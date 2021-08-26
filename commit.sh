@@ -15,7 +15,7 @@ else
     OTHER_ORIGIN="master"
 fi
 
-git commit -m $1
+git commit -m "$1" --author="$2"
 git push $CURRENT_ORIGIN $CURRENT_BRANCH;
 git checkout $OTHER_BRANCH
 git merge $CURRENT_ORIGIN --no-edit
