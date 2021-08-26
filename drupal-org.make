@@ -15,7 +15,7 @@ projects[token][type] = module
 projects[token][version] = 1.9
 
 projects[webform][type] = module
-projects[webform][version] = 5.27
+projects[webform][version] = 5.28
 
 projects[ds][type] = module
 projects[ds][version] = 3.13
@@ -27,7 +27,7 @@ projects[linkit][type] = module
 projects[linkit][version] = 5.0-beta12
 
 projects[seeds_layouts][type] = module
-projects[seeds_layouts][version] = 1.6
+projects[seeds_layouts][version] = 1.7
 
 projects[crop][type] = module
 projects[crop][version] = 2.1
@@ -79,11 +79,8 @@ projects[shariff][version] = 1.7
 ;; Issue #3060551: data-url should be the url of the node.
 projects[shariff][patch][] = https://www.drupal.org/files/issues/2019-06-10/shariff-node-data-url-3060551-3.patch
 
-projects[admin_toolbar][type] = module
-projects[admin_toolbar][version] = 2.4
-
 projects[seeds_toolbar][type] = module
-projects[seeds_toolbar][version] = 1.16
+projects[seeds_toolbar][version] = 1.17
 
 projects[rabbit_hole][type] = module
 projects[rabbit_hole][version] = 1.0-beta10
