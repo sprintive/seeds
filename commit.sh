@@ -5,12 +5,12 @@ CURRENT_BRANCH=${CURRENT_BRANCH##refs/heads/}
 if [ "$CURRENT_BRANCH" == "8.x-9.x" ]    # ← see 'man test' for available unary and binary operators.
 then
     OTHER_BRANCH="8.9.x"
-    CURRENT_ORIGIN="master"
+    CURRENT_ORIGIN="origin"
     OTHER_ORIGIN="github"
 else
     OTHER_BRANCH="8.x-9.x"
     CURRENT_ORIGIN="github"
-    OTHER_ORIGIN="master"
+    OTHER_ORIGIN="origin"
 fi
 
 git commit -m "$1" --author="$2"
