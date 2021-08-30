@@ -11,7 +11,7 @@ interface FormPermisisonsInterface {
    * Gets the permissions of a node bundle.
    *
    * @param string $bundle
-   *   The bundle
+   *   The bundle.
    *
    * @return array
    *   An array of permissions.

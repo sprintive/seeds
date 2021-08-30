@@ -6,25 +6,33 @@ use Drupal\Core\Serialization\Yaml;
  * Install 'seeds_development' if 'views_ui' is enabled.
  */
 function seeds_pollination_update_8101(&$sandbox) {
-  $module_handler = \Drupal::moduleHandler();
-  if ($module_handler->moduleExists('views_ui')) {
-    /** @var \Drupal\Core\Extension\ModuleInstallerInterface $module_installer */
-    $module_installer = \Drupal::service('module_installer');
-    $module_installer->install(['seeds_development']);
-  }
+    $module_handler = \Drupal::moduleHandler();
+    if ($module_handler->moduleExists('views_ui')) {
+        /** @var \Drupal\Core\Extension\ModuleInstallerInterface $module_installer */
+        $module_installer = \Drupal::service('module_installer');
+        $module_installer->install(['seeds_development']);
+    }
 }
 
 /**
  * Add 'translations.yml' file
  */
 function seeds_pollination_update_8102(&$sandbox) {
-  $content = [
-    'ar' => [
-      'Example' => 'مثال',
-    ],
-  ];
-  $translations_path = DRUPAL_ROOT . '/translations.yml';
-  if (!file_exists($translations_path)) {
-    file_put_contents($translations_path, Yaml::encode($content));
-  }
+    $content = [
+        'ar' => [
+            'Example' => 'مثال',
+        ],
+    ];
+    $translations_path = DRUPAL_ROOT . '/translations.yml';
+    if (!file_exists($translations_path)) {
+        file_put_contents($translations_path, Yaml::encode($content));
+    }
+}
+
+/**
+ * Enable 'display unmasquerade button' when masquerading as a user without the toolbar permission.
+ */
+function seeds_pollination_update_8103(&$sandbox) {
+    $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
+    $config->set('display_unmasquerade_button', '1')->save();
 }

@@ -2,6 +2,7 @@
 
 namespace Drupal\seeds_development\Controller;
 
+use Drupal\image\ImageStyleInterface;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -18,7 +19,7 @@ class SeedsDevelopmentController extends ControllerBase {
   protected $entityTypeManager;
 
   /**
-   * The inspector
+   * The inspector.
    *
    * @var \Drupal\seeds_development\SeedsDevelopmentInspectorInterface
    */
@@ -40,7 +41,7 @@ class SeedsDevelopmentController extends ControllerBase {
    * @return string
    *   Return Hello string.
    */
-  public function inspectImageStyle(\Drupal\image\ImageStyleInterface $image_style) {
+  public function inspectImageStyle(ImageStyleInterface $image_style) {
 
     $sections = $this->inspector->imageStyleUseability($image_style);
     $elements = [];
@@ -69,6 +70,9 @@ class SeedsDevelopmentController extends ControllerBase {
     return $elements;
   }
 
+  /**
+   *
+   */
   public function generateFieldGroups($entity_type_id, $bundle, $form_mode) {
     $tabs = (object) [
       'group_name' => 'group_tabs',
@@ -82,8 +86,7 @@ class SeedsDevelopmentController extends ControllerBase {
       'format_type' => 'tabs',
       'label' => 'Tabs',
       'region' => 'content',
-      'format_settings' => [
-      ],
+      'format_settings' => [],
     ];
 
     $basic_information = (object) [

@@ -53,7 +53,7 @@ class FormPermissions {
   protected $userPermissions;
 
   /**
-   * The module handler
+   * The module handler.
    *
    * @var \Drupal\Core\Extension\ModuleHandlerInterface
    */

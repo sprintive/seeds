@@ -1,0 +1,4 @@
+unmasquerade:
+  css:
+    component:
+      assets/css/unmasquerade.css: {}

@@ -1,6 +1,7 @@
 <?php
 
 namespace Drupal\seeds_development;
+
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
@@ -27,7 +28,7 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
   protected $configFactory;
 
   /**
-   * The module handler
+   * The module handler.
    *
    * @var \Drupal\Core\Extension\ModuleHandlerInterface
    */
@@ -42,6 +43,9 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
     $this->moduleHandler = $module_handler;
   }
 
+  /**
+   *
+   */
   private function configUsability($search) {
     $found = [];
     $config = shell_exec("grep '\(\:$search\:\)\|\(\W$search$\)' /var/www/html/oxford-jo/public_html/sites/default/config/* -lr");
@@ -101,7 +105,7 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
       ];
     }
 
-    // View displays
+    // View displays.
     /** @var \Drupal\Core\Entity\Entity\EntityViewDisplay[] */
     $view_displays = $this->entityTypeManager->getStorage('entity_view_display')->loadMultiple();
     $found_view_displays = [];
@@ -119,7 +123,8 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
             $url = new Url("entity.entity_view_display.{$target_entity_type->id()}.default", [
               $target_entity_type->getBundleEntityType() => $view_display->get('bundle'),
             ]);
-          } else {
+          }
+          else {
             $url = new Url("entity.entity_view_display.{$target_entity_type->id()}.view_mode",
               [
                 'view_mode_name' => $view_mode,

@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\image\ImageStyleInterface;
+
 namespace Drupal\seeds_development;
 
 /**
@@ -8,14 +10,14 @@ namespace Drupal\seeds_development;
 interface SeedsDevelopmentInspectorInterface {
 
   /**
-   * Checks where the image style is used
+   * Checks where the image style is used.
    *
    * @param \Drupal\image\ImageStyleInterface $image_style
-   *    The image style.
+   *   The image style.
    *
    * @return array
-   *    An array of locations
+   *   An array of locations
    */
-  public function imageStyleUseability(\Drupal\image\ImageStyleInterface $image_style);
+  public function imageStyleUseability(ImageStyleInterface $image_style);
 
 }
