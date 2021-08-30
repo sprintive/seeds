@@ -1,11 +1,18 @@
 <?php
 
+/**
+ * @file
+ */
+
 use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\media\Entity\Media;
 use Embed\Embed;
 
 const ALLOWED_FIELD_TYPES = ['text_with_summary', 'text_long'];
 
+/**
+ *
+ */
 function seeds_pollination_drush_command() {
   $commands = [];
   $commands['url_embed_migrate'] = [
@@ -19,6 +26,9 @@ function seeds_pollination_drush_command() {
   return $commands;
 }
 
+/**
+ *
+ */
 function drush_seeds_pollination_url_embed_migrate() {
   $not_used = TRUE;
   // Check if url_embed is installed.
@@ -49,7 +59,8 @@ function drush_seeds_pollination_url_embed_migrate() {
           if (drush_get_option('migrate')) {
             // Migrate.
             seeds_pollination_url_embed_to_embeddable($field_storage->getTargetEntityTypeId(), $entity_id, $field_name);
-          } else {
+          }
+          else {
             echo (sprintf("Found \"%s\" url_embeds in \"%s:%s\"\n", count($results), $table_name, $field_name));
           }
         }
@@ -58,7 +69,8 @@ function drush_seeds_pollination_url_embed_migrate() {
   }
   if ($not_used) {
     echo "Url embed is not used on this website.\n";
-  } else {
+  }
+  else {
     echo "Run \"urlem --migrate\" to migrate";
   }
 }
@@ -67,6 +79,7 @@ function drush_seeds_pollination_url_embed_migrate() {
  * Creates a media: embeddable as a DOMElement.
  *
  * @param string $content
+ *
  * @return \DOMElement
  */
 function seeds_pollination_create_media_embeddable($content, \DOMDocument $doc) {
@@ -89,6 +102,7 @@ function seeds_pollination_create_media_embeddable($content, \DOMDocument $doc) 
  * @param string $entity_type
  * @param string $entity_id
  * @param string $field_name
+ *
  * @return void
  */
 function seeds_pollination_url_embed_to_embeddable($entity_type, $entity_id, $field_name) {
@@ -98,7 +112,7 @@ function seeds_pollination_url_embed_to_embeddable($entity_type, $entity_id, $fi
     $doc = new DOMDocument();
     $doc->encoding = 'UTF-8';
     $body = $entity->get($field_name)->value;
-    libxml_use_internal_errors(true);
+    libxml_use_internal_errors(TRUE);
     $success = $doc->loadHTML("<div><meta charset=\"utf-8\" />" . $body . "</div>", LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
 
     if (!$success) {
@@ -117,7 +131,8 @@ function seeds_pollination_url_embed_to_embeddable($entity_type, $entity_id, $fi
             'key' => $settings->get('facebook_app_id') . '|' . $settings->get('facebook_app_secret'),
           ],
         ]);
-      } catch (InvalidArgumentException $e) {
+      }
+      catch (InvalidArgumentException $e) {
         echo $e->getMessage();
         continue;
       }
@@ -125,7 +140,8 @@ function seeds_pollination_url_embed_to_embeddable($entity_type, $entity_id, $fi
         $element = seeds_pollination_create_media_embeddable($code, $doc);
         $drupal_url->parentNode->replaceChild($element, $drupal_url);
         echo sprintf("Fetched '%s' succesfully!", $embed_url);
-      } else {
+      }
+      else {
         echo (sprintf("Failed to fetch the url \"%s\".\n", $embed_url));
       }
     }

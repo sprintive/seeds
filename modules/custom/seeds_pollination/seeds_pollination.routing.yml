@@ -1,0 +1,6 @@
+seeds_pollination.settings:
+  path: admin/config/user-interface/seeds-pollination
+  defaults:
+    _form: '\Drupal\seeds_pollination\Form\SeedsPollinationSettingsForm'
+  requirements:
+    _permission: 'administer seeds pollination settings'
