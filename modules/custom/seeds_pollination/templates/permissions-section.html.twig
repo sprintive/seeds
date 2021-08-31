@@ -1,0 +1,25 @@
+<div {{attributes.addClass('permissions-section')}}>
+	<div class="permissions-header">
+		<button class="permissions-collapse">
+			<h2>
+				{{section_name}}
+				<span class="permissions-count">
+					<span class="permissions-checked-count">{{checked_count}}</span>/{{permissions_count}}</span>
+			</h2>
+		</button>
+
+		<div class="permissions-tools">
+			<button class="permissions-check-all" title="Check all">&check;
+			</button>
+			<button class="permissions-uncheck-all" title="Uncheck all">✘</button>
+			{% if copy %}
+				<button class="permissions-copy" title="Copy">📄</button>
+				<button class="permissions-paste" disabled title="Copy">📋</button>
+			{% endif %}
+
+		</div>
+	</div>
+	<div class="permissions-collapsable">
+		{{permissions}}
+	</div>
+</div>

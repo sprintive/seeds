@@ -3,4 +3,4 @@ seeds_pollination.settings:
   defaults:
     _form: '\Drupal\seeds_pollination\Form\SeedsPollinationSettingsForm'
   requirements:
-    _permission: 'administer seeds pollination settings'
+    _permission: "administer seeds pollination settings"
