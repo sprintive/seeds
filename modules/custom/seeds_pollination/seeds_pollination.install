@@ -30,9 +30,9 @@ function seeds_pollination_update_8102(&$sandbox) {
 }
 
 /**
- * Enable 'display unmasquerade button' when masquerading as a user without the toolbar permission.
+ * Enable the new features on seeds pollination.
  */
 function seeds_pollination_update_8103(&$sandbox) {
     $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
-    $config->set('display_unmasquerade_button', '1')->save();
+    $config->set('display_unmasquerade_button', '1')->set('replace_permissions_form_route', '1')->save();
 }
