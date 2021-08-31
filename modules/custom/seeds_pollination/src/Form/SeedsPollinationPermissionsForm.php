@@ -510,6 +510,13 @@ class SeedsPollinationPermissionsForm extends ConfigFormBase implements Containe
         $this->userRole = $user_role;
         $form = parent::buildForm($form, $form_state);
         $role = $user_role;
+
+        // Add a search input box.
+        $form['search'] = [
+            '#type' => 'textfield',
+            '#title' => $this->t('Search'),
+        ];
+
         $form['permissions'] = [
             '#type' => 'container',
             '#tree' => TRUE,

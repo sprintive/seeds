@@ -2,7 +2,38 @@
   Drupal.behaviors.permissionsSections = {
     attach: function (context, settings) {
       var permissionsCopy = [];
-      var currentSection = null;
+
+      // Search
+      $('input[name="search"]').on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+
+        $(".permissions-section").each(function () {
+          var sectionLabel = $(".permissions-section-name", this).get(
+            0
+          ).innerText;
+          // Get the labels of each checkbox.
+          var checkboxesStringMerged = $('input[type="checkbox"]', this).map(
+            function () {
+              return $(this).next().get(0).innerText;
+            }
+          );
+
+          console.log(checkboxesStringMerged);
+          if (
+            !sectionLabel.toLowerCase().includes(value) &&
+            !checkboxesStringMerged
+              .get()
+              .join(" ")
+              .toLowerCase()
+              .includes(value)
+          ) {
+            $(this).addClass("hide");
+          } else {
+            $(this).removeClass("hide");
+          }
+        });
+      });
+
       $(".permissions-section")
         .once("permissionsSections")
         .each(function () {

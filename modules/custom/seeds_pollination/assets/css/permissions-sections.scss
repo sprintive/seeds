@@ -1,6 +1,10 @@
 .permissions-section {
   margin-bottom: 15px;
 
+  &.hide {
+    display: none;
+  }
+
   .permissions-header {
     display: flex;
     background-color: white;
