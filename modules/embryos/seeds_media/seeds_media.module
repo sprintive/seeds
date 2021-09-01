@@ -114,7 +114,8 @@ function seeds_media_default_media(&$form, FormStateInterface $form_state) {
   try {
     $media->set('is_default', (bool) $is_default);
     $media->save();
-  } catch (InvalidArgumentException $e) {
+  }
+  catch (InvalidArgumentException $e) {
     \Drupal::messenger()->addWarning(t("Couldn't set \"is_default\" value on media."));
   }
 }

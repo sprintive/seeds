@@ -5,7 +5,6 @@
  */
 
 use Drupal\editor\EditorInterface;
-use Drupal\seeds_editor\AlteredUrlEmbed;
 
 /**
  * Implements hook_ckeditor_css_alter().

@@ -17,10 +17,10 @@ function seeds_install() {
     Drupal::configFactory()
       ->getEditable('system.site')
       ->set('page.front', '/user')
-      ->save(true);
+      ->save(TRUE);
   }
 
-  // Disable frontpage andd taxonomy term view page
+  // Disable frontpage andd taxonomy term view page.
   View::load('frontpage')
     ->disable()
     ->save();
@@ -31,7 +31,7 @@ function seeds_install() {
   // Enable the admin theme.
   Drupal::configFactory()
     ->getEditable('node.settings')
-    ->set('use_admin_theme', true)
-    ->save(true);
+    ->set('use_admin_theme', TRUE)
+    ->save(TRUE);
 
 }

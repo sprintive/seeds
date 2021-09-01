@@ -56,6 +56,7 @@ class GroupsGeneratorLocalActions extends DeriverBase implements ContainerDerive
 
     foreach ($this->entityTypeManager->getDefinitions() as $entity_type_id => $entity_type) {
       if ($entity_type->get('field_ui_base_route')) {
+        // TODO: Maybe make it on all form displays instead of only on default.
         $this->derivatives["field_form_generate_groups_$entity_type_id"] = [
           'route_name' => "seeds_development.generate_field_groups",
           'title' => $this->t('Generate Basic Groups'),
