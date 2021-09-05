@@ -188,7 +188,7 @@ projects[minifyhtml][version] = 1.10
 projects[responsive_image_preload][type] = module
 projects[responsive_image_preload][version] = 1.0.x-dev
 ;; Issue #3229962: Supports webp module
-projectes[drupal/responsive_image_preload][patch][] = https://www.drupal.org/files/issues/2021-09-05/supports_webp_module-3229962-03.patch
+projectes[responsive_image_preload][patch][] = https://www.drupal.org/files/issues/2021-09-05/supports_webp_module-3229962-03.patch
 
 projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-beta2
