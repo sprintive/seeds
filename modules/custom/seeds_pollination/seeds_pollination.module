@@ -295,7 +295,6 @@ function seeds_pollination_add_translation($source_string, $translated_string, $
 /**
  * Implements hook_entity_type_alter().
  */
-
 function seeds_pollination_entity_type_alter(array &$entity_types) {
     if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
         $entity_types_list = [

@@ -64,6 +64,10 @@
     "drupal/length_indicator": "1.1",
     "drupal/imageapi_optimize": "4.0-beta1",
     "drupal/imageapi_optimize_resmushit": "2.0-beta1",
+    "drupal/webp": "^1.0@beta",
+    "drupal/advagg": "4.1",
+    "drupal/minifyhtml": "1.10",
+    "drupal/responsive_image_preload": "1.0.x-dev#4037f4133f8bf03b8efcbc3b698209a1b1ab7406",
     "drupal/cloudflare": "1.0-beta2",
     "drupal/ultimate_cron": "2.0-alpha5",
     "drupal/smtp": "1.0",
@@ -154,6 +158,12 @@
       },
       "drupal/fast_404": {
         "Issue #2370323: Translatable html error page": "https://www.drupal.org/files/issues/2021-05-18/2370323-12.patch"
+      },
+      "drupal/responsive_image_preload": {
+        "Issue #3229962: Supports webp module": "https://www.drupal.org/files/issues/2021-09-05/supports_webp_module-3229962-03.patch"
+      },
+      "drupal/simple_sitemap": {
+        "Issue #2987748: Add Media images to sitemap": "https://www.drupal.org/files/issues/2021-04-12/simple_sitemap_support_media_and_image_styles-45.patch"
       }
     }
   },
