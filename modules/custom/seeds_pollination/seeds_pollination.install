@@ -36,3 +36,11 @@ function seeds_pollination_update_8103(&$sandbox) {
     $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
     $config->set('display_unmasquerade_button', '1')->save();
 }
+
+/**
+ * Enable 'description' fields on all config entities.
+ */
+function seeds_pollination_update_8104(&$sandbox) {
+    $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
+    $config->set('description_is_required_for_config_entities', '1')->set('replace_permissions_form_route', '1')->save();
+}

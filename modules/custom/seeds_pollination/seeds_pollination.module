@@ -1,6 +1,12 @@
 <?php
 
+/**
+ * @file
+ */
+
+use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Entity\EntityForm;
+use Drupal\Core\Entity\EntityFormInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Serialization\Yaml;
@@ -20,6 +26,24 @@ function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface
     $title = $form['title']['widget'][0]['value']['#title'];
     $form['title']['widget'][0]['value']['#title_display'] = 'hidden';
     $form['title']['widget'][0]['value']['#placeholder'] = $title;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function seeds_pollination_theme($existing, $type, $theme, $path) {
+    return [
+        'permissions_section' => [
+            'variables' => [
+                'attributes' => [],
+                'permissions' => NULL,
+                'section_name' => NULL,
+                'copy' => NULL,
+                'checked_count' => NULL,
+                'permissions_count' => NULL,
+            ],
+        ],
+    ];
 }
 
 /**
@@ -56,6 +80,63 @@ function seeds_pollination_preprocess_html(&$variables) {
  */
 function seeds_pollination_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
     $form_object = $form_state->getFormObject();
+    $exclude_forms = ['view_edit_form', 'view_preview_form'];
+    // Make the description field required for all config entities.
+    if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
+        $exclude_config_ids = \Drupal::config('seeds_pollination.settings')->get('description_config_entities_exclude') ?? [];
+        if ($form_object instanceof EntityFormInterface) {
+            $entity = $form_object->getEntity();
+            if ($entity instanceof ConfigEntityInterface && !in_array($form_id, $exclude_forms)) {
+                $description = t('Describe the @entity_type_label in 20 characters minimum. <strong>Please be mindful that other developers will work on the same project, so be concise.</strong>', ['@entity_type_label' => $entity->getEntityType()->getLabel()]);
+                if ($entity->getEntityTypeId() == 'view') {
+                    $description_element = &$form['name']['description'] ?? NULL;
+                    $description_element['#states'] = [];
+                    unset($description_element['#title_display']);
+                    unset($form["name"]["description_enable"]);
+                } else {
+                    $description_element = &$form['description'] ?? NULL;
+                }
+                if (isset($description_element)) {
+                    $description_element['#required'] = TRUE;
+                    $description_element['#element_validate'] = ['seeds_pollination_description_validate'];
+                    $old_description = $description_element['#description'] ?? NULL;
+                    if ($old_description) {
+                        $description_element['#description'] .= ' ' . $description;
+                    } else {
+                        $description_element['#description'] = $description;
+                    }
+                } elseif (!in_array($entity->getEntityTypeId(), $exclude_config_ids)) {
+                    $form['description'] = [
+                        '#type' => 'textarea',
+                        '#required' => TRUE,
+                        '#title' => t('Description'),
+                        '#description' => $description,
+                        '#default_value' => $entity->getThirdPartySetting('seeds_pollination', 'description'),
+                        '#element_validate' => ['seeds_pollination_description_validate'],
+                    ];
+
+                    $form['actions']['submit']['#submit'][] = 'seeds_pollination_description_submit';
+                }
+
+                if ('field_config_edit_form' == $form_id) {
+                    $form_state->set('admin_description_field', 'admin_description');
+                    $form['admin_description'] = $form['description'];
+                    $form['admin_description']['#title'] = t('Administrative Description');
+                    $form['admin_description']['#description'] = 'Write something useful for other developers on why this field was created and what its purpose. ' . $description;
+                    $form['admin_description']['#weight'] += 2;
+                    $form['admin_description']['#default_value'] = $entity->getThirdPartySetting('seeds_pollination', 'description');
+                    $form['actions']['submit']['#submit'][] = 'seeds_pollination_description_submit';
+                }
+            }
+
+        }
+
+        if ('views_ui_edit_details_form' == $form_id) {
+            $form["details"]["description"]['#required'] = TRUE;
+            $form["details"]["description"]['#element_validate'] = ['seeds_pollination_description_validate'];
+        }
+
+    }
 
     // If the form is an entity bundle form and the type is not 'delete'.
     if ($form_object instanceof EntityForm && $form_object->getOperation() != "delete") {
@@ -114,6 +195,39 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
 }
 
 /**
+ * Validates the user role form.
+ *
+ * @param array $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *
+ * @return void
+ */
+function seeds_pollination_description_validate(&$element, FormStateInterface $form_state) {
+    $description = $form_state->getValue($element['#name']);
+    if (mb_strlen($description) < 20) {
+        $form_state->setError($element, t('The description should be 20 characters at minimum'));
+    }
+}
+
+/**
+ * Handle the submitation of form with a description.
+ *
+ * @param array $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *
+ * @return void
+ */
+function seeds_pollination_description_submit($form, FormStateInterface $form_state) {
+    $form_object = $form_state->getFormObject();
+    if ($form_object instanceof EntityFormInterface) {
+        /** @var \Drupal\Core\Config\Entity\ConfigEntityInterface $entity */
+        $entity = $form_object->getEntity();
+        $entity->setThirdPartySetting('seeds_pollination', 'description', $form_state->getValue($form_state->get('admin_description_field') ?? 'description'));
+        $entity->save();
+    }
+}
+
+/**
  * Implements of HOOK_form_submit().
  */
 function container_settings_form_submit(&$form, FormStateInterface &$form_state) {
@@ -136,7 +250,6 @@ function container_settings_form_submit(&$form, FormStateInterface &$form_state)
 /**
  * Implements hook_rebuild().
  */
-
 function seeds_pollination_rebuild() {
     $translation_path = DRUPAL_ROOT . '/' . 'translations.yml';
     if (file_exists($translation_path)) {
@@ -158,7 +271,6 @@ function seeds_pollination_rebuild() {
 
 /**
  * Creates a new translation source.
- *
  */
 function seeds_pollination_add_translation($source_string, $translated_string, $langcode) {
     // Find existing source string.
@@ -177,5 +289,24 @@ function seeds_pollination_add_translation($source_string, $translated_string, $
             'language' => $langcode,
             'translation' => $translated_string,
         ])->save();
+    }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function seeds_pollination_entity_type_alter(array &$entity_types) {
+    if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
+        $entity_types_list = [
+            'field_config' => 'Drupal\seeds_pollination\SeedsFieldConfigListBuilder',
+            'entity_queue' => 'Drupal\seeds_pollination\SeedsEntityQueueListBuilder',
+            'user_role' => 'Drupal\seeds_pollination\SeedsRoleListBuilder',
+            'entity_form_mode' => 'Drupal\seeds_pollination\SeedsFormModeListBuilder',
+        ];
+        foreach ($entity_types_list as $entity_type_id => $list_class) {
+            if (isset($entity_types[$entity_type_id])) {
+                $entity_types[$entity_type_id]->setListBuilderClass($list_class);
+            }
+        }
     }
 }
