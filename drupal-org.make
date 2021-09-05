@@ -145,6 +145,8 @@ projects[pathauto][version] = 1.8
 
 projects[simple_sitemap][type] = module
 projects[simple_sitemap][version] = 3.10
+;; Issue #2987748: Add Media images to sitemap
+projects[simple_sitemap][patch][] = https://www.drupal.org/files/issues/2021-04-12/simple_sitemap_support_media_and_image_styles-45.patch
 
 projects[link_attributes][type] = module
 projects[link_attributes][version] = 1.11
@@ -173,6 +175,20 @@ projects[imageapi_optimize][version] = 2.0-beta1
 
 projects[imageapi_optimize_resmushit][type] = module
 projects[imageapi_optimize_resmushit][version] = 1.0-beta1
+
+projects[webp][type] = module
+projects[webp][version] = 1.0-beta5
+
+projects[advagg][type] = module
+projects[advagg][version] = 4.1
+
+projects[minifyhtml][type] = module
+projects[minifyhtml][version] = 1.10
+
+projects[responsive_image_preload][type] = module
+projects[responsive_image_preload][version] = 1.0.x-dev
+;; Issue #3229962: Supports webp module
+projectes[drupal/responsive_image_preload][patch][] = https://www.drupal.org/files/issues/2021-09-05/supports_webp_module-3229962-03.patch
 
 projects[cloudflare][type] = module
 projects[cloudflare][version] = 1.0-beta2
