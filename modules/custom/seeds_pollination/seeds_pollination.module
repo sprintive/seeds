@@ -80,13 +80,13 @@ function seeds_pollination_preprocess_html(&$variables) {
  */
 function seeds_pollination_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
     $form_object = $form_state->getFormObject();
-    $exclude_forms = ['view_edit_form','view_preview_form'];
+    $exclude_forms = ['view_edit_form', 'view_preview_form'];
     // Make the description field required for all config entities.
     if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
         $exclude_config_ids = \Drupal::config('seeds_pollination.settings')->get('description_config_entities_exclude') ?? [];
         if ($form_object instanceof EntityFormInterface) {
             $entity = $form_object->getEntity();
-            if ($entity instanceof ConfigEntityInterface && !in_array($form_id, $exclude_forms) ) {
+            if ($entity instanceof ConfigEntityInterface && !in_array($form_id, $exclude_forms)) {
                 $description = t('Describe the @entity_type_label in 20 characters minimum. <strong>Please be mindful that other developers will work on the same project, so be concise.</strong>', ['@entity_type_label' => $entity->getEntityType()->getLabel()]);
                 if ($entity->getEntityTypeId() == 'view') {
                     $description_element = &$form['name']['description'] ?? NULL;
@@ -298,9 +298,16 @@ function seeds_pollination_add_translation($source_string, $translated_string, $
 
 function seeds_pollination_entity_type_alter(array &$entity_types) {
     if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
-        $entity_types['field_config']->setListBuilderClass('Drupal\seeds_pollination\SeedsFieldConfigListBuilder');
-        $entity_types['entity_queue']->setListBuilderClass('Drupal\seeds_pollination\SeedsEntityQueueListBuilder');
-        $entity_types['user_role']->setListBuilderClass('Drupal\seeds_pollination\SeedsRoleListBuilder');
-        $entity_types['entity_form_mode']->setListBuilderClass('Drupal\seeds_pollination\SeedsFormModeListBuilder');
+        $entity_types_list = [
+            'field_config' => 'Drupal\seeds_pollination\SeedsFieldConfigListBuilder',
+            'entity_queue' => 'Drupal\seeds_pollination\SeedsEntityQueueListBuilder',
+            'user_role' => 'Drupal\seeds_pollination\SeedsRoleListBuilder',
+            'entity_form_mode' => 'Drupal\seeds_pollination\SeedsFormModeListBuilder',
+        ];
+        foreach ($entity_types_list as $entity_type_id => $list_class) {
+            if (isset($entity_types[$entity_type_id])) {
+                $entity_types[$entity_type_id]->setListBuilderClass($list_class);
+            }
+        }
     }
 }
