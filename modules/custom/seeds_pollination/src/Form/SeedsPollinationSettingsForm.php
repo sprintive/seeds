@@ -36,6 +36,30 @@ class SeedsPollinationSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('display_unmasquerade_button'),
     ];
 
+    $form['replace_permissions_form_route'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Replace the role permissions form with the Seeds Pollination\'s one'),
+      '#default_value' => $config->get('replace_permissions_form_route'),
+    ];
+
+    $form['description_is_required_for_config_entities'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Make the description field required for config entities'),
+      '#default_value' => $config->get('description_is_required_for_config_entities'),
+    ];
+
+    $form['description_config_entities_exclude'] = [
+      '#type' => 'textfield',
+      '#placeholder' => 'e.g. "user_role, entity_queue"',
+      '#title' => $this->t('Exclude Config Entity IDs'),
+      '#default_value' => $config->get('description_config_entities_exclude') ? implode(', ', $config->get('description_config_entities_exclude')) : NULL,
+      '#states' => [
+        'visible' => [
+          ':input[name="description_is_required_for_config_entities"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
+
     return $form;
   }
 
@@ -47,6 +71,10 @@ class SeedsPollinationSettingsForm extends ConfigFormBase {
     $form_state->cleanValues();
     $values = $form_state->getValues();
     foreach ($values as $key => $value) {
+      if ('description_config_entities_exclude' == $key) {
+        $value = str_replace(' ', '', $value);
+        $value = explode(',', $value);
+      }
       $config->set($key, $value);
     }
 
