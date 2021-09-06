@@ -2,3 +2,9 @@ unmasquerade:
   css:
     component:
       assets/css/unmasquerade.css: {}
+permissions_sections:
+  css:
+    component:
+      assets/css/permissions-sections.css: {}
+  js:
+    assets/js/permissions-sections.js: {}
