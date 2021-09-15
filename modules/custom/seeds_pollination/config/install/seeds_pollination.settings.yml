@@ -1,4 +1,14 @@
-display_unmasquerade_button: "1"
-replace_permissions_form_route: "1"
-description_is_required_for_config_entities: "1"
-description_config_entities_exclude: [field_storage_config]
+display_unmasquerade_button: 1
+replace_permissions_form_route: 1
+description_is_required_for_config_entities: 1
+description_config_entities_include:
+  - webform
+  - taxonomy_vocabulary
+  - view
+  - media_type
+  - node_type
+  - entity_queue
+  - user_role
+  - field_config
+  - paragraphs_type
+  - entity_form_display

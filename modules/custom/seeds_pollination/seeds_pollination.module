@@ -22,176 +22,186 @@ use Drupal\locale\SourceString;
  * Implements HOOK_form_node_form_alter().
  */
 function seeds_pollination_form_node_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
-    // Hide title label in all content types and make it as a placeholder.
-    $title = $form['title']['widget'][0]['value']['#title'];
-    $form['title']['widget'][0]['value']['#title_display'] = 'hidden';
-    $form['title']['widget'][0]['value']['#placeholder'] = $title;
+  // Hide title label in all content types and make it as a placeholder.
+  $title = $form['title']['widget'][0]['value']['#title'];
+  $form['title']['widget'][0]['value']['#title_display'] = 'hidden';
+  $form['title']['widget'][0]['value']['#placeholder'] = $title;
 }
 
 /**
  * Implements hook_theme().
  */
 function seeds_pollination_theme($existing, $type, $theme, $path) {
-    return [
-        'permissions_section' => [
-            'variables' => [
-                'attributes' => [],
-                'permissions' => NULL,
-                'section_name' => NULL,
-                'copy' => NULL,
-                'checked_count' => NULL,
-                'permissions_count' => NULL,
-            ],
-        ],
-    ];
+  return [
+    'permissions_section' => [
+      'variables' => [
+        'attributes' => [],
+        'permissions' => NULL,
+        'section_name' => NULL,
+        'copy' => NULL,
+        'checked_count' => NULL,
+        'permissions_count' => NULL,
+      ],
+    ],
+  ];
 }
 
 /**
  * Implements hook_preprocess_HOOK().
  */
 function seeds_pollination_preprocess_html(&$variables) {
-    $config = \Drupal::config('seeds_pollination.settings');
-    $masquerade_is_enabled = \Drupal::moduleHandler()->moduleExists('masquerade');
-    $variables['#cache']['tags'][] = 'config:seeds_pollination.settings';
-    if ($config->get('display_unmasquerade_button') && $masquerade_is_enabled) {
-        if (\Drupal::service('masquerade')->isMasquerading() && !\Drupal::currentUser()->hasPermission('access toolbar')) {
-            $variables['page_top'][] = [
-                '#type' => 'link',
-                '#url' => Url::fromRoute('masquerade.unmasquerade'),
-                '#title' => Markup::create('<h2><i class="fa fa-eye-slash" aria-hidden="true"></i></h2>'),
-                '#attributes' => [
-                    'class' => ['seeds-pollination-unmasquerade'],
-                    'id' => 'seeds-pollination-unmasquerade',
-                ],
-                '#attached' => [
-                    'library' => ['seeds_pollination/unmasquerade'],
-                ],
-                '#cache' => [
-                    'contexts' => ['user.permissions'],
-                ],
-            ];
-        }
-
+  $config = \Drupal::config('seeds_pollination.settings');
+  $masquerade_is_enabled = \Drupal::moduleHandler()->moduleExists('masquerade');
+  $variables['#cache']['tags'][] = 'config:seeds_pollination.settings';
+  if ($config->get('display_unmasquerade_button') && $masquerade_is_enabled) {
+    if (\Drupal::service('masquerade')->isMasquerading() && !\Drupal::currentUser()->hasPermission('access toolbar')) {
+      $variables['page_top'][] = [
+        '#type' => 'link',
+        '#url' => Url::fromRoute('masquerade.unmasquerade'),
+        '#title' => Markup::create('<h2><i class="fa fa-eye-slash" aria-hidden="true"></i></h2>'),
+        '#attributes' => [
+          'class' => ['seeds-pollination-unmasquerade'],
+          'id' => 'seeds-pollination-unmasquerade',
+        ],
+        '#attached' => [
+          'library' => ['seeds_pollination/unmasquerade'],
+        ],
+        '#cache' => [
+          'contexts' => ['user.permissions'],
+        ],
+      ];
     }
+
+  }
 }
 
 /**
  * Implements of HOOK_form_alter().
  */
 function seeds_pollination_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
-    $form_object = $form_state->getFormObject();
-    $exclude_forms = ['view_edit_form', 'view_preview_form'];
-    // Make the description field required for all config entities.
-    if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
-        $exclude_config_ids = \Drupal::config('seeds_pollination.settings')->get('description_config_entities_exclude') ?? [];
-        if ($form_object instanceof EntityFormInterface) {
-            $entity = $form_object->getEntity();
-            if ($entity instanceof ConfigEntityInterface && !in_array($form_id, $exclude_forms)) {
-                $description = t('Describe the @entity_type_label in 20 characters minimum. <strong>Please be mindful that other developers will work on the same project, so be concise.</strong>', ['@entity_type_label' => $entity->getEntityType()->getLabel()]);
-                if ($entity->getEntityTypeId() == 'view') {
-                    $description_element = &$form['name']['description'] ?? NULL;
-                    $description_element['#states'] = [];
-                    unset($description_element['#title_display']);
-                    unset($form["name"]["description_enable"]);
-                } else {
-                    $description_element = &$form['description'] ?? NULL;
-                }
-                if (isset($description_element)) {
-                    $description_element['#required'] = TRUE;
-                    $description_element['#element_validate'] = ['seeds_pollination_description_validate'];
-                    $old_description = $description_element['#description'] ?? NULL;
-                    if ($old_description) {
-                        $description_element['#description'] .= ' ' . $description;
-                    } else {
-                        $description_element['#description'] = $description;
-                    }
-                } elseif (!in_array($entity->getEntityTypeId(), $exclude_config_ids)) {
-                    $form['description'] = [
-                        '#type' => 'textarea',
-                        '#required' => TRUE,
-                        '#title' => t('Description'),
-                        '#description' => $description,
-                        '#default_value' => $entity->getThirdPartySetting('seeds_pollination', 'description'),
-                        '#element_validate' => ['seeds_pollination_description_validate'],
-                    ];
+  $form_object = $form_state->getFormObject();
+  $exclude_forms = ['view_edit_form', 'view_preview_form'];
+  // Make the description field required for all config entities.
+  if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
+    $include_config_ids = \Drupal::config('seeds_pollination.settings')->get('description_config_entities_include') ?? [];
+    if ($form_object instanceof EntityFormInterface) {
+      $entity = $form_object->getEntity();
+      if ($entity instanceof ConfigEntityInterface && !in_array($form_id, $exclude_forms) && in_array($entity->getEntityTypeId(), $include_config_ids)) {
+        $description = t('Describe the @entity_type_label in 20 characters minimum. <strong>Please be mindful that other developers will work on the same project, so be concise.</strong>', ['@entity_type_label' => $entity->getEntityType()->getLabel()]);
 
-                    $form['actions']['submit']['#submit'][] = 'seeds_pollination_description_submit';
-                }
-
-                if ('field_config_edit_form' == $form_id) {
-                    $form_state->set('admin_description_field', 'admin_description');
-                    $form['admin_description'] = $form['description'];
-                    $form['admin_description']['#title'] = t('Administrative Description');
-                    $form['admin_description']['#description'] = 'Write something useful for other developers on why this field was created and what its purpose. ' . $description;
-                    $form['admin_description']['#weight'] += 2;
-                    $form['admin_description']['#default_value'] = $entity->getThirdPartySetting('seeds_pollination', 'description');
-                    $form['actions']['submit']['#submit'][] = 'seeds_pollination_description_submit';
-                }
-            }
-
+        if ($entity->getEntityTypeId() == 'view') {
+          $description_element = &$form['name']['description'] ?? NULL;
+          $description_element['#states'] = [];
+          unset($description_element['#title_display']);
+          unset($form["name"]["description_enable"]);
+        } else if ($entity->getEntityTypeId() == 'webform' && isset($form['general_settings']['description'])) {
+          $description_element = &$form['general_settings']['description'];
+        } else {
+          $description_element = &$form['description'] ?? NULL;
         }
 
-        if ('views_ui_edit_details_form' == $form_id) {
-            $form["details"]["description"]['#required'] = TRUE;
-            $form["details"]["description"]['#element_validate'] = ['seeds_pollination_description_validate'];
+        if (isset($description_element)) {
+          $description_element['#required'] = TRUE;
+          $description_element['#element_validate'] = ['seeds_pollination_description_validate'];
+          $old_description = $description_element['#description'] ?? NULL;
+          if ($old_description) {
+            $description_element['#description'] .= ' ' . $description;
+          } else {
+            $description_element['#description'] = $description;
+          }
+        } else {
+          $is_form_display = $entity->getEntityTypeId() == 'entity_form_display';
+          $seeds_description = $entity->getThirdPartySetting('seeds_pollination', 'description');
+          if ($is_form_display && !$seeds_description && $entity instanceof \Drupal\Core\Entity\Entity\EntityFormDisplay && $entity->get('mode') == 'default') {
+            $seeds_description = 'The default form display for ' . $entity->getTargetEntityTypeId();
+          }
+
+          $form['description'] = [
+            '#type' => 'textarea',
+            '#required' => TRUE,
+            '#title' => t('Description'),
+            '#description' => $description,
+            '#default_value' => $seeds_description,
+            '#element_validate' => ['seeds_pollination_description_validate'],
+          ];
+
+          $form['actions']['submit']['#submit'][] = 'seeds_pollination_description_submit';
         }
 
+        if ('field_config_edit_form' == $form_id) {
+          $form_state->set('admin_description_field', 'admin_description');
+          $form['admin_description'] = $form['description'];
+          $form['admin_description']['#title'] = t('Administrative Description');
+          $form['admin_description']['#description'] = 'Write something useful for other developers on why this field was created and what its purpose. ' . $description;
+          $form['admin_description']['#weight'] += 2;
+          $form['admin_description']['#default_value'] = $entity->getThirdPartySetting('seeds_pollination', 'description');
+          $form['actions']['submit']['#submit'][] = 'seeds_pollination_description_submit';
+          $form['description']['#required'] = FALSE;
+        }
+      }
+    }
+    if (in_array('view', $include_config_ids)) {
+      if ('views_ui_edit_details_form' == $form_id) {
+        $form["details"]["description"]['#required'] = TRUE;
+        $form["details"]["description"]['#element_validate'] = ['seeds_pollination_description_validate'];
+      }
+    }
+  }
+
+  // If the form is an entity bundle form and the type is not 'delete'.
+  if ($form_object instanceof EntityForm && $form_object->getOperation() != "delete") {
+
+    // Get current status of container.
+    $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
+
+    // Get the current entity, which is a bundle entity.
+    $entity = $form_object->getEntity();
+
+    // Get the bundle of this bundle entity type.
+    $definition = \Drupal::entityTypeManager()->getDefinition($entity->getEntityTypeId());
+    $bundle_of = $definition->get('bundle_of') ?: $entity->id();
+    $form_state->set('bundle_of', $bundle_of);
+
+    // Check if the entity has a canonical route.
+    $route_provider = \Drupal::service('router.route_provider');
+    $canonical = $route_provider->getRoutesByNames(["entity.{$bundle_of}.canonical"]);
+
+    // If there is no canonical route, ignore.
+    // Also, we exclude block_content entities, becuase it has a canonical link, but it is used to edit
+    // the entity instead of it being a normal landing page.
+    if (empty($canonical) || "block_content" == $bundle_of) {
+      return;
     }
 
-    // If the form is an entity bundle form and the type is not 'delete'.
-    if ($form_object instanceof EntityForm && $form_object->getOperation() != "delete") {
+    // Get the value.
+    $container_settings = (bool) $config->get("{$bundle_of}_{$entity->id()}");
 
-        // Get current status of container.
-        $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
-
-        // Get the current entity, which is a bundle entity.
-        $entity = $form_object->getEntity();
-
-        // Get the bundle of this bundle entity type.
-        $definition = \Drupal::entityTypeManager()->getDefinition($entity->getEntityTypeId());
-        $bundle_of = $definition->get('bundle_of') ?: $entity->id();
-        $form_state->set('bundle_of', $bundle_of);
-
-        // Check if the entity has a canonical route.
-        $route_provider = \Drupal::service('router.route_provider');
-        $canonical = $route_provider->getRoutesByNames(["entity.{$bundle_of}.canonical"]);
-
-        // If there is no canonical route, ignore.
-        // Also, we exclude block_content entities, becuase it has a canonical link, but it is used to edit
-        // the entity instead of it being a normal landing page.
-        if (empty($canonical) || "block_content" == $bundle_of) {
-            return;
-        }
-
-        // Get the value.
-        $container_settings = (bool) $config->get("{$bundle_of}_{$entity->id()}");
-
-        // Define field set in additional settings group.
-        $form['container_settings'] = [
-            '#type' => 'details',
-            '#title' => t('Container settings'),
-            '#group' => isset($form['additional_settings']) ? 'additional_settings' : 'advanced',
-        ];
-
-        // Add checkbox option.
-        $form['container_settings']['fluid_container'] = [
-            '#type' => 'checkbox',
-            '#title' => t('Fluid Container'),
-            '#default_value' => $container_settings,
-        ];
-
-        // Add the custom submit to the form.
-        $form['actions']['submit']['#submit'][] = 'container_settings_form_submit';
-    }
-
-    // Load Root theme for layout builder Modal.
-    $modal_forms = [
-        'layout_builder_add_block',
-        'layout_builder_update_block',
+    // Define field set in additional settings group.
+    $form['container_settings'] = [
+      '#type' => 'details',
+      '#title' => t('Container settings'),
+      '#group' => isset($form['additional_settings']) ? 'additional_settings' : 'advanced',
     ];
-    if (in_array($form_id, $modal_forms)) {
-        $form['#attached']['library'][] = 'root/global-styling';
-    }
+
+    // Add checkbox option.
+    $form['container_settings']['fluid_container'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Fluid Container'),
+      '#default_value' => $container_settings,
+    ];
+
+    // Add the custom submit to the form.
+    $form['actions']['submit']['#submit'][] = 'container_settings_form_submit';
+  }
+
+  // Load Root theme for layout builder Modal.
+  $modal_forms = [
+    'layout_builder_add_block',
+    'layout_builder_update_block',
+  ];
+  if (in_array($form_id, $modal_forms)) {
+    $form['#attached']['library'][] = 'root/global-styling';
+  }
 }
 
 /**
@@ -203,10 +213,10 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
  * @return void
  */
 function seeds_pollination_description_validate(&$element, FormStateInterface $form_state) {
-    $description = $form_state->getValue($element['#name']);
-    if (mb_strlen($description) < 20) {
-        $form_state->setError($element, t('The description should be 20 characters at minimum'));
-    }
+  $description = $form_state->getValue($element['#name']);
+  if (mb_strlen($description) < 20) {
+    $form_state->setError($element, t('The description should be 20 characters at minimum'));
+  }
 }
 
 /**
@@ -218,95 +228,95 @@ function seeds_pollination_description_validate(&$element, FormStateInterface $f
  * @return void
  */
 function seeds_pollination_description_submit($form, FormStateInterface $form_state) {
-    $form_object = $form_state->getFormObject();
-    if ($form_object instanceof EntityFormInterface) {
-        /** @var \Drupal\Core\Config\Entity\ConfigEntityInterface $entity */
-        $entity = $form_object->getEntity();
-        $entity->setThirdPartySetting('seeds_pollination', 'description', $form_state->getValue($form_state->get('admin_description_field') ?? 'description'));
-        $entity->save();
-    }
+  $form_object = $form_state->getFormObject();
+  if ($form_object instanceof EntityFormInterface) {
+    /** @var \Drupal\Core\Config\Entity\ConfigEntityInterface $entity */
+    $entity = $form_object->getEntity();
+    $entity->setThirdPartySetting('seeds_pollination', 'description', $form_state->getValue($form_state->get('admin_description_field') ?? 'description'));
+    $entity->save();
+  }
 }
 
 /**
  * Implements of HOOK_form_submit().
  */
 function container_settings_form_submit(&$form, FormStateInterface &$form_state) {
-    // Get container configations.
-    $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
+  // Get container configations.
+  $config = \Drupal::service('config.factory')->getEditable('seeds.container_settings');
 
-    // Get the 'bundle_of' value.
-    $bundle_of = $form_state->get('bundle_of');
+  // Get the 'bundle_of' value.
+  $bundle_of = $form_state->get('bundle_of');
 
-    // Get the entity bundle.
-    $entity = $form_state->getFormObject()->getEntity();
+  // Get the entity bundle.
+  $entity = $form_state->getFormObject()->getEntity();
 
-    // Get the submitted value.
-    $value = (bool) $form_state->getValue('fluid_container');
+  // Get the submitted value.
+  $value = (bool) $form_state->getValue('fluid_container');
 
-    // Set and save to configuration.
-    $config->set("{$bundle_of}_{$entity->id()}", $value)->save();
+  // Set and save to configuration.
+  $config->set("{$bundle_of}_{$entity->id()}", $value)->save();
 }
 
 /**
  * Implements hook_rebuild().
  */
 function seeds_pollination_rebuild() {
-    $translation_path = DRUPAL_ROOT . '/' . 'translations.yml';
-    if (file_exists($translation_path)) {
-        $translations_content = file_get_contents($translation_path);
-        if ($translations_content) {
-            $decoded = Yaml::decode($translations_content);
-            foreach ($decoded as $langcode => $translations) {
-                foreach ($translations as $source => $translation) {
-                    seeds_pollination_add_translation($source, $translation, $langcode);
-                }
-            }
-        } else {
-            echo "Failed to read the translation.yml file!";
+  $translation_path = DRUPAL_ROOT . '/' . 'translations.yml';
+  if (file_exists($translation_path)) {
+    $translations_content = file_get_contents($translation_path);
+    if ($translations_content) {
+      $decoded = Yaml::decode($translations_content);
+      foreach ($decoded as $langcode => $translations) {
+        foreach ($translations as $source => $translation) {
+          seeds_pollination_add_translation($source, $translation, $langcode);
         }
+      }
     } else {
-        echo (sprintf('"translations.yml" was not found. Consider adding "translations.yml" on your Drupal root "%s"', $translation_path));
+      echo "Failed to read the translation.yml file!";
     }
+  } else {
+    echo (sprintf('"translations.yml" was not found. Consider adding "translations.yml" on your Drupal root "%s"', $translation_path));
+  }
 }
 
 /**
  * Creates a new translation source.
  */
 function seeds_pollination_add_translation($source_string, $translated_string, $langcode) {
-    // Find existing source string.
-    if (\Drupal::moduleHandler()->moduleExists('locale')) {
-        $storage = \Drupal::service('locale.storage');
-        $string = $storage->findString(['source' => $source_string]);
-        if (is_null($string)) {
-            $string = new SourceString();
-            $string->setString($source_string);
-            $string->setStorage($storage);
-            $string->save();
-        }
-        // Create translation. If one already exists, it will be replaced.
-        $storage->createTranslation([
-            'lid' => $string->lid,
-            'language' => $langcode,
-            'translation' => $translated_string,
-        ])->save();
+  // Find existing source string.
+  if (\Drupal::moduleHandler()->moduleExists('locale')) {
+    $storage = \Drupal::service('locale.storage');
+    $string = $storage->findString(['source' => $source_string]);
+    if (is_null($string)) {
+      $string = new SourceString();
+      $string->setString($source_string);
+      $string->setStorage($storage);
+      $string->save();
     }
+    // Create translation. If one already exists, it will be replaced.
+    $storage->createTranslation([
+      'lid' => $string->lid,
+      'language' => $langcode,
+      'translation' => $translated_string,
+    ])->save();
+  }
 }
 
 /**
  * Implements hook_entity_type_alter().
  */
 function seeds_pollination_entity_type_alter(array &$entity_types) {
-    if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
-        $entity_types_list = [
-            'field_config' => 'Drupal\seeds_pollination\SeedsFieldConfigListBuilder',
-            'entity_queue' => 'Drupal\seeds_pollination\SeedsEntityQueueListBuilder',
-            'user_role' => 'Drupal\seeds_pollination\SeedsRoleListBuilder',
-            'entity_form_mode' => 'Drupal\seeds_pollination\SeedsFormModeListBuilder',
-        ];
-        foreach ($entity_types_list as $entity_type_id => $list_class) {
-            if (isset($entity_types[$entity_type_id])) {
-                $entity_types[$entity_type_id]->setListBuilderClass($list_class);
-            }
-        }
+  if (\Drupal::config('seeds_pollination.settings')->get('description_is_required_for_config_entities')) {
+    $entity_types_list = [
+      'field_config' => 'Drupal\seeds_pollination\SeedsFieldConfigListBuilder',
+      'entity_queue' => 'Drupal\seeds_pollination\SeedsEntityQueueListBuilder',
+      'user_role' => 'Drupal\seeds_pollination\SeedsRoleListBuilder',
+      'entity_form_mode' => 'Drupal\seeds_pollination\SeedsFormModeListBuilder',
+    ];
+    foreach ($entity_types_list as $entity_type_id => $list_class) {
+      if (isset($entity_types[$entity_type_id])) {
+        $entity_types[$entity_type_id]->setListBuilderClass($list_class);
+      }
     }
+  }
 }
