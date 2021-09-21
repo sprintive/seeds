@@ -117,6 +117,9 @@ projects[embed][version] = 1.4
 projects[entity_embed][type] = module
 projects[entity_embed][version] = 1.2
 
+projects[transliterate_filenames][type] = module
+projects[transliterate_filenames][version] = 1.5
+
 projects[editor_advanced_link][type] = module
 projects[editor_advanced_link][version] = 1.9
 
