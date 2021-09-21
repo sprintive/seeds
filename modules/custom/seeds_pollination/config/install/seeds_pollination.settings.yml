@@ -1,6 +1,7 @@
 display_unmasquerade_button: 1
 replace_permissions_form_route: 1
-description_is_required_for_config_entities: 1
+show_description_for_config_entities: 1
+description_is_required_for_config_entities: 0
 description_config_entities_include:
   - webform
   - taxonomy_vocabulary
