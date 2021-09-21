@@ -72,3 +72,27 @@ function seeds_pollination_update_8105(&$sandbox) {
     \Drupal::messenger()->addWarning('Failed to read config/install/seeds_polination.settings.yml');
   }
 }
+
+  /**
+ * Re-Reupdates the seeds_pollination config again.
+ */
+function seeds_pollination_update_8106(&$sandbox) {
+  $path = DRUPAL_ROOT . '/' . \Drupal::moduleHandler()->getModule('seeds_pollination')->getPath() . '/config/install/seeds_pollination.settings.yml';
+  $warn = FALSE;
+  $content = file_get_contents($path);
+  if ($content) {
+    $data = Yaml::decode($content);
+    $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
+    if (is_array($data)) {
+      $config->setData($data)->save();
+    } else {
+      $warn = TRUE;
+    }
+  } else {
+    $warn = TRUE;
+  }
+
+  if ($warn) {
+    \Drupal::messenger()->addWarning('Failed to read config/install/seeds_polination.settings.yml');
+  }
+}
