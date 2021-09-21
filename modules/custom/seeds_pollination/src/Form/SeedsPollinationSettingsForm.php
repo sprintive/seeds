@@ -42,10 +42,21 @@ class SeedsPollinationSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('replace_permissions_form_route'),
     ];
 
+    $form['show_description_for_config_entities'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Show a description for config entities if they don\'t have one'),
+      '#default_value' => $config->get('show_description_for_config_entities'),
+    ];
+
     $form['description_is_required_for_config_entities'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Make the description field required for config entities'),
       '#default_value' => $config->get('description_is_required_for_config_entities'),
+      '#states' => [
+        'visible' => [
+          ':input[name="show_description_for_config_entities"]' => ['checked' => TRUE],
+        ],
+      ],
     ];
 
     $form['description_config_entities_include'] = [
@@ -55,7 +66,7 @@ class SeedsPollinationSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('description_config_entities_include') ? implode(', ', $config->get('description_config_entities_include')) : NULL,
       '#states' => [
         'visible' => [
-          ':input[name="description_is_required_for_config_entities"]' => ['checked' => TRUE],
+          ':input[name="show_description_for_config_entities"]' => ['checked' => TRUE],
         ],
       ],
     ];
