@@ -24,7 +24,7 @@ projects[field_group][type] = module
 projects[field_group][version] = 3.2
 
 projects[linkit][type] = module
-projects[linkit][version] = 5.0-beta12
+projects[linkit][version] = 5.0-beta13
 
 projects[seeds_layouts][type] = module
 projects[seeds_layouts][version] = 1.7

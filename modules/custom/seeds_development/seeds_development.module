@@ -42,32 +42,3 @@ function seeds_development_entity_operation_alter(array &$operations, \Drupal\Co
     $operations['inspect'] = create_inspect_operation('seeds_development.image_style', ['image_style' => $entity->id()]);
   }
 }
-
-/**
- * Implements hook_form_alter().
- */
-
-function seeds_development_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-
-  if ($form_id == 'node_type_edit_form') {
-    /** @var \Drupal\seeds_development\FormPermissions $form_permissions */
-    $form_permissions = \Drupal::service('seeds_development.form_permissions');
-    $form['actions']['submit']['#submit'][] = 'entity_type_permissions_set';
-
-    /** @var \Drupal\node\NodeTypeInterface $node_type */
-    $node_type = $form_state->getFormObject()->getEntity();
-    $permissions = $form_permissions->getNodePermissions($node_type->id());
-    $form['permissions'] = $form_permissions->buildPermissionsCheckboxes($permissions);
-  }
-
-  if ($form_id == "taxonomy_vocabulary_form") {
-    /** @var \Drupal\seeds_development\FormPermissions $form_permissions */
-    $form_permissions = \Drupal::service('seeds_development.form_permissions');
-    $form['actions']['submit']['#submit'][] = 'entity_type_permissions_set';
-
-    /** @var \Drupal\taxonomy\VocabularyInterface $vocabulary */
-    $vocabulary = $form_state->getFormObject()->getEntity();
-    $permissions = $form_permissions->getVocabularyPermissions($vocabulary->id());
-    $form['permissions'] = $form_permissions->buildPermissionsCheckboxes($permissions);
-  }
-}
