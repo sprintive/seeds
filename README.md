@@ -51,7 +51,6 @@ There are certian settings you can modify in the `theme.json`:
 	"rtlEnabled": false
 }
 ```
-
 ## Enabling RTL styling
 In you `THEMENAME.theme`, find the following lines:
 ```
