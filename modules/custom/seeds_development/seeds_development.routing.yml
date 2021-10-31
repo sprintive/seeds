@@ -1,14 +1,21 @@
 seeds_development.image_style:
-  path: "/admin/config/media/image-styles/inspect/{image_style}"
+  path: "/admin/config/media/image-styles/inspect/image-styles/{image_style}"
   defaults:
     _controller: '\Drupal\seeds_development\Controller\SeedsDevelopmentController::inspectImageStyle'
-    _title: "Image Style Inspect"
+    _title: "Inspect Image Style"
   requirements:
     _permission: "access seeds development"
   options:
     parameters:
       image_style:
         type: entity:image_style
+seeds_development.unused_image_style:
+  path: "/admin/config/media/image-styles/inspect/unused-image-styles"
+  defaults:
+    _controller: '\Drupal\seeds_development\Controller\SeedsDevelopmentController::inspectAllImageStyle'
+    _title: "Unused Image Styles"
+  requirements:
+    _permission: "access seeds development"
 seeds_development.generate_field_groups:
   path: "/admin/config/structure/{entity_type_id}/{bundle}/{form_mode}"
   defaults:
