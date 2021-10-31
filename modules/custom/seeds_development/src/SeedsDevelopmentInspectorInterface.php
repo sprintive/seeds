@@ -1,8 +1,8 @@
 <?php
 
-use Drupal\image\ImageStyleInterface;
-
 namespace Drupal\seeds_development;
+
+use Drupal\image\ImageStyleInterface;
 
 /**
  * Interface SeedsDevelopmentInspectorInterface.
