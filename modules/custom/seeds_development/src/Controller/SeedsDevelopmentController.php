@@ -2,8 +2,9 @@
 
 namespace Drupal\seeds_development\Controller;
 
-use Drupal\image\ImageStyleInterface;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Site\Settings;
+use Drupal\image\ImageStyleInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -36,10 +37,9 @@ class SeedsDevelopmentController extends ControllerBase {
   }
 
   /**
-   * Inspectimagestyle.
+   * Inpects an image style.
    *
-   * @return string
-   *   Return Hello string.
+   * @return array
    */
   public function inspectImageStyle(ImageStyleInterface $image_style) {
 
@@ -154,6 +154,48 @@ class SeedsDevelopmentController extends ControllerBase {
     return [
       '#type' => 'markup',
       '#markup' => $this->t('Implement method: viewDisplayInspect with parameter(s): $entity_type_id, $bundle, $view_mode'),
+    ];
+  }
+
+  /**
+   * Inspects all image styles and their usability.
+   *
+   * @return array
+   */
+  public function inspectAllImageStyle() {
+    // Get all image styles.
+    /** @var \Drupal\image\ImageStyleInterface[] $image_styles */
+    $image_styles = $this->entityTypeManager->getStorage('image_style')->loadMultiple();
+
+    // Foreach check their usability.
+    $image_styles_info = [];
+    foreach ($image_styles as $image_style) {
+      $image_styles_info[$image_style->id()] = $this->inspector->imageStyleUseability($image_style);
+    }
+
+    // Build the rows in the table to show the results.
+    $table = [
+      '#type' => 'table',
+      '#header' => [
+        $this->t('Image Style'),
+      ],
+      '#rows' => [],
+    ];
+
+    foreach ($image_styles_info as $id => $image_style_info) {
+      if (empty($image_style_info)) {
+        $table['#rows'][] = [
+          '#markup' => $id,
+        ];
+      }
+    }
+
+    $config_path = Settings::get('config_sync_directory');
+    return [
+      'desc' => [
+        '#markup' => "<strong>NOTE: the application reads the local config ($config_path), not the active config,</strong>"
+      ],
+      'table' => $table
     ];
   }
 

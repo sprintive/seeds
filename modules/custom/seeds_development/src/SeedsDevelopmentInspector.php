@@ -5,6 +5,7 @@ namespace Drupal\seeds_development;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\Core\Site\Settings;
 use Drupal\Core\Url;
 use Drupal\image\ImageStyleInterface;
 
@@ -48,11 +49,21 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
    */
   private function configUsability($search) {
     $found = [];
-    $config = shell_exec("grep '\(\:$search\:\)\|\(\W$search$\)' /var/www/html/oxford-jo/public_html/sites/default/config/* -lr");
+    $root = DRUPAL_ROOT;
+    $config_path = Settings::get('config_sync_directory');
+    $config = shell_exec("grep '\(\:$search\:\)\|\(\W$search$\)' ${root}/$config_path/* -lr");
     $config_list = explode(PHP_EOL, $config);
-    foreach ($config_list as $path) {
-      if ($config !== "") {
+    if ($config && $config !== "") {
+      foreach ($config_list as $path) {
+        if ($path === "") {
+          continue;
+        }
         $name = end(explode('/', $path));
+
+        if($name === "image.style.$search.yml") {
+          continue;
+        }
+
         $found[] = [
           'id' => $name,
           'label' => $name,
@@ -98,7 +109,7 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
         ];
       }, $responsive_images);
 
-      $sections[] = [
+      $sections['responsive_images'] = [
         'id' => 'responsive_images',
         'title' => t('Responsive Images'),
         'content' => $responsive_images,
@@ -123,8 +134,7 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
             $url = new Url("entity.entity_view_display.{$target_entity_type->id()}.default", [
               $target_entity_type->getBundleEntityType() => $view_display->get('bundle'),
             ]);
-          }
-          else {
+          } else {
             $url = new Url("entity.entity_view_display.{$target_entity_type->id()}.view_mode",
               [
                 'view_mode_name' => $view_mode,
@@ -140,19 +150,19 @@ class SeedsDevelopmentInspector implements SeedsDevelopmentInspectorInterface {
         }
       }
 
-      if (!empty($found_view_displays)) {
-        $sections[] = [
-          'id' => 'view_displays',
-          'title' => t('View Displays'),
-          'content' => $found_view_displays,
-        ];
-      }
+    }
 
+    if (!empty($found_view_displays)) {
+      $sections['view_displays'] = [
+        'id' => 'view_displays',
+        'title' => t('View Displays'),
+        'content' => $found_view_displays,
+      ];
     }
 
     $found = $this->configUsability($image_style->id());
     if (!empty($found)) {
-      $sections[] = [
+      $sections['config'] = [
         'id' => 'config',
         'title' => t("Found in Config"),
         'content' => $found,
