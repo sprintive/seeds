@@ -14,9 +14,6 @@ projects[ctools][version] = 3.7
 projects[token][type] = module
 projects[token][version] = 1.9
 
-projects[webform][type] = module
-projects[webform][version] = 5.28
-
 projects[ds][type] = module
 projects[ds][version] = 3.13
 
@@ -49,13 +46,13 @@ projects[paragraphs][version] = 1.12
 projects[paragraphs][patch][] = https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch
 
 projects[slick][type] = module
-projects[slick][version] = 2.3
+projects[slick][version] = 2.4
 
 projects[blazy][type] = module
-projects[blazy][version] = 2.4
+projects[blazy][version] = 2.5
 
 projects[slick_views][type] = module
-projects[slick_views][version] = 2.4
+projects[slick_views][version] = 2.5
 
 projects[slick_paragraphs][type] = module
 projects[slick_paragraphs][version] = 2.1
@@ -69,7 +66,7 @@ projects[button_formatter][type] = module
 projects[button_formatter][version] = 1.2
 
 projects[layout_builder_restrictions][type] = module
-projects[layout_builder_restrictions][version] = 2.9
+projects[layout_builder_restrictions][version] = 2.10
 
 projects[layout_builder_modal][type] = module
 projects[layout_builder_modal][version] = 1.1
@@ -100,10 +97,7 @@ projects[masquerade][type] = module
 projects[masquerade][version] = 2.0-beta4
 
 projects[responsive_preview][type] = module
-projects[responsive_preview][version] = 1.0
-
-projects[views_bulk_operations][type] = module
-projects[views_bulk_operations][version] = 3.13
+projects[responsive_preview][version] = 1.1
 
 projects[views_bulk_edit][type] = module
 projects[views_bulk_edit][version] = 2.6
@@ -119,9 +113,6 @@ projects[entity_embed][version] = 1.2
 
 projects[transliterate_filenames][type] = module
 projects[transliterate_filenames][version] = 1.5
-
-projects[editor_advanced_link][type] = module
-projects[editor_advanced_link][version] = 1.9
 
 projects[ace_editor][type] = module
 projects[ace_editor][version] = 1.3
@@ -147,7 +138,7 @@ projects[pathauto][type] = module
 projects[pathauto][version] = 1.8
 
 projects[simple_sitemap][type] = module
-projects[simple_sitemap][version] = 3.10
+projects[simple_sitemap][version] = 3.11
 ;; Issue #2987748: Add Media images to sitemap
 projects[simple_sitemap][patch][] = https://www.drupal.org/files/issues/2021-04-12/simple_sitemap_support_media_and_image_styles-45.patch
 
