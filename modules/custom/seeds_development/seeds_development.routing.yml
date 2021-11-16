@@ -24,9 +24,16 @@ seeds_development.generate_field_groups:
   requirements:
     _permission: "access seeds development"
 seeds_development.view_mode:
-  path: "/admin/structure/{entity_type_id}/{bundle}/{view_mode}"
+  path: "/admin/structure/{entity_type_id}/{bundle}/view-mode/{view_mode}"
   defaults:
     _controller: '\Drupal\seeds_development\Controller\SeedsDevelopmentController::viewDisplayInspect'
     _title: "View Display Inspect"
+  requirements:
+    _permission: "access seeds development"
+seeds_development.translate_fields:
+  path: "/admin/structure/{entity_type_id}/{bundle}/translate-fields"
+  defaults:
+    _form: '\Drupal\seeds_development\Form\TranslateFieldsForm'
+    _title: "Translate Fields"
   requirements:
     _permission: "access seeds development"
