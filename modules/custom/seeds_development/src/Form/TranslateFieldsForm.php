@@ -8,10 +8,12 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Security\TrustedCallbackInterface;
 use Drupal\field\Entity\FieldConfig;
-use Drupal\language\ConfigurableLanguageManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
+/**
+ *
+ */
 class TranslateFieldsForm extends FormBase implements TrustedCallbackInterface {
 
   /**
@@ -22,19 +24,22 @@ class TranslateFieldsForm extends FormBase implements TrustedCallbackInterface {
   protected $routeMatch;
 
   /**
-   * The entity field manager
+   * The entity field manager.
    *
    * @var \Drupal\Core\Entity\EntityFieldManagerInterface
    */
   protected $entityFieldManager;
 
   /**
-   * The language manager
+   * The language manager.
    *
-   * @var ConfigurableLanguageManagerInterface
+   * @var \Drupal\language\ConfigurableLanguageManagerInterface
    */
   protected $languageManager;
 
+  /**
+   *
+   */
   public static function trustedCallbacks() {
     return ['preRenderTable'];
   }
@@ -58,9 +63,27 @@ class TranslateFieldsForm extends FormBase implements TrustedCallbackInterface {
   }
 
   /**
-   * Gets the fields to translate
+   * Gets the entity type id from current route.
    *
-   * @return FieldConfigInterface[]
+   * @return string
+   */
+  protected function getEntityTypeId() {
+    return $this->routeMatch->getParameter('entity_type_id');
+  }
+
+  /**
+   * Gets the bundle from current route.
+   *
+   * @return string
+   */
+  protected function getBundle() {
+    return $this->routeMatch->getParameter('bundle');
+  }
+
+  /**
+   * Gets the fields to translate.
+   *
+   * @return \Drupal\Core\Field\FieldConfigInterface[]
    */
   protected function getFields() {
     $entity_type_id = $this->routeMatch->getParameter('entity_type_id');
@@ -122,6 +145,9 @@ class TranslateFieldsForm extends FormBase implements TrustedCallbackInterface {
     ];
   }
 
+  /**
+   *
+   */
   public function preRenderTable(&$fields) {
     $languages = $this->languageManager->getLanguages();
     $fields['#theme'] = 'table';
@@ -160,7 +186,6 @@ class TranslateFieldsForm extends FormBase implements TrustedCallbackInterface {
     $languages = $this->languageManager->getLanguages();
     $entity_type_id = $this->routeMatch->getParameter('entity_type_id');
     $bundle = $this->routeMatch->getParameter('bundle');
-    $field_configs = [];
     $original_langcode = $this->languageManager->getDefaultLanguage()->getId();
     foreach ($fields as $field_name => $field) {
       $config_name = "field.field.$entity_type_id.$bundle.$field_name";
