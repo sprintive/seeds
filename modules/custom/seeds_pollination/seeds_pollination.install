@@ -73,7 +73,7 @@ function seeds_pollination_update_8105(&$sandbox) {
   }
 }
 
-  /**
+/**
  * Re-Reupdates the seeds_pollination config again.
  */
 function seeds_pollination_update_8106(&$sandbox) {
@@ -95,4 +95,12 @@ function seeds_pollination_update_8106(&$sandbox) {
   if ($warn) {
     \Drupal::messenger()->addWarning('Failed to read config/install/seeds_polination.settings.yml');
   }
+}
+
+/**
+ * Enable forcing small letter extensions for file uploads.
+ */
+function seeds_pollination_update_8107(&$sandbox) {
+  $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
+  $config->set('small_letters_extension', '1')->save();
 }
