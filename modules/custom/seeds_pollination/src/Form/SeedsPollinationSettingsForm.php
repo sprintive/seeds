@@ -42,6 +42,12 @@ class SeedsPollinationSettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('replace_permissions_form_route'),
     ];
 
+    $form['disable_user_1_edit'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Disable user 1 edit'),
+      '#default_value' => $config->get('disable_user_1_edit'),
+    ];
+
     $form['show_description_for_config_entities'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Show a description for config entities if they don\'t have one'),

@@ -73,7 +73,7 @@ function seeds_pollination_update_8105(&$sandbox) {
   }
 }
 
-  /**
+/**
  * Re-Reupdates the seeds_pollination config again.
  */
 function seeds_pollination_update_8106(&$sandbox) {
@@ -94,5 +94,19 @@ function seeds_pollination_update_8106(&$sandbox) {
 
   if ($warn) {
     \Drupal::messenger()->addWarning('Failed to read config/install/seeds_polination.settings.yml');
+  }
+}
+
+/**
+ * Enable 'disable user 1 edit' config
+ *
+ */
+function seeds_pollination_update_8107() {
+  $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
+  $config->set('disable_user_1_edit', '1')->save();
+
+  // Check if the module already exists.
+  if (\Drupal::moduleHandler()->moduleExists('disable_user_1_edit')) {
+    \Drupal::messenger()->addWarning(t('The module "disable_user_1_edit" should be disabled now, "seeds_pollination" already provides this feature. Check the configuration form of "seeds_pollination"'));
   }
 }

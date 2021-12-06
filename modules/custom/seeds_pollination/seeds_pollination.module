@@ -4,6 +4,7 @@
  * @file
  */
 
+use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Entity\EntityFormInterface;
@@ -322,4 +323,21 @@ function seeds_pollination_entity_type_alter(array &$entity_types) {
       }
     }
   }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_access().
+ */
+
+function seeds_pollination_user_access(\Drupal\user\UserInterface $entity, $operation, \Drupal\Core\Session\AccountInterface $account) {
+  if ($entity->id() === '1') {
+    if ($operation === 'update') {
+      $disable_user_edit = \Drupal::config('seeds_pollination.settings')->get('disable_user_1_edit') ?? NULL;
+      if ($disable_user_edit) {
+        return AccessResult::forbidden('You shall not pass!');
+      }
+    }
+  }
+
+  return AccessResult::neutral();
 }
