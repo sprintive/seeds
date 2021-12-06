@@ -77,6 +77,13 @@ class SeedsPollinationSettingsForm extends ConfigFormBase {
       ],
     ];
 
+    $form['small_letters_extension'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Force extensions to be always small letter'),
+      '#description' => $this->t('This is useful for modules such as WebP.'),
+      '#default_value' => $config->get('small_letters_extension'),
+    ];
+
     return $form;
   }
 

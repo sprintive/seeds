@@ -97,11 +97,19 @@ function seeds_pollination_update_8106(&$sandbox) {
   }
 }
 
+/*
+ * Enable forcing small letter extensions for file uploads.
+ */
+function seeds_pollination_update_8107(&$sandbox) {
+  $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
+  $config->set('small_letters_extension', '1')->save();
+}
+
 /**
  * Enable 'disable user 1 edit' config
  *
  */
-function seeds_pollination_update_8107() {
+function seeds_pollination_update_8108() {
   $config = \Drupal::configFactory()->getEditable('seeds_pollination.settings');
   $config->set('disable_user_1_edit', '1')->save();
 

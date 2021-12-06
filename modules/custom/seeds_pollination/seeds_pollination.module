@@ -12,6 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Serialization\Yaml;
 use Drupal\Core\Url;
+use Drupal\file\FileInterface;
 use Drupal\locale\SourceString;
 
 /**
@@ -328,7 +329,6 @@ function seeds_pollination_entity_type_alter(array &$entity_types) {
 /**
  * Implements hook_ENTITY_TYPE_access().
  */
-
 function seeds_pollination_user_access(\Drupal\user\UserInterface $entity, $operation, \Drupal\Core\Session\AccountInterface $account) {
   if ($entity->id() === '1') {
     if ($operation === 'update') {
@@ -340,4 +340,21 @@ function seeds_pollination_user_access(\Drupal\user\UserInterface $entity, $oper
   }
 
   return AccessResult::neutral();
+}
+
+/*
+ * Implements hook_file_validate().
+ */
+function seeds_pollination_file_validate(FileInterface $file) {
+  if (\Drupal::config('seeds_pollination.settings')->get('small_letters_extension')) {
+    // Force small letter extension on files.
+    $basename = \Drupal::service('file_system')->basename($file->destination);
+    $basename = explode('.', $basename);
+    $name = reset($basename);
+    $extension = end($basename);
+    $extension = strtolower($extension);
+    $basename = $name . '.' . $extension;
+    $dirname = \Drupal::service('file_system')->dirname($file->destination);
+    $file->destination = \Drupal::service('file_system')->createFilename($basename, $dirname);
+  }
 }
