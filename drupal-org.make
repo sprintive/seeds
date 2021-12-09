@@ -12,7 +12,7 @@ projects[ctools][type] = module
 projects[ctools][version] = 3.7
 
 projects[token][type] = module
-projects[token][version] = 1.9
+projects[token][version] = 1.10
 
 projects[ds][type] = module
 projects[ds][version] = 3.13
@@ -63,7 +63,7 @@ projects[photoswipe][version] = 2.9
 projects[photoswipe][patch][] = https://www.drupal.org/files/issues/2021-02-09/photoswipe-2980534-24.patch
 
 projects[button_formatter][type] = module
-projects[button_formatter][version] = 1.2
+projects[button_formatter][version] = 1.4
 
 projects[layout_builder_restrictions][type] = module
 projects[layout_builder_restrictions][version] = 2.10
