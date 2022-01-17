@@ -3,8 +3,11 @@
 namespace Drupal\seeds_development\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\Core\Site\Settings;
+use Drupal\file\Entity\File;
 use Drupal\image\ImageStyleInterface;
+use Drupal\responsive_image\Entity\ResponsiveImageStyle;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -193,9 +196,72 @@ class SeedsDevelopmentController extends ControllerBase {
     $config_path = Settings::get('config_sync_directory');
     return [
       'desc' => [
-        '#markup' => "<strong>NOTE: the application reads the local config ($config_path), not the active config,</strong>"
+        '#markup' => "<strong>NOTE: the application reads the local config ($config_path), not the active config,</strong>",
       ],
-      'table' => $table
+      'table' => $table,
+    ];
+  }
+
+  private function generateTestFile() {
+    /** @var \Drupal\Core\File\FileSystemInterface $file_system */
+    $file_system = \Drupal::service('file_system');
+
+    $image_path = \Drupal::moduleHandler()->getModule('seeds_development')->getPath() . '/assets/images/test.png';
+    $path = $file_system->copy($image_path, 'public://responsive-image-test.png', FileSystemInterface::EXISTS_REPLACE);
+    $file = File::create();
+    $file->setFileUri($path);
+    $file->setPermanent();
+    $file->setFilename('responsive-image-test.png');
+    $file->save();
+    return $file->id();
+  }
+
+  /**
+   * Tests all responsive image styles
+   *
+   * @return void
+   */
+  public function testResponsiveImages() {
+    $key_value_store = \Drupal::keyValue('seeds_development');
+    $file_id = $key_value_store->get('responsive_image_test_file');
+
+    if (!$file_id) {
+      $file_id = $this->generateTestFile();
+      $key_value_store->set('responsive_image_test_file', $file_id);
+    }
+
+    $file = File::load($file_id);
+
+    // Load all responsive image styles.
+    $responsive_image_styles = ResponsiveImageStyle::loadMultiple();
+    $render = [];
+    foreach ($responsive_image_styles as $responsive_image_style) {
+      $render[] = [
+        '#type' => 'container',
+        '#attributes' => [
+          'class' => ['responsive-image-style'],
+        ],
+        'fieldset' => [
+          '#type' => 'fieldset',
+          '#title' => $responsive_image_style->label(),
+          'responsive_image' => [
+            '#theme' => 'responsive_image',
+            '#responsive_image_style_id' => $responsive_image_style->id(),
+            '#uri' => $file->getFileUri(),
+          ],
+        ],
+      ];
+    }
+
+    return [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => 'responsive-image-style-list',
+      ],
+      'list' => $render,
+      '#attached' => [
+        'library' => ['seeds_development/responsive_image_style_test'],
+      ],
     ];
   }
 

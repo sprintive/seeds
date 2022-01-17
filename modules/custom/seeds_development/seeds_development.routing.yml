@@ -37,3 +37,10 @@ seeds_development.translate_fields:
     _title: "Translate Fields"
   requirements:
     _permission: "access seeds development"
+seeds_development.test_responsive_images:
+  path: "/admin/config/media/responsive-image-style/test"
+  defaults:
+    _controller: '\Drupal\seeds_development\Controller\SeedsDevelopmentController::testResponsiveImages'
+    _title: "Test Responsive Images"
+  requirements:
+    _permission: "access seeds development"
