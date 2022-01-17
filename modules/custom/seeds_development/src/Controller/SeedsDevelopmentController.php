@@ -206,12 +206,12 @@ class SeedsDevelopmentController extends ControllerBase {
     /** @var \Drupal\Core\File\FileSystemInterface $file_system */
     $file_system = \Drupal::service('file_system');
 
-    $image_path = \Drupal::moduleHandler()->getModule('seeds_development')->getPath() . '/assets/images/test.png';
-    $path = $file_system->copy($image_path, 'public://responsive-image-test.png', FileSystemInterface::EXISTS_REPLACE);
+    $image_path = \Drupal::moduleHandler()->getModule('seeds_development')->getPath() . '/assets/images/test.jpg';
+    $path = $file_system->copy($image_path, 'public://responsive-image-test.jpg', FileSystemInterface::EXISTS_REPLACE);
     $file = File::create();
     $file->setFileUri($path);
     $file->setPermanent();
-    $file->setFilename('responsive-image-test.png');
+    $file->setFilename('responsive-image-test.jpg');
     $file->save();
     return $file->id();
   }
