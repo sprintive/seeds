@@ -1,0 +1,3 @@
+drush:
+  include:
+    - public_html/profiles/contrib/seeds/modules/custom/seeds_pollination/Drush

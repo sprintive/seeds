@@ -121,3 +121,22 @@ function seeds_pollination_update_8108() {
     $module_installer->uninstall(['disable_user_1_edit']);
   }
 }
+
+/**
+ * Init new 'drush.yml' file.
+ *
+ */
+function seeds_pollination_update_8109() {
+  $module_path = \Drupal::moduleHandler()->getModule('seeds_pollination')->getPath();
+  $drush_yml_path = $module_path . '/drush.yml';
+  $root = $GLOBALS['ROOT'];
+  if (!file_exists($root . '/drush')) {
+    mkdir($root . '/drush');
+  }
+
+  $success = copy($drush_yml_path, $root . '/drush/drush.yml');
+
+  if (!$success) {
+    throw new \Exception(sprintf('Failed to copy from %s to %s', $drush_yml_path, $root . '/drush/drush.yml'));
+  }
+}
