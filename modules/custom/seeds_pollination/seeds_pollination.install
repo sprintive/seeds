@@ -130,6 +130,16 @@ function seeds_pollination_update_8109() {
   $module_path = \Drupal::moduleHandler()->getModule('seeds_pollination')->getPath();
   $drush_yml_path = $module_path . '/drush.yml';
   $root = $GLOBALS['ROOT'];
+
+  // Check if the previous folder has a composer.json file.
+  $frags = explode('/', $root);
+  array_pop($frags);
+  $previous_folder = implode('/', $frags);
+
+  if (file_exists($previous_folder . '/composer.json')) {
+    $root = $previous_folder;
+  }
+
   if (!file_exists($root . '/drush')) {
     mkdir($root . '/drush');
   }
