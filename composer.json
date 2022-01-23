@@ -30,7 +30,7 @@
     "drupal/slick_paragraphs": "2.1",
     "drupal/photoswipe": "^3.0@alpha",
     "drupal/button_formatter": "1.4",
-    "drupal/layout_builder_restrictions": "2.10",
+    "drupal/layout_builder_restrictions": "2.12",
     "drupal/layout_builder_modal": "1.1",
     "drupal/shariff": "1.7",
     "drupal/admin_toolbar": "3.0.3",
