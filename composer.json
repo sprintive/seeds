@@ -61,7 +61,7 @@
     "drupal/simple_sitemap": "3.11",
     "drupal/link_attributes": "1.11",
     "drupal/redirect": "1.7",
-    "drupal/google_analytics": "2.5",
+    "drupal/google_analytics": "4.0.0",
     "drupal/yoast_seo": "1.7",
     "drupal/schema_metatag": "2.3",
     "drupal/length_indicator": "1.2",
@@ -79,6 +79,9 @@
     "drupal/password_policy": "3.0",
     "drupal/username_enumeration_prevention": "1.2",
     "drupal/login_security": "2.0",
+    "drupal/session_limit": "2.0.0-beta2",
+    "drupal/seckit": "2.0.0",
+    "drupal/remove_http_headers": "1.0",
     "drupal/bootstrap_barrio": "4.33 || 5.5.4",
     "drupal/seeds_coat": "1.10 || ^2.0@beta",
     "drupal/root": "1.7"
@@ -167,6 +170,9 @@
       },
       "drupal/webp": {
         "Issue #3256454: Error \"Could not generate image resource from URI\" on non-image formats": "https://www.drupal.org/files/issues/2022-02-15/check_private_file_image_is_valid_3256454_02.patch"
+      },
+      "drupal/advagg": {
+        "Issue #3252394: JShrink incompatible with PHP 8": "https://www.drupal.org/files/issues/2021-12-03/advagg-jshrink-update.3252394-1.patch"
       }
     }
   },
