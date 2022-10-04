@@ -76,7 +76,7 @@
     "drupal/ultimate_cron": "2.0-alpha5",
     "drupal/smtp": "1.1",
     "drupal/captcha": "1.5",
-    "drupal/recaptcha": "3.1",
+    "drupal/recaptcha": "3.0",
     "drupal/password_policy": "3.0",
     "drupal/username_enumeration_prevention": "1.2",
     "drupal/login_security": "2.0",
@@ -154,7 +154,7 @@
         "Issue #2901390: Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch"
       },
       "drupal/recaptcha": {
-        "Issue #2493183: Ajax support / Use behaviors for 2.x": "https://www.drupal.org/files/issues/2022-08-01/recaptcha-ajax-support-2493183-248.patch"
+        "Issue #2493183: Ajax support / Use behaviors for 2.x": "https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch"
       },
       "drupal/yoast_seo": {
         "Issue #3204023: Style issues on mobile": "https://www.drupal.org/files/issues/2021-03-17/style_issues_on_mobile-3204023-3.patch",
