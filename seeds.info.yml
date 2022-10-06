@@ -37,7 +37,6 @@ dependencies:
   - drupal:help
   - drupal:fast404
   - responsive_preview:responsive_preview
-  - responsive_media_image:responsive_media_image
   - views_bulk_operations:views_bulk_operations
   - views_bulk_edit:views_bulk_edit
   - admin_toolbar:admin_toolbar_links_access_filter
