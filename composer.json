@@ -138,7 +138,6 @@
     "patches": {
       "drupal/core": {
         "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2021-05-12/2771361-42.patch",
-        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2022-03-03/2985168-121.patch"
       },
       "drupal/focal_point": {
         "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
@@ -151,9 +150,6 @@
       },
       "drupal/paragraphs": {
         "Issue #2901390: Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch"
-      },
-      "drupal/recaptcha": {
-        "Issue #2493183: Ajax support / Use behaviors for 2.x": "https://www.drupal.org/files/issues/2020-01-30/recaptcha-ajax-2493183-197_0.patch"
       },
       "drupal/yoast_seo": {
         "Issue #3204023: Style issues on mobile": "https://www.drupal.org/files/issues/2021-03-17/style_issues_on_mobile-3204023-3.patch",
