@@ -2,7 +2,7 @@ name: 'Seeds Media'
 description: 'Provide needed media types and enhance out of the box media experience.'
 type: module
 version: '9.0.1'
-core_version_requirement: '^9'
+core_version_requirement: '^9 || ^10'
 configure: seeds_media.config
 dependencies:
   - field

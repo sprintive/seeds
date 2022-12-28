@@ -2,7 +2,7 @@ name: 'Seeds Editor'
 description: 'Neat editors focused on normal users UX.'
 type: module
 version: '9.0.1'
-core_version_requirement: '^9'
+core_version_requirement: '^9 || ^10'
 configure: seeds_editor.config
 dependencies:
   - drupal:ckeditor
