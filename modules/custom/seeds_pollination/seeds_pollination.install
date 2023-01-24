@@ -156,6 +156,19 @@ function seeds_pollination_update_8109() {
  *
  */
 function seeds_pollination_update_9001() {
+
+  // Check if media_library module is enabled.
+  if (!\Drupal::moduleHandler()->moduleExists('media_library')) {
+    return;
+  }
+
+  // Enable 'media_library_edit' module if not enabled.
+  if (!\Drupal::moduleHandler()->moduleExists('media_library_edit')) {
+    /** @var \Drupal\Core\Extension\ModuleInstallerInterface $module_installer */
+    $module_installer = \Drupal::service('module_installer');
+    $module_installer->install(['media_library_edit']);
+  }
+
   // Load all form displays.
   /** @var \Drupal\Core\Entity\Entity\EntityFormDisplay[] $form_displays */
   $form_displays = \Drupal::entityTypeManager()->getStorage('entity_form_display')->loadMultiple();

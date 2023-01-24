@@ -48,6 +48,7 @@ dependencies:
   - masquerade:masquerade
   - ds:ds
   - field_group:field_group
+  - media_library_edit:media_library_edit
 
   # Embryos
   - seeds_media:seeds_media
