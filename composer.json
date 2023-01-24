@@ -65,6 +65,7 @@
     "drupal/schema_metatag": "2.4",
     "drupal/ms_clarity": "1.0.1",
     "drupal/length_indicator": "1.2",
+    "drupal/media_library_edit": "3.0.2",
     "drupal/imageapi_optimize": "4.0.1",
     "drupal/imageapi_optimize_resmushit": "2.0-beta2",
     "drupal/webp": "^1.0@beta",
@@ -137,8 +138,7 @@
     },
     "patches": {
       "drupal/core": {
-        "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2021-05-12/2771361-42.patch",
-        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2023-01-11/2985168-media-edit-modal-9.5.x-147_3.patch"
+        "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2021-05-12/2771361-42.patch"
       },
       "drupal/focal_point": {
         "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
