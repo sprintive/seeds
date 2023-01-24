@@ -1,4 +1,4 @@
-.media-library-edit__link {
+.media-library-item .media-library-edit__link {
     background-image: url(/profiles/contrib/seeds/modules/custom/seeds_pollination/assets/images/pencil.svg) !important;
     left: 10px;
     right: auto;
