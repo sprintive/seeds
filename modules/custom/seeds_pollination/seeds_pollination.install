@@ -150,3 +150,30 @@ function seeds_pollination_update_8109() {
     throw new \Exception(sprintf('Failed to copy from %s to %s', $drush_yml_path, $root . '/drush/drush.yml'));
   }
 }
+
+/**
+ * Enable media library edit on all media library widgets.
+ *
+ */
+function seeds_pollination_update_9001() {
+  // Load all form displays.
+  /** @var \Drupal\Core\Entity\Entity\EntityFormDisplay[] $form_displays */
+  $form_displays = \Drupal::entityTypeManager()->getStorage('entity_form_display')->loadMultiple();
+  // Foreach the components, check if it is using media_library
+  foreach ($form_displays as $form_display) {
+    $components = $form_display->getComponents();
+    $has_changed = FALSE;
+    foreach ($components as $component_name => $component) {
+      if ($component['type'] == 'media_library_widget') {
+        // Set third party setting 'media_library_edit' to true.
+        $component['third_party_settings']['media_library_edit']['show_edit'] = TRUE;
+        $form_display->setComponent($component_name, $component);
+        $has_changed = TRUE;
+      }
+    }
+
+    if ($has_changed) {
+      $form_display->save();
+    }
+  }
+}

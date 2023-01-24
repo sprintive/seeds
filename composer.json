@@ -69,7 +69,7 @@
     "drupal/imageapi_optimize": "4.0.1",
     "drupal/imageapi_optimize_resmushit": "2.0-beta2",
     "drupal/webp": "^1.0@beta",
-    "drupal/advagg": "4.1",
+    "drupal/advagg": "5.0.0",
     "drupal/minifyhtml": "2.0.1",
     "drupal/responsive_image_preload": "1.0.x-dev#4037f4133f8bf03b8efcbc3b698209a1b1ab7406",
     "drupal/cloudflare": "1.0-beta2",
