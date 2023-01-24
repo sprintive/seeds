@@ -4,6 +4,9 @@
  * @file
  */
 
+use Drupal\Core\Session\AccountInterface;
+use Drupal\user\UserInterface;
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Entity\EntityForm;
@@ -97,9 +100,11 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
           $description_element['#states'] = [];
           unset($description_element['#title_display']);
           unset($form["name"]["description_enable"]);
-        } else if ($entity->getEntityTypeId() == 'webform' && isset($form['general_settings']['description'])) {
+        }
+        elseif ($entity->getEntityTypeId() == 'webform' && isset($form['general_settings']['description'])) {
           $description_element = &$form['general_settings']['description'];
-        } else {
+        }
+        else {
           $description_element = &$form['description'] ?? NULL;
         }
 
@@ -111,13 +116,15 @@ function seeds_pollination_form_alter(array &$form, FormStateInterface $form_sta
           $old_description = $description_element['#description'] ?? NULL;
           if ($old_description) {
             $description_element['#description'] .= ' ' . $description;
-          } else {
+          }
+          else {
             $description_element['#description'] = $description;
           }
-        } else {
+        }
+        else {
           $is_form_display = $entity->getEntityTypeId() == 'entity_form_display';
           $seeds_description = $entity->getThirdPartySetting('seeds_pollination', 'description');
-          if ($is_form_display && !$seeds_description && $entity instanceof \Drupal\Core\Entity\Entity\EntityFormDisplay && $entity->get('mode') == 'default') {
+          if ($is_form_display && !$seeds_description && $entity instanceof EntityFormDisplay && $entity->get('mode') == 'default') {
             $seeds_description = 'The default form display for ' . $entity->getTargetEntityTypeId();
           }
 
@@ -276,10 +283,12 @@ function seeds_pollination_rebuild() {
           seeds_pollination_add_translation($source, $translation, $langcode);
         }
       }
-    } else {
+    }
+    else {
       echo "Failed to read the translation.yml file!";
     }
-  } else {
+  }
+  else {
     echo (sprintf('"translations.yml" was not found. Consider adding "translations.yml" on your Drupal root "%s"', $translation_path));
   }
 }
@@ -329,7 +338,7 @@ function seeds_pollination_entity_type_alter(array &$entity_types) {
 /**
  * Implements hook_ENTITY_TYPE_access().
  */
-function seeds_pollination_user_access(\Drupal\user\UserInterface $entity, $operation, \Drupal\Core\Session\AccountInterface $account) {
+function seeds_pollination_user_access(UserInterface $entity, $operation, AccountInterface $account) {
   if ($entity->id() === '1') {
     if ($operation === 'update') {
       $disable_user_edit = \Drupal::config('seeds_pollination.settings')->get('disable_user_1_edit') ?? NULL;
@@ -342,7 +351,7 @@ function seeds_pollination_user_access(\Drupal\user\UserInterface $entity, $oper
   return AccessResult::neutral();
 }
 
-/*
+/**
  * Implements hook_file_validate().
  */
 function seeds_pollination_file_validate(FileInterface $file) {
@@ -356,5 +365,16 @@ function seeds_pollination_file_validate(FileInterface $file) {
     $basename = $name . '.' . $extension;
     $dirname = \Drupal::service('file_system')->dirname($file->destination);
     $file->destination = \Drupal::service('file_system')->createFilename($basename, $dirname);
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function seeds_pollination_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  // Check if media_library widget.
+  if ($context['widget']->getPluginId() == 'media_library_widget') {
+    // Add a custom css.
+    $element['#attached']['library'][] = 'seeds_pollination/media_library';
   }
 }

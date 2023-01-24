@@ -8,3 +8,7 @@ permissions_sections:
       assets/css/permissions-sections.css: {}
   js:
     assets/js/permissions-sections.js: {}
+media_library:
+  css:
+    component:
+      assets/css/media-library.css: {}
