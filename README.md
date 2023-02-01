@@ -143,7 +143,7 @@ We also provide a neat feature, you can set some default medias to not allow acc
 
 ~~Webform~~
 Linkit
-Seeds Layouts
+~~Seeds Layouts~~
 ~~Focal point~~
 ~~Allowed formats~~
 ~~Photoswipe~~
