@@ -63,7 +63,7 @@
     "drupal/google_analytics": "4.0.2",
     "drupal/yoast_seo": "1.8",
     "drupal/schema_metatag": "2.4",
-    "drupal/ms_clarity": "1.0.1",
+    "drupal/ms_clarity": "2.0.0-beta1",
     "drupal/length_indicator": "1.2",
     "drupal/imageapi_optimize": "4.0.1",
     "drupal/imageapi_optimize_resmushit": "2.0-beta2",
