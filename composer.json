@@ -38,7 +38,7 @@
     "drupal/shariff": "1.x-dev#4289b92e6cff9ae6f0c8ab23a1cdde0786032b6d",
     "drupal/entityqueue": "1.6",
     "drupal/admin_toolbar": "3.3.0",
-    "drupal/seeds_toolbar": "1.21",
+    "drupal/seeds_toolbar": "2.0.0-beta2",
     "drupal/media_embeddable": "1.1.0",
     "drupal/rabbit_hole": "1.0-beta11",
     "drupal/menu_admin_per_menu": "1.5",
