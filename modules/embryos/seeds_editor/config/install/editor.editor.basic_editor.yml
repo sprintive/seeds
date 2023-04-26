@@ -4,86 +4,225 @@ dependencies:
   config:
     - filter.format.basic_editor
   module:
-    - ckeditor
+    - ckeditor5
 format: basic_editor
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: 'Text Options'
-          items:
-            - Format
-            - Styles
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Underline
-            - Strike
-            - '-'
-            - Superscript
-            - Subscript
-            - '-'
-        -
-          name: Align
-          items:
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - JustifyBlock
-            - BidiLtr
-            - BidiRtl
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-            - Indent
-            - Outdent
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Media
-          items:
-            - DrupalMediaLibrary
-            - Iframe
-        -
-          name: Table
-          items:
-            - Table
-            - Blockquote
-        -
-          name: 'Clear Format'
-          items:
-            - RemoveFormat
-        -
-          name: Opearions
-          items:
-            - Undo
-            - Redo
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
-        -
-          name: 'Full Screen'
-          items:
-            - Maximize
+    items:
+      - heading
+      - style
+      - '|'
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - superscript
+      - subscript
+      - '|'
+      - alignment
+      - direction
+      - '|'
+      - bulletedList
+      - numberedList
+      - indent
+      - outdent
+      - '|'
+      - link
+      - '|'
+      - drupalMedia
+      - '|'
+      - insertTable
+      - blockQuote
+      - '|'
+      - removeFormat
+      - '|'
+      - undo
+      - redo
+      - '|'
+      - sourceEditing
+      - '|'
+      - code
   plugins:
-    stylescombo:
-      styles: "a.btn.btn-outline-primary|Primary Link\r\na.btn.btn-outline-secondary|Secondary Link\r\na.btn.btn-outline-success|Success Link\r\na.btn.btn-outline-warning|Warning Link\r\na.btn.btn-outline-light|Light Link\r\na.btn.btn-outline-info|Info Link\r\na.btn.btn-outline-danger|Danger Link\r\na.btn.btn-outline-dark|Dark Link\r\na.btn.btn-primary|Primary Button\r\na.btn.btn-secondary|Secondary Button\r\na.btn.btn-success|Success Button\r\na.btn.btn-warning|Warning Button\r\na.btn.btn-light|Light Button\r\na.btn.btn-info|Info Button\r\na.btn.btn-danger|Danger Button\r\na.btn.btn-dark|Dark Button\r\np.alert.alert-primary|Primary Paragraph\r\np.alert.alert-secondary|Secondary Paragraph\r\np.alert.alert-info|Info Paragraph\r\np.alert.alert-warning|Warning Paragraph\r\np.alert.alert-danger|Danger Paragraph\r\np.alert.alert-dark|Dark Paragraph\r\np.alert.alert-light|Light Paragraph\r\np.jumbotron|Jumbotron Paragraph\r\ntable.table|Base Table\r\ntable.table.table-dark|Dark Table\r\ntable.table.thead-light|Light Header Table\r\ntable.table.thead-dark|Dark Header Table\r\ntable.table.table-striped|Striped Rows\r\ntable.table.table-bordered|Bordered Table\r\ntable.table.table-hover|Hoverable Rows\r\ntable.table.table-sm|Small Table\r\ntable.table.table-responsive|Responsive Table\r\ntr.table-primary|Primary Row\r\ntr.table-secondary|Secondary Row\r\ntr.table-success|Success Row\r\ntr.table-warning|Warning Row\r\ntr.table-light|Light Row\r\ntr.table-info|Info Row\r\ntr.table-danger|Danger Row\r\ntr.table-dark|Dark Row"
-    language:
-      language_list: un
-    drupallink:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<img src alt data-entity-type data-entity-uuid data-align data-caption>'
+        - '<drupal-entity alt title data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button>'
+        - '<ace theme height font-size print-margin>'
+        - '<drupal-url data-*>'
+        - '<iframe longdesc name scrolling src title align height frameborder width>'
+        - '<a hreflang target>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<p class>'
+        - '<table class>'
+        - '<th class>'
+        - '<tr class>'
+        - '<drupal-media title>'
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Primary Link'
+          element: '<a class="btn btn-outline-primary">'
+        -
+          label: 'Secondary Link'
+          element: '<a class="btn btn-outline-secondary">'
+        -
+          label: 'Success Link'
+          element: '<a class="btn btn-outline-success">'
+        -
+          label: 'Warning Link'
+          element: '<a class="btn btn-outline-warning">'
+        -
+          label: 'Light Link'
+          element: '<a class="btn btn-outline-light">'
+        -
+          label: 'Info Link'
+          element: '<a class="btn btn-outline-info">'
+        -
+          label: 'Danger Link'
+          element: '<a class="btn btn-outline-danger">'
+        -
+          label: 'Dark Link'
+          element: '<a class="btn btn-outline-dark">'
+        -
+          label: 'Primary Button'
+          element: '<a class="btn btn-primary">'
+        -
+          label: 'Secondary Button'
+          element: '<a class="btn btn-secondary">'
+        -
+          label: 'Success Button'
+          element: '<a class="btn btn-success">'
+        -
+          label: 'Warning Button'
+          element: '<a class="btn btn-warning">'
+        -
+          label: 'Light Button'
+          element: '<a class="btn btn-light">'
+        -
+          label: 'Info Button'
+          element: '<a class="btn btn-info">'
+        -
+          label: 'Danger Button'
+          element: '<a class="btn btn-danger">'
+        -
+          label: 'Dark Button'
+          element: '<a class="btn btn-dark">'
+        -
+          label: 'Primary Paragraph'
+          element: '<p class="alert alert-primary">'
+        -
+          label: 'Secondary Paragraph'
+          element: '<p class="alert alert-secondary">'
+        -
+          label: 'Info Paragraph'
+          element: '<p class="alert alert-info">'
+        -
+          label: 'Warning Paragraph'
+          element: '<p class="alert alert-warning">'
+        -
+          label: 'Danger Paragraph'
+          element: '<p class="alert alert-danger">'
+        -
+          label: 'Dark Paragraph'
+          element: '<p class="alert alert-dark">'
+        -
+          label: 'Light Paragraph'
+          element: '<p class="alert alert-light">'
+        -
+          label: 'Jumbotron Paragraph'
+          element: '<p class="jumbotron">'
+        -
+          label: 'Base Table'
+          element: '<table class="table">'
+        -
+          label: 'Dark Table'
+          element: '<table class="table table-dark">'
+        -
+          label: 'Light Header Table'
+          element: '<table class="table thead-light">'
+        -
+          label: 'Dark Header Table'
+          element: '<table class="table thead-dark">'
+        -
+          label: 'Striped Rows'
+          element: '<table class="table table-striped">'
+        -
+          label: 'Bordered Table'
+          element: '<table class="table table-bordered">'
+        -
+          label: 'Hoverable Rows'
+          element: '<table class="table table-hover">'
+        -
+          label: 'Small Table'
+          element: '<table class="table table-sm">'
+        -
+          label: 'Responsive Table'
+          element: '<table class="table table-responsive">'
+        -
+          label: 'Primary Row'
+          element: '<tr class="table-primary">'
+        -
+          label: 'Secondary Row'
+          element: '<tr class="table-secondary">'
+        -
+          label: 'Success Row'
+          element: '<tr class="table-success">'
+        -
+          label: 'Warning Row'
+          element: '<tr class="table-warning">'
+        -
+          label: 'Light Row'
+          element: '<tr class="table-light">'
+        -
+          label: 'Info Row'
+          element: '<tr class="table-info">'
+        -
+          label: 'Danger Row'
+          element: '<tr class="table-danger">'
+        -
+          label: 'Dark Row'
+          element: '<tr class="table-dark">'
+    ckeditor_bidi_ckeditor5:
+      rtl_default: false
+    editor_advanced_link_link:
+      enabled_attributes:
+        - class
+        - id
+        - target
+        - title
+    linkit_extension:
       linkit_enabled: true
       linkit_profile: default
+    media_media:
+      allow_view_mode_override: true
 image_upload:
   status: true
   scheme: public
