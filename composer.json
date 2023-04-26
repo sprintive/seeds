@@ -57,7 +57,7 @@
     "drupal/ckeditor_bidi": "4.0.0",
     "drupal/ckeditor_iframe": "dev-3286496-automated-drupal-10",
     "drupal/fakeobjects": "1.2",
-    "drupal/fast_404": "dev-3287465-automated-drupal-10",
+    "drupal/fast_404": "dev-seeds",
     "drupal/metatag": "1.22",
     "drupal/pathauto": "1.11",
     "drupal/simple_sitemap": "3.11 || 4.1.3",
@@ -145,8 +145,7 @@
     },
     "patches": {
       "drupal/core": {
-        "Issue #2771361: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2021-05-12/2771361-42.patch",
-        "Issue #2985168: Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2022-12-15/2985168-132-media-widget-edit-button.patch"
+        "Issue #2986041: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2022-11-07/2986041-25.patch"
       },
       "drupal/focal_point": {
         "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
@@ -164,17 +163,11 @@
         "Issue #3204023: Style issues on mobile": "https://www.drupal.org/files/issues/2021-03-17/style_issues_on_mobile-3204023-3.patch",
         "Issue #3125252: I can't translate SEO Content analysis": "https://www.drupal.org/files/issues/2021-03-17/i_cant_translate_seo_content_analysis-3125252-4.patch"
       },
-      "drupal/fast_404": {
-        "Issue #2370323: Translatable html error page": "https://www.drupal.org/files/issues/2021-05-18/2370323-12.patch"
-      },
       "drupal/simple_sitemap": {
-        "Issue #2987748: Add Media images to sitemap": "https://www.drupal.org/files/issues/2021-04-12/simple_sitemap_support_media_and_image_styles-45.patch"
+        "Issue #2987748: Add Media images to sitemap": "https://www.drupal.org/files/issues/2022-06-22/simple_sitemap_support_media_and_image_styles-2987748-60.patch"
       },
       "drupal/webp": {
         "Issue #3256454: Error \"Could not generate image resource from URI\" on non-image formats": "https://www.drupal.org/files/issues/2022-02-15/check_private_file_image_is_valid_3256454_02.patch"
-      },
-      "drupal/advagg": {
-        "Issue #3252394: JShrink incompatible with PHP 8": "https://www.drupal.org/files/issues/2021-12-03/advagg-jshrink-update.3252394-1.patch"
       }
     }
   },
