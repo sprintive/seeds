@@ -85,7 +85,9 @@
     "drupal/seckit": "2.0.1",
     "drupal/remove_http_headers": "2.0.0",
     "drupal/seeds_coat": "1.x-dev || 3.0.0-beta1",
-    "drupal/root": "2.x-dev"
+    "drupal/root": "2.x-dev",
+    "drupal/responsive_image_preload": "2.0.0",
+    "drupal/media_library_edit": " 3.0.2"
   },
   "repositories": [
     {
