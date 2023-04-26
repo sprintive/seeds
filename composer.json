@@ -9,7 +9,6 @@
     "php": ">=7.3",
     "drush/drush": "*",
     "drupal/coder": "*",
-    "drupal/console": "^1.9",
     "composer/composer": "^2",
     "cweagans/composer-patches": "1.7.3",
     "drupal/core-composer-scaffold": "^10.0",
