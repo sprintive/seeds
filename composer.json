@@ -7,6 +7,10 @@
   "prefer-stable": true,
   "require": {
     "php": ">=7.3",
+    "drush/drush": "*",
+    "drupal/coder": "*",
+    "drupal/console": "^1.9",
+    "symfony/css-selector": "~4",
     "composer/composer": "^2",
     "cweagans/composer-patches": "1.7.3",
     "drupal/core-composer-scaffold": "^10.0",
@@ -84,12 +88,6 @@
     "drupal/remove_http_headers": "2.0.0",
     "drupal/seeds_coat": "1.x-dev || 3.0.0-beta1",
     "drupal/root": "2.x-dev"
-  },
-  "require-dev": {
-    "drush/drush": "*",
-    "drupal/coder": "*",
-    "drupal/console": "^1.9",
-    "symfony/css-selector": "~4"
   },
   "repositories": [
     {
