@@ -1,6 +1,0 @@
-seeds_editor.settings:
-  title: 'Seeds Editor'
-  route_name: seeds_editor.config
-  description: 'Additional settings for the ckeditor'
-  parent: system.admin_config_content
-  weight: 99

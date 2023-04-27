@@ -1,5 +1,0 @@
-seeds_pollination.settings:
-  title: 'Seeds Pollination'
-  description: 'Manage Seeds Pollination settings.'
-  route_name: seeds_pollination.settings
-  parent: system.admin_config_ui

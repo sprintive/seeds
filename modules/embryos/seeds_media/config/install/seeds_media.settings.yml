@@ -1,8 +1,0 @@
-embed:
-  allowed_image_styles:
-    ckeditor_large: ckeditor_large
-    ckeditor_medium: ckeditor_medium
-    ckeditor_small: ckeditor_small
-override_blazy_loader: 1
-blazy_loader: /profiles/contrib/seeds/themes/custom/seeds_coat/login-logo.svg
-blazy_background: '#333333'

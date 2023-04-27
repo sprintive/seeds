@@ -1,8 +1,0 @@
-choose embed display:
-  title: 'Choose Embed Display'
-  description: 'If the user can choose the display plugin'
-administer seeds media:
-  title: 'Administer Seeds Media'
-  restrict access: true
-bypass default media access:
-  title: 'Bypass default media access'

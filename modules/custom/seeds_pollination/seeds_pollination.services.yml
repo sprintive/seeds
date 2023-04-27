@@ -1,6 +1,0 @@
-services:
-  seeds_pollination.route_subscriber:
-    class: Drupal\seeds_pollination\Routing\RouteSubscriber
-    arguments: ["@config.factory"]
-    tags:
-      - { name: event_subscriber }
