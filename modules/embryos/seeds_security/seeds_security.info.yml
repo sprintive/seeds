@@ -1,13 +1,13 @@
-name: 'Seeds Security & Performance'
+name: "Seeds Security & Performance"
 description: Starter Module to enable all security modules
 type: module
-version: '9.0.1'
-core_version_requirement: '^9 || ^10'
+core_version_requirement: "^9 || ^10"
 dependencies:
-  - username_enumeration_prevention
-  - captcha
-  - recaptcha
-  - password_policy
-  - imageapi_optimize
-  - imageapi_optimize_resmushit
-package: 'Seeds'
+  - username_enumeration_prevention:username_enumeration_prevention
+  - captcha:captcha
+  - recaptcha:recaptcha
+  - password_policy:password_policy
+  - imageapi_optimize:imageapi_optimize
+  - imageapi_optimize_resmushit:imageapi_optimize_resmushit
+  - webform_spam_words:webform_spam_words
+package: "Seeds"
