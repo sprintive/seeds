@@ -155,9 +155,6 @@
       "drupal/core": "-p2"
     },
     "patches": {
-      "drupal/core": {
-        "Issue #2986041: Fix multiple ajax calls problem, which causes the browser to be in an infinite loop thus causing a crash.": "https://www.drupal.org/files/issues/2022-11-07/2986041-25.patch"
-      },
       "drupal/focal_point": {
         "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
       },
