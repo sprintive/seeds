@@ -95,7 +95,7 @@
     "drupal/responsive_image_preload": "2.0.0",
     "drupal/media_library_edit": " 3.0.2",
     "drupal/fpa": "4.0.0",
-    "drupal/rdf": "2.0.2",
+    "drupal/rdf": "2.1.1",
     "drupal/seven": "1.0.0-alpha1"
   },
   "repositories": [
