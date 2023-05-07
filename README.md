@@ -1,7 +1,7 @@
 ### Seeds: Kickoff distribution for SMEs
 [![Latest Stable Version](https://poser.pugx.org/sprintive/seeds/v/stable)](https://packagist.org/packages/sprintive/seeds) [![Total Downloads](https://poser.pugx.org/sprintive/seeds/downloads)](https://packagist.org/packages/sprintive/seeds) [![Latest Unstable Version](https://poser.pugx.org/sprintive/seeds/v/unstable)](https://packagist.org/packages/sprintive/seeds) [![License](https://poser.pugx.org/sprintive/seeds/license)](https://packagist.org/packages/sprintive/seeds) [![composer.lock](https://poser.pugx.org/sprintive/seeds/composerlock)](https://packagist.org/packages/sprintive/seeds)
 
-[![Seeds](https://www.drupal.org/files/styles/grid-3-2x/public/project-images/screenshot_375.png?itok=fCIrtWGf)](https://www.drupal.org/project/seeds)
+[![Seeds](https://www.drupal.org/files/project-images/Seeds-Logo.png)](https://www.drupal.org/project/seeds)
 
 Light distribution to kick off all projects regardless scale, you can use it to speed up your projects.
 

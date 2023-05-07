@@ -49,12 +49,8 @@ dependencies:
   - ds:ds
   - field_group:field_group
   - fpa:fpa
-
-  # Embryos
   - seeds_media:seeds_media
   - seeds_editor:seeds_editor
-
-  # Custom modules
   - seeds_pollination:seeds_pollination
   - seeds_development:seeds_development
 
