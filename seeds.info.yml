@@ -1,7 +1,7 @@
 name: Seeds
 type: profile
 description: "Kickoff distribution for SMEs, Curated by Sprintive."
-version: '12.0.x-dev'
+version: '12.0.0-beta12'
 project: seeds
 core_version_requirement: '^9 || ^10'
 distribution:
@@ -31,7 +31,6 @@ dependencies:
   - drupal:toolbar
   - drupal:field_ui
   - drupal:file
-  - drupal:rdf
   - drupal:views
   - drupal:automated_cron
   - drupal:help

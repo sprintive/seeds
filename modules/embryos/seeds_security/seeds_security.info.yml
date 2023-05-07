@@ -6,8 +6,5 @@ dependencies:
   - username_enumeration_prevention:username_enumeration_prevention
   - captcha:captcha
   - recaptcha:recaptcha
-  - password_policy:password_policy
-  - imageapi_optimize:imageapi_optimize
-  - imageapi_optimize_resmushit:imageapi_optimize_resmushit
   - webform_spam_words:webform_spam_words
 package: "Seeds"
