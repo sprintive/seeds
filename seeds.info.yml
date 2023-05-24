@@ -30,7 +30,6 @@ dependencies:
   - drupal:toolbar
   - drupal:field_ui
   - drupal:file
-  - drupal:rdf
   - drupal:views
   - drupal:automated_cron
   - drupal:help
