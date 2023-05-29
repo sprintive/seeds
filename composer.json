@@ -85,7 +85,8 @@
     "drupal/remove_http_headers": "1.0",
     "drupal/bootstrap_barrio": "4.33 || 5.5.10",
     "drupal/seeds_coat": "^1.10 || 2.0.0-beta2 || ^3.0",
-    "drupal/root": "2.0.0-alpha4"
+    "drupal/root": "2.0.0-alpha4",
+    "drupal/activities:^1.0@beta"
   },
   "require-dev": {
     "drush/drush": "*",

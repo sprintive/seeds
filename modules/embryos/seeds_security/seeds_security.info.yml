@@ -10,4 +10,5 @@ dependencies:
   - password_policy
   - imageapi_optimize
   - imageapi_optimize_resmushit
+  - activities
 package: 'Seeds'
