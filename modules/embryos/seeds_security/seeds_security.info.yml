@@ -7,4 +7,5 @@ dependencies:
   - captcha:captcha
   - recaptcha:recaptcha
   - webform_spam_words:webform_spam_words
+  - activities:activities
 package: "Seeds"
