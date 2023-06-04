@@ -52,6 +52,7 @@ dependencies:
   - seeds_editor:seeds_editor
   - seeds_pollination:seeds_pollination
   - seeds_development:seeds_development
+  - seeds_security:seeds_security
 
 themes:
   - root
