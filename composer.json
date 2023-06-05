@@ -61,17 +61,6 @@
     "drupal/editor_advanced_link": "2.1.1",
     "drupal/ace_editor": "2.0.0-alpha1",
     "drupal/fakeobjects": "1.2",
-    "drupal/fast_404": "dev-seeds",
-    "drupal/metatag": "1.23",
-    "drupal/pathauto": "1.11",
-    "drupal/simple_sitemap": "3.11 || 4.1.4",
-    "drupal/link_attributes": "1.13",
-    "drupal/redirect": "1.8",
-    "drupal/google_analytics": "4.0.2",
-    "drupal/yoast_seo": "1.8",
-    "drupal/schema_metatag": "2.4",
-    "drupal/ms_clarity": "2.0.0-beta1",
-    "drupal/length_indicator": "1.2",
     "drupal/webp": "^1.0@beta",
     "drupal/advagg": "6.0.0-alpha1",
     "drupal/minifyhtml": "2.0.2",
@@ -93,13 +82,8 @@
       "type": "composer",
       "url": "https://packages.drupal.org/8",
       "exclude": [
-        "drupal/fast_404",
         "drupal/ckeditor_iframe"
       ]
-    },
-    {
-      "type": "git",
-      "url": "https://git.drupalcode.org/issue/fast_404-3287465.git"
     },
     {
       "type": "git",
@@ -111,7 +95,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-8.x-7.x": "8.7.x-dev"
+      "12.0.x-dev": "12.0.x-dev"
     },
     "installer-paths": {
       "public_html/core": [
@@ -159,13 +143,6 @@
       },
       "drupal/paragraphs": {
         "Issue #2901390: Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2019-08-10/paragraphs-set_langcode_widgets-290139_updated.patch"
-      },
-      "drupal/yoast_seo": {
-        "Issue #3204023: Style issues on mobile": "https://www.drupal.org/files/issues/2021-03-17/style_issues_on_mobile-3204023-3.patch",
-        "Issue #3125252: I can't translate SEO Content analysis": "https://www.drupal.org/files/issues/2021-03-17/i_cant_translate_seo_content_analysis-3125252-4.patch"
-      },
-      "drupal/simple_sitemap": {
-        "Issue #2987748: Add Media images to sitemap": "https://www.drupal.org/files/issues/2022-06-22/simple_sitemap_support_media_and_image_styles-2987748-60.patch"
       },
       "drupal/webp": {
         "Issue #3256454: Error \"Could not generate image resource from URI\" on non-image formats": "https://www.drupal.org/files/issues/2022-02-15/check_private_file_image_is_valid_3256454_02.patch"
