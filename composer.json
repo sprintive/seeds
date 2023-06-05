@@ -18,7 +18,7 @@
     "drupal/seeds_pollination": "^1.0.0",
     "drupal/seeds_development": "^1.0.0",
     "drupal/seeds_security": "^1.0.0",
-    "drupal/seeds_seo": "^1.0.0",
+    "drupal/seeds_seo": "^1.0.1",
     "drupal/entity": "1.4",
     "drupal/entity_reference_revisions": "1.10",
     "drupal/ctools": "3.13",
