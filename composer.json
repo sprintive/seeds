@@ -72,14 +72,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "https://packages.drupal.org/8",
-      "exclude": [
-        "drupal/ckeditor_iframe"
-      ]
-    },
-    {
-      "type": "git",
-      "url": "https://git.drupalcode.org/issue/ckeditor_iframe-3286496.git"
+      "url": "https://packages.drupal.org/8"
     }
   ],
   "conflict": {
