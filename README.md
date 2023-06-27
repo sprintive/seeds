@@ -138,32 +138,3 @@ Go to `/admin/structure/types`, Click edit on a content type. You will be met wi
 Go to `/admin/config/seeds_media`. You will see blazy settings.  Check the `Override blazy loader?` then set the background image and color to something you like, hit save and flush the cache, you should see the loader takes a different appearence.
 ## Set default medias
 We also provide a neat feature, you can set some default medias to not allow accidental edits by the client. Simply, go edit any media, you will see at the bottom a checkbox, `Default media`, check it and save, now only users with `Bypass Default Media Access` permission can edit the media.
-
-## Drupal 10 modules:
-
-~~Webform~~
-Linkit
-~~Seeds Layouts~~
-~~Focal point~~
-~~Allowed formats~~
-~~Photoswipe~~
-Button Formatter
-~~Shariff~~ (Dev version)
-~~Entity queue~~
-Media Embeddable
-~~Block content permissions~~
-~~Responsive preview~~
-~~Entity embed~~ (Dev version)
-~~Ace editor~~
-Ckeditor Iframe
-~~FakeObjects~~
-MS Clarity
-~~Advagg~~ (Major version)
-Cloudflare
-~~Password policy~~
-~~Login Security~~
-~~Session Limit~~
-~~Remove http headers~~
-~~Taxonomy access fix~~ (From 3.x-dev to 4 beta )
-~~CKEditor BIDI~~
-Fast 404
