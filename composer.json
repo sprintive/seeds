@@ -37,8 +37,8 @@
     "drupal/smart_trim": "2.0.0",
     "drupal/paragraphs": "1.15",
     "drupal/paragraphs_admin": "1.4",
-    "drupal/slick": "2.7",
-    "drupal/slick_views": "2.6",
+    "drupal/slick": "2.9",
+    "drupal/slick_views": "2.7",
     "drupal/slick_paragraphs": "2.2",
     "drupal/photoswipe": "3.2.8",
     "drupal/button_formatter": "1.5",
@@ -67,12 +67,7 @@
     "drupal/entity_embed": "1.x-dev#f41e8a4662dfa9dfc1e7c7bd20a7173f9a231352",
     "drupal/editor_advanced_link": "2.1.1",
     "drupal/media_embeddable": "1.1.0",
-    "drupal/ace_editor": "2.0.0-alpha1",
-    "drupal/fakeobjects": "1.2",
-    "drupal/rdf": "2.1.1",
-    "drupal/seven": "1.0.0-alpha1",
-    "drupal/ckeditor_bidi": "4.0.0",
-    "drupal/ckeditor_iframe": "dev-3286496-automated-drupal-10"
+    "drupal/ace_editor": "2.0.0-alpha1"
   },
   "repositories": [
     {
