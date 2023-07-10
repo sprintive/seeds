@@ -44,7 +44,7 @@
     "drupal/button_formatter": "1.5",
     "drupal/layout_builder_restrictions": "2.18",
     "drupal/layout_builder_modal": "1.2",
-    "drupal/shariff": "1.x-dev#4289b92e6cff9ae6f0c8ab23a1cdde0786032b6d",
+    "drupal/shariff": "1.x-dev@dev",
     "drupal/entityqueue": "1.6",
     "drupal/admin_toolbar": "3.4.1",
     "drupal/rabbit_hole": "1.0-beta11",
