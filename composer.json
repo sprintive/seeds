@@ -129,6 +129,9 @@
       },
       "drupal/webp": {
         "Issue #3256454: Error \"Could not generate image resource from URI\" on non-image formats": "https://www.drupal.org/files/issues/2022-02-15/check_private_file_image_is_valid_3256454_02.patch"
+      },
+      "drupal/ultimate_cron": {
+        "Issue #3351276: ultimate_cron-fix-deprecation-warning": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
       }
     }
   },
