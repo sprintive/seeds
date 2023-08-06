@@ -134,6 +134,9 @@
       },
       "drupal/entityqueue": {
         "Issue #3370066: entityqueue php8.2 compatibility": "https://www.drupal.org/files/issues/2023-06-26/entityqueue-php82_compatibility-3370066-2.patch"
+      },
+      "drupal/slick": {
+        "Issue #3343829: slick-fix-deprecation-warning": "https://www.drupal.org/files/issues/2023-02-23/3343829-2.patch"
       }
     }
   },
