@@ -137,6 +137,9 @@
       },
       "drupal/slick": {
         "Issue #3343829: slick-fix-deprecation-warning": "https://www.drupal.org/files/issues/2023-02-23/3343829-2.patch"
+      },
+      "drupal/ds": {
+        "Issues #3373675: deprecated-function-creation": "https://www.drupal.org/files/issues/2023-07-10/deprecated_function-3373675-2_0.patch"
       }
     }
   },
