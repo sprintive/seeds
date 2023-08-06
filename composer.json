@@ -115,7 +115,8 @@
     },
     "patches": {
       "drupal/focal_point": {
-        "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
+        "Issue #3094478: Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch",
+        "Issue #3371179: Overlay blocking image upload modal": "https://www.drupal.org/files/issues/2023-07-10/focal-point-ajax-issue-9.patch"
       },
       "drupal/block_content_permissions": {
         "Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission": "https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch"
