@@ -126,9 +126,6 @@
       "drupal/ultimate_cron": {
         "Issue #3351276: ultimate_cron-fix-deprecation-warning": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
       },
-      "drupal/entityqueue": {
-        "Issue #3370066: entityqueue php8.2 compatibility": "https://www.drupal.org/files/issues/2023-06-26/entityqueue-php82_compatibility-3370066-2.patch"
-      },
       "drupal/ds": {
         "Issues #3373675: deprecated-function-creation": "https://www.drupal.org/files/issues/2023-07-10/deprecated_function-3373675-2_0.patch"
       }
