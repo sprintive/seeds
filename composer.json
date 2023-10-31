@@ -64,7 +64,7 @@
     "drupal/fpa": "4.0.0",
     "drupal/allowed_formats": "2.0.0",
     "drupal/embed": "1.6",
-    "drupal/entity_embed": "1.x-dev#f41e8a4662dfa9dfc1e7c7bd20a7173f9a231352",
+    "drupal/entity_embed": "1.4",
     "drupal/editor_advanced_link": "2.2.4",
     "drupal/media_embeddable": "1.1.0",
     "drupal/ace_editor": "2.0.0-beta2"
