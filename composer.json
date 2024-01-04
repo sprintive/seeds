@@ -114,6 +114,9 @@
       "drupal/core": "-p2"
     },
     "patches": {
+      "drupal/core": {
+        "Issue #3404866: Fix variables css in Claro": "https://www.drupal.org/files/issues/2024-01-04/missing_variables_in_claro-3404866-41.patch"
+      },
       "drupal/block_content_permissions": {
         "Issue #2920739: Allow accessing the Custom block library page without Administer blocks permission": "https://www.drupal.org/files/issues/2018-03-17/block_content_permissions-2920739-16.patch"
       },
