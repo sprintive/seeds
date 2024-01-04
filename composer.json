@@ -131,6 +131,9 @@
       },
       "drupal/ds": {
         "Issues #3373675: deprecated-function-creation": "https://www.drupal.org/files/issues/2023-07-10/deprecated_function-3373675-2_0.patch"
+      },
+      "drupal/advagg": {
+          "issues 3375725  Deprecated function: Creation of dynamic property": "https://www.drupal.org/files/issues/2023-07-28/3375725-5.patch"
       }
     }
   },
