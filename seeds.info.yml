@@ -1,7 +1,7 @@
 name: Seeds
 type: profile
 description: "Kickoff distribution for SMEs, Curated by Sprintive."
-version: "12.2.x-dev"
+version: "12.2.3"
 project: seeds
 core_version_requirement: "^9 || ^10"
 distribution:
@@ -42,7 +42,6 @@ dependencies:
   - admin_toolbar:admin_toolbar_tools
   - diff:diff
   - menu_admin_per_menu:menu_admin_per_menu
-  - taxonomy_access_fix:taxonomy_access_fix
   - seeds_toolbar:seeds_toolbar
   - masquerade:masquerade
   - ds:ds
