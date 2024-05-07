@@ -35,6 +35,7 @@
     "drupal/linkit": "^6.1.2",
     "drupal/crop": "^2.3",
     "drupal/focal_point": "^2.1",
+    "drupal/image_effects":"^3.6",
     "drupal/smart_trim": "^2.1",
     "drupal/paragraphs": "^1.17",
     "drupal/paragraphs_admin": "^1.5",
