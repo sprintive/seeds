@@ -89,10 +89,23 @@ function seeds_install() {
   }
 }
 
-
 /**
-* Enable fpa module.
-*/
+ * Enable fpa module.
+ */
 function seeds_update_9001() {
   \Drupal::service('module_installer')->install(['fpa']);
+}
+
+/**
+ * Enable check media usability.
+ */
+function seeds_update_9003() {
+  // Load the configuration factory service.
+  $config_factory = \Drupal::service('config.factory');
+
+  // Get the configuration object for seeds_media.settings.yml.
+  $config = $config_factory->getEditable('seeds_media.settings');
+
+  // Set the check_media_usability configuration to TRUE.
+  $config->set('check_media_usability', 1)->save();
 }
