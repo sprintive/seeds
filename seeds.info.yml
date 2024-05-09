@@ -35,6 +35,7 @@ dependencies:
   - drupal:automated_cron
   - drupal:help
   - drupal:fast404
+  - drupal:focal_point
   - responsive_preview:responsive_preview
   - views_bulk_operations:views_bulk_operations
   - views_bulk_edit:views_bulk_edit
