@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {}
+name: ckeditor_small
+label: "Small Embedded Image"
+effects: {}
