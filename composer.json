@@ -12,7 +12,7 @@
     "composer/composer": "^2",
     "cweagans/composer-patches": "1.7.3",
     "drupal/core-composer-scaffold": "^10.0",
-    "drupal/core": "10.3.1",
+    "drupal/core": "10.3.5",
     "drupal/seeds_editor": "^1.1",
     "drupal/seeds_media": "^1.0",
     "drupal/seeds_pollination": "^1.0",
@@ -23,7 +23,7 @@
     "drupal/seeds_layouts": "^2.0",
     "drupal/seeds_toolbar": "^2.0",
     "drupal/seeds_coat": "^1.11 || ^3.0",
-    "drupal/seeds_tailwind": "1.0.x-dev@dev",
+    "drupal/seeds_tailwind": "^1.0",
     "drupal/seeds_page": "^1.0",
     "drupal/seeds_administration": "^1.0"
   },
