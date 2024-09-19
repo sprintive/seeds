@@ -81,6 +81,9 @@
       "drupal/ace_editor": {
         "#ISSUE 2941227 Fix Missing install/schema-1": "https://www.drupal.org/files/issues/2022-01-26/ace_editor-2941227-8.patch",
         "#ISSUE 2941227 Fix Missing install/schema-2": "https://www.drupal.org/files/issues/2024-06-22/ace_editor-3455758-8--interdiff.patch"
+      },
+      "drupal/paragraphs": {
+        "issue #3090200 :Paragraph access check using incorrect revision of its parent": "https://www.drupal.org/files/issues/2022-10-26/3084934-13_combine_3090200-22.patch"
       }
     }
   },
