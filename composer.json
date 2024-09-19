@@ -78,9 +78,6 @@
       "drupal/advagg": {
         "issues 3375725  Deprecated function: Creation of dynamic property": "https://www.drupal.org/files/issues/2023-07-28/3375725-5.patch"
       },
-      "drupal/ckeditor_media_resize": {
-        "issue 3458385 Drupal core 10.3 breaks compatibility with CKEditor5 API": "https://www.drupal.org/files/issues/2024-07-06/ckeditor5_media_resize_update_ck5_plugin-15671444-4.patch"
-      },
       "drupal/ace_editor": {
         "#ISSUE 2941227 Fix Missing install/schema-1": "https://www.drupal.org/files/issues/2022-01-26/ace_editor-2941227-8.patch",
         "#ISSUE 2941227 Fix Missing install/schema-2": "https://www.drupal.org/files/issues/2024-06-22/ace_editor-3455758-8--interdiff.patch"
