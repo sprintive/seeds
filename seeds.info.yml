@@ -39,7 +39,6 @@ dependencies:
   - responsive_preview:responsive_preview
   - views_bulk_operations:views_bulk_operations
   - views_bulk_edit:views_bulk_edit
-  - admin_toolbar:admin_toolbar_links_access_filter
   - admin_toolbar:admin_toolbar_tools
   - diff:diff
   - menu_admin_per_menu:menu_admin_per_menu
