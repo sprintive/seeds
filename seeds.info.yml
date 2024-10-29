@@ -11,7 +11,6 @@ distribution:
 
 dependencies:
   - drupal:node
-  - drupal:history
   - drupal:block
   - drupal:ckeditor5
   - drupal:config
@@ -29,7 +28,6 @@ dependencies:
   - drupal:taxonomy
   - drupal:shortcut
   - drupal:toolbar
-  - drupal:field_ui
   - drupal:file
   - drupal:views
   - drupal:automated_cron
