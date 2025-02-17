@@ -53,5 +53,4 @@ dependencies:
 
 themes:
   - root
-  - bootstrap_barrio
-  - seeds_coat
+  - seeds_ui
