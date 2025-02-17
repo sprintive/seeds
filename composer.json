@@ -18,7 +18,7 @@
     "drupal/seeds_pollination": "^1.0",
     "drupal/seeds_development": "^1.0",
     "drupal/seeds_security": "^1.0",
-    "drupal/seeds_seo": "^1.0",
+    "drupal/seeds_seo": "^2.0",
     "drupal/seeds_performance": "^1.0",
     "drupal/seeds_layouts": "^2.0",
     "drupal/seeds_toolbar": "^2.0",
@@ -37,7 +37,7 @@
   },
   "extra": {
     "branch-alias": {
-      "12.0.x-dev": "12.0.x-dev"
+      "13.0.x-dev": "12.0.x-dev"
     },
     "installer-paths": {
       "public_html/core": [
