@@ -17,7 +17,7 @@
     "drupal/seeds_media": "^1.0",
     "drupal/seeds_pollination": "^1.0",
     "drupal/seeds_development": "^1.0",
-    "drupal/seeds_security": "^1.0",
+    "drupal/seeds_security": "^2.0",
     "drupal/seeds_seo": "^2.0",
     "drupal/seeds_performance": "^1.0",
     "drupal/seeds_layouts": "^2.0",
