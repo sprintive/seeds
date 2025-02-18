@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../seeds_seo"
+		},
+		{
+			"path": "../seeds_security"
+		},
+		{
+			"path": "../seeds_administration"
+		},
+		{
+			"path": "../seeds_editor"
+		},
+		{
+			"path": "../seeds-project"
+		},
+		{
+			"path": "../seeds_performance"
+		}
+	],
+	"settings": {}
+}
