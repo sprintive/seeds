@@ -22,7 +22,7 @@
     "drupal/seeds_performance": "^1.0",
     "drupal/seeds_layouts": "^2.0",
     "drupal/seeds_toolbar": "^2.0",
-    "drupal/seeds_ui": "1.0.x-dev",
+    "drupal/seeds_ui": "^1.0",
     "drupal/seeds_page": "^1.0",
     "drupal/seeds_administration": "^2.0"
   },
@@ -72,14 +72,8 @@
     },
     "patches": {
       "drupal/core": {
-        "issue #2999491 :Add reusable option to inline block creation": "https://git.drupalcode.org/project/drupal/-/merge_requests/4178.patch"
-      },
-      "drupal/advagg": {
-        "issues 3375725  Deprecated function: Creation of dynamic property": "https://www.drupal.org/files/issues/2023-07-28/3375725-5.patch"
-      },
-      "drupal/ace_editor": {
-        "#ISSUE 2941227 Fix Missing install/schema-1": "https://www.drupal.org/files/issues/2022-01-26/ace_editor-2941227-8.patch",
-        "#ISSUE 2941227 Fix Missing install/schema-2": "https://www.drupal.org/files/issues/2024-06-22/ace_editor-3455758-8--interdiff.patch"
+        "Issue #2999491 :Add reusable option to inline block creation": "https://git.drupalcode.org/project/drupal/-/merge_requests/4178.patch",
+        "Issue #3332416 CKEditor 5 toolbar items of multi-value field": "https://www.drupal.org/files/issues/2024-04-09/3332416-79.patch"
       }
     }
   },
