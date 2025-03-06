@@ -12,7 +12,7 @@
     "composer/composer": "^2",
     "cweagans/composer-patches": "1.7.3",
     "drupal/core-composer-scaffold": "^10.0",
-    "drupal/core": "11.1.2",
+    "drupal/core": "11.1.4",
     "drupal/seeds_editor": "^1.1",
     "drupal/seeds_media": "^1.0",
     "drupal/seeds_pollination": "^1.0",
@@ -76,7 +76,7 @@
         "Issue #3332416 CKEditor 5 toolbar items of multi-value field": "https://www.drupal.org/files/issues/2024-04-09/3332416-79.patch"
       },
       "drupal/ds": {
-        "Issue #3507312 :Fix array_unshift() Error in ds_theme_registry_alter() when running Field Group pre-process before ds_entity_view": "https://www.drupal.org/files/issues/2025-02-18/ds--2025-02-18--3507312--mr-43.patch"      
+        "Issue #3507312 :Fix array_unshift() Error in ds_theme_registry_alter() when running Field Group pre-process before ds_entity_view": "https://www.drupal.org/files/issues/2025-02-18/ds--2025-02-18--3507312--mr-43.patch"
       }
     }
   },
