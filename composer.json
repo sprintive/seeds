@@ -22,8 +22,6 @@
     "drupal/seeds_performance": "^1.0",
     "drupal/seeds_layouts": "^2.0",
     "drupal/seeds_toolbar": "^2.0",
-    "drupal/seeds_coat": "^1.11 || ^3.0",
-    "drupal/seeds_tailwind": "^1.0",
     "drupal/seeds_page": "^1.0",
     "drupal/seeds_administration": "^1.0"
   },
