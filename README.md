@@ -23,15 +23,7 @@ Seeds includes a curated set of modules organized into functional bundles to enh
 - **Seeds Layout**: Enhances the Layout Builder with extended features and flexibility.  
 - **Seeds Widgets**: Provides ready-made content blocks for a richer content authoring experience.  
 - **Seeds Pollination**: Enriches the Drupal core with extended user and editorial capabilities.
-
----
-
-
-#### Sponsored and developed by:
-
-[![Sprintive](https://www.drupal.org/files/styles/grid-3/public/drupal_4.png?itok=FXajfgGW)](http://sprintive.com)
-
-Sprintive is a web solution provider which transform ideas into realities, where humans are the center of everything, and Drupal is the heart of our actions, it has built and delivered Drupal projects focusing on a deep understanding of business goals and objective to help companies innovate and grow.
+- **Seeds UI**: Provides a modern, responsive, and customizable Drupal theme based on best practices. Seeds UI includes a flexible grid system, RFS-based typography, utility mixins, and a robust component library to accelerate front-end development and ensure a consistent user experience.
 
 # Seeds UI Developer Guide
 
@@ -285,3 +277,11 @@ Go to `/admin/structure/types`, Click edit on a content type. You will be met wi
 Go to `/admin/config/seeds_media`. You will see blazy settings.  Check the `Override blazy loader?` then set the background image and color to something you like, hit save and flush the cache, you should see the loader takes a different appearence.
 ## Set default medias
 We also provide a neat feature, you can set some default medias to not allow accidental edits by the client. Simply, go edit any media, you will see at the bottom a checkbox, `Default media`, check it and save, now only users with `Bypass Default Media Access` permission can edit the media.
+---
+
+
+#### Sponsored and developed by:
+
+[![Sprintive](https://www.drupal.org/files/styles/grid-3/public/drupal_4.png?itok=FXajfgGW)](http://sprintive.com)
+
+Sprintive is a web solution provider which transform ideas into realities, where humans are the center of everything, and Drupal is the heart of our actions, it has built and delivered Drupal projects focusing on a deep understanding of business goals and objective to help companies innovate and grow.
