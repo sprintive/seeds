@@ -33,124 +33,251 @@ Seeds includes a curated set of modules organized into functional bundles to enh
 
 Sprintive is a web solution provider which transform ideas into realities, where humans are the center of everything, and Drupal is the heart of our actions, it has built and delivered Drupal projects focusing on a deep understanding of business goals and objective to help companies innovate and grow.
 
-# Documentation
-- [Creating a subtheme](#markdown-header-creating-a-subtheme)
-- [Styling using sass](#markdown-header-styling-using-sass)
-- [Enabling RTL styling](#markdown-header-enabling-rtl-styling)
-- [Mixins you can use in sass](#markdown-header-mixins-you-can-use-in-sass)
-- [Sass placeholder classes that you can extend](#markdown-header-sass-placeholder-classes-that-you-can-extend)
-- [CKEditor RTL and LTR styling](#markdown-header-ckeditor-rtl-and-ltr-styling)
-- [Using responsive font sizes in sass](#markdown-header-using-responsive-font-sizes-in-sass)
-- [Disable bootstrap container in certian content types](#markdown-header-disable-bootstrap-container-in-certian-content-types)
-- [Override blazy loader](#markdown-header-override-blazy-loader)
-- [Set default medias](#markdown-header-set-default-medias)
+# Seeds UI Developer Guide
 
-## Creating a subtheme
-Creating a subtheme is simple, you have to have a git init in your project, then by running the `create_subtheme.sh`and following the instructions, you would have a ready-to-go theme in your hands. Run:
-```
-./public_html/profiles/contrib/seeds/themes/custom/seeds_coat/scripts/create_subtheme.sh
-```
-You will be asked to enter you theme machine name and label, after that, the theme is created and activated automatically.
+## Migration from Seeds Coat
 
-## Styling using sass
-After you created your subtheme, it will automatically run `npm install`inside the subtheme folder, all you have to do is running:
-```
-gulp watch OR npm start
-```
-Then begin styling. After you are done, make sure to run:
-```
-gulp build OR npm run build
-```
-To build and minify the css when deploying to production.
+**Important**: Seeds UI is replacing Seeds Coat in the Seeds distribution. 
 
-There are certian settings you can modify in the `theme.json`:
+- **Seeds UI** is now the default theme in Seeds distro
+- **Seeds Coat** has been removed from the distribution
+- **If you want to continue using Seeds Coat**, you must download it separately
+
+## External Library Integration
+
+Seeds UI automatically loads default styles from an external library:
+
 ```json
-{
-	"livereloadPort": 35729,
-	"rtlEnabled": false
+"dependencies": {
+  "seeds_ui": "git+ssh://git@github.com:sprintive/seeds_ui#1.x"
 }
 ```
 
-## Enabling RTL styling
-In you `THEMENAME.theme`, find the following lines:
+This external package provides:
+- **Default styling system** - Base styles and components
+- **Grid system** - Bootstrap-compatible layout system  
+- **Responsive mixins** - Breakpoint and utility mixins
+- **Typography system** - RFS responsive font sizing
+
+When you run `npm install`, this external library is automatically installed in `node_modules/seeds_ui/` and provides the foundation styles that your subtheme extends.
+
+## Creating a Subtheme
+
+### Quick Setup with Automated Script
+
+```bash
+cd /path/to/drupal/themes/contrib/seeds_ui
+bash scripts/create_subtheme.sh
 ```
-/* Comment out and change "THEMENAME" to enable rtl style */
-// $variables['page']['#attached']['library'][] = 'THEMENAME/rtl';
+
+**Follow prompts for**:
+- Machine name: `my_custom_theme`
+- Display name: `My Custom Theme` 
+- Destination: `/path/to/drupal/themes/custom`
+
+**Script handles**:
+- ✅ File copying and renaming
+- ✅ Configuration updates
+- ✅ npm install and build
+- ✅ Drush theme enable
+
+### Subtheme File Structure
+
+After creation, your subtheme will have:
+
 ```
-Comment this out to enable RTL styling.
-## Mixins you can use in sass
-### @include form($gutter: 15px, $min-width: 180px);
-This mixin defines general classes for forms:
-- .form-2col
-- .form-3col
-- .form-4col
+my_custom_theme/
+├── scss/
+│   ├── style.scss          # Main SASS entry
+│   ├── _base.scss          # Variables and mixins
+│   ├── _variables.scss     # Custom variables
+│   ├── _mixin.scss         # Available mixins
+│   ├── _elements.scss      # Element styling
+│   ├── _blocks.scss        # Block styling
+│   ├── _layout.scss        # Layout styling
+│   └── _overrides.scss     # Override base theme
+├── css/
+│   └── style.css           # Compiled CSS
+├── js/
+│   └── custom.js           # Custom JavaScript
+└── config/                 # Theme configurations
+```
 
-When you are creating a webform, you can create a container and then add one of the above to act as a row that contains form elements.
-By default, it is added for all webforms.
+---
 
-### @include form-inline($gutter: 5px, $break: 767px);
-Define an inline form with gutter and a maximum breakpoint.
+## Styling with SASS
 
-### @include responsive-image-blazy($lg, $md, $sm);
-Using it with the combination of `seeds_coat` responsive image styles, it can prove useful. This mixin is used when you want to use blazy with core responsive image styles
-to avoid content reflows using `padding-top` check the `_mixin.scss` file for additonal info.
+### SASS File Organization
 
-```sass
-.node--type-article {
-	@include responsive-image-blazy(
-		('w':1200,'h':900),
-		('w':900,'h':600),
-		('w':400,'h':400)
-	);
+Seeds UI imports default styles from the external library:
+
+```scss
+// Main SASS entry point imports external library
+@import "../node_modules/seeds_ui/scss/style.scss";
+```
+
+In your subtheme, organize SASS files as follows:
+
+```scss
+// scss/style.scss - Main entry point
+@use "base" as *;      // Variables and mixins
+@use "elements";       // HTML elements  
+@use "blocks";         // Drupal blocks
+@use "layout";         // Layout styling
+@use "overrides";      // Base theme overrides
+```
+
+### Variables Configuration
+
+Define custom variables in `scss/_variables.scss`:
+
+```scss
+// Color palette
+$primary-color: #4f4f4d;
+$secondary-color: #007bff;
+$white: #fff;
+$black: #000;
+
+// Typography
+$font-family-base: 'Helvetica Neue', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+// Spacing
+$spacer: 1rem;
+$border-radius: 0.375rem;
+
+// Breakpoints
+$grid-breakpoint-xs: 0;
+$grid-breakpoint-sm: 576px;
+$grid-breakpoint-md: 768px;
+$grid-breakpoint-lg: 992px;
+$grid-breakpoint-xl: 1200px;
+```
+
+### Build Commands
+
+```bash
+# Development with watching
+npm run watch
+
+# Production build
+npm run css
+
+# Individual steps
+npm run css-compile     # SASS → CSS
+npm run css-prefix      # Add vendor prefixes  
+npm run css-rtl         # Generate RTL versions
+npm run css-minify      # Minify for production
+```
+
+---
+
+## Enabling RTL Styling
+
+RTL (Right-to-Left) support is automatically handled by Seeds UI's build system.
+
+### Automatic RTL Generation
+
+When you run `npm run css`, the system:
+
+1. **Compiles your SASS** to standard CSS
+2. **Processes with RTLCss** to flip directional properties
+3. **Generates RTL versions** with `.rtl.css` suffix
+4. **Creates minified versions** for production
+
+### RTL Output Files
+
+```
+dist/css/
+├── style.css           # LTR development
+├── style.min.css       # LTR production
+├── style.rtl.css       # RTL development  
+├── style.rtl.min.css   # RTL production
+```
+
+### RTL-Specific Styling
+
+For manual RTL adjustments, use direction-specific properties:
+
+```scss
+.my-component {
+  margin-left: 1rem;     // Auto-flipped to margin-right in RTL
+  
+  // Manual RTL override
+  [dir="rtl"] & {
+    margin-left: 0;
+    margin-right: 2rem;  // Custom RTL spacing
+  }
 }
-
-```
-Where 'w' is the width of the image and 'h' is the height. The mixin uses three bootstrap breakpoints: `lg, md, sm`
-
-### @include shadow();
-Sets a shadowy container on the element. Useful with images.
-### @include fontawesome($content, $psuedo: 'before');
-Includes a fontawesome icon. See [Fontawesome v4](https://fontawesome.com/v4.7.0/)
-
-```sass
-@include fontawesome('\f2d1');
 ```
 
-## Sass placeholder classes that you can extend
-### @extend %center
-Centers an element.
-```sass
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-margin: auto;
-```
-### @extend %absolute-full
-Set position to absolute and stretch it.
-```sass
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-```
-## CKEditor RTL and LTR styling
-Go to `/admin/config/content/seeds` or `Admin >> Configuration >> Content Authoring >> Seeds Content Settings`, You will see CKEditor styling settings. By default, it is initialized, but if you want to change it, feel free to do it.
+### Testing RTL
 
-## Using responsive font sizes in sass
-in your `_theme-variables.scss` file, comment out this line:
-```
-// $enable-responsive-font-sizes: true
-```
-You can now use the bootstrap 4 build in mixin:
-```sass
-@include  rfs(64px);
-// OR
-@include  responsive-font-size(64px);
-// OR
-@include  font-size(64px);
-```
+1. **Enable RTL language** in Drupal (Arabic, Hebrew)
+2. **RTL stylesheets auto-load** based on language direction
+3. **Test components** in both LTR and RTL modes
+4. **Adjust as needed** using direction-specific selectors
+
+---
+
+## Available SASS Mixins
+
+### Subtheme Mixins (`scss/_mixin.scss`)
+
+- **`@include image-shadow()`** - Adds shadow overlay to images
+- **`@include equal-height()`** - Creates equal height flex containers
+- **`@include inline-form($gutter, $break)`** - Inline form layouts
+- **`@include form($gutter, $min-width)`** - Multi-column forms
+- **`@include fontawesome($content, $pseudo)`** - FontAwesome icons
+- **`@include responsive-image-blazy($lg, $md, $sm)`** - Aspect ratio for responsive images
+- **`%center`** - Absolute center positioning
+- **`%absolute-full`** - Full absolute positioning
+- **`%blazy-image`** - Blazy image setup
+
+### Core Mixins (`node_modules/seeds_ui/scss/mixins/`)
+
+#### Responsive Breakpoints
+- **`@include media-breakpoint-min($breakpoint)`** - Min-width media queries
+- **`@include media-breakpoint-max($breakpoint)`** - Max-width media queries  
+- **`@include media-breakpoint-between($lower, $upper)`** - Between breakpoints
+- **`@include media-breakpoint-only($breakpoint)`** - Single breakpoint only
+
+Available breakpoints: `xs` (0px), `sm` (576px), `md` (768px), `lg` (992px), `xl` (1200px), `xxl` (1400px)
+
+#### Grid System
+- **`@include make-row($gutter)`** - Custom grid rows
+- **`@include make-col($size)`** - Custom grid columns
+- **`@include make-col-auto()`** - Auto-width columns
+- **`@include make-col-offset($size)`** - Column offsets
+- **`@include row-cols($count)`** - Equal-width children
+
+#### Layout & Styling
+- **`@include make-container($gutter)`** - Custom containers
+- **`@include border-radius($radius)`** - Border radius
+- **`@include border-top-radius($radius)`** - Top border radius
+- **`@include border-bottom-radius($radius)`** - Bottom border radius
+- **`@include img-fluid()`** - Responsive images (max-width: 100%)
+- **`@include reset-text()`** - Reset text styling
+
+---
+
+## Responsive Font Sizes (RFS)
+
+Seeds UI uses **RFS (Responsive Font Size)** for fluid typography that scales with viewport size.
+
+### RFS Mixins
+
+- **`@include font-size($size)`** - Responsive font sizing that scales down on smaller screens
+- **`@include rfs($value, $property: font-size)`** - Advanced RFS with custom property
+
+### Configuration Variables
+
+- **`$rfs-minimum-font-size`** - Minimum font size (default: 1rem)
+- **`$rfs-factor`** - Scaling factor (default: 10)
+- **`$rfs-breakpoint`** - Breakpoint for scaling (default: 1200px)
+- **`$rfs-two-dimensional`** - Enable height-based scaling (default: false) 
+
 ## Disable bootstrap container in certian content types
 Go to `/admin/structure/types`, Click edit on a content type. You will be met with various settings. At the bottom, you will see `Container settings`, Navigate there and enable `Fluid container` to disable the bootstrap container.
 
