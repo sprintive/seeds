@@ -6,8 +6,6 @@
  */
 
 use Drupal\views\Entity\View;
-use Drupal\menu_link_content\Entity\MenuLinkContent;
-use Drupal\system\Entity\Menu;
 
 /**
  * Implements hook_install().
@@ -35,77 +33,4 @@ function seeds_install() {
     ->getEditable('node.settings')
     ->set('use_admin_theme', TRUE)
     ->save(TRUE);
-
-  // Create Social Media Menu.
-  // Create Social Media Menu.
-  $social_media_links = [
-    'facebook' => [
-      'title' => 'Facebook',
-      'class' => 'fa fa-facebook',
-    ],
-    'twitter' => [
-      'title' => 'Twitter',
-      'class' => 'fa fa-twitter',
-    ],
-    'youtube' => [
-      'title' => 'Youtube',
-      'class' => 'fa fa-youtube-play',
-    ],
-    'Instagram' => [
-      'title' => 'Instagram',
-      'class' => 'fa fa-instagram',
-    ],
-    'linkedin' => [
-      'title' => 'Linkedin',
-      'class' => 'fa fa-linkedin',
-    ],
-    'tumblr' => [
-      'title' => 'Tumblr',
-      'class' => 'fa fa-tumblr',
-    ],
-  ];
-  $menu = Menu::create([
-    'id' => 'seeds-social-media',
-    'label' => "Social Media",
-    'description' => "Social media links.",
-  ]);
-  $menu->save();
-  foreach ($social_media_links as $link) {
-    $link = MenuLinkContent::create([
-      'title' => $link['title'],
-      'link' => [
-        'uri' => 'https://www.sprintive.com',
-        'options' => [
-          'attributes' => [
-            'class' => $link['class'],
-            'target' => '_blank',
-          ],
-        ],
-      ],
-      'menu_name' => 'seeds-social-media',
-      'expanded' => FALSE,
-    ]);
-    $link->save();
-  }
-}
-
-/**
- * Enable fpa module.
- */
-function seeds_update_9001() {
-  \Drupal::service('module_installer')->install(['fpa']);
-}
-
-/**
- * Enable check media usability.
- */
-function seeds_update_9003() {
-  // Load the configuration factory service.
-  $config_factory = \Drupal::service('config.factory');
-
-  // Get the configuration object for seeds_media.settings.yml.
-  $config = $config_factory->getEditable('seeds_media.settings');
-
-  // Set the check_media_usability configuration to TRUE.
-  $config->set('check_media_usability', 1)->save();
 }
