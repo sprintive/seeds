@@ -72,11 +72,7 @@
     },
     "patches": {
       "drupal/core": {
-        "Issue #2999491 :Add reusable option to inline block creation": "https://git.drupalcode.org/project/drupal/-/merge_requests/4178.patch",
         "Issue #3332416 CKEditor 5 toolbar items of multi-value field": "https://www.drupal.org/files/issues/2024-04-09/3332416-79.patch"
-      },
-      "drupal/ds": {
-        "Issue #3507312 :Fix array_unshift() Error in ds_theme_registry_alter() when running Field Group pre-process before ds_entity_view": "https://www.drupal.org/files/issues/2025-02-18/ds--2025-02-18--3507312--mr-43.patch"
       }
     }
   },
