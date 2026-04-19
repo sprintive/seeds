@@ -1,7 +1,7 @@
 name: Seeds
 type: profile
 description: "Kickoff distribution for SMEs, Curated by Sprintive."
-version: "13.0.x"
+version: "13.0.7"
 project: seeds
 core_version_requirement: "^10 || ^11"
 distribution:
