@@ -37,7 +37,7 @@
   },
   "extra": {
     "branch-alias": {
-      "13.1.x-dev": "13.1.x-dev"
+      "dev-13.1.x": "13.1.x-dev"
     },
     "installer-paths": {
       "public_html/core": [
