@@ -33,4 +33,264 @@ function seeds_install() {
     ->getEditable('node.settings')
     ->set('use_admin_theme', TRUE)
     ->save(TRUE);
+
+  // The Default Admin theme is the theme of the back end, and the sidebar of
+  // Seeds Toolbar is set up the way Seeds wants it.
+  _seeds_use_default_admin_theme();
+  _seeds_configure_seeds_toolbar();
+}
+
+/**
+ * Makes Default Admin the admin theme, with the favicon of the Seeds profile.
+ *
+ * The favicon is the one of the Root theme, the admin theme before, kept in the
+ * profile so it stays when Root is no longer there. A favicon that was set for
+ * Default Admin is left as it is.
+ *
+ * @return bool
+ *   TRUE if Default Admin is now the admin theme, FALSE if the theme is not in
+ *   the code of the site.
+ */
+function _seeds_use_default_admin_theme(): bool {
+  if (!\Drupal::service('extension.list.theme')->exists('default_admin')) {
+    return FALSE;
+  }
+  \Drupal::service('theme_installer')->install(['default_admin']);
+
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('admin', 'default_admin')
+    ->save(TRUE);
+
+  $settings = \Drupal::configFactory()->getEditable('default_admin.settings');
+  if ($settings->get('favicon.use_default') ?? TRUE) {
+    $settings
+      ->set('favicon.use_default', FALSE)
+      ->set('favicon.mimetype', 'image/vnd.microsoft.icon')
+      ->set('favicon.path', \Drupal::service('extension.list.profile')->getPath('seeds') . '/favicon.ico')
+      ->save(TRUE);
+  }
+  return TRUE;
+}
+
+/**
+ * Lets the roles that saw the old toolbar see the Navigation sidebar.
+ *
+ * Navigation shows its sidebar to the roles with "Access navigation", where the
+ * old toolbar was shown by "Use the administration toolbar", which goes when the
+ * Toolbar module is uninstalled. The roles that had it get "Access navigation",
+ * and "Use admin search" with it, as the old toolbar had a search, unless they
+ * have both already. The administrator role of the site is not left out.
+ *
+ * @return array
+ *   The permissions that were granted, listed by role.
+ */
+function _seeds_grant_navigation_access(): array {
+  $available = \Drupal::service('user.permissions')->getPermissions();
+  $granted = [];
+  foreach (\Drupal\user\Entity\Role::loadMultiple() as $id => $role) {
+    if ($role->isAdmin()) {
+      continue;
+    }
+    $saw_toolbar = $role->hasPermission('access toolbar');
+    $wanted = [];
+    if ($saw_toolbar) {
+      $wanted[] = 'access navigation';
+    }
+    if ($saw_toolbar || $role->hasPermission('use admin toolbar search')) {
+      $wanted[] = 'use admin search';
+    }
+    $missing = array_filter($wanted, static fn (string $permission): bool => isset($available[$permission]) && !$role->hasPermission($permission));
+    if ($missing) {
+      foreach ($missing as $permission) {
+        $role->grantPermission($permission);
+      }
+      $role->save();
+      $granted[$id] = array_values($missing);
+    }
+  }
+  return $granted;
+}
+
+/**
+ * Sets up the sidebar of Seeds Toolbar the way Seeds wants it.
+ *
+ * Settings that were not migrated yet, because the site came from Seeds Toolbar
+ * 2.x, are migrated first, with the update of the module itself.
+ *
+ * @return bool
+ *   TRUE if the settings were applied, FALSE if Seeds Toolbar is not installed
+ *   or Navigation, which it needs, is not.
+ */
+function _seeds_configure_seeds_toolbar(): bool {
+  $module_handler = \Drupal::moduleHandler();
+  if (!$module_handler->moduleExists('seeds_toolbar') || !$module_handler->moduleExists('navigation')) {
+    return FALSE;
+  }
+
+  $config = \Drupal::configFactory()->getEditable('seeds_toolbar.settings');
+  if (!array_key_exists('group_admin_menu', $config->getRawData())) {
+    $module_handler->loadInclude('seeds_toolbar', 'install');
+    seeds_toolbar_update_30001();
+    $config = \Drupal::configFactory()->getEditable('seeds_toolbar.settings');
+  }
+
+  $config
+    ->set('search', TRUE)
+    ->set('group_admin_menu', TRUE)
+    ->set('content_group', TRUE)
+    ->set('menu_icons', TRUE)
+    ->set('tools_menu', TRUE)
+    ->set('create_entity_types', ['node_type', 'block_content_type', 'media_type', 'taxonomy_vocabulary', 'menu'])
+    ->set('page_actions.placement', 'sidebar')
+    ->set('contextual.placement', 'sidebar')
+    ->set('responsive_preview.enabled', TRUE)
+    ->set('logo_status.version', TRUE)
+    ->save(TRUE);
+
+  // Puts the blocks where the settings ask for them, as the form of the module
+  // does when it is saved.
+  \Drupal::service('Drupal\seeds_toolbar\SidebarSetup')->apply();
+  \Drupal::service('router.builder')->setRebuildNeeded();
+  return TRUE;
+}
+
+/**
+ * Implements hook_update_dependencies().
+ */
+function seeds_update_dependencies(): array {
+  // The roles are given the sidebar, the sidebar is set up, and the toolbar
+  // modules are uninstalled, after Seeds Toolbar has moved to Navigation, which
+  // its own update installs.
+  foreach ([13102, 13103, 13104] as $update) {
+    $dependencies['seeds'][$update] = ['seeds_toolbar' => 30001];
+  }
+  return $dependencies;
+}
+
+/**
+ * Use the Default Admin theme as the admin theme, in place of Root.
+ *
+ * A site that has chosen another admin theme keeps it. A site that already uses
+ * Default Admin only gets the favicon.
+ */
+function seeds_update_13101(): string {
+  $admin = \Drupal::config('system.theme')->get('admin');
+  if (!in_array($admin, ['', NULL, 'root', 'default_admin'], TRUE)) {
+    return (string) t('The admin theme is @theme, so it was left as it is.', ['@theme' => $admin]);
+  }
+  if (!_seeds_use_default_admin_theme()) {
+    return (string) t('The Default Admin theme is not in the code of the site, so the admin theme was left as it is.');
+  }
+  return (string) t('Default Admin is the admin theme, with the favicon of the Seeds profile.');
+}
+
+/**
+ * Let the roles that saw the old toolbar see the Navigation sidebar.
+ */
+function seeds_update_13102(): string {
+  if (!\Drupal::moduleHandler()->moduleExists('navigation')) {
+    return (string) t('Navigation is not installed, so the roles were left as they are.');
+  }
+  $granted = _seeds_grant_navigation_access();
+  if (!$granted) {
+    return (string) t('The roles already have what they need to see the sidebar.');
+  }
+  $parts = [];
+  foreach ($granted as $role => $permissions) {
+    $parts[] = $role . ' (' . implode(', ', $permissions) . ')';
+  }
+  return (string) t('Granted: @roles.', ['@roles' => implode('; ', $parts)]);
+}
+
+/**
+ * Set up the sidebar of Seeds Toolbar.
+ *
+ * Shows the admin search, groups the administration links, groups the content
+ * links under CMS, shows icons on sub-menu items and the Tools menu, adds
+ * content, content blocks, media, taxonomy terms and menu links to the Create
+ * menu, puts the action links and the edit mode toggle in the sidebar, shows the
+ * layout preview, and shows the Drupal version next to the logo.
+ */
+function seeds_update_13103(): string {
+  if (!_seeds_configure_seeds_toolbar()) {
+    return (string) t('Seeds Toolbar or Navigation is not installed, so the sidebar was not set up.');
+  }
+  return (string) t('The sidebar of Seeds Toolbar is set up.');
+}
+
+/**
+ * Uninstall Admin Toolbar, its submodules and Toolbar, which Navigation replaces.
+ *
+ * The submodules go first, Admin Toolbar after them and Toolbar last. A module
+ * that another module still needs is left installed, and said so in the message.
+ * Navigation has to be installed, or the site would be left without a toolbar.
+ */
+function seeds_update_13104(): string {
+  $module_handler = \Drupal::moduleHandler();
+  if (!$module_handler->moduleExists('navigation')) {
+    return (string) t('Navigation is not installed, so the toolbar modules were left installed.');
+  }
+
+  $related = array_filter(
+    array_keys($module_handler->getModuleList()),
+    static fn (string $name): bool => str_starts_with($name, 'admin_toolbar')
+  );
+  // The longer names are the submodules, which need the shorter ones.
+  usort($related, static fn (string $a, string $b): int => strlen($b) <=> strlen($a));
+  $pending = $module_handler->moduleExists('toolbar') ? array_merge($related, ['toolbar']) : $related;
+
+  $installer = \Drupal::service('module_installer');
+  $uninstalled = [];
+  // A module that waits for another one is tried again, until a pass changes
+  // nothing.
+  do {
+    $changed = FALSE;
+    foreach ($pending as $key => $module) {
+      if ($installer->validateUninstall([$module])) {
+        continue;
+      }
+      $installer->uninstall([$module], FALSE);
+      $uninstalled[] = $module;
+      unset($pending[$key]);
+      $changed = TRUE;
+    }
+  } while ($changed && $pending);
+
+  $message = $uninstalled
+    ? (string) t('Uninstalled: @modules.', ['@modules' => implode(', ', $uninstalled)])
+    : (string) t('No toolbar module was uninstalled.');
+  if ($pending) {
+    $message .= ' ' . (string) t('Left installed, as other modules need them: @modules.', ['@modules' => implode(', ', $pending)]);
+  }
+  return $message;
+}
+
+/**
+ * Uninstall the Root theme, which Default Admin replaces.
+ *
+ * The code of Root stays in the site, so it can be installed again. The theme is
+ * left installed when it is still the default or the admin theme, or the base of
+ * a theme that is installed.
+ */
+function seeds_update_13105(): string {
+  $theme_handler = \Drupal::service('theme_handler');
+  if (!$theme_handler->themeExists('root')) {
+    return (string) t('The Root theme is not installed.');
+  }
+
+  $config = \Drupal::config('system.theme');
+  foreach (['default', 'admin'] as $key) {
+    if ($config->get($key) === 'root') {
+      return (string) t('Root is still the @key theme, so it was left installed.', ['@key' => $key]);
+    }
+  }
+  foreach ($theme_handler->listInfo() as $name => $theme) {
+    if (($theme->info['base theme'] ?? '') === 'root') {
+      return (string) t('The theme @theme is based on Root, so it was left installed.', ['@theme' => $name]);
+    }
+  }
+
+  \Drupal::service('theme_installer')->uninstall(['root']);
+  return (string) t('The Root theme was uninstalled.');
 }
