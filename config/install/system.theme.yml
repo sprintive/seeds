@@ -1,2 +1,2 @@
-admin: root
-default: seeds_coat
+admin: default_admin
+default: seeds_ui
